@@ -1,4 +1,36 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\bibliographystyle{apacite}
+
 \begin{document}
-hello
+
+\textbf{Question 1}
+\newline
+
+%\fullcite
+
+
+An ontology can be defined as "An explicit specialization of a conceptualization" \cite{Gruber1993}
+
+
+This concept was expanded to "An ontology is a formal, explicit specialization of a shared conceptualization" by \cite{Studer1998}.
+
+\cite{Genesereth1987} claims that "A conceptualization is an abstract, simplified view of the world that we wish to represent for some purpose". We can see it as a mental model of the world. It is not yet expressed formally. \cite{Genesereth1987} also more formally define a conceptualization as, \emph{a tuple,( D, \textbf{R}) where}
+\begin{itemize}
+\item \emph{D is a set called the universe of discourse }
+\item \emph{\textbf{R} is a set of relation on D}
+\end{itemize}
+
+In a conceptualization of an insect classification system ( insect taxonomy ) the elements of \emph{D} would be things like the insects themselves, what the insects eat, insect body parts ect. \emph{\textbf{R}} would be relationships like insect A eats insect B or Unitary relationships like insect C can fly.
+
+According to \cite{GuObSt09} we need a language ( formal or informal ) to express our conceptualization. We say that the language commits to a conceptualization and that once we commit we only admit models that are intended\citep[p.8]{GuObSt09}. In other words only the models that fit our conceptualization. In our insect example the relationship "to eat" could be interpreted in many ways. Does it mean that insect A can or cant eat and insect of the same type? Also if insect A can eat insect B and insect B can eat insect C, can insect A eat insect C.
+
+The language that is used need to only have the relations with the meaning intended in the conceptualization. There should be no ambiguity. 
+
+Conceptualizations can be specified in 2 way: \emph{extensionally} and \emph{intentionally}\citep[p.8]{GuObSt09}. To \emph{extensionally} specify our example we have to list every possible relationship in R, which is impossible \cite{GuObSt09}. We can only partially specify our world. 
+In contrast a we can specify our conceptualization \emph{intentionally} by fixing "a language want to use to talk of it, and to constrain the interpretations of such a language in and \emph{intentional} way." \citep[p.8]{GuObSt09} This can be done by \emph{meaning postulates} \cite{Nagel1948}. For example we define that "to eat" in our previous example is reflexive and transitive. In other words an insect can eat an insect of the same type i.e. cannibalism. Also if insect A can eat insect B, which can eat insect C, then insect A can eat insect C.
+Thus by \emph{intentionally} specifying the conceptualization we have created an \emph{approximate} specification \cite{GuObSt09}, in con contrast to the explicit specification we would get from specifying the conceptualization explicitly. 
+
+
+\bibliography{mybib}
 \end{document}
