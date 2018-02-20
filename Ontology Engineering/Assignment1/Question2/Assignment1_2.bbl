@@ -1,0 +1,27 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Gruber%
+}{%
+Gruber%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+Gruber1993}
+\APACinsertmetastar {%
+Gruber1993}%
+\begin{APACrefauthors}%
+Gruber, T\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A translation approach to portable ontology
+  specifications}} {{A translation approach to portable ontology
+  specifications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Knowledge Acquisition}{5}{2}{199--220}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
