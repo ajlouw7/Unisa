@@ -1,0 +1,126 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Carnap%
+}{%
+Carnap%
+}{%
+{\protect \APACyear {1956}}%
+}]{%
+Nagel1948}
+\APACinsertmetastar {%
+Nagel1948}%
+\begin{APACrefauthors}%
+Carnap, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1956}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Meaning and Necessity. A Study in Semantics and Modal
+  Logic}} {{Meaning and Necessity. A Study in Semantics and Modal
+  Logic}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The University of Chicago Press, second edition}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Genesereth%
+\ \BBA {} Nielson%
+}{%
+Genesereth%
+\ \BBA {} Nielson%
+}{%
+{\protect \APACyear {1987}}%
+}]{%
+Genesereth1987}
+\APACinsertmetastar {%
+Genesereth1987}%
+\begin{APACrefauthors}%
+Genesereth, M\BPBI R.%
+\BCBT {}\ \BBA {} Nielson, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1987}.
+\newblock
+\APACrefbtitle {{Logical Foundations of Artificial Intelligence}} {{Logical
+  Foundations of Artificial Intelligence}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gruber%
+}{%
+Gruber%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+Gruber1993}
+\APACinsertmetastar {%
+Gruber1993}%
+\begin{APACrefauthors}%
+Gruber, T\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A translation approach to portable ontology
+  specifications}} {{A translation approach to portable ontology
+  specifications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Knowledge Acquisition}{5}{2}{199--220}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Guarino%
+, Oberle%
+\BCBL {}\ \BBA {} Staab%
+}{%
+Guarino%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+GuObSt09}
+\APACinsertmetastar {%
+GuObSt09}%
+\begin{APACrefauthors}%
+Guarino, N.%
+, Oberle, D.%
+\BCBL {}\ \BBA {} Staab, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {{Handbook on Ontologies}} {{Handbook on Ontologies}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Studer%
+, Benjamins%
+\BCBL {}\ \BBA {} Fensel%
+}{%
+Studer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+Studer1998}
+\APACinsertmetastar {%
+Studer1998}%
+\begin{APACrefauthors}%
+Studer, R.%
+, Benjamins, R.%
+\BCBL {}\ \BBA {} Fensel, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Knowledge engineering: Principles and methods}}
+  {{Knowledge engineering: Principles and methods}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Data & Knowlege Engineering}{25}{1-2}{161--198}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
