@@ -32,6 +32,98 @@ Berners-Lee, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bienvenu%
+\ \BBA {} Rosati%
+}{%
+Bienvenu%
+\ \BBA {} Rosati%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Bien2015}
+\APACinsertmetastar {%
+Bien2015}%
+\begin{APACrefauthors}%
+Bienvenu, M.%
+\BCBT {}\ \BBA {} Rosati, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Query-based comparison of OBDA specifications}}
+  {{Query-based comparison of OBDA specifications}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {CEUR Workshop Proceedings} {Ceur workshop proceedings}\
+  (\BVOL\ 1350).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chandrasekaran%
+, Johnson%
+\BCBL {}\ \BBA {} Benjamins%
+}{%
+Chandrasekaran%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+can}
+\APACinsertmetastar {%
+can}%
+\begin{APACrefauthors}%
+Chandrasekaran, B.%
+, Johnson, T\BPBI R.%
+\BCBL {}\ \BBA {} Benjamins, V\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Ontologies: what are they? why do we need them?}}
+  {{Ontologies: what are they? why do we need them?}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Intelligent Systems and Their
+  Applications}{14}{}{20--26}.
+\newblock
+\begin{APACrefURL} \url{http://understandingrequirements.com/resources/4.1
+  Ontologies.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ciocoiu%
+, Gruninger%
+\BCBL {}\ \BBA {} Nau%
+}{%
+Ciocoiu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Ciocoiu2000}
+\APACinsertmetastar {%
+Ciocoiu2000}%
+\begin{APACrefauthors}%
+Ciocoiu, M.%
+, Gruninger, M.%
+\BCBL {}\ \BBA {} Nau, D\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Ontologies for Integrating Engineering Applications}}
+  {{Ontologies for Integrating Engineering Applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computing and Information Science in
+  Engineering}{1}{1}{12--22}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.cs.umd.edu/{~}nau/papers/ciocoiu2001ontologies.pdf
+  http://dx.doi.org/10.1115/1.1344878} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1115/1.1344878} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Decker%
 \ \protect \BOthers {.}}{%
 Decker%
@@ -58,6 +150,122 @@ Decker, S.%
   SEMANTIC WEB: The Roles of XML and RDF}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{IEEE Internet Comput.}{4}{5}{63--74}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dolby%
+\ \protect \BOthers {.}}{%
+Dolby%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Dolby2008}
+\APACinsertmetastar {%
+Dolby2008}%
+\begin{APACrefauthors}%
+Dolby, J.%
+, Fokoue, A.%
+, Kalyanpur, A.%
+, Ma, L.%
+, Schonberg, E.%
+, Srinivas, K.%
+\BCBL {}\ \BBA {} Sun, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{LNCS 5318 - Scalable Grounded Conjunctive Query
+  Evaluation over Large and Expressive Knowledge Bases}} {{LNCS 5318 - Scalable
+  Grounded Conjunctive Query Evaluation over Large and Expressive Knowledge
+  Bases}}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Garc{\'{i}}a-Castro%
+\ \BBA {} G{\'{o}}mez-P{\'{e}}rez%
+}{%
+Garc{\'{i}}a-Castro%
+\ \BBA {} G{\'{o}}mez-P{\'{e}}rez%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Garcia2011}
+\APACinsertmetastar {%
+Garcia2011}%
+\begin{APACrefauthors}%
+Garc{\'{i}}a-Castro, R.%
+\BCBT {}\ \BBA {} G{\'{o}}mez-P{\'{e}}rez, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Perspectives in Semantic Interoperability}}
+  {{Perspectives in Semantic Interoperability}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {The SemanticWeb Research and Applications 8th Extended
+  SemanticWeb Conference} {The semanticweb research and applications 8th
+  extended semanticweb conference}\ (\BPG~16).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Grosjean%
+, Soualmia%
+, Bouarech%
+, Jonquet%
+\BCBL {}\ \BBA {} Darmoni%
+}{%
+Grosjean%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+gros2014}
+\APACinsertmetastar {%
+gros2014}%
+\begin{APACrefauthors}%
+Grosjean, J.%
+, Soualmia, L\BPBI F.%
+, Bouarech, K.%
+, Jonquet, C.%
+\BCBL {}\ \BBA {} Darmoni, S\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Approach to Compare Bio-Ontologies Portals}} {{An
+  Approach to Compare Bio-Ontologies Portals}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Studies in Health Technology and Informatics} {Studies
+  in health technology and informatics}\ (\BVOL~205, \BPGS\ 1008--1012).
+\newblock
+\begin{APACrefDOI} \doi{10.3233/978-1-61499-432-9-1008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Heiler%
+}{%
+Heiler%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+Heiler1995a}
+\APACinsertmetastar {%
+Heiler1995a}%
+\begin{APACrefauthors}%
+Heiler, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Semantic Interoperability}} {{Semantic
+  Interoperability}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM Computing Surveys}{27}{2}{271--273}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -88,6 +296,61 @@ Horrocks, I.%
 \APACjournalVolNumPages{J. Web Semant.}{1}{1}{7--26}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.websem.2003.07.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACciteatitle {{Ontology-based data access with databases: A short
+  course}}}{%
+\APACciteatitle {{Ontology-based data access with databases: A short
+  course}}}{%
+{\protect \APACyear {2013}}%
+}]{%
+kon2013}
+\APACinsertmetastar {%
+kon2013}%
+{\BBOQ}\APACrefatitle {{Ontology-based data access with databases: A short
+  course}} {{Ontology-based data access with databases: A short
+  course}}.{\BBCQ}
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\BIn{} (\BVOL\ 8067 LNAI, \BPGS\ 194--229).
+\newblock
+\begin{APACrefURL}
+  \url{http://www.dcs.bbk.ac.uk/{~}roman/papers/RW-Chapter.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+van Diggelen%
+\ \BBA {} Dignum%
+}{%
+van Diggelen%
+\ \BBA {} Dignum%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+VanDiggelen2007}
+\APACinsertmetastar {%
+VanDiggelen2007}%
+\begin{APACrefauthors}%
+van Diggelen, J.%
+\BCBT {}\ \BBA {} Dignum, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Developing Semantically Interoperable e-Commerce
+  Systems} {Developing semantically interoperable e-commerce systems}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the Ninth International Conference on
+  Electronic Commerce} {Proceedings of the ninth international conference on
+  electronic commerce}\ (\BPGS\ 117--126).
+\newblock
+\APACaddressPublisher{New York, NY, USA}{ACM}.
+\newblock
+\begin{APACrefDOI} \doi{10.1145/1282100.1282126} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
