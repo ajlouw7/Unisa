@@ -1,27 +1,93 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Gruber%
+Berners-Lee%
+, Hendler%
+\BCBL {}\ \BBA {} Lassila%
 }{%
-Gruber%
-}{%
-{\protect \APACyear {1993}}%
+Berners-Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2001}}%
 }]{%
-Gruber1993}
+lee2001}
 \APACinsertmetastar {%
-Gruber1993}%
+lee2001}%
 \begin{APACrefauthors}%
-Gruber, T\BPBI R.%
+Berners-Lee, T.%
+, Hendler, J.%
+\BCBL {}\ \BBA {} Lassila, O.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1993}{}{}.
+\APACrefYearMonthDay{2001}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{A translation approach to portable ontology
-  specifications}} {{A translation approach to portable ontology
-  specifications}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The Semantic Web}} {{The Semantic Web}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Knowledge Acquisition}{5}{2}{199--220}.
+\APACjournalVolNumPages{Sci. Am.}{284}{5}{34--43}.
+\newblock
+\begin{APACrefURL} \url{http://link.springer.com/10.1007/978-3-319-58068-5}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-58068-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Decker%
+\ \protect \BOthers {.}}{%
+Decker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+Decker}
+\APACinsertmetastar {%
+Decker}%
+\begin{APACrefauthors}%
+Decker, S.%
+, Melnik, S.%
+, Harmelen, F\BPBI V.%
+, Fensel, D.%
+, Klein, M.%
+, Broekstra, J.%
+\BDBL {}Horrocks, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{THE SEMANTIC WEB: The Roles of XML and RDF}} {{THE
+  SEMANTIC WEB: The Roles of XML and RDF}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Internet Comput.}{4}{5}{63--74}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Horrocks%
+, Patel-Schneider%
+\BCBL {}\ \BBA {} van Harmelen%
+}{%
+Horrocks%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Horrocks2003}
+\APACinsertmetastar {%
+Horrocks2003}%
+\begin{APACrefauthors}%
+Horrocks, I.%
+, Patel-Schneider, P.%
+\BCBL {}\ \BBA {} van Harmelen, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{From SHIQ and RDF to OWL:The Making of a Web Ontology
+  Language}} {{From SHIQ and RDF to OWL:The Making of a Web Ontology
+  Language}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{J. Web Semant.}{1}{1}{7--26}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.websem.2003.07.001} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
