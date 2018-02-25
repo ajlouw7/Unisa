@@ -1,0 +1,84 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Bechhofer%
+\ \BBA {} Carroll%
+}{%
+Bechhofer%
+\ \BBA {} Carroll%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Bechhofer2004}
+\APACinsertmetastar {%
+Bechhofer2004}%
+\begin{APACrefauthors}%
+Bechhofer, S\BPBI K.%
+\BCBT {}\ \BBA {} Carroll, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Parsing owl dl: trees or triples?}} {{Parsing owl dl:
+  trees or triples?}}{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proc. 13th Int. Conf. World Wide Web} {Proc. 13th int.
+  conf. world wide web}\ (\BPGS\ 266--275).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Grau%
+\ \protect \BOthers {.}}{%
+Grau%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Grau2008}
+\APACinsertmetastar {%
+Grau2008}%
+\begin{APACrefauthors}%
+Grau, B\BPBI C.%
+, Horrocks, I.%
+, Motik, B.%
+, Parsia, B.%
+, Patel-Schneider, P\BPBI F.%
+\BCBL {}\ \BBA {} Sattler, U.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{OWL2: The next step for OWL}} {{OWL2: The next step for
+  OWL}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{J. Web Semant.}{6}{4}{309--322}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Patel-Schneider%
+, Hayes%
+\BCBL {}\ \BBA {} Horrocks%
+}{%
+Patel-Schneider%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Patel}
+\APACinsertmetastar {%
+Patel}%
+\begin{APACrefauthors}%
+Patel-Schneider, P\BPBI F.%
+, Hayes, P.%
+\BCBL {}\ \BBA {} Horrocks, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{February}{}.
+\newblock
+\APACrefbtitle {OWL Web Ontology Language Semantics and Abstract Syntax, W3C
+  Recommendation.} {Owl web ontology language semantics and abstract syntax,
+  w3c recommendation.}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -7,11 +7,11 @@
 \textbf{Question 2}
 \newline
 
-Today's content on the web is mostly human readable and not machine readable. This it difficult for machine to independently, form a human intelligence, find ind deduce information. Current systems can only to text searches but cannot deduce meaning. Hence the development of the Semantic web. "The Semantic Web will bring structure to the meaningful content of Web pages, creating an environment where software agents roaming from page to page can readily carry out sophisticated tasks for users". \citep{lee2001} Examples of services the Semantic Web will enable are information brokers, search agents and information filters. \citep{Decker} 
+Today's content on the web is mostly human readable and not machine readable. This it difficult for machine to independently, form a human intelligence, find ind deduce information. Current systems can only to text searches but cannot deduce meaning. Hence the development of the Semantic Web. "The Semantic Web will bring structure to the meaningful content of Web pages, creating an environment where software agents roaming from page to page can readily carry out sophisticated tasks for users". \citep{lee2001} Examples of services the Semantic Web will enable are information brokers, search agents and information filters. \citep{Decker} 
 
 Agents will be able to deduce the meaning of the data and infer new knowledge from what it already knows. Because the agents will be using the semantics embedded in the web pages, we will not need AI with a level of sophistication of a human being. \citep{lee2001}
 
-The semantic information has to be encoded into web pages using a machine readable language for these agents to function because semantics of data is rarely explicit. \citep{Heiler1995a}  With this in mind, there are a couple of languages that have come forward in wic we can do this encoding. RDF and RDF SCHEMA were the initial focus of the but we found to be lacking in expressive power. The World Wide Web Consortium (W3C) created the Web Ontology Group to develop an Ontology language for the Semantic Web. The relationship between terms are to be provided by this ontology in a structured vocabulary. Making it easy for agent to interpret unambiguously \citep{Horrocks2003}
+The semantic information has to be encoded into web pages using a machine readable language for these agents to function because semantics of data is rarely explicit. \citep{Heiler1995a}  With this in mind, there are a couple of languages that have come forward in which we can do this encoding. RDF and RDF SCHEMA were the initial focus of the but we found to be lacking in expressive power. The World Wide Web Consortium (W3C) created the Web Ontology Group to develop an Ontology language for the Semantic Web. The relationship between terms are to be provided by this ontology in a structured vocabulary. Making it easy for agent to interpret unambiguously \citep{Horrocks2003}
 
 Using common languages allows agents to search through different web pages to find relevant data. But using the same language like OWL does not guarantee that the meaning of particular terms are the same across different web pages or domains. We can guarantee \emph{semantic interoperability} (meaning of the data) by using the same standard ontology. \citep{VanDiggelen2007}. In such a case the meaning of all terms and relationships are the same by definition. The definition of the ontology.
 
@@ -23,10 +23,13 @@ If it is not possible for systems to use the same ontology, some interoperabilit
 
 Another option is \emph{Ontological Alignment}. This involves creating mappings between the entities and relationships of the ontologies. Te problem with this approach is the sheer number of mappings tat need to be made. \citep{VanDiggelen2007} An intermediate ontology can be used to reduce the number of mappings.\citep{Ciocoiu2000}\citep{VanDiggelen2007}
 
-When some form of \emph{semantic interoperability} is achieved between systems, these systems can be used to answer queries.  This can be done through \emph{Ontology based data access} (OBDA). "Ontology-based data access (OBDA) is a recent paradigm that proposes the use of an ontology as a conceptual, reconciled view of the information stored in a set of
-existing data sources." \citep{Bien2015}
+When some form of \emph{semantic interoperability} is achieved between systems, these systems can be used to answer queries.  This can be done through \emph{Ontology based data access} (OBDA). "Ontology-based data access (OBDA) is a recent paradigm that proposes the use of an ontology as a conceptual, reconciled view of the information stored in a set of existing data sources." \citep{Bien2015} In other words the queries are done through the ontology to the data. This data could anything form a relational database, tripple stores or datalog engines.\citep{RodMuro2013}
 
-These queries are formally expressed using Descriptive Logics which is a family of formal knowlae representation languages. Of tese queries, \emph{Conjunctive Queries} are used most often. \cite{Bien2015} A good definition of a \emph{Conjunctive Query} is given by \cite{Dolby2008}. As an example we use the example given in \cite{kon2013} 
+These queries can be formally expressed using Descriptive Logics which is a family of formal knowledge representation languages. There are different types queries. Some types include \emph{Conjunctive Queries} and \emph{Instance Queries}. \cite{Bien2015}
+ 
+These queries in Descriptive Logics format then needs to be translated into the language of the target system. For instance if the target systems use a relational database, the query needs to be translated to a SQL query. \citep{kon2013}
+
+The Semantic Web is an extension of the the current Web, \cite{lee2001}, and allows for much more comprehensive searches than than traditional text based searches (Google,Bing). Allowing the user to specify not only the objects that they are searching for but the relationships these objects have.
 
 \bibliography{mybib}
 \end{document}

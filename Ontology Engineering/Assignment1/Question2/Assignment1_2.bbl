@@ -24,11 +24,6 @@ Berners-Lee, T.%
 {\BBOQ}\APACrefatitle {{The Semantic Web}} {{The Semantic Web}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Sci. Am.}{284}{5}{34--43}.
-\newblock
-\begin{APACrefURL} \url{http://link.springer.com/10.1007/978-3-319-58068-5}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1007/978-3-319-58068-5} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -84,9 +79,6 @@ Chandrasekaran, B.%
 \newblock
 \APACjournalVolNumPages{IEEE Intelligent Systems and Their
   Applications}{14}{}{20--26}.
-\newblock
-\begin{APACrefURL} \url{http://understandingrequirements.com/resources/4.1
-  Ontologies.pdf} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -115,12 +107,6 @@ Ciocoiu, M.%
 \newblock
 \APACjournalVolNumPages{Journal of Computing and Information Science in
   Engineering}{1}{1}{12--22}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.cs.umd.edu/{~}nau/papers/ciocoiu2001ontologies.pdf
-  http://dx.doi.org/10.1115/1.1344878} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1115/1.1344878} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -150,37 +136,6 @@ Decker, S.%
   SEMANTIC WEB: The Roles of XML and RDF}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{IEEE Internet Comput.}{4}{5}{63--74}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Dolby%
-\ \protect \BOthers {.}}{%
-Dolby%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2008}}%
-}]{%
-Dolby2008}
-\APACinsertmetastar {%
-Dolby2008}%
-\begin{APACrefauthors}%
-Dolby, J.%
-, Fokoue, A.%
-, Kalyanpur, A.%
-, Ma, L.%
-, Schonberg, E.%
-, Srinivas, K.%
-\BCBL {}\ \BBA {} Sun, X.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2008}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{LNCS 5318 - Scalable Grounded Conjunctive Query
-  Evaluation over Large and Expressive Knowledge Bases}} {{LNCS 5318 - Scalable
-  Grounded Conjunctive Query Evaluation over Large and Expressive Knowledge
-  Bases}}.{\BBCQ}
-\newblock
-
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -241,8 +196,6 @@ Grosjean, J.%
 \newblock
 \BIn{} \APACrefbtitle {Studies in Health Technology and Informatics} {Studies
   in health technology and informatics}\ (\BVOL~205, \BPGS\ 1008--1012).
-\newblock
-\begin{APACrefDOI} \doi{10.3233/978-1-61499-432-9-1008} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -294,31 +247,62 @@ Horrocks, I.%
   Language}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{J. Web Semant.}{1}{1}{7--26}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.websem.2003.07.001} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-\APACciteatitle {{Ontology-based data access with databases: A short
-  course}}}{%
-\APACciteatitle {{Ontology-based data access with databases: A short
-  course}}}{%
+Kontchakov%
+, Rodr{\'{i}}guez-Muro%
+\BCBL {}\ \BBA {} Zakharyaschev%
+}{%
+Kontchakov%
+\ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
 }]{%
 kon2013}
 \APACinsertmetastar {%
 kon2013}%
+\begin{APACrefauthors}%
+Kontchakov, R.%
+, Rodr{\'{i}}guez-Muro, M.%
+\BCBL {}\ \BBA {} Zakharyaschev, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
 {\BBOQ}\APACrefatitle {{Ontology-based data access with databases: A short
   course}} {{Ontology-based data access with databases: A short
   course}}.{\BBCQ}
 \newblock
+\BIn{} (\BVOL\ 8067 LNAI, \BPGS\ 194--229).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodr{\'{i}}guez-Muro%
+, Kontchakov%
+\BCBL {}\ \BBA {} Zakharyaschev%
+}{%
+Rodr{\'{i}}guez-Muro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+RodMuro2013}
+\APACinsertmetastar {%
+RodMuro2013}%
+\begin{APACrefauthors}%
+Rodr{\'{i}}guez-Muro, M.%
+, Kontchakov, R.%
+\BCBL {}\ \BBA {} Zakharyaschev, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
 \APACrefYearMonthDay{2013}{}{}.
 \newblock
-\BIn{} (\BVOL\ 8067 LNAI, \BPGS\ 194--229).
+{\BBOQ}\APACrefatitle {{Ontology-based data access: Ontop of databases}}
+  {{Ontology-based data access: Ontop of databases}}.{\BBCQ}
 \newblock
-\begin{APACrefURL}
-  \url{http://www.dcs.bbk.ac.uk/{~}roman/papers/RW-Chapter.pdf}
-  \end{APACrefURL}
+\APACjournalVolNumPages{Lect. Notes Comput. Sci. (including Subser. Lect. Notes
+  Artif. Intell. Lect. Notes Bioinformatics)}{8218 LNCS}{PART 1}{558--573}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -349,8 +333,6 @@ van Diggelen, J.%
   electronic commerce}\ (\BPGS\ 117--126).
 \newblock
 \APACaddressPublisher{New York, NY, USA}{ACM}.
-\newblock
-\begin{APACrefDOI} \doi{10.1145/1282100.1282126} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
