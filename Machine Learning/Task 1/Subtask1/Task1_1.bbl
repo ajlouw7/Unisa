@@ -1,0 +1,122 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{ California Institute of Technology}%
+}{%
+{ California Institute of Technology}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+cal}
+\APACinsertmetastar {%
+cal}%
+\begin{APACrefauthors}%
+{ California Institute of Technology}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Learning from Data.} {Learning from data.}
+\newblock
+\begin{APACrefURL} \url{http://work.caltech.edu/telecourse.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Class Central}%
+}{%
+{Class Central}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+georg}
+\APACinsertmetastar {%
+georg}%
+\begin{APACrefauthors}%
+{Class Central}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {edX:Machine Learning.} {edx:machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.class-central.com/course/edx-machine-learning-8995}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+edX%
+}{%
+edX%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+col}
+\APACinsertmetastar {%
+col}%
+\begin{APACrefauthors}%
+edX.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Machine Learning.} {Machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.edx.org/course/machine-learning-columbiax-csmm-102x-3}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NPTEL%
+}{%
+NPTEL%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+mad}
+\APACinsertmetastar {%
+mad}%
+\begin{APACrefauthors}%
+NPTEL.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Introduction to Machine Learning.} {Introduction to machine
+  learning.}
+\newblock
+\begin{APACrefURL} \url{https://onlinecourses.nptel.ac.in/noc18_cs26/preview}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+UDACITY%
+}{%
+UDACITY%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+stan}
+\APACinsertmetastar {%
+stan}%
+\begin{APACrefauthors}%
+UDACITY.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Intro to machine Learning.} {Intro to machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.udacity.com/course/intro-to-machine-learning--ud120}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

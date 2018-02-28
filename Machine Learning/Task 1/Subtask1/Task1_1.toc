@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Abstract}{1}
+\contentsline {section}{\numberline {2}Method}{1}
+\contentsline {section}{\numberline {3}Results}{1}
+\contentsline {subsection}{\numberline {3.1}"Intro to Machine Learning" from Udacity (Stanford University)}{1}
+\contentsline {subsection}{\numberline {3.2}"Learning from Data" from Caltech }{2}
+\contentsline {subsection}{\numberline {3.3}"Machine Learning" from edX (Georgia Institute of Technology)}{2}
+\contentsline {subsection}{\numberline {3.4}"Machine Learning" from edX (Columbia University)}{2}
+\contentsline {subsection}{\numberline {3.5}"Introduction to Machine Learning" from NPTEL (Indian Institute of Technology Madras)}{2}
+\contentsline {section}{\numberline {4}Conclusion}{2}
