@@ -2,7 +2,7 @@
 \usepackage[natbibapa]{apacite} 
 \bibliographystyle{apacite}
 
-\title{Investigation of online courses in machine learning}
+\title{Investigation of online courses in Machine Learning}
 \author{ Adriaan Louw (53031377)}
 
 \begin{document}
@@ -45,7 +45,7 @@ This course does lack Neural Networks. \citep{col}
 \subsection{"Introduction to Machine Learning" from NPTEL (Indian Institute of Technology Madras)}
 
 This course also includes Decision Trees, Support Vector Machines, Regression, Neural Networks, Perceptrons, Bayesian Learning and Clustering.
-The only popular topic missing is Kernel Methods.
+The only popular topic missing is Kernel Methods. \citep{mad}
 
 \section{Conclusion}
 

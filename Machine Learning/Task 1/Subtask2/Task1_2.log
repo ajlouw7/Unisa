@@ -1,0 +1,142 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.15)  1 MAR 2018 18:47
+entering extended mode
+**./Task1_2.tex
+(Task1_2.tex
+LaTeX2e <2017-04-15>
+Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\apacite\apacite.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count87
+\bibleftmargin=\skip43
+\bibindent=\skip44
+\bibparsep=\skip45
+\bibitemsep=\skip46
+\biblabelsep=\skip47
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip48
+\bibsep=\skip49
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
+LaTeX Info: Redefining \BBA on input line 3.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (Task1_2.aux)
+\openout1 = `Task1_2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+\c@maskedRefs=\count89
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\apacite\english.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+ (Task1_2.toc)
+\tf@toc=\write3
+\openout3 = `Task1_2.toc'.
+
+
+Overfull \hbox (3.58408pt too wide) in paragraph at lines 22--24
+\OT1/cmr/m/n/10 Notre Dame (2017), Columbia Uni-ver-sity (2015), Uni-ver-sity o
+f Mel-bourne (2018),
+ []
+
+[1
+
+{C:/Users/riaanl.THOROUGHTEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+] (Task1_2.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 23.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--144
+\OT1/cmtt/m/n/10 http :// web [] .cs [] .ucla [] .edu / []sriram / courses / cs
+188 [] .winter [] -2017 /
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 203--215
+[]\OT1/cmr/m/n/10 University of Wash-ing-ton.  (2012).  \OT1/cmr/m/it/10 Css490
+.  \OT1/cmr/m/n/10 Re-trieved from $\OT1/cmtt/m/n/10 http ://
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--215
+\OT1/cmtt/m/n/10 courses [] .washington [] .edu / css490 / 2012 [] .Winter / CS
+S % 20490 [] -590 % 20 [] - %
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 227--239
+[]\OT1/cmr/m/n/10 Univesity at Buf-falo.  (2018).  \OT1/cmr/m/it/10 Cse474.  \O
+T1/cmr/m/n/10 Re-trieved from $\OT1/cmtt/m/n/10 https ://
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--239
+\OT1/cmtt/m/n/10 www [] .cse [] .buffalo [] .edu // []chandola / teaching / mac
+hinelearningdocs /
+ []
+
+) [2] (Task1_2.aux) ) 
+Here is how much of TeX's memory you used:
+ 1103 strings out of 493303
+ 13406 string characters out of 3138817
+ 76405 words of memory out of 3000000
+ 4707 multiletter control sequences out of 15000+200000
+ 8102 words of font info for 29 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,6n,21p,382b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Task1_2.pdf (2 pages, 105868 bytes).
+PDF statistics:
+ 37 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

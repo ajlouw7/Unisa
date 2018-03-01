@@ -1,0 +1,41 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{url}      % shows underscore and tilde in web addresses
+\bibliographystyle{apacite}
+
+\title{Investigation of University courses in Machine Learning}
+\author{ Adriaan Louw (53031377)}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Abstract}
+An investigation into the state of University courses in Machine Learning
+
+\section{Method}
+I selected 10 university courses. Mostly preferring courses with well known or Ivy League universities. This list is by no means exhaustive. I then tabulated each topic that each course offered.
+
+\section{Results}
+The courses selected are: \cite{stan}, \cite{buf}, \cite{mit}, \cite{prince}, \cite{ucla},
+\cite{mic}, \cite{nor}, \cite{col}, \cite{mel}, \cite{was}.
+
+The only topic that is covered by all courses is Neural Networks, but only 7 specify that they do Perceptrons. Some mention that they do Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) like \cite{nor}, but most only specify the term neural networks and do not elaborate. Deep learning is also mentioned with some, but not consistently.
+
+The second most popular topic was Support Vector Machines (SVM), which is covered by 8 of our 10 universities.
+
+A tie for 3rd place are Decision Trees and Logistic Regression. But this come with a caveat, most courses include some sort of regression but not all specify which kind. For instance, this is the case with \cite{mel}. It might be reasonable to assume that at least Linear regression will be covered at most institutions.
+
+Bayesian Learning of some sort was also popular at all universities. Some institutions mentioned only Naive Bayes where others only specified Bayesian Networks. But they all have to do with using the theories of the Reverend Thomas Bayes.
+
+Now coming to less popular topics. Clustering and Kernel Methods were only part of the syllabus of half the courses. Where topics like Principal Component Analysis (PCA), Hidden Markov Models and Natural Language Programming are even less popular.
+
+\section{Conclusion}
+
+The spread of topics covered by our 10 selected courses varied quite a bit. Only Neural Networks, Support Vector Machines and Regression of some kind we consistently covered.
+The domain space for machine learning seems o be too large to fit everything into a standard university course.
+
+\bibliography{mybib}
+\end{document}
