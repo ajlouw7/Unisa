@@ -1,10 +1,8 @@
 \documentclass[10pt,a4paper]{article}
 %\usepackage[natbibapa]{apacite} 
 \usepackage{enumitem}
-\usepackage[dvipsnames]{xcolor}
-\usepackage[a4paper,text={16cm,22.7cm},centering]{geometry}
-\usepackage[pdflatex,recompilepics=auto]{gastex} 
-\gasset{frame=false} % switch to true to add frames
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
 %\bibliographystyle{apacite}
 
 
@@ -56,10 +54,19 @@ The state $\{4\}$ has no outgoing states so we can ignore this state in terms of
 
 Now we have gone through all the states in Q'. The result is \newline $Q'=\{\{1\},\{1,2,3,4,5\},\{4,5\},\{3,4,5\}, \{4\},\emptyset\,\{2\}\}$ and \newline $A=\{\{1,2,3,4,5\},\{4,5\},\{3,4,5\},\{4\}\}$.
 
-\begin{center}\compatiblegastexun
-\begin{gpicture}(69,51)(-14,-12.5)
-\end{gpicture}
-\end{center}
+\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+   \node[state,initial] (q_0)   {$\{1\}$}; 
+   \node[state,accepting] (q_1) [above right=of q_0] {$\{1,2,3,4,5\}$}; 
+   \node[state,accepting] (q_2) [below right=of q_0] {$\{4,5\}$}; 
+   \node[state,accepting] (q_3) [below right=of q_1] {$\{3,4,5\}$};
+   \node[state,accepting] (q_4) [below right=of q_3] ($\{4\}$
+    \path[->] 
+    (q_0) edge  node {0} (q_1)
+          edge  node [swap] {1} (q_2)
+    (q_1) edge  node  {1} (q_3)
+          edge [loop above] node {0} ()
+    (q_2) edge [loop below] node {1} ();
+\end{tikzpicture}
 \end{enumerate}
 
 \section{Question 2}
