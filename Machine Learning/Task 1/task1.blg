@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: task1.aux
+The style file: apacite.bst
+Database file #1: mybib.bib
+Warning--entry type for "stan" isn't style-file defined
+--line 6 of file mybib.bib
+Warning--entry type for "cal" isn't style-file defined
+--line 13 of file mybib.bib
+Warning--entry type for "georg" isn't style-file defined
+--line 20 of file mybib.bib
+Warning--entry type for "col" isn't style-file defined
+--line 27 of file mybib.bib
+Warning--entry type for "mad" isn't style-file defined
+--line 34 of file mybib.bib
+Warning--entry type for "stan1" isn't style-file defined
+--line 42 of file mybib.bib
+Warning--entry type for "buf" isn't style-file defined
+--line 49 of file mybib.bib
+Warning--entry type for "mit" isn't style-file defined
+--line 56 of file mybib.bib
+Warning--entry type for "prince" isn't style-file defined
+--line 63 of file mybib.bib
+Warning--entry type for "ucla" isn't style-file defined
+--line 70 of file mybib.bib
+Warning--entry type for "mic" isn't style-file defined
+--line 77 of file mybib.bib
+Warning--entry type for "nor" isn't style-file defined
+--line 84 of file mybib.bib
+Warning--entry type for "col1" isn't style-file defined
+--line 91 of file mybib.bib
+Warning--entry type for "mel" isn't style-file defined
+--line 98 of file mybib.bib
+Warning--entry type for "was" isn't style-file defined
+--line 105 of file mybib.bib
+Warning--entry type for "udacitystat" isn't style-file defined
+--line 112 of file mybib.bib
+Warning--entry type for "edxstat" isn't style-file defined
+--line 119 of file mybib.bib
+I was expecting a `,' or a `}'---line 125 of file mybib.bib
+ : 
+ : @online{python,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "python" isn't style-file defined
+--line 125 of file mybib.bib
+Warning--entry type for "python2" isn't style-file defined
+--line 132 of file mybib.bib
+Warning--entry type for "wikistat" isn't style-file defined
+--line 139 of file mybib.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+(There was 1 error message)

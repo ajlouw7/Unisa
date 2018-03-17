@@ -1,0 +1,474 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{ California Institute of Technology}%
+}{%
+{ California Institute of Technology}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+cal}
+\APACinsertmetastar {%
+cal}%
+\begin{APACrefauthors}%
+{ California Institute of Technology}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Learning from Data.} {Learning from data.}
+\newblock
+\begin{APACrefURL} \url{http://work.caltech.edu/telecourse.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Class Central}%
+}{%
+{Class Central}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+georg}
+\APACinsertmetastar {%
+georg}%
+\begin{APACrefauthors}%
+{Class Central}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {edX:Machine Learning.} {edx:machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.class-central.com/course/edx-machine-learning-8995}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Columbia University}%
+}{%
+{Columbia University}%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+col1}
+\APACinsertmetastar {%
+col1}%
+\begin{APACrefauthors}%
+{Columbia University}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Machine Learning 4771.} {Machine learning 4771.}
+\newblock
+\begin{APACrefURL}
+  \url{http://www.cs.columbia.edu/~jebara/4771/notes/class1x.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+edX%
+}{%
+edX%
+}{%
+{\protect \APACyear {2018}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+col}
+\APACinsertmetastar {%
+col}%
+\begin{APACrefauthors}%
+edX.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {Machine Learning.} {Machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.edx.org/course/machine-learning-columbiax-csmm-102x-3}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+edX%
+}{%
+edX%
+}{%
+{\protect \APACyear {2018}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+edxstat}
+\APACinsertmetastar {%
+edxstat}%
+\begin{APACrefauthors}%
+edX.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {Statistical Modeling and Regression Analysis.} {Statistical
+  modeling and regression analysis.}
+\newblock
+\begin{APACrefURL} \url{https://www.edx.org/course/regression-analysis}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Massachusetts Institute of Technology}%
+}{%
+{Massachusetts Institute of Technology}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+mit}
+\APACinsertmetastar {%
+mit}%
+\begin{APACrefauthors}%
+{Massachusetts Institute of Technology}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {6.036.} {6.036.}
+\newblock
+\begin{APACrefURL}
+  \url{http://courses.csail.mit.edu/6.036/spring\_2017/lectures.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Michigan State University}%
+}{%
+{Michigan State University}%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+mic}
+\APACinsertmetastar {%
+mic}%
+\begin{APACrefauthors}%
+{Michigan State University}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {CSE491.} {Cse491.}
+\newblock
+\begin{APACrefURL} \url{https://github.com/jiayuzhou/CSE491-2016Fall}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NPTEL%
+}{%
+NPTEL%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+mad}
+\APACinsertmetastar {%
+mad}%
+\begin{APACrefauthors}%
+NPTEL.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Introduction to Machine Learning.} {Introduction to machine
+  learning.}
+\newblock
+\begin{APACrefURL} \url{https://onlinecourses.nptel.ac.in/noc18\_cs26/preview}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Princeton}%
+}{%
+{Princeton}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+prince}
+\APACinsertmetastar {%
+prince}%
+\begin{APACrefauthors}%
+{Princeton}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {COS402.} {Cos402.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.cs.princeton.edu/courses/archive/fall16/cos402/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+python guide.org%
+}{%
+python guide.org%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+python2}
+\APACinsertmetastar {%
+python2}%
+\begin{APACrefauthors}%
+python guide.org.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Learning Python.} {Learning python.}
+\newblock
+\begin{APACrefURL} \url{http://docs.python-guide.org/en/latest/intro/
+  learning/\#the-python-tutorial} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+python.org%
+}{%
+python.org%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+python}
+\APACinsertmetastar {%
+python}%
+\begin{APACrefauthors}%
+python.org.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Python For Beginners.} {Python for beginners.}
+\newblock
+\begin{APACrefURL} \url{https://www.python.org/about/gettingstarted/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stanford%
+}{%
+Stanford%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+stan1}
+\APACinsertmetastar {%
+stan1}%
+\begin{APACrefauthors}%
+Stanford.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {CS229.} {Cs229.}
+\newblock
+\begin{APACrefURL} \url{http://cs229.stanford.edu/syllabus.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+UDACITY%
+}{%
+UDACITY%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+stan}
+\APACinsertmetastar {%
+stan}%
+\begin{APACrefauthors}%
+UDACITY.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Intro to machine Learning.} {Intro to machine learning.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.udacity.com/course/intro-to-machine-learning--ud120}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Udacity%
+}{%
+Udacity%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+udacitystat}
+\APACinsertmetastar {%
+udacitystat}%
+\begin{APACrefauthors}%
+Udacity.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Intro to Statistics.} {Intro to statistics.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.udacity.com/course/intro-to-statistics--st101}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University at Buffalo}%
+}{%
+{University at Buffalo}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+buf}
+\APACinsertmetastar {%
+buf}%
+\begin{APACrefauthors}%
+{University at Buffalo}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {CSE474.} {Cse474.}
+\newblock
+\begin{APACrefURL} \url{https://www.cse.buffalo.edu//~chandola/teaching/
+  machinelearningdocs/syllabus.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of California, Los Angeles}%
+}{%
+{University of California, Los Angeles}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+ucla}
+\APACinsertmetastar {%
+ucla}%
+\begin{APACrefauthors}%
+{University of California, Los Angeles}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {CS188.} {Cs188.}
+\newblock
+\begin{APACrefURL} \url{http://web.cs.ucla.edu/~sriram/courses/
+  cs188.winter-2017/html/index.html} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Melbourne}%
+}{%
+{University of Melbourne}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+mel}
+\APACinsertmetastar {%
+mel}%
+\begin{APACrefauthors}%
+{University of Melbourne}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {COMP30027.} {Comp30027.}
+\newblock
+\begin{APACrefURL} \url{https://handbook.unimelb.edu.au/subjects/comp30027}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Notre Dame}%
+}{%
+{University of Notre Dame}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+nor}
+\APACinsertmetastar {%
+nor}%
+\begin{APACrefauthors}%
+{University of Notre Dame}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {CSE40625.} {Cse40625.}
+\newblock
+\begin{APACrefURL}
+  \url{https://github.com/cse40625/cse40625/blob/master/syllabus.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Washington}%
+}{%
+{University of Washington}%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+was}
+\APACinsertmetastar {%
+was}%
+\begin{APACrefauthors}%
+{University of Washington}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+\APACrefbtitle {CSS490.} {Css490.}
+\newblock
+\begin{APACrefURL} \url{http://courses.washington.edu/css490/2012.Winter/
+  CSS\%20490-590\%20-\%20Introduction\%20to\%20Machine\%20Learning.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+wikipedia.org%
+}{%
+wikipedia.org%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+wikistat}
+\APACinsertmetastar {%
+wikistat}%
+\begin{APACrefauthors}%
+wikipedia.org.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Information theory.} {Information theory.}
+\newblock
+\begin{APACrefURL} \url{https://en.wikipedia.org/wiki/Information\_theory}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

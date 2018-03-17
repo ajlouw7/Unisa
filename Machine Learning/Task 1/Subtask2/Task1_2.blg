@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Task1_2.aux
 The style file: apacite.bst
 Database file #1: mybib.bib
-Warning--entry type for "stan" isn't style-file defined
+Warning--entry type for "stan1" isn't style-file defined
 --line 6 of file mybib.bib
 Warning--entry type for "buf" isn't style-file defined
 --line 13 of file mybib.bib
@@ -15,7 +15,7 @@ Warning--entry type for "mic" isn't style-file defined
 --line 41 of file mybib.bib
 Warning--entry type for "nor" isn't style-file defined
 --line 48 of file mybib.bib
-Warning--entry type for "col" isn't style-file defined
+Warning--entry type for "col1" isn't style-file defined
 --line 55 of file mybib.bib
 Warning--entry type for "mel" isn't style-file defined
 --line 62 of file mybib.bib

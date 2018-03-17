@@ -7,9 +7,9 @@
 }{%
 {\protect \APACyear {2015}}%
 }]{%
-col}
+col1}
 \APACinsertmetastar {%
-col}%
+col1}%
 \begin{APACrefauthors}%
 {Columbia University}.%
 \end{APACrefauthors}%
@@ -102,9 +102,9 @@ Stanford%
 }{%
 {\protect \APACyear {2018}}%
 }]{%
-stan}
+stan1}
 \APACinsertmetastar {%
-stan}%
+stan1}%
 \begin{APACrefauthors}%
 Stanford.%
 \end{APACrefauthors}%
