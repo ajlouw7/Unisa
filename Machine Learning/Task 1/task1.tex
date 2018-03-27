@@ -1,0 +1,85 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\bibliographystyle{apacite}
+
+\title{Investigation of online and University courses in Machine Learning}
+\author{ Adriaan Louw (53031377)}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Abstract}
+An investigation into the state of online and university courses in machine learning
+
+\section{Method}
+I selected 5 online courses and 10 university courses in machine learning. Mostly preferring courses with well know universities. This list is by no means exhaustive. I then tabulated each topic that each course offered.
+
+\section{Results}
+
+\subsection{Online Courses}
+\subsubsection{"Intro to Machine Learning" from Udacity (Stanford University)}
+
+This course contains popular topics which include Decision Trees, Regression, Support Vector Machines and clustering. It is also only one of two courses that include Principal Component Analysis (PCA). The course also covers the use of regression.
+
+It does not however include anything on Neural networks or Perceptrons. The course does cover however  cover other topics like Baysian networks. \citep{stan}
+
+\subsubsection{"Learning from Data" from Caltech }
+
+This course includes Support Vector Machines, Regression, Neural Networks, Kernel methods and Linear modeling is also included. The study of the VC dimension is also included, this is only found in one other course.
+
+This course is the leanest of all the courses with regards to topics taught. There is no mention of Naive Bayes, Baysian Networks, Perceptrons, Clustering or Decision Trees. \citep{cal}
+
+\subsubsection{"Machine Learning" from edX (Georgia Institute of Technology)}
+ 
+With this course we have popular topics which include Decision Trees. Support Vector Machines, Neural Networks, Regression, Kernel Methods, Bayesian Learning and Clustering. It is also the only course to include Markov Decision Processes. VC Dimensions are also included. Also, Instance Based Learning can only be found in this course.
+ 
+The only popular topic this course is lacking is Perceptrons.\citep{georg}
+
+\subsubsection{"Machine Learning" from edX (Columbia University)}
+
+This course has most of the popular topics including Decision Trees, Regression, Support Vector Machines Perceptrons, Bayesian Learning, Kernal Methods and Clustering. It is also one of only 2 courses that include PCA and it is the only course that teaches Hidden Markov Models.
+This course does lack Neural Networks. \citep{col}
+
+\subsubsection{"Introduction to Machine Learning" from NPTEL (Indian Institute of Technology Madras)}
+
+This course also includes Decision Trees, Support Vector Machines, Regression, Neural Networks, Perceptrons, Bayesian Learning and Clustering.
+The only popular topic missing is Kernel Methods. \citep{mad}
+
+\subsection{University Courses}
+The courses selected are: \cite{stan1}, \cite{buf}, \cite{mit}, \cite{prince}, \cite{ucla},
+\cite{mic}, \cite{nor}, \cite{col1}, \cite{mel}, \cite{was}.
+
+The only topic that is covered by all courses is Neural Networks, but only 7 specify that they do Perceptrons. Some mention that they do Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) like \cite{nor}, but most only specify the term neural networks and do not elaborate. Deep learning is also mentioned with some, but not consistently.
+
+The second most popular topic was Support Vector Machines (SVM), which is covered by 8 of our 10 universities.
+
+A tie for 3rd place are Decision Trees and Logistic Regression. But this come with a caveat, most courses include some sort of regression but not all specify which kind. For instance, this is the case with \cite{mel}. It might be reasonable to assume that at least Linear regression will be covered at most institutions.
+
+Bayesian Learning of some sort was also popular at all universities. Some institutions mentioned only Naive Bayes where others only specified Bayesian Networks. But they all have to do with using the theories of the Reverend Thomas Bayes.
+
+Now coming to less popular topics. Clustering and Kernel Methods were only part of the syllabus of half the courses. Where topics like Principal Component Analysis (PCA), Hidden Markov Models and Natural Language Programming were even less popular.
+
+\section{Conclusion}
+
+From the online courses under discussion, we can see that not all topics are equally popular. The only 2 topics were present in each course were Regression and Support Vector machines. Regression usually included at least linear regression, but in some courses Logistic Regression was also covered. Two topics were also found in 4 of our courses. These are Decision Trees and Clustering. To round off the popular topics, we have the topic that were included in at least 3 courses. That would be Kernel Methods, Neural Networks and Bayesian Learning. 
+
+Some unpopular topics include Hidden Markov Models and PCA. While topics like Q-Learning or Natural Language Processing did not feature at all.
+From this small dataset it seems like most courses agree on which topics are most important.
+
+As for the university courses, spread of topics covered by our 10 selected courses varied quite a bit. Only Neural Networks, Support Vector Machines and Regression of some kind we consistently covered.
+The domain space for machine learning seems to be too large to fit everything into a standard university course.
+
+There are a number of skills that will be required in this course.
+
+Firstly a good grounding in statistics is essential. These skills can be learnt online with free courses like \cite{udacitystat} or \cite{edxstat}.
+
+Secondly, making the reasonable assumption that we will be implementing machine learning algorithms, learning the programming language Python, would be beneficial. \cite{python} or \cite{python2} may be good starting points.
+
+Some elements of Information theory could also be useful. Especially with decision trees and the ID3 algorithm. A nice place to start with this is \cite{wikistat}.
+
+In general most topics in a course in machine learning should be understandable by a honours student if he or she has studied these additional topics.
+\bibliography{mybib}
+\end{document}

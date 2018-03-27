@@ -91,7 +91,7 @@ NPTEL.%
 \APACrefbtitle {Introduction to Machine Learning.} {Introduction to machine
   learning.}
 \newblock
-\begin{APACrefURL} \url{https://onlinecourses.nptel.ac.in/noc18_cs26/preview}
+\begin{APACrefURL} \url{https://onlinecourses.nptel.ac.in/noc18\_cs26/preview}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
