@@ -1,0 +1,74 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Cardie%
+}{%
+Cardie%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Cardie}
+\APACinsertmetastar {%
+Cardie}%
+\begin{APACrefauthors}%
+Cardie, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Inductive Learning or Concept Learning}} {{Inductive
+  Learning or Concept Learning}}.{\BBCQ}
+\newblock
+\begin{APACrefURL} \url{https://www.cs.cornell.edu/courses/cs4740/2012sp/
+  lectures/ml-basics-ai-lecture-4pp.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chandola%
+}{%
+Chandola%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+stan}
+\APACinsertmetastar {%
+stan}%
+\begin{APACrefauthors}%
+Chandola, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Introduction to Machine Learning.} {Introduction to machine
+  learning.}
+\newblock
+\begin{APACrefURL} \url{https://www.cse.buffalo.edu//~chandola/teaching/
+  machinelearningdocs/parta2-handout.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Riedmiller%
+}{%
+Riedmiller%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Riedmiller}
+\APACinsertmetastar {%
+Riedmiller}%
+\begin{APACrefauthors}%
+Riedmiller, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\APACrefbtitle {{Concept Learning}.} {{Concept Learning}.}
+\newblock
+\begin{APACrefURL} \url{http://ml.informatik.uni-freiburg.de/former/{\_}media/
+  documents/teaching/ss09/ml/version.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

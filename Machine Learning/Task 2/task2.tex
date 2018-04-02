@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\bibliographystyle{apacite}
+
+\title{Investigation into the inner workings of Concept Learning and Decision Trees}
+\author{ Adriaan Louw (53031377)}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Abstract}
+
+\section{Method}
+
+\section{Results}
+\subsection{Concept Learning}
+\subsubsection{What is Concept Learning?}
+We can describe Concept Learning in terms of trying to teach a machine to classify animals as either dogs or not.
+
+We assuming we classify leaves by the following parameters
+\begin{itemize}
+\item Is the animal large or small? (Size)
+\item Is it brown or black? (Colour)
+\item Is the tail long or short? (Tail length)
+\item Does it have 2 or 4 legs?
+\item Does it bark?
+\end{itemize}
+
+We can then describe animals according to these parameters
+$\{size,colour,tail length,no of legs,does it bark\}$. This is called our hypothesis space.
+
+Then a particular animal can be described as $\{ small, brown, short, 4, no\}$ for example. For our dataset we have a selection of animals and whether that animal is a dog or not.
+
+The concept that we wish the machine to learn is which values of each parameter defines the Concept of a do. In our case that would be $\{?, ?, ?, 4, yes\}$ where $?$ means any value.
+
+Formally we can say:
+
+\begin{itemize}
+\item We have $X$ which is all the instances in the hypothesis space
+\item We also have $c(x)$ which is the function that returns whether an animal is a dog or not
+\item Training data $ D = \{ \langle x,c(x) \rangle : x \in X, c(x) \in \{0,1\}\}$
+\end{itemize}
+
+\citep{stan}
+
+\subsubsection{General-to-specific ordering of hypotheses}
+
+From the above example, the most general hypothesis would be $\{?,?,?,?,?\}$. This means any animal would satisfy the hypothesis. The most specific hypothesis is $\{\emptyset,\emptyset,\emptyset,\emptyset,\emptyset\}$. 
+
+We can sort hypotheses based on whether they are more general or specific than other hypotheses.
+
+Consider the following hypotheses: $h_1 = \{?,?,?,?,yes\}$ and $h_2 = \{?,brown,?,4,yes\}$. $h_1$ is more general than $h_2$. In other words it less specific on what the parameters have to be to satisfy the hypothesis. 
+
+\citep{Riedmiller}
+\subsubsection{The FIND-S algorithm }
+The find S-Algorithm is to find the "maximally specific hypothesis". This means it is the most specific hypothesis that can be found that represents the concept.
+
+The algorithm works as follows. We start with a empty hypothesis $h = \emptyset$. Then we iterate through each hypothesis in our data set ( see Equation \ref{dataset} ). If $c(x_i) = 0 $ then go to the next hypothesis.  
+
+
+Assuming we have a the following dataset : 
+\begin{equation}
+\label{dataset}
+\begin{split}
+D &= \sum_{i=1}^n\{x_i,c(x_i)\}\\ 
+  &= \{        \{\{ small, brown, short, 4, no\}, 0\},\\
+  & \quad\quad \{\{ small, brown, long, 4, yes\}, 1\},\\
+  & \quad\quad \{\{ large, black, short, 2, no\}, 0\},\\
+  & \quad\quad \{\{ large, black, long, 4, yes\}, 1\}
+     \}
+\end{split}
+\end{equation} 
+
+
+
+\citep{stan}
+
+\citep{Cardie}
+
+\subsection{Decision Trees}
+
+\section{Conclusion}
+
+\bibliography{mybib}
+\end{document}

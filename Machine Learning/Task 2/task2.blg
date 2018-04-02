@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: task2.aux
+The style file: apacite.bst
+Database file #1: mybib.bib
+Warning--entry type for "stan" isn't style-file defined
+--line 6 of file mybib.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Cardie
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Cardie
+while executing---line 5079 of file apacite.bst
+(There was 1 error message)
