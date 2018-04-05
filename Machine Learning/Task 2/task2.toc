@@ -6,5 +6,9 @@
 \contentsline {subsubsection}{\numberline {3.1.2}General-to-specific ordering of hypotheses}{2}
 \contentsline {subsubsection}{\numberline {3.1.3}The FIND-S algorithm }{2}
 \contentsline {subsubsection}{\numberline {3.1.4}Version Spaces}{3}
-\contentsline {subsection}{\numberline {3.2}Decision Trees}{3}
-\contentsline {section}{\numberline {4}Conclusion}{3}
+\contentsline {subsubsection}{\numberline {3.1.5}The CANDIDATE-ELIMINATION algorithm}{3}
+\contentsline {subsubsection}{\numberline {3.1.6}Inductive bias}{4}
+\contentsline {subsection}{\numberline {3.2}Decision Trees}{4}
+\contentsline {subsubsection}{\numberline {3.2.1}The ID3 Algorithm}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Working example of the ID3 Algorithm}{5}
+\contentsline {section}{\numberline {4}Conclusion}{5}

@@ -25,6 +25,51 @@ Chandola, V.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Mitchell%
+}{%
+Mitchell%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Michell2009}
+\APACinsertmetastar {%
+Michell2009}%
+\begin{APACrefauthors}%
+Mitchell, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {{Machine Learning}} {{Machine Learning}}.
+\newblock
+\APACaddressPublisher{}{McGraw-Hill}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Quinlan%
+}{%
+Quinlan%
+}{%
+{\protect \APACyear {1986}}%
+}]{%
+Quinlan1986}
+\APACinsertmetastar {%
+Quinlan1986}%
+\begin{APACrefauthors}%
+Quinlan, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Induction of Decision Trees}} {{Induction of Decision
+  Trees}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine Learning}{1}{1}{81--106}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Riedmiller%
 }{%
 Riedmiller%
