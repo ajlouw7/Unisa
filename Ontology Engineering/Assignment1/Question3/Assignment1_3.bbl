@@ -1,6 +1,41 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Antoniou%
+\ \BBA {} {Van Harmelen}%
+}{%
+Antoniou%
+\ \BBA {} {Van Harmelen}%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Staab2009}
+\APACinsertmetastar {%
+Staab2009}%
+\begin{APACrefauthors}%
+Antoniou, G.%
+\BCBT {}\ \BBA {} {Van Harmelen}, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Handbook on Ontologies}} {{Handbook on
+  Ontologies}}.{\BBCQ}
+\newblock
+\BIn{} S.~Staab\ \BBA {} R.~Struder\ (\BEDS), \APACrefbtitle {Handbook on
+  Ontologies} {Handbook on ontologies}\ (\PrintOrdinal{Second Edition}\ \BEd,
+  \BPGS\ 91--110).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\newblock
+\begin{APACrefURL} \url{http://link.springer.com/10.1007/978-3-540-92673-3}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bechhofer%
 \ \BBA {} Carroll%
 }{%

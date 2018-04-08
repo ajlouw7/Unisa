@@ -8,7 +8,13 @@
 \textbf{Question 3}
 \newline
 
-Web Ontology Language (OWL) was created as a standard by the Web Ontology Working group, which was formed by the World Wide Web Consortium (W3C). \cite{Grau2008} There are 3 language variants of OWL. Owl Lite, OWL DL and OWL Full. Where OWL DL has more expressive power than OWL Lite and OWL in turn has more expressive power than OWL DL. \citep{Patel}
+Web Ontology Language (OWL) was created as a standard by the Web Ontology Working group, which was formed by the World Wide Web Consortium (W3C). \cite{Grau2008} It was created because of a number of limitations of expressiveness was found in RDF and RDFS. \citep{Staab2009}. There are 3 language variants of OWL. Owl Lite, OWL DL and OWL Full. Where OWL DL has more expressive power than OWL Lite and OWL Full in turn has more expressive power than OWL DL. \citep{Patel}
+
+There are a number of useful features that cannot be expressed using RDF and RDFS. For instance, 
+\begin{description}
+\item[$\bullet$] a
+\item[$\bullet$] bb
+\end{list} 
 
 RDF uses triples of the form
 
@@ -18,7 +24,7 @@ RDF uses triples of the form
 
 to represent information. Where A is the Subject that has a relationship, R is the relationship and B is the Object the relationship applies to. \citep{Grau2008}
 
-OWL ontologies can be written using RDF triples. This syntax is called OWL 1 RDF. Indeed most have been written using OWL 1 RDF syntax. \citep{Bechhofer2004}
+OWL ontologies can be written using RDF triples. This syntax is called OWL 1 RDF.. \citep{Bechhofer2004}
 
 This can make expressing certain OWL 1 concepts difficult because RDF triples cannot be created for many OWL 1 constructs. \citep{Grau2008} Using the example from \cite{Grau2008}, to indicate A is the union of B and C we have to create the following construct:
 
@@ -30,6 +36,8 @@ This can make expressing certain OWL 1 concepts difficult because RDF triples ca
 
 This example shows a couple of interesting things. In OWL 1 RDF, RDF and OWL types are used together i.e.\emph{owl:unionOf} and \emph{rdf:first}. Also expressing relatively simple concepts can be difficult to read. 
 
+An alternative is to use 
+\citep{Staab2009}
 
 
 
