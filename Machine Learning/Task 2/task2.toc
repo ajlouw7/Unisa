@@ -11,4 +11,3 @@
 \contentsline {subsection}{\numberline {3.2}Decision Trees}{4}
 \contentsline {subsubsection}{\numberline {3.2.1}The ID3 Algorithm}{4}
 \contentsline {subsubsection}{\numberline {3.2.2}Working example of the ID3 Algorithm}{5}
-\contentsline {section}{\numberline {4}Conclusion}{5}

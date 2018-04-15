@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Assignment1.aux
+The style file: apacite.bst
+I found no \citation commands---while reading file Assignment1.aux
+Database file #1: mybib.bib
+I was expecting a `,' or a `}'---line 125 of file mybib.bib
+ : 
+ : @online{python,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+(There were 2 error messages)

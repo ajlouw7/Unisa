@@ -229,10 +229,132 @@ E(outlook) &= \frac{5}{14}I(p_1,n_1) + \frac{4}{14}I(p_2,n_2) + \frac{5}{14}I(p_
 Calculating the gain of the attribute outlook gives
 
 \begin{equation}
+gain(outlook) = 0.940 - E(outlook) = 0.246
+\end{equation}
 
+Now we need to calculate the gain of the other attributes namely temperature, humidity and windy. The attribute temperature has 3 possible values hot,mild and cool. There are 2 positive and 2 negative objects in the dataset which has the value hot for the attribute temperature. This gives $p_1=2$ and $n_2=2$. Similarly for mild $p_2 = 4,N_2=2$ and cool $p_3=3,N_3=1$. This gives 
 
+\begin{equation}
+\begin{split}
+gain(temperature) &= I(p,n) - E(temperature) \\
+                  &= 0.940 -\frac{4}{14}I(p_1,n_1) - \frac{6}{14}I(p_2,n_2) - \frac{6}{14}I(p_3,n_3)  \\
+               &= 0.940 - 0.911 \\              
+               &= 0.029 \\
+\end{split}
+\end{equation}
 
-\section{Conclusion}
+Now for humidity we get high($p_1=3,n_1=4$), normal ($p_2=6,n_2=1$) which gives
+
+\begin{equation}
+\begin{split}
+gain(humidity) &= I(p,n) - E(humidity)\\
+                  &= 0.940 -\frac{7}{14}I(p_1,n_1) - \frac{7}{14}I(p_2,n_2)  \\
+                  &= 0.940 - 0.788 \\              
+                  &= 0.151 \\
+\end{split}
+\end{equation}
+
+And for windy we have true ($p_1=3,n_1=3$) and false ($p_2=6,n_2=2$) where
+\begin{equation}
+\begin{split}
+gain(windy) &= I(p,n) - E(windy)\\
+                  &= 0.940 -\frac{6}{14}I(p_1,n_1) - \frac{8}{14}I(p_2,n_2)  \\
+                  &= 0.940 - 0.891 \\              
+                  &= 0.048 \\
+\end{split}
+\end{equation}{Conclusion}
+
+Now comparing the gains for the 4 attributes we find that the gain for outlook is the highest. We make this the root of our tree. We then subdivide the dataset according to the values of outlook. Then create a sub-trees for each.
+
+When outlook = sunny we have 5 data points of which 2 are positive and 3 are negative. We need to calculate $I(p,n) = I(2,3)$.
+
+\begin{equation}
+\begin{split}
+I(p,n) &= -\frac{2}{5}log_2\frac{2}{5}-\frac{3}{5}log_2\frac{3}{5} \\
+       &= 0.971 \\
+\end{split}
+\end{equation}
+
+Then for when temperature = hot we have $p_1=0$ and $n_1=2$, temperature = mild ($p_2=1,n_2=1$) and temperature = cool ($p_3=1,n_3=0$). Giving  
+
+\begin{equation}
+\begin{split}
+gain(temperature) &= I(p,n) - E(temperature) \\
+                  &= 0.971 -\frac{2}{5}I(p_1,n_1) - \frac{2}{5}I(p_2,n_2) - \frac{1}{5}I(p_3,n_3)  \\
+               &= 0.971. - 0.4 \\              
+               &= 0.571 \\
+\end{split}
+\end{equation}
+
+For Humidity: high($p_1=0,n_1=3$) and normal($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+gain(humidity) &= I(p,n) - E(humidity) \\
+                  &= 0.971 -\frac{3}{5}I(p_1,n_1) - \frac{2}{5}I(p_2,n_2)  \\
+               &= 0.971. - 0.0 \\              
+               &= 0.971 \\
+\end{split}
+\end{equation}
+
+And Windy: true($p_1=1,n_1=1$) and false($p_2=1,n_2=2$) 
+
+\begin{equation}
+\begin{split}
+gain(humidity) &= I(p,n) - E(humidity) \\
+               &= 0.971 -\frac{2}{5}I(p_1,n_1) - \frac{3}{5}I(p_2,n_2)  \\
+               &= 0.971. - 0.951 \\              
+               &= 0.020 \\
+\end{split}
+\end{equation}
+
+This tells us the highest gain is for the attribute humidity. Therefore a new sub-tree is formed underneath our root tree at the node where outlook = sunny. The leaf nodes of the sub-tree will then be leaf nodes of the final tree since when outlook = sunny and humidity = high the class is always N and when outlook is sunny and humidity is normal the class is always P.
+
+Going back to the root tree when outlook = overcast we see that the class is always P so this will be a leaf node of the final tree. 
+
+Finally we need to determine the sub-tree under outlook = rain. We need to calculate the gain again for temperature, humidity and windy. There are 5 data point for outlook = rain. There are 3 positive and 2 negative which gives
+
+\begin{equation}
+\begin{split}
+I(p,n) &= -\frac{3}{5}log_2\frac{2}{5}-\frac{2}{5}log_2\frac{3}{5} \\
+       &= 0.971 \\
+\end{split}
+\end{equation}
+
+For Temperature: hot ($p_1=0,n_1=0$), mild($p_2=2,n_2=1$) and cool($p_3=1,n_3=1$)
+
+\begin{equation}
+\begin{split}
+gain(temperature) &= I(p,n) - E(temperature) \\
+                  &= 0.971 -\frac{0}{5}I(p_1,n_1) - \frac{3}{5}I(p_2,n_2) - \frac{2}{5}I(p_3,n_3)  \\
+               &= 0.971. - 0.951 \\              
+               &= 0.010 \\
+\end{split}
+\end{equation}
+
+For Humidity: high($p_1=1,n_1=1$) and normal($p_2=2,n_2=1$)
+
+\begin{equation}
+\begin{split}
+gain(humidity) &= I(p,n) - E(humidity) \\
+                  &= 0.971 -\frac{2}{5}I(p_1,n_1) - \frac{3}{5}I(p_2,n_2)  \\
+               &= 0.971. - 0.951 \\              
+               &= 0.020 \\
+\end{split}
+\end{equation}
+
+For Windy: true($p_1=0,n_1=2$) and false($p_2=3,n_2=0$)
+
+\begin{equation}
+\begin{split}
+gain(humidity) &= I(p,n) - E(humidity) \\
+               &= 0.971 -\frac{2}{5}I(p_1,n_1) - \frac{3}{5}I(p_2,n_2)  \\
+               &= 0.971. - 0.0 \\              
+               &= 0.971 \\
+\end{split}
+\end{equation}
+
+Which means the attribute that has the highest gain when outlook = rainy is humidity. We create a new sub-tree of humidity and the location outlook = rainy. Additionally, when windy = true, the class is always N and when windy = false the class is always P. Which means the leaves of windy are leaf nodes of the final tree as well. This means our decision tree is complete.
 
 \bibliography{mybib}
 \end{document}
