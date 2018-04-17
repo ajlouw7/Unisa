@@ -83,7 +83,7 @@ Boolean functions can be broken down into various sub-classes. The first subclas
 
 Secondly we have \emph{clauses} or . A clause is a function where the literals are separated by the or function. As in $k_1+k_2 + ... + k_n $. An example would be $x_1 + \overline{x_5} + x_8$.
 
-
+Disjunctive normal functions are functions that can be written as a disjunction of terms. 
 
 
 
