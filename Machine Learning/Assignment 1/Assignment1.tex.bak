@@ -1,8 +1,18 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[natbibapa]{apacite} 
 \usepackage{amsmath}
+\usepackage{tikz}
 
 \bibliographystyle{apacite}
+
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
 
 \title{Assignment 1}
 \author{ Adriaan Louw (53031377)}
@@ -95,6 +105,29 @@ Disjunctive normal functions are functions that can be written as a disjunction 
 \section{Question 3}
 \section{Question 4}
 \section{Question 5}
+\subsection{Question 5.1}
+$A\wedge B$
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {A}
+    child { node [circle,draw] {B}
+      child { node[dummy] {0}
+         edge from parent node [below] {0} }
+      child { node[dummy] {0}
+         edge from parent node [below] {1} }    
+      edge from parent node[below] {0} }
+    child { node [circle,draw] {B}
+      child { node [dummy] {1}
+        edge from parent node [below] {0} } 
+      child { node [dummy] {0}
+         edge from parent node [below] {1} }  
+      edge from parent node[below] {1}};
+\end{tikzpicture}
+
+
+
 \section{Question 6}
 
 Entropy is used to calculate a decision tree in the ID3 algorithm. For a collection of Samples ($S$):
