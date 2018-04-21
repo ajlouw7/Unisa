@@ -129,6 +129,7 @@ $A\wedge B$
 
 
 \section{Question 6}
+\subsection{Question 6a}
 
 Entropy is used to calculate a decision tree in the ID3 algorithm. For a collection of Samples ($S$):
 
@@ -155,22 +156,373 @@ We need to determine $Entropy(S)$
 \begin{split}
 Entropy(p,n) &=  -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
            &= -\frac{3}{3+1} log_2\frac{3}{3+1} -\frac{1}{3+1} log_2\frac{1}{3+1} \\
-           &=    \\
+           &= 0.811   \\
 \end{split}
 \end{equation}
 
 Now we need to determine the gain for the 6 attributes to determine which one will be the root node.
 
-For Sky we have sunny {$p_1=3,n_1=0$) and rainy {$p_1=0,n_1=1$)
+For Sky we have sunny {$p_1=3,n_1=0$) and rainy {$p_2=0,n_2=1$)
 \begin{equation}
 \begin{split}
+\label{sky}
 Gain(S,Sky) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
-          &= ?? - \frac{1}{4} Entropy(S_{Sunny} ) - Entropy(S_{Rainy}) \\
-          &= ?? - \frac{1}{4} Entropy(3,0) - Entropy(0,1) \\
-          &= ?? -\frac{3}{4} ( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} ) - \frac{1}{4}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
-          &= 
+          &= 0.811 - \frac{3}{4} Entropy(S_{Sunny} ) - \frac{1}{4}Entropy(S_{Rainy}) \\
+          &= 0.811 - \frac{3}{4} Entropy(3,0) - \frac{1}{4}Entropy(0,1) \\
+          &= 0.811 -\frac{3}{4} ( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} ) - \frac{1}{4}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.811 - 0\\
+          &= 0.811 \\
 \end{split}
 \end{equation}
+
+For attribute AirTemp we have warm {$p_1=3,n_1=0$) and cold {$p_2=0,n_2=1$)
+
+\begin{equation}
+\begin{split}
+\label{airtemp}
+Gain(S,AirTemp) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
+          &= 0.811 - \frac{3}{4} Entropy(S_{Warm} ) - \frac{1}{4}Entropy(S_{Cold}) \\
+          &= 0.811 - \frac{3}{4} Entropy(3,0) - \frac{1}{4}Entropy(0,1) \\
+          &= 0.811 -\frac{3}{4} ( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} ) - \frac{1}{4}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.811 - 0\\
+          &= 0.811 \\
+\end{split}
+\end{equation}
+
+For attribute Humidity we have normal {$p_1=1,n_1=0$) and high {$p_1=2,n_2=1$)
+
+\begin{equation}
+\begin{split}
+\label{humidity}
+Gain(S,Humidity) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
+          &= 0.811 - \frac{1}{4} Entropy(S_{normal} ) - \frac{3}{4}Entropy(S_{high}) \\
+          &= 0.811 - \frac{1}{4} Entropy(1,0) - \frac{3}{4}Entropy(2,1) \\
+          &= 0.811 -\frac{1}{4} ( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} ) - \frac{3}{4}(-\frac{2}{3} log_2\frac{2}{3} - \frac{1}{3}log_2\frac{1}{3} ) \\
+          &= 0.811 - 0.689\\
+          &= 0.123 \\
+\end{split}
+\end{equation}
+
+For attribute Wind we only have strong {$p_1=3,n_1=1$}
+
+\begin{equation}
+\begin{split}
+\label{wind}
+Gain(S,Wind) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
+          &= 0.811 - \frac{4}{4} Entropy(S_{strong} ) \\
+          &= 0.811 - \frac{4}{4} Entropy(3,1) \\
+          &= 0.811 -\frac{4}{4} ( -\frac{4}{4} log_2\frac{4}{4} -\frac{0}{4} log_2\frac{0}{4} ) \\
+          &= 0.811 - 0.811\\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For attribute water we have warm {$p_1=2,n_1=1$) and cold {$p_1=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+\label{water}
+Gain(S,Water) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
+          &= 0.811 - \frac{3}{4} Entropy(S_{warm} ) - \frac{1}{4}Entropy(S_{high}) \\
+          &= 0.811 - \frac{3}{4} Entropy(2,1) - \frac{1}{4}Entropy(1,0) \\
+          &= 0.811 -\frac{3}{4} ( -\frac{2}{3} log_2\frac{2}{3} -\frac{1}{3} log_2\frac{1}{3} ) - \frac{1}{4}(-\frac{1}{1} log_2\frac{1}{1} - \frac{0}{1}log_2\frac{0}{1} ) \\
+          &= 0.811 - 0.689\\
+          &= 0.123 \\
+\end{split}
+\end{equation}
+
+For attribute forecast we have same {$p_1=2,n_1=0$) and change {$p_1=1,n_2=1$)
+
+\begin{equation}
+\begin{split}
+\label{forcast}
+Gain(S,Forecast) &= Entropy(S) - \sum_{v \in Values(A)} \frac{\vert S_v\vert}{\vert S\vert}Entropy(S_v) \\
+          &= 0.811 - \frac{2}{4} Entropy(S_{same} ) - \frac{2}{4}Entropy(S_{change}) \\
+          &= 0.811 - \frac{2}{4} Entropy(2,0) - \frac{1}{1}Entropy(1,0) \\
+          &= 0.811 -\frac{2}{4} ( -\frac{2}{2} log_2\frac{2}{2} -\frac{0}{2} log_2\frac{0}{2} ) - \frac{2}{4}(-\frac{1}{2} log_2\frac{1}{2} - \frac{1}{2}log_2\frac{1}{2} ) \\
+          &= 0.811 - 0.5\\
+          &= 0.311 \\
+\end{split}
+\end{equation}
+
+To recap: 
+\newline
+Gain(Sky) = 0.811 from Equation \ref{sky} \newline
+Gain(AirTemp) = 0.811 from Equation \ref{airtemp} \newline
+Gain(Humidity) 0.123 from Equation \ref{humidity} \newline
+Gain(Wind) = 0 from Equation \ref{wind} \newline
+Gain(Water) = 0.123 from Equation \ref{water} \newline
+Gain(Forecast) = 0.311 from Equation \ref{forcast} \newline
+
+
+We find that Sky and Airtemp have the greatest information gain. We could choose either to be the root node. We arbitrarily will choose Sky as the root node. The decision tree so far will look like this:
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Yes}    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {No}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+
+For the leaf node Sky = Sunny, we need to determine the sub-tree.
+
+For Sky = Sunny:
+
+\begin{equation}
+\begin{split}
+Entropy(S_{Sky=Sunny}) &= Entropy(p,n) \\
+                       &= -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+                       &= -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} \\
+                       &= 0   \\
+\end{split}
+\end{equation}
+
+We need to calculate the information gain for the other attributes when Sky = sunny
+
+For AirTemp we only have warm ($p_1=3,n_1=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},AirTemp) &= 0.0 - \frac{3}{3} Entropy(S_{Sky=Sunny;AirTemp=Warm} )\\
+          &= 0.0 - \frac{3}{3} Entropy(3,0) \\
+          &= 0.0 - 1( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Humidity normal ($p_1=1,n_1=0$) and high ($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Humidity) &= 0.0 - \frac{1}{3} Entropy(S_{Sky=Sunny;Humidity=Normal} ) \\
+&-
+    \frac{2}{3}Entropy(S_{Sky=Sunny;Humidity=High})\\
+          &= 0.0 - \frac{1}{3} Entropy(1,0) - \frac{2}{3}Entropy(2,0)\\
+          &= 0.0 - \frac{1}{3}( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} ) -\frac{2}{3}( -\frac{2}{2}log_2\frac{2}{2} - \frac{0}{2}log_2\frac{0}{2} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Wind we only have strong ($p_1=3,n_1=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Wind) &= 0.0 - \frac{3}{3} Entropy(S_{Sky=Sunny;Wind=Strong} )\\
+          &= 0.0 - \frac{3}{3} Entropy(3,0) \\
+          &= 0.0 - 1( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Water we have warm($p_1=2,n_1=0$) and cool($p_2=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Water) &= 0.0 - \frac{2}{3} Entropy(S_{Sky=Sunny;Water=Warm} ) \\
+&-
+    \frac{1}{3}Entropy(S_{Sky=Sunny;Water=Cool})\\
+          &= 0.0 - \frac{2}{3} Entropy(2,0) - \frac{1}{3}Entropy(1,0)\\
+          &= 0.0 - \frac{2}{3}( -\frac{2}{2} log_2\frac{2}{2} -\frac{0}{2} log_2\frac{0}{2} ) -\frac{1}{3}( -\frac{1}{1}log_2\frac{1}{1} - \frac{0}{1}log_2\frac{0}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Forecast we have same($p_1=2,n_1=0$) and change($p_2=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Forecast) &= 0.0 - \frac{2}{3} Entropy(S_{Sky=Sunny;Forecast=Same} ) \\
+&-
+    \frac{1}{3}Entropy(S_{Sky=Sunny;Forecast=Change})\\
+          &= 0.0 - \frac{2}{3} Entropy(2,0) - \frac{1}{3}Entropy(1,0)\\
+          &= 0.0 - \frac{2}{3}( -\frac{2}{2} log_2\frac{2}{2} -\frac{0}{2} log_2\frac{0}{2} ) -\frac{1}{3}( -\frac{1}{1}log_2\frac{1}{1} - \frac{0}{1}log_2\frac{0}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+This means that the node Sky = Sunny in our tree will be a leaf node, sice at this node the gain gor all the other attributes are 0.
+
+Next we need to calculate the subtree under the node Sky = Rainy
+
+Starting with  
+
+\begin{equation}
+\begin{split}
+Entropy(S_{Sky=Rainy}) &= Entropy(p,n) \\
+                       &= -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+                       &= -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} \\
+                       &= 0   \\
+\end{split}
+\end{equation}
+
+For AirTemp we only have cold ($p_1=0,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},AirTemp) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Rainy;AirTemp=Cold} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - 1( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Humidity we only have High ($p_1=0,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Humidity) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Rainy;Humidity=High} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - 1( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Wind we only have Strong ($p_1=0,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Wind) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Rainy;Wind=Strong} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - 1( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Water we only have Warm ($p_1=0,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Water) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Rainy;Water=Warm} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - 1( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+For Forecast we only have Change ($p_1=0,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Forecast) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Rainy;ForeCast=Change} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - 1( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} )  \\
+          &= 0.0 \\
+\end{split}
+\end{equation}
+
+This means when Sky = Rainy, the gain from all the other attributes are 0. This means Sky = Rainy is also a leaf node. This means the final tree will be:
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Yes}    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {No}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+\subsection{Question 6b}
+Now we add a new row of training data. We will be recalculating the decision tree. Starting by determining the root node of the tree by comparing the information gain each attribute gives us.
+
+First we need to determine the entropy of S
+
+\begin{equation}
+\begin{split}
+Entropy(p,n) &=  -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+           &= -\frac{3}{3+2} log_2\frac{3}{3+2} -\frac{2}{3+2} log_2\frac{2}{3+2} \\
+           &= 0.971   \\
+\end{split}
+\end{equation}
+
+For the attribute Sky we have Sunny ($p_1=3,n_1=1$) and Rainy ($p_2=0,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S,Sky) &= 0.971 -\frac{4}{5} Entropy(S_{Sunny} ) - \frac{1}{5}Entropy(S_{Rainy}) \\
+          &= 0.971 - \frac{4}{5} Entropy(3,1) - \frac{1}{5}Entropy(0,1) \\
+          &= 0.971 -\frac{4}{5} ( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} ) - \frac{1}{5}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.971 - 0.649\\
+          &= 0.322 \\
+\end{split}
+\end{equation}
+
+For the attribute AirTemp we have Warm ($p_1=3,n_1=1$) and Cold ($p_2=0,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S,AirTemp) &= 0.971 - \frac{4}{5} Entropy(S_{Warm} ) - \frac{1}{5}Entropy(S_{Cold}) \\
+          &= 0.971 - \frac{4}{5} Entropy(3,1) - \frac{1}{5}Entropy(0,1) \\
+          &= 0.971 -\frac{4}{5} ( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} ) - \frac{1}{5}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.971 - 0.649\\
+          &= 0.322 \\
+\end{split}
+\end{equation}
+
+For the attribute Humidity we have Normal ($p_1=1,n_1=1$) and High ($p_2=2,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S,Humidity) &= 0.971 - \frac{2}{5} Entropy(S_{Normal} ) - \frac{3}{5}Entropy(S_{High}) \\
+          &= 0.971 - \frac{2}{5} Entropy(1,1) - \frac{3}{5}Entropy(2,1) \\
+          &= 0.971 -\frac{2}{5} ( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} ) -           \frac{3}{5}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.971 - 0.951\\
+          &= 0.020 \\
+\end{split}
+\end{equation}
+
+For the attribute Wind we have Strong($p_1=3,n_1=1$) and Weak ($p_2=0,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S,Wind) &= 0.971 - \frac{4}{5} Entropy(S_{Strong} ) - \frac{1}{5}Entropy(S_{Weak}) \\
+          &= 0.971 - \frac{4}{5} Entropy(3,1) - \frac{1}{5}Entropy(0,1) \\
+          &= 0.971 -\frac{4}{5} ( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} ) - \frac{1}{5}(-\frac{0}{1} log_2\frac{0}{1} - \frac{1}{1}log_2\frac{1}{1} ) \\
+          &= 0.971 - 0.649\\
+          &= 0.322 \\
+\end{split}
+\end{equation}
+
+For the attribute Water we have Warm ($p_1=3,n_1=1$) and Cool ($p_2=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S,Water) &= 0.971 - \frac{4}{5} Entropy(S_{Warm} ) - \frac{1}{5}Entropy(S_{Cool}) \\
+          &= 0.971 - \frac{4}{5} Entropy(3,1) - \frac{1}{5}Entropy(0,1) \\
+          &= 0.971 -\frac{4}{5} ( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} ) - \frac{1}{5}(-\frac{1}{1} log_2\frac{1}{1} - \frac{0}{1}log_2\frac{0}{1} ) \\
+          &= 0.971 - 0.649\\
+          &= 0.322 \\
+\end{split}
+\end{equation}
+
+For the attribute Forecast we have Same ($p_1=2,n_1=1$) and Change ($p_2=1,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S,Forecast) &= 0.971 - \frac{3}{5} Entropy(S_{Same} ) - \frac{2}{5}Entropy(S_{Change}) \\
+          &= 0.971 - \frac{3}{5} Entropy(2,1) - \frac{2}{5}Entropy(1,1) \\
+          &= 0.971 -\frac{3}{5} ( -\frac{2}{3} log_2\frac{2}{3} -\frac{1}{3} log_2\frac{1}{3} ) - \frac{2}{5}(-\frac{1}{2} log_2\frac{1}{2} - \frac{1}{2}log_2\frac{1}{2} ) \\
+          &= 0.971 - 0.951\\
+          &= 0.020 \\
+\end{split}
+\end{equation}
+
+We find that the attributes Sky,AirTemp,Wind and Water all have the highest gain of 0.322. This is already very different from the previous question. For consistency we now choose Sky from these 4 attributes to be our root node. This gives us the following decision tree:
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Yes}    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {No}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
 
 
 \bibliography{mybib}
