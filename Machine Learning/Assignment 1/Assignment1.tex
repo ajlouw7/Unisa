@@ -102,11 +102,45 @@ Disjunctive normal functions are functions that can be written as a disjunction 
 
 
 
-\section{Question 3}
+\section{Question 3: Report on k-Nearest Neighbour Algorithm}
+
+
+\begin{tikzpicture}[scale=1.0]
+ % Draw axes
+    \draw [<->,thick] (0,7) node (yaxis) [above] {$y$}
+        |- (7,0) node (xaxis) [right] {$x$};
+    % x-axis    
+    \foreach \x in {0,1,2,3,4,5,6,7}
+       \draw (\x cm,1pt) -- (\x cm,-3pt)
+             node[anchor=north] {$\x$};
+    \foreach \y/\ytext in {0,1,2,3,4,5,6,7}
+        \draw (1pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {$\ytext$};        
+            
+    \fill[red]   (3,3) circle (4pt);
+    \fill[green] (2,2) circle (4pt);
+    \fill[green] (4,4) circle (4pt);
+    \fill[green] (2,4) circle (4pt);
+    \fill[green] (4,2) circle (4pt);
+    
+    \fill[blue]  (2.5,3) circle (4pt);
+    \fill[blue]  (4,5) circle (4pt);
+    \fill[blue]  (3,6) circle (4pt);
+    \fill[blue]  (2,3) circle (4pt);    
+    \fill[blue]  (1,1) circle (4pt);    
+    \fill[blue]  (1,3) circle (4pt);
+\end{tikzpicture}
+
+Consider the above diagram. Suppose we need to classify the red dot as either a blue dot or a green dot for an arbitrary 
+
+
+\cite{Michell2009}
+\cite{was}
+\cite{Murphy}
+
 \section{Question 4}
 \section{Question 5}
 \subsection{Question 5.1}
-$A\wedge B$
+For the equation $A\wedge B$:
 
 \begin{tikzpicture}
  [level/.style={sibling distance=60mm/#1}]
@@ -126,8 +160,23 @@ $A\wedge B$
       edge from parent node[below] {1}};
 \end{tikzpicture}
 
+When A=0, B returns 0 whether we have the value 0 or 1 for B. We can collapse this B and just return 0.
 
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {A}
+    child { node [circle,draw] {0}
+      edge from parent node[below] {0} }
+    child { node [circle,draw] {B}
+      child { node [dummy] {1}
+        edge from parent node [below] {0} } 
+      child { node [dummy] {0}
+         edge from parent node [below] {1} }  
+      edge from parent node[below] {1}};
+\end{tikzpicture}
 
+\subsection{Question 5.2}
 \section{Question 6}
 \subsection{Question 6a}
 
@@ -253,7 +302,6 @@ Gain(Humidity) 0.123 from Equation \ref{humidity} \newline
 Gain(Wind) = 0 from Equation \ref{wind} \newline
 Gain(Water) = 0.123 from Equation \ref{water} \newline
 Gain(Forecast) = 0.311 from Equation \ref{forcast} \newline
-
 
 We find that Sky and Airtemp have the greatest information gain. We could choose either to be the root node. We arbitrarily will choose Sky as the root node. The decision tree so far will look like this:
 
@@ -517,12 +565,344 @@ We find that the attributes Sky,AirTemp,Wind and Water all have the highest gain
  [level/.style={sibling distance=60mm/#1}]
  
   \node [circle,draw] {Sky}
-    child { node [circle,draw] {Yes}    
+    child { node [circle,draw] {?}    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {?}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+Continuing with Sky = Sunny, we need to determine the gain of the other attributes so that we can determine the sub-tree. We know that there are 3 positive data rows and one negative for Sky = Sunny:
+
+\begin{equation}
+\begin{split}
+Entropy(S_{Sky=Sunny}) &= Entropy(p,n) \\
+                       &= -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+                       &= -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} \\
+                       &= 0.811   \\
+\end{split}
+\end{equation}
+
+For attribute AirTemp we have only the value Warm ($p_1=3,n_1=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},AirTemp) &= 0.811 - \frac{3}{3} Entropy(S_{Sky=Sunny;AirTemp=Warm} )\\
+          &= 0.811 - \frac{4}{4} Entropy(3,1) \\
+          &= 0.811 - 1( -\frac{3}{4} log_2\frac{3}{4} -\frac{1}{4} log_2\frac{1}{4} )  \\
+          &= 0.811 - 0.811  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For attribute Humidity we have Normal($p_1=1,n_1=1$) and High ($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Humidity) &= 0.811 - \frac{2}{4} Entropy(S_{Sky=Sunny;Humidity=Normal} )\\
+                                      &-\frac{2}{4}Entropy(S_{Sky=Sunny;Humidity=High})\\
+          &= 0.811 - \frac{2}{4} Entropy(1,1) - \frac{2}{4}Entropy(2,0) \\
+          &= 0.811 - \frac{2}{4}( -\frac{1}{2} log_2\frac{1}{2} -\frac{1}{2} log_2\frac{1}{2} ) 
+                   - \frac{2}{4}( -\frac{2}{2} log_2\frac{2}{2} -\frac{0}{2} log_2\frac{0}{2} \\
+          &= 0.811 - 0.5  \\
+          &= 0.311
+\end{split}
+\end{equation}
+
+For attribute Wind we have Strong($p_1=3,n_1=0$) and Weak ($p_2=0,n_2=1$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Wind) &= 0.811 - \frac{3}{4} Entropy(S_{Sky=Sunny;Wind=Strong} )\\
+                                      &-\frac{1}{4}Entropy(S_{Sky=Sunny;Wind=Weak})\\
+          &= 0.811 - \frac{3}{4} Entropy(3,0) - \frac{1}{4}Entropy(0,1) \\
+          &= 0.811 - \frac{3}{4}( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} ) 
+                   - \frac{1}{4}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} \\
+          &= 0.811 - 0.0  \\
+          &= 0.811
+\end{split}
+\end{equation}
+
+For attribute Water we have Warm($p_1=2,n_1=1$) and Cool ($p_2=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Water) &= 0.811 - \frac{3}{4} Entropy(S_{Sky=Sunny;Water=Warm} )\\
+                                      &-\frac{1}{4}Entropy(S_{Sky=Sunny;Water=Cool})\\
+          &= 0.811 - \frac{3}{4} Entropy(2,1) - \frac{1}{4}Entropy(1,0) \\
+          &= 0.811 - \frac{3}{4}( -\frac{2}{3} log_2\frac{2}{3} -\frac{1}{3} log_2\frac{1}{3} ) 
+                   - \frac{1}{4}( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} \\
+          &= 0.811 - 0.689  \\
+          &= 0.123
+\end{split}
+\end{equation}
+
+For attribute Forecast we have Same($p_1=2,n_1=1$) and Weak ($p_2=1,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny},Forecast) &= 0.811 - \frac{3}{4} Entropy(S_{Sky=Sunny;Forecast=Same} )\\
+                                      &-\frac{1}{4}Entropy(S_{Sky=Sunny;Forecast=Change})\\
+          &= 0.811 - \frac{3}{4} Entropy(2,1) - \frac{1}{4}Entropy(1,0) \\
+          &= 0.811 - \frac{3}{4}( -\frac{2}{3} log_2\frac{2}{3} -\frac{1}{3} log_2\frac{1}{3} ) 
+                   - \frac{1}{4}( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} \\
+          &= 0.811 - 0.689  \\
+          &= 0.123
+\end{split}
+\end{equation}
+
+Therefore the attribute with the greatest gain when Sky=Sunny is Wind. The Wind attribute will now form our new sub-tree at Sky = Sunny 
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Wind}  
+      child { node[dummy] {?}
+         edge from parent node [below] {Strong} }
+      child { node[dummy] {?}
+         edge from parent node [below] {Weak} }    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {?}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+Now we have to calculate the gains for Sky=Sunny and Wind=Strong. Starting with the Entropy(S) calculation. We can see from the data that there is 3 positive data rows and 0 negative data rows for Sky=Sunny and Wind=Strong 
+
+\begin{equation}
+\begin{split}
+Entropy(p,n) &=  -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+           &= -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} \\
+           &= 0.0   \\
+\end{split}
+\end{equation}
+
+For attribute AirTemp we have only the value Warm ($p_1=3,n_1=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Strong},AirTemp) &= 0.811 - \frac{3}{3} Entropy(S_{Sky=Sunny;Wind=Strong;AirTemp=Warm} )\\
+          &= 0.0 - \frac{3}{3} Entropy(3,0) \\
+          &= 0.0 - 1( -\frac{3}{3} log_2\frac{3}{3} -\frac{0}{3} log_2\frac{0}{3} )  \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For attribute Humidity we have the values Normal ($p_1=1,n_1=0$) and High($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Strong},Humidity) &= 0.0 - \frac{1}{3} Entropy(S_{Sky=Sunny;Wind=Strong,Humidity=Normal} ) \\ &- \frac{2}{3}Entropy(S_{Sky=Sunny;Wind=Strong,Humidity=High}) \\
+          &= 0.0 - \frac{1}{3} Entropy(1,0) - \frac{2}{3}Entropy(2,0) \\
+          &= 0.0 -\frac{1}{3} ( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} ) - \frac{2}{3}(-\frac{2}{2} log_2\frac{2}{2} - \frac{0}{2}log_2\frac{0}{2} ) \\
+          &= 0.0 - 0.0\\
+          &= 0 \\
+\end{split}
+\end{equation}
+
+For attribute Water we have values Cool ($p_1=1,n_1=0$) and Warm($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Strong},Water) &= 0.0 - \frac{1}{3} Entropy(S_{Sky=Sunny;Wind=Strong,Water=Cool} ) \\  &- \frac{2}{3}Entropy(S_{Sky=Sunny;Wind=Strong,Water=Warm}) \\
+          &= 0.0 - \frac{1}{3} Entropy(1,0) - \frac{2}{3}Entropy(2,0) \\
+          &= 0.0 -\frac{1}{3} ( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} ) - \frac{2}{3}(-\frac{2}{2} log_2\frac{2}{2} - \frac{0}{2}log_2\frac{0}{2} ) \\
+          &= 0.0 - 0.0\\
+          &= 0 \\
+\end{split}
+\end{equation}
+
+For attribute Forecast we have values Change ($p_1=1,n_1=0$) and Same($p_2=2,n_2=0$)
+
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Strong},Forecast) &= 0.0 - \frac{1}{3} Entropy(S_{Sky=Sunny;Wind=Strong,Forecast=Change} ) \\  &- \frac{2}{3}Entropy(S_{Sky=Sunny;Wind=Strong,Forecast=Same}) \\
+          &= 0.0 - \frac{1}{3} Entropy(1,0) - \frac{2}{3}Entropy(2,0) \\
+          &= 0.0 -\frac{1}{3} ( -\frac{1}{1} log_2\frac{1}{1} -\frac{0}{1} log_2\frac{0}{1} ) - \frac{2}{3}(-\frac{2}{2} log_2\frac{2}{2} - \frac{0}{2}log_2\frac{0}{2} ) \\
+          &= 0.0 - 0.0\\
+          &= 0 \\
+\end{split}
+\end{equation}
+
+We can see that the gains for all the other attributes, when Sky = Sunny and Wind = Strong, are 0. This means that this branch of the tree is complete giving:
+
+ \begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Wind}  
+      child { node[dummy] {Yes}
+         edge from parent node [below] {Strong} }
+      child { node[dummy] {?}
+         edge from parent node [below] {Weak} }    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {?}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+We can classify the leaf node to be yes because all training rows when Sky = Sunny and Wind = Strong has a yes value for EnjoySport.
+
+Now we need to classify the branch Sky = Sunny and Wind = Weak. There are no positive and one negative data rows for Sky = Sunny and Wind = Weak
+
+\begin{equation}
+\begin{split}
+Entropy(S_{Sky=Sunny,Wind=Weak}) &= Entropy(p,n) \\
+                       &= -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+                       &= -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} \\
+                       &= 0   \\
+\end{split}
+\end{equation}
+
+For the attribute AirTemp we have Warm($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Weak},AirTemp) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Wind=Weak;Airtemp=Warm} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Humidity we have Normal($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Weak},Humidity) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Wind=Weak;Humidity=Normal} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Water we have Warm($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Weak},Water) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Wind=Weak;Water=Warm} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Forecast we have Same($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Sunny;Wind=Weak},Forecast) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Wind=Weak;Forecast=Same} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+Now we can see that the gains of all the attributes, when Sky = Sunny and Wind = Weak, are 0. Additionally we can see that this node would return No, because it is the only option according to our data for Sky = Sunny and Wind = Weak. This gives us:
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Wind}  
+      child { node[dummy] {Yes}
+         edge from parent node [below] {Strong} }
+      child { node[dummy] {No}
+         edge from parent node [below] {Weak} }    
+      edge from parent node[below] {Sunny} }
+    child { node [circle,draw] {?}
+      edge from parent node[below] {Rainy}};
+\end{tikzpicture}
+
+The only branch that still needs classifying is the Sky = Rainy branch. Now we will calculate the gains for the other attributes in this case. For Sky = Rainy, we have only one data row. Which means we have 0 positive and 1 negative data row.
+
+\begin{equation}
+\begin{split}
+Entropy(S_{Sky=Rainy}) &= Entropy(p,n) \\
+                       &= -\frac{p}{p+n}log_2\frac{p}{p+n} - \frac{n}{p+n}log_2\frac{n}{p+n}  \\
+                       &= -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} \\
+                       &= 0   \\
+\end{split}
+\end{equation}
+
+For the attribute AirTemp we have Cold($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},AirTemp) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;AirTemp=Cold} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Humidity we have High($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Humidity) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Humidity=High} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Wind we have Strong($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Wind) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Wind=Strong} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Water we have Warm($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Water) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Water=Warm} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+For the attribute Forecast we have Change($p_1=0,n_1=1$)
+ 
+\begin{equation}
+\begin{split}
+Gain(S_{Sky=Rainy},Forecast) &= 0.0 - \frac{1}{1} Entropy(S_{Sky=Sunny;Forecast=Change} )\\
+          &= 0.0 - \frac{1}{1} Entropy(0,1) \\
+          &= 0.0 - \frac{1}{1}( -\frac{0}{1} log_2\frac{0}{1} -\frac{1}{1} log_2\frac{1}{1} ) \\
+          &= 0.0 - 0.0  \\
+          &= 0
+\end{split}
+\end{equation}
+
+We can can see from the gains for the attributes when Sky = Rainy, that we do not create a new sub-tree but make this a leaf node. From the only applicable data row we can see that this node will return No. Therefore the final decision tree will be:
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {Sky}
+    child { node [circle,draw] {Wind}  
+      child { node[dummy] {Yes}
+         edge from parent node [below] {Strong} }
+      child { node[dummy] {No}
+         edge from parent node [below] {Weak} }    
       edge from parent node[below] {Sunny} }
     child { node [circle,draw] {No}
       edge from parent node[below] {Rainy}};
 \end{tikzpicture}
-
 
 
 \bibliography{mybib}

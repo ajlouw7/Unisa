@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  21 APR 2018 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  22 APR 2018 16:04
 entering extended mode
 **./Assignment1.tex
 (Assignment1.tex
@@ -498,52 +498,126 @@ Overfull \hbox (46.08427pt too wide) in paragraph at lines 31--34
 [1
 
 {C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-[3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 248--256
+[3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 295--303
 
- []
-
-[5]
-Overfull \hbox (34.66632pt too wide) detected at line 308
-[]
  []
 
 [6]
-Overfull \hbox (19.24478pt too wide) detected at line 332
+Overfull \hbox (34.66632pt too wide) detected at line 354
 []
  []
 
 
-Overfull \hbox (30.09319pt too wide) detected at line 345
+Overfull \hbox (19.24478pt too wide) detected at line 378
 []
  []
 
-[7] [8] [9] [10] (Assignment1.bbl
+[7]
+Overfull \hbox (30.09319pt too wide) detected at line 391
+[]
+ []
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
+[8] [9] [10] [11]
+Overfull \hbox (0.22165pt too wide) detected at line 593
+[]
+ []
 
-) [11] (Assignment1.aux) )
+
+Overfull \hbox (40.77745pt too wide) detected at line 607
+[]
+ []
+
+
+Overfull \hbox (21.66562pt too wide) detected at line 621
+[]
+ []
+
+[12]
+Overfull \hbox (25.35591pt too wide) detected at line 635
+[]
+ []
+
+
+Overfull \hbox (36.20432pt too wide) detected at line 649
+[]
+ []
+
+[13]
+Overfull \hbox (108.66309pt too wide) detected at line 687
+[]
+ []
+
+
+Overfull \hbox (109.41528pt too wide) detected at line 699
+[]
+ []
+
+
+Overfull \hbox (73.4655pt too wide) detected at line 711
+[]
+ []
+
+[14]
+Overfull \hbox (2.4956pt too wide) in paragraph at lines 713--714
+[]\OT1/cmr/m/n/10 For at-tribute Fore-cast we have val-ues Change ($\OML/cmm/m/
+it/10 p[] \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; n[] \OT1/cmr/m/n/10 = 0$) and S
+ame($\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (100.48015pt too wide) detected at line 723
+[]
+ []
+
+[15]
+Overfull \hbox (87.61224pt too wide) detected at line 764
+[]
+ []
+
+
+Overfull \hbox (101.03218pt too wide) detected at line 776
+[]
+ []
+
+
+Overfull \hbox (68.22664pt too wide) detected at line 788
+[]
+ []
+
+
+Overfull \hbox (84.48273pt too wide) detected at line 800
+[]
+ []
+
+[16] [17] (Assignment1.bbl [18]
+Overfull \hbox (14.5271pt too wide) in paragraph at lines 57--69
+\OT1/cmtt/m/n/10 http://courses.washington.edu/css490/2012.Winter/lecture[]slid
+es/
+ []
+
+) [19] (Assignment1.aux) )
 (\end occurred inside a group at level 10)
 
-### simple group (level 10) entered at line 234 ({)
-### simple group (level 9) entered at line 234 ({)
-### simple group (level 8) entered at line 220 ({)
-### simple group (level 7) entered at line 220 ({)
-### simple group (level 6) entered at line 192 ({)
-### simple group (level 5) entered at line 192 ({)
-### simple group (level 4) entered at line 178 ({)
-### simple group (level 3) entered at line 178 ({)
-### simple group (level 2) entered at line 165 ({)
-### simple group (level 1) entered at line 165 ({)
+### simple group (level 10) entered at line 281 ({)
+### simple group (level 9) entered at line 281 ({)
+### simple group (level 8) entered at line 267 ({)
+### simple group (level 7) entered at line 267 ({)
+### simple group (level 6) entered at line 239 ({)
+### simple group (level 5) entered at line 239 ({)
+### simple group (level 4) entered at line 225 ({)
+### simple group (level 3) entered at line 225 ({)
+### simple group (level 2) entered at line 212 ({)
+### simple group (level 1) entered at line 212 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12828 strings out of 493303
- 250904 string characters out of 3138856
- 294485 words of memory out of 3000000
- 16148 multiletter control sequences out of 15000+200000
- 9369 words of font info for 34 fonts, out of 3000000 for 9000
+ 13033 strings out of 493303
+ 254938 string characters out of 3138856
+ 298134 words of memory out of 3000000
+ 16352 multiletter control sequences out of 15000+200000
+ 9537 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,57p,395b,955s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,57p,395b,1005s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
@@ -554,10 +628,11 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX
 blic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Assignment1.pdf (11 pages, 173981 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Assignment1.pdf (19 pages, 212762 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

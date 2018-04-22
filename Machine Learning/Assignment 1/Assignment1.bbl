@@ -1,3 +1,70 @@
 \begin{thebibliography}{}
 
+\bibitem [\protect \citeauthoryear {%
+Mitchell%
+}{%
+Mitchell%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Michell2009}
+\APACinsertmetastar {%
+Michell2009}%
+\begin{APACrefauthors}%
+Mitchell, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {{Machine Learning}} {{Machine Learning}}.
+\newblock
+\APACaddressPublisher{}{McGraw-Hill}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Murphy%
+}{%
+Murphy%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Murphy}
+\APACinsertmetastar {%
+Murphy}%
+\begin{APACrefauthors}%
+Murphy, K\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {{Machine Learning: A Probabilistic Perspective}} {{Machine
+  Learning: A Probabilistic Perspective}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Wasthington}%
+}{%
+{University of Wasthington}%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+was}
+\APACinsertmetastar {%
+was}%
+\begin{APACrefauthors}%
+{University of Wasthington}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+\APACrefbtitle {Nearest Neighbor.} {Nearest neighbor.}
+\newblock
+\begin{APACrefURL}
+  \url{http://courses.washington.edu/css490/2012.Winter/lecture\_slides/
+  06c\_nearest\_neighbor.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}
