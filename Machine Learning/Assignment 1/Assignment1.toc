@@ -1,10 +1,12 @@
 \contentsline {section}{\numberline {1}Question 1}{1}
 \contentsline {section}{\numberline {2}Question 2}{1}
-\contentsline {section}{\numberline {3}Question 3}{2}
+\contentsline {section}{\numberline {3}Question 3: Report on k-Nearest Neighbour Algorithm}{3}
 \contentsline {section}{\numberline {4}Question 4}{3}
 \contentsline {section}{\numberline {5}Question 5}{3}
 \contentsline {subsection}{\numberline {5.1}Question 5.1}{3}
 \contentsline {subsection}{\numberline {5.2}Question 5.2}{4}
-\contentsline {section}{\numberline {6}Question 6}{4}
-\contentsline {subsection}{\numberline {6.1}Question 6a}{4}
-\contentsline {subsection}{\numberline {6.2}Question 6b}{10}
+\contentsline {subsection}{\numberline {5.3}Question 5.3}{4}
+\contentsline {subsection}{\numberline {5.4}5.4}{5}
+\contentsline {section}{\numberline {6}Question 6}{6}
+\contentsline {subsection}{\numberline {6.1}Question 6a}{6}
+\contentsline {subsection}{\numberline {6.2}Question 6b}{12}
