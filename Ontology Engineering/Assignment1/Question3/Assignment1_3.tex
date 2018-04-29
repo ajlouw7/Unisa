@@ -8,39 +8,25 @@
 \textbf{Question 3}
 \newline
 
-Web Ontology Language (OWL) was created as a standard by the Web Ontology Working group, which was formed by the World Wide Web Consortium (W3C). \cite{Grau2008} It was created because of a number of limitations of expressiveness was found in RDF and RDFS. \citep{Staab2009}. There are 3 language variants of OWL. Owl Lite, OWL DL and OWL Full. Where OWL DL has more expressive power than OWL Lite and OWL Full in turn has more expressive power than OWL DL. \citep{Patel}
+Web Ontology Language (OWL) was created as a standard by the Web Ontology Working group, which in turn  was formed by the World Wide Web Consortium (W3C). \cite{Grau2008} OWL was created because of a number of limitations in expressiveness was found in RDF and RDFS. The reason RDFS was not simply extended, was because of "... the trade-off between expressive power and efficient reasoning" \cite{Staab2009}. In other words, if the RDFS was made more expressive it would have had to be at the expense of being able to write efficient reasoners for it.
 
-There are a number of useful features that cannot be expressed using RDF and RDFS. For instance, 
+There are 3 language variants of OWL. Owl Lite, OWL DL and OWL Full. Where OWL DL has more expressive power than OWL Lite and OWL Full in turn has more expressive power than OWL DL. \citep{Patel}
+
+OWL uses various commands from RDFS. For instance \emph{rdfs::comment} is used to store comments on ontology elements, where as \emph{rdfs::label} is used to add human readable names to elements in the ontology. \citep{Horridge2011} Additionally \emph{rdfs::subClassOf} is used to define whether one class is a subclass of another class. \citep{Staab2009}
+
+There are a number of useful features that cannot be expressed using RDF and RDFS. For instance: 
 \begin{description}
-\item[$\bullet$] a
-\item[$\bullet$] bb
-\end{list} 
+\item[$\bullet$] Whether 2 classes are disjoint or mutually exclusive. This can be accomplished using \emph{owl:disjointWith} in OWL.
+\item[$\bullet$] Cardinality cannot be restricted. For example we cannot say that a store has only one owner. OWL uses \emph{owl::cardinality} to express this concept. OWL also has \emph{owl::minCardinality} and \emph{owl::maxCardinality} to express a minimum or a maximum cardinality when the cardinality encompasses a range. For example lecturer must have a minimum of 5 students and a maximum of 400.
+\item[$\bullet$] New classes cannot be expressed as the union, intersection and/or complement of other classes. \emph{owl::complementOf} can be used to declare a class to be the compliment of another class. \emph{owl::unionOf} is used to declare a class the uniion of a set of classes and \emph{owl:intersectionOf} is used to declare a class to be the intersection of a set of classes.
+\item[$\bullet$] The scope of properties cannot be made local. The operation rdfs:range defines the scope of a property for all classes. In OWL, \emph{owl::Restriction} in conjunction with \emph{owl::allValuesFrom}m \emph{owl::someValuesFrom} and \emph{owl::hasValue} can be used to place various restrictions on classes.
+\item[$\bullet$] The RDFS cannot express whether a property is transitive or symmetric. This is solved in OWL using \emph{owl::TransitiveProperty} and \emph{owl::SymmetricProperty}.
+\item[$\bullet$] RDFS cannot express when one property is the inverse of another property. Owl uses \emph{owl::inverseOf} for this functionality.
+\end{description} 
 
-RDF uses triples of the form
-
-\[ 
-\langle A, R, B \rangle
-\]
-
-to represent information. Where A is the Subject that has a relationship, R is the relationship and B is the Object the relationship applies to. \citep{Grau2008}
-
-OWL ontologies can be written using RDF triples. This syntax is called OWL 1 RDF.. \citep{Bechhofer2004}
-
-This can make expressing certain OWL 1 concepts difficult because RDF triples cannot be created for many OWL 1 constructs. \citep{Grau2008} Using the example from \cite{Grau2008}, to indicate A is the union of B and C we have to create the following construct:
-
-\[ \langle A,owl:unionOf,\_:x1 \rangle \]
-\[ \langle \_:x1, rdf:first, B \rangle \]
-\[ \langle \_:x1, rdf:rest, \_:x2 \rangle \]
-\[ \langle \_:x2, rdf:first, C \rangle \]
-\[ \langle \_:x2, rdf:rest, rdf:nil \rangle \] \citep{Grau2008}
-
-This example shows a couple of interesting things. In OWL 1 RDF, RDF and OWL types are used together i.e.\emph{owl:unionOf} and \emph{rdf:first}. Also expressing relatively simple concepts can be difficult to read. 
-
-An alternative is to use 
 \citep{Staab2009}
 
-
-
+In conclusion, we can see that OWL was created to provide features that RDFS could not or it would not have been feasible to provide. 
 
 \bibliography{mybib}
 \end{document}

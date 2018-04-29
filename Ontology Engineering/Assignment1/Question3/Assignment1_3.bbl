@@ -36,30 +36,24 @@ Antoniou, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bechhofer%
-\ \BBA {} Carroll%
+Consortium%
 }{%
-Bechhofer%
-\ \BBA {} Carroll%
+Consortium%
 }{%
 {\protect \APACyear {2004}}%
 }]{%
-Bechhofer2004}
+Patel}
 \APACinsertmetastar {%
-Bechhofer2004}%
+Patel}%
 \begin{APACrefauthors}%
-Bechhofer, S\BPBI K.%
-\BCBT {}\ \BBA {} Carroll, J.%
+Consortium, W\BPBI W\BPBI W.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2004}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Parsing owl dl: trees or triples?}} {{Parsing owl dl:
-  trees or triples?}}{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Proc. 13th Int. Conf. World Wide Web} {Proc. 13th int.
-  conf. world wide web}\ (\BPGS\ 266--275).
+\APACrefbtitle {Owl web ontology language semantics and abstract syntax} {Owl
+  web ontology language semantics and abstract syntax}\ (\BVOL~10).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -91,29 +85,34 @@ Grau, B\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Patel-Schneider%
-, Hayes%
-\BCBL {}\ \BBA {} Horrocks%
-}{%
-Patel-Schneider%
+Horridge%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2004}}%
+Horridge%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
 }]{%
-Patel}
+Horridge2011}
 \APACinsertmetastar {%
-Patel}%
+Horridge2011}%
 \begin{APACrefauthors}%
-Patel-Schneider, P\BPBI F.%
-, Hayes, P.%
-\BCBL {}\ \BBA {} Horrocks, I.%
+Horridge, M.%
+, Knublauch, H.%
+, Rector, A.%
+, Stevens, R.%
+, Wroe, C.%
+, Jupp, S.%
+\BDBL {}Brandt, S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2004}{February}{}.
+\APACrefYearMonthDay{2011}{}{}.
 \newblock
-\APACrefbtitle {OWL Web Ontology Language Semantics and Abstract Syntax, W3C
-  Recommendation.} {Owl web ontology language semantics and abstract syntax,
-  w3c recommendation.}
+{\BBOQ}\APACrefatitle {{A Practical Guide To Building OWL Ontologies Using
+  Prot{\'{e}}g{\'{e}} 4 and CO-ODE Tools Edition 1.3}} {{A Practical Guide To
+  Building OWL Ontologies Using Prot{\'{e}}g{\'{e}} 4 and CO-ODE Tools Edition
+  1.3}}.{\BBCQ}
+\newblock
+
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
