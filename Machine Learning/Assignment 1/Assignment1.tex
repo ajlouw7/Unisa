@@ -132,8 +132,11 @@ Disjunctive normal functions are functions that can be written as a disjunction 
 
 Consider the above diagram. Suppose we need to classify the red dot as either a blue dot or a green dot for an arbitrary machine learning application. We could Use the k-nearest neighbour algorithm.
 
-In this algorithm the value of the data points closest to the target.
+In this algorithm the value of the data points closest to the target determine the value of the target. 
 
+\begin{equation}
+d(x_i,x_j) \equiv \sqrt{\sum_{r=1}^n(a_r(x_i) - a_r(x_j))^2}
+\end{equation}
 
 \cite{Michell2009}
 \cite{was}
@@ -143,6 +146,17 @@ In this algorithm the value of the data points closest to the target.
 \section{Question 5}
 \subsection{Question 5.1}
 For the equation $A\wedge \neg B$:
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+$A$ & $B$ & $\neg B$ & $A\wedge \neg B$ \\
+\hline
+0 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 1 & 1 \\
+1 & 1 & 0 & 0 \\
+\hline
+\end{tabular}
 
 \begin{tikzpicture}
  [level/.style={sibling distance=60mm/#1}]
@@ -180,6 +194,21 @@ When A=0, B returns 0 whether we have the value 0 or 1 for B. We can collapse th
 
 \subsection{Question 5.2}
 For the equation $A\vee [B\wedge C]$:
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$A$ & $B$ & $C$ & $B\wedge C$ & $A\vee [B\wedge C]$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
 
 \begin{tikzpicture}
  [level/.style={sibling distance=60mm/#1}]
@@ -238,6 +267,17 @@ When $A = 0$ and $B = 0$, the result is 0 independent form the value of C. This 
 \subsection{Question 5.3}
 For the equation $A \bigoplus B$:
 
+\begin{tabular}{|c|c|c|c|}
+\hline
+$A$ & $B$ & $A\bigoplus B$ \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\hline
+\end{tabular}
+
 \begin{tikzpicture}
  [level/.style={sibling distance=60mm/#1}]
  
@@ -260,6 +300,30 @@ This tree cannot be simplified further
 
 \subsection{5.4}
 For the equation $[A \wedge B]\vee[C \wedge D]$:
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$A$ & $B$ & $C$ & $D$ & $A \wedge B$ & $C \wedge D$ & $[A \wedge B]\vee[C \wedge D]$\\
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 & 0 & 1 & 1 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
 
 \begin{tikzpicture}
  [level/.style={sibling distance=60mm/#1},
