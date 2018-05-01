@@ -2,6 +2,7 @@
 \usepackage[natbibapa]{apacite} 
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{etoolbox}
 
 \bibliographystyle{apacite}
 
@@ -13,6 +14,12 @@
   env/.style      = {treenode, font=\ttfamily\normalsize},
   dummy/.style    = {circle,draw}
 }
+
+\usetikzlibrary{shapes.misc}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
 
 \title{Assignment 1}
 \author{ Adriaan Louw (53031377)}
@@ -143,6 +150,206 @@ d(x_i,x_j) \equiv \sqrt{\sum_{r=1}^n(a_r(x_i) - a_r(x_j))^2}
 \cite{Murphy}
 
 \section{Question 4}
+
+Firstly we need to covert the positions $(x,y)$ into our hypothesis space $\langle a,b \rangle$. The quantities are related by the equation: 
+
+\begin{equation}
+h \leftarrow \langle a < \sqrt{x^2 + y^2} < b \rangle
+\end{equation}
+ 
+Given dataset
+
+\begin{tabular}{|c|c|c|}
+\hline
+index & x & y \\
+\hline
+1 & 5 & 5 \\
+2 & -6 & 4 \\
+3 & -3 & -4 \\
+4 & 2  & -4 \\
+5 & -1 & 2 \\
+6 & -2 & 0 \\
+7 & 6  & 7 \\
+8 & 8  & -8 \\
+\hline
+\end{tabular} 
+ 
+For datapoint 1 we have 
+
+\begin{equation}
+\begin{split}
+a < \sqrt{x^2 + y^2} < b \\
+a < \sqrt{5^2 + 5^2} < b\\
+a < \sqrt{50} < b\\ 
+a < 7.071 < b \\
+\end{split}
+\end{equation}
+
+Given that a a b are integers it is safe to assume they are the next integer i.e. $\langle a, b \rangle = \langle 7,8 \rangle$.
+
+A similar calculation gives us the values of the other data points in the hypothesis space. Note that in cases like $(x,y) = (-3,-4)$
+
+\begin{equation}
+\begin{split}
+a < \sqrt{x^2 + y^2} < b \\
+a < \sqrt{(-3)^2 + (-4)^2} < b\\
+a < \sqrt{25} < b\\ 
+a < 5 < b \\
+\end{split}
+\end{equation}
+
+the middle term is a whole integer. Meaning  $\langle a, b \rangle = \langle 4,6 \rangle$
+
+Thus our dataset becomes
+ 
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+index & x & y & a & b\\
+\hline
+1 & 5 & 5 & 7 & 8\\
+2 & -6 & 4 & 7 & 8\\
+3 & -3 & -4 & 4&6\\
+4 & 2  & -4 & 4&5\\
+5 & -1 & 2 & 2&3\\
+6 & -2 & 0 & 1&3\\
+7 & 6  & 7 & 9&10\\
+8 & 8  & -8 & 11&12\\
+\hline
+\end{tabular} 
+ 
+\subsection{Question 4a} 
+ 
+\begin{equation}
+ S = \{ \langle 4,6 \rangle, \langle 7,8 \rangle \}
+ \end{equation}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-12)--(0,12) node[right]{$y$};
+\draw [<->](-12,0)--(12,0) node[right]{$x$};
+ 
+%labels
+\foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (5,5) node[cross,green]{};
+\draw (-6,4) node[cross,green]{};
+\draw (-3,-4) node[cross,green]{};
+\draw (2,-4) node[cross,green]{}; 
+
+\draw (-1,2) node[cross,red]{};
+\draw (-2,0) node[cross,red]{};
+\draw (6,7) node[cross,red]{};
+\draw (8,-8) node[cross,red]{};
+ 
+%sboundary
+%4-6
+\draw[solid] (0,0) circle (4);
+\draw[solid] (0,0) circle (6);
+\path [draw=none,fill=green, fill opacity = 0.2,even odd rule] (0,0) circle (4) (0,0) circle (6);
+ 
+%7-8
+\draw[solid] (0,0) circle (7);
+\draw[solid] (0,0) circle (8);
+\path [draw=none,fill=green, fill opacity = 0.2,even odd rule] (0,0) circle (7) (0,0) circle (8);
+\end{tikzpicture}
+\end{center}
+
+\subsection{Question 4b} 
+ 
+ \begin{equation}
+ S = \{ \langle 3,9 \rangle \}
+ \end{equation}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-12)--(0,12) node[right]{$y$};
+\draw [<->](-12,0)--(12,0) node[right]{$x$};
+ 
+%labels
+\foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (5,5) node[cross,green]{};
+\draw (-6,4) node[cross,green]{};
+\draw (-3,-4) node[cross,green]{};
+\draw (2,-4) node[cross,green]{}; 
+
+\draw (-1,2) node[cross,red]{};
+\draw (-2,0) node[cross,red]{};
+\draw (6,7) node[cross,red]{};
+\draw (8,-8) node[cross,red]{};
+ 
+%sboundary
+\draw[solid] (0,0) circle (3);
+\draw[solid] (0,0) circle (9);
+\path [draw=none,fill=green, fill opacity = 0.2,even odd rule] (0,0) circle (3) (0,0) circle (9);
+ 
+\end{tikzpicture}
+\end{center}
+ 
+\subsection{Question 4c}
+ 
+\subsection{Question 4d}
+  
+We could use a rectangle of the form $\langle(a,b),(c,d)\rangle$ where $a,b,c,d \in Z$. (a,b) is the position of the lower left hand corner of the outer square and (c,d) is the lower left hand corner of the inner square.
+$h \leftarrow \langle (-6,-6), (-3,-3 ) \rangle $
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-12)--(0,12) node[right]{$y$};
+\draw [<->](-12,0)--(12,0) node[right]{$x$};
+ 
+%labels
+\foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (5,5) node[cross,green]{};
+\draw (-6,4) node[cross,green]{};
+\draw (-3,-4) node[cross,green]{};
+\draw (2,-4) node[cross,green]{}; 
+
+\draw (-1,2) node[cross,red]{};
+\draw (-2,0) node[cross,red]{};
+\draw (6,7) node[cross,red]{};
+\draw (8,-8) node[cross,red]{};
+ 
+%sboundary
+\draw[solid] (-3,-3) rectangle (3,3);
+\draw[solid] (-6,-6) rectangle (6,6);
+\path [draw=none,fill=green, fill opacity = 0.2,even odd rule] (-3,-3) rectangle (3,3) (-6,-6) rectangle(6,6);
+ 
+\end{tikzpicture}
+\end{center}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 \section{Question 5}
 \subsection{Question 5.1}
 For the equation $A\wedge \neg B$:
