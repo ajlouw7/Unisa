@@ -2,14 +2,16 @@
 \usepackage[natbibapa]{apacite} 
 \bibliographystyle{apacite}
 
+\title{Ontology Engineering Assignment 1}
+\author{Adriaan Louw (53031377)}
+
 \begin{document}
+\maketitle
 
 \textbf{Question 1}
 \newline
 
 An ontology can be defined as "An explicit specialization of a conceptualization" \cite{Gruber1993}
-
-%This concept was expanded to "An ontology is a formal, explicit specialization of a shared conceptualization" by \cite{Studer1998}.
 
 \cite{Genesereth1987} claims that "A conceptualization is an abstract, simplified view of the world that we wish to represent for some purpose". We can see it as a mental model of the world. It is not yet expressed formally. \cite{Genesereth1987} also more formally define a conceptualization as, \emph{a tuple,( D, \textbf{R}) where}
 \begin{itemize}
@@ -23,10 +25,9 @@ According to \cite{GuObSt09} we need a language ( formal or informal ) to expres
 
 The language that is used need to only have the relations with the meaning intended in the conceptualization. There should be no ambiguity. 
 
-Conceptualizations can be specified in 2 way: \emph{extensionally} and \emph{intentionally}\citep[p.8]{GuObSt09}. To \emph{extensionally} specify our example we have to list every possible relationship in R, which is impossible \cite{GuObSt09}. We can only partially specify our world. 
-In contrast a we can specify our conceptualization \emph{intentionally} by fixing "a language want to use to talk of it, and to constrain the interpretations of such a language in and \emph{intentional} way." \citep[p.8]{GuObSt09} This can be done by \emph{meaning postulates} \cite{Nagel1948}. For example we define that "to eat" in our previous example is reflexive and transitive. In other words an insect can eat an insect of the same type i.e. cannibalism. Also if insect A can eat insect B, which can eat insect C, then insect A can eat insect C.
-Thus by \emph{intentionally} specifying the conceptualization we have created an \emph{approximate} specification \cite{GuObSt09}, in con contrast to the explicit specification we would get from specifying the conceptualization explicitly. 
-
-
+Conceptualizations can be specified in 2 ways: \emph{extensionally} and \emph{intentionally}\citep[p.8]{GuObSt09}. To \emph{extensionally} specify our example we have to list every possible relationship in R, which is impossible \cite{GuObSt09}. We can only partially specify our world. 
+In contrast a we can specify our conceptualization \emph{intentionally} by fixing "a language want to use to talk of it, and to constrain the interpretations of such a language in and \emph{intentional} way." \citep[p.8]{GuObSt09} This can be done by \emph{meaning postulates} \cite{Nagel1948}. For example we define that "to eat" in our previous example is reflexive and transitive. In other words an insect can eat an insect of the same type i.e. cannibalism. Also, if insect A can eat insect B, which can eat insect C, then insect A can eat insect C.
+Thus by \emph{intentionally} specifying the conceptualization we have created an \emph{approximate} specification \cite{GuObSt09}, in contrast to the explicit specification we would get from specifying the conceptualization explicitly. 
+Thus by specifying the conceptualization explicitly all assumptions will be made explicit.
 \bibliography{mybib}
 \end{document}

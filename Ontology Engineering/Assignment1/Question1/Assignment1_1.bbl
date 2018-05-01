@@ -96,31 +96,4 @@ Guarino, N.%
 \APACrefbtitle {{Handbook on Ontologies}} {{Handbook on Ontologies}}.
 \PrintBackRefs{\CurrentBib}
 
-\bibitem [\protect \citeauthoryear {%
-Studer%
-, Benjamins%
-\BCBL {}\ \BBA {} Fensel%
-}{%
-Studer%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1998}}%
-}]{%
-Studer1998}
-\APACinsertmetastar {%
-Studer1998}%
-\begin{APACrefauthors}%
-Studer, R.%
-, Benjamins, R.%
-\BCBL {}\ \BBA {} Fensel, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1998}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Knowledge engineering: Principles and methods}}
-  {{Knowledge engineering: Principles and methods}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Data & Knowlege Engineering}{25}{1-2}{161--198}.
-\PrintBackRefs{\CurrentBib}
-
 \end{thebibliography}
