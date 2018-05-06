@@ -132,22 +132,50 @@ Disjunctive normal functions are functions that can be written as a disjunction 
     \fill[blue]  (2.5,3) circle (4pt);
     \fill[blue]  (4,5) circle (4pt);
     \fill[blue]  (3,6) circle (4pt);
-    \fill[blue]  (2,3) circle (4pt);    
+    \fill[green]  (2,3) circle (4pt);    
     \fill[blue]  (1,1) circle (4pt);    
     \fill[blue]  (1,3) circle (4pt);
 \end{tikzpicture}
 
-Consider the above diagram. Suppose we need to classify the red dot as either a blue dot or a green dot for an arbitrary machine learning application. We could Use the k-nearest neighbour algorithm.
+Consider the above diagram. Suppose we need to classify the red dot as either a blue dot or a green dot for an arbitrary machine learning task. We could use the k-nearest neighbour algorithm. Where k refers to how many of the red dots neighbours we use to deduce its value.
 
-In this algorithm the value of the data points closest to the target determine the value of the target. 
+Let the Euclidean distance be defined as
+
+\begin{equation}
+d(x,y) = \sqrt{\sum_i (x_i - y_i)^2}
+\end{equation}
+
+\citep{was}
+
+We use the euclidean distance to determine the nearest neighbour. If we only use the 1-nearest neighbour we find the nearest point to be $(2.5,3)$. We can deduce that the dot should be blue. On the other hand, if we use the 6-nearest neighbours we can see that the value should be green, since most of the 6 nearest neighbours are green. (Specifically referring to the points $\{(2.5,3),(2,3),(2,2),(4,2),(4,4),(2,4)\}$ )
+
+An odd number of nearest neighbours should be chosen in order to eliminate the possibility of a tie. As in the case with 2 nearest neighbours $\{(2.5,3),2,3)\}$.  
+
+This case be generalised to a problem space (as in \cite{Michell2009}) where a an instance $x$ is described by the feature vector
+
+\begin{equation}
+\langle a_1 (x),a_2(x),...,a_n(x)\rangle
+\end{equation} 
+
+where a denotes the a attributes of x. Then the distance will be defined as 
 
 \begin{equation}
 d(x_i,x_j) \equiv \sqrt{\sum_{r=1}^n(a_r(x_i) - a_r(x_j))^2}
 \end{equation}
 
-\cite{Michell2009}
-\cite{was}
-\cite{Murphy}
+\citep{Michell2009}
+
+This algorithm is susceptible to the \emph{curse of dimensionality}. As the number of dimensions (or attributes) increases the contribution of an individual attribute decreases. If the data can only be categorised through a few or even 1 attribute, then i contribution of the important attributes will be "drowned out". \citep{Murphy} To reduce the \emph{curse of dimensionality}, the attributes could be weighted and additionally weighting attributes, we want to ignore, with 0.\citep{Michell2009}
+
+One issue with the k-nearest neighbour algorithm is that all computation generally done is do during the querying phase. Unlike decision trees where most of the computation can be done initially and the querying process being quite simple. \citep{Michell2009}
+
+This algorithm can also be extended to continuous functions as in
+
+\begin{equation}
+\hat{f}(x_q) \leftarrow \frac{\sum_{i=1}^k f(x_i)}{k}
+\end{equation}
+
+where $\hat{f}(x_q)$ is the resultant function at the point we are querying $x_q$.
 
 \section{Question 4}
 
