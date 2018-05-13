@@ -1,16 +1,16 @@
 \contentsline {section}{\numberline {1}Question 1}{1}
 \contentsline {section}{\numberline {2}Question 2}{1}
-\contentsline {section}{\numberline {3}Question 3: Report on k-Nearest Neighbour Algorithm}{3}
-\contentsline {section}{\numberline {4}Question 4}{4}
-\contentsline {subsection}{\numberline {4.1}Question 4a}{5}
-\contentsline {subsection}{\numberline {4.2}Question 4b}{6}
-\contentsline {subsection}{\numberline {4.3}Question 4c}{7}
-\contentsline {subsection}{\numberline {4.4}Question 4d}{7}
-\contentsline {section}{\numberline {5}Question 5}{8}
-\contentsline {subsection}{\numberline {5.1}Question 5.1}{8}
-\contentsline {subsection}{\numberline {5.2}Question 5.2}{9}
-\contentsline {subsection}{\numberline {5.3}Question 5.3}{10}
-\contentsline {subsection}{\numberline {5.4}5.4}{10}
-\contentsline {section}{\numberline {6}Question 6}{13}
-\contentsline {subsection}{\numberline {6.1}Question 6a}{13}
-\contentsline {subsection}{\numberline {6.2}Question 6b}{19}
+\contentsline {section}{\numberline {3}Question 3: Report on k-Nearest Neighbour Algorithm}{4}
+\contentsline {section}{\numberline {4}Question 4}{5}
+\contentsline {subsection}{\numberline {4.1}Question 4a}{6}
+\contentsline {subsection}{\numberline {4.2}Question 4b}{7}
+\contentsline {subsection}{\numberline {4.3}Question 4c}{8}
+\contentsline {subsection}{\numberline {4.4}Question 4d}{8}
+\contentsline {section}{\numberline {5}Question 5}{9}
+\contentsline {subsection}{\numberline {5.1}Question 5.1}{9}
+\contentsline {subsection}{\numberline {5.2}Question 5.2}{10}
+\contentsline {subsection}{\numberline {5.3}Question 5.3}{11}
+\contentsline {subsection}{\numberline {5.4}5.4}{11}
+\contentsline {section}{\numberline {6}Question 6}{14}
+\contentsline {subsection}{\numberline {6.1}Question 6a}{14}
+\contentsline {subsection}{\numberline {6.2}Question 6b}{20}

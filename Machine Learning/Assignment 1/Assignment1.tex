@@ -69,7 +69,7 @@ Where it returns true if $x_1$ is true or if $x_2$ or both are true. Thirdly we 
 
 This operation returns true if $x_1$ is false and false if $x_1$ is true.
 
-The . and + operations are commutative 
+The . and + operations are commutative ( the order of the terms do not matter )
 
 \begin{equation}
 \begin{split}
@@ -78,7 +78,7 @@ x_1+x_2 &= x_2 + x_1 \\
 \end{split}
 \end{equation}
 
-and associative
+and associative ( the way we group them to evaluate them do not matter )
 
 \begin{equation}
 \begin{split}
@@ -96,18 +96,61 @@ To commute between . and + we use DeMorgan's laws
 \end{split}
 \end{equation}
 
-Boolean functions can be broken down into various sub-classes. The first subclass is called \emph{terms}. We can write these as $k_1k_2k_3...k_n$ where $k_i$ are literals. An example would be the following term of size 4, $x_2.x3.\overline{x_6}.x_{12}$. This is also called a conjunctive literal as in all the terms  are separated by the and operation.
+Boolean functions can be broken down into various sub-classes. The first subclass is called \emph{terms}. We can write these as $k_1k_2k_3...k_n$ where $k_i$ are literals. An example would be the following term of size 4, $x_2.x3.\overline{x_6}.x_{12}$. This is also called a conjunctive literal as in all the terms are separated by the \emph{and} operation.
 
 Secondly we have \emph{clauses} or . A clause is a function where the literals are separated by the or function. As in $k_1+k_2 + ... + k_n $. An example would be $x_1 + \overline{x_5} + x_8$.
 
-Disjunctive normal functions are functions that can be written as a disjunction of terms. 
+Disjunctive normal functions are functions that can be written as a disjunction of terms. In other words where terms are separated by the $+$ (\emph{or}) operator. For instance 
 
+\begin{equation}
+f= x_1x_2 + x_3x_4
+\end{equation}
 
+where the terms are $x_1x_2$ and $x_3x_4$. This has a dual in the Conjunctive Normal Form (CNF) which is a conjunction of clauses. Example
 
+\begin{equation}
+f= (x_1 + x_3)(x_2 + x_4)
+\end{equation}
 
+where the clauses $x_1+x_3$ and $x_2+x_4$ are conjoined using the "and" operation.
 
+We can move between DNF and CNF using De Morgan's laws.
 
+The next class of boolean functions is called decision lists. We can define a decision list as an ordered pair of terms and boolean values. As in
 
+\begin{equation}
+\begin{split}
+&(t_q,v_q) \\
+&(t_{q-1},v_{q-1}) \\
+&...\\
+&(t_i,v_i) \\
+&...\\
+&(t_2,v_2)\\
+&(T,v_1)\
+\end{split}
+\end{equation} 
+
+where $t_i$ are terms as defined above, T is a term whose value is 1 and $v_i$ are boolean values 0 or 1. The value of $v_i$, for the first value of $t_i$ that is equal to 1, is the value of the decision list. As an example we have
+
+\begin{equation}
+\begin{split}
+& f = \\
+&(x_1 \overline{x_2} x_3x_5,0) \\
+&(x_1x_3,1)\\
+&(x_1x_2,0)\\
+&(1,0)\\
+\end{split}
+\end{equation} 
+
+If $x_1 = 1$, $x_2=1$, $x_3=1$ and $x_5=0$, the the decision list will have value 1 because the first term that is equal to 1 is $x_1x_3$. If $x_1=x_2=x_3=x_5=0$ then the first term that will have value 1 is the last term. Then the value of the decision list will be 0. A decision list of k terms is called a k-DL.
+
+A symmetric function is a function whose value does not change( invariant) for  permutations of the input variables. For instance, if it takes in 5 variables, and 3 of them are true and 2 are false, then the function will be symmetric if it does not matter which variables are false or true as long as the same number of variables stay true and false. Stated another way. In this example as long as any 3 variables are true and 2are false and the value of the function stays the same, then the function is symmetric. An example would be the parity function
+
+\begin{equation}
+f = \overline{x_1}x_2x_3 + x_1\overline{x_2}x_3 + x_1x_2\overline{x_3} + \overline{x_1}\overline{x_2}\overline{x_3}
+\end{equation}
+
+A voting function is a subclass of symmetric functions. A voting function has value 1 if a certain number k of inputs or more have value 1. This is called a k-voting function. The function is a majority function if it returns 1 if k is half the number of terms. 
 
 \section{Question 3: Report on k-Nearest Neighbour Algorithm}
 
