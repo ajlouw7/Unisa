@@ -1,0 +1,173 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+C{\^{o}}t{\'{e}}%
+\ \BBA {} Robboy%
+}{%
+C{\^{o}}t{\'{e}}%
+\ \BBA {} Robboy%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+Cote1980}
+\APACinsertmetastar {%
+Cote1980}%
+\begin{APACrefauthors}%
+C{\^{o}}t{\'{e}}, R\BPBI A.%
+\BCBT {}\ \BBA {} Robboy, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Progress in Medical Information Management}} {{Progress
+  in Medical Information Management}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Jama}{243}{8}{756--762}.
+\newblock
+\begin{APACrefURL}
+  \url{http://jama.jamanetwork.com/article.aspx?articleid=368815}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1001/jama.1980.03300340032015} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+IHTSO%
+}{%
+IHTSO%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+snomedcttech2015}
+\APACinsertmetastar {%
+snomedcttech2015}%
+\begin{APACrefauthors}%
+IHTSO.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{SNOMED CT {\textregistered} Technical Implementation Guide
+  2015}} {{SNOMED CT {\textregistered} Technical Implementation Guide 2015}}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitutionEqAuth{}{IHTSO}.
+\newblock
+\begin{APACrefURL}
+  \url{https://doc.ihtsdo.org/download/doc{\_}TechnicalImplementationGuide{\_}
+  Current-en-US{\_}INT{\_}20150131.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+, Cornet%
+, Lau%
+\BCBL {}\ \BBA {} {De Keizer}%
+}{%
+Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Lee2013}
+\APACinsertmetastar {%
+Lee2013}%
+\begin{APACrefauthors}%
+Lee, D.%
+, Cornet, R.%
+, Lau, F.%
+\BCBL {}\ \BBA {} {De Keizer}, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A survey of SNOMED CT implementations}} {{A survey of
+  SNOMED CT implementations}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{J. Biomed. Inform.}{46}{}{87--96}.
+\newblock
+\begin{APACrefURL} \url{https://ac.els-cdn.com/S1532046412001530/
+  1-s2.0-S1532046412001530-main.pdf?{\_}tid=1c161356-6d6f-4e0a
+  -94ae-4e46254f39ed{\&}acdnat=1527329697{\_}01f0958e81e1e12380178df1ec05f63b}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jbi.2012.09.006} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NIH%
+}{%
+NIH%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+nih}
+\APACinsertmetastar {%
+nih}%
+\begin{APACrefauthors}%
+NIH.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{Overview of SNOMED CT}.} {{Overview of SNOMED CT}.}
+\newblock
+\APACaddressPublisher{}{U.S. National Library of Medicine}.
+\newblock
+\begin{APACrefURL}
+  [{2018-05-26}]\url{https://www.nlm.nih.gov/healthit/snomedct/snomed{\_}overview.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{SNOMED International}%
+}{%
+{SNOMED International}%
+}{%
+{\protect \APACyear {2018}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+sn2018}
+\APACinsertmetastar {%
+sn2018}%
+\begin{APACrefauthors}%
+{SNOMED International}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {{History Of SNOMED CT}.} {{History Of SNOMED CT}.}
+\newblock
+\begin{APACrefURL}
+  [{2018-05-26}]\url{https://www.snomed.org/snomed-ct/what-is-snomed-ct/
+  history-of-snomed-ct} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{SNOMED International}%
+}{%
+{SNOMED International}%
+}{%
+{\protect \APACyear {2018}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+snocr}
+\APACinsertmetastar {%
+snocr}%
+\begin{APACrefauthors}%
+{SNOMED International}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {{How is SNOMED CT created?}} {{How is SNOMED CT created?}}
+\newblock
+\begin{APACrefURL}
+  [{2018-05-26}]\url{https://www.snomed.org/snomed-ct/what-is-snomed-ct/
+  how-is-snomed-ct-created} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

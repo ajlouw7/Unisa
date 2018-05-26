@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\bibliographystyle{apacite}
+
+\title{Ontology Engineering Assignment 3}
+\author{Adriaan Louw (53031377)}
+
+\begin{document}
+\maketitle
+
+\section{Question 1}
+
+Snomed CT (Systematized Nomenclature of Medicine Clinical Terms) is a well established domain ontology. 
+
+\subsection{History}
+
+SNOMED CT can be traced back to 1965 when the College of American Pathologists published the Systematized Nomenclature of Pathology (SNOP). SNOP covered a large number of known medical conditions, since it was designed for the classification of surgical an autopsy diagnoses \citep{Cote1980}.
+
+This was further expanded into SNOMED in 1977. Unlike SNOP, SNOMED was a collaboration between various societies and not just the College of American Pathologists. It included various medical societies from the United States, England and Canada \citep{Cote1980}. 
+
+SNOMED RT was a new logic based version published in 2000, in colaboration with Kaiser Permanente \citep{sn2018,nih}. SNOMED RT was merged with Clinical Terms Version 3 (CTV3) and released as SNOMED CT in January 2002. \citep{sn2018}
+
+In 2007 the International Health Terminology Standards Development Organisation gained the intellectual rights to all SNOMED versions \citep{nih}.
+
+\subsection{Purpose \& Use}
+
+SNOMED CT is used in over 50 countries \cite{Lee2013}. According to \cite{snomedcttech2015} there are 3 types of implementations for SNOMED CT:
+
+\begin{itemize}
+\item \emph{Clinical Records}: These implementations manage records of patients. Such systems can vary insize from specialized departments to large organizations. These systems provide means of entering new SNOMED CT expressions, storing and retrieving them. \citep{snomedcttech2015}
+
+\item \emph{Knowledge Representation}: SNOMED CT is used in knowledge resources like decision support protocols, electronic reference books and clinical guidelines. In these implementations, SNOMED CT expressions are used to define concepts and relationships. In more sophisticated uses queries can be generated on stored information, like in a clinical decision support system.\citep{snomedcttech2015}
+
+\item \emph{Aggregation and analysis}: The process of gathering data for later analysis.\citep{snomedcttech2015}
+\end{itemize}
+
+\subsection{Ongoing Maintenance}
+
+Such a large ontology that is in constant use requires constant maintenance. A new version of the ontology is published every 6 months \citep{snocr}
+\bibliography{mybib}
+\end{document}
