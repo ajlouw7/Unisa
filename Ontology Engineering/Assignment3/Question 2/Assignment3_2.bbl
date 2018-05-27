@@ -1,0 +1,69 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Borgo%
+\ \BBA {} Masolo%
+}{%
+Borgo%
+\ \BBA {} Masolo%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+dolce}
+\APACinsertmetastar {%
+dolce}%
+\begin{APACrefauthors}%
+Borgo, S.%
+\BCBT {}\ \BBA {} Masolo, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Foundational choices in DOLCE}} {{Foundational choices
+  in DOLCE}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Handb. Ontol. (Second Ed.}{}{}{361--382}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/profile/Stefano{\_}Borgo/publication/225213719{\_}Foundational{\_}choices{\_}in{\_}DOLCE/links/00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pease%
+, Niles%
+\BCBL {}\ \BBA {} Li%
+}{%
+Pease%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2002}}%
+}]{%
+sumo}
+\APACinsertmetastar {%
+sumo}%
+\begin{APACrefauthors}%
+Pease, A.%
+, Niles, I.%
+\BCBL {}\ \BBA {} Li, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Suggested Upper Merged Ontology: A Large Ontology
+  for the Semantic Web and its Applications}} {{The Suggested Upper Merged
+  Ontology: A Large Ontology for the Semantic Web and its
+  Applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Work. notes AAAI-2002 Work. Ontol. Semant.
+  web}{28}{}{7--10}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.aaai.org/Papers/Workshops/2002/WS-02-11/WS02-11-011.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

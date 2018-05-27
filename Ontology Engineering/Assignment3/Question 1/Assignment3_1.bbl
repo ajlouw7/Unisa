@@ -1,6 +1,39 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Cornet%
+\ \BBA {} {De Keizer}%
+}{%
+Cornet%
+\ \BBA {} {De Keizer}%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+y40}
+\APACinsertmetastar {%
+y40}%
+\begin{APACrefauthors}%
+Cornet, R.%
+\BCBT {}\ \BBA {} {De Keizer}, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Forty years of SNOMED: A literature review}} {{Forty
+  years of SNOMED: A literature review}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {BMC Med. Inform. Decis. Mak.} {Bmc med. inform. decis.
+  mak.}\ (\BVOL~8, \BPGS\ 1--6).
+\newblock
+\begin{APACrefURL}
+  \url{https://bmcmedinformdecismak.biomedcentral.com/track/pdf/
+  10.1186/1472-6947-8-S1-S2} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/1472-6947-8-S1-S2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 C{\^{o}}t{\'{e}}%
 \ \BBA {} Robboy%
 }{%
@@ -33,6 +66,42 @@ C{\^{o}}t{\'{e}}, R\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+H{\'{e}}ja%
+, Surj{\'{a}}n%
+\BCBL {}\ \BBA {} Varga%
+}{%
+H{\'{e}}ja%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+analysis}
+\APACinsertmetastar {%
+analysis}%
+\begin{APACrefauthors}%
+H{\'{e}}ja, G.%
+, Surj{\'{a}}n, G.%
+\BCBL {}\ \BBA {} Varga, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Ontological analysis of SNOMED CT}} {{Ontological
+  analysis of SNOMED CT}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {BMC Med. Inform. Decis. Mak.} {Bmc med. inform. decis.
+  mak.}\ (\BVOL~8, \BPGS\ 1--5).
+\newblock
+\APACaddressPublisher{Copenhagen, Demark}{}.
+\newblock
+\begin{APACrefURL}
+  \url{https://0-link-springer-com.oasis.unisa.ac.za/content/pdf/
+  10.1186{\%}2F1472-6947-8-S1-S8.pdf} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/1472-6947-8-S1-S8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 IHTSO%
 }{%
 IHTSO%
@@ -55,9 +124,9 @@ IHTSO.%
 \newblock
 \APACaddressInstitutionEqAuth{}{IHTSO}.
 \newblock
-\begin{APACrefURL}
-  \url{https://doc.ihtsdo.org/download/doc{\_}TechnicalImplementationGuide{\_}
-  Current-en-US{\_}INT{\_}20150131.pdf} \end{APACrefURL}
+\begin{APACrefURL} \url{https://doc.ihtsdo.org/download/
+  doc{\_}TechnicalImplementationGuide{\_}Current-en-US{\_}INT{\_}20150131.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -89,8 +158,8 @@ Lee, D.%
 \APACjournalVolNumPages{J. Biomed. Inform.}{46}{}{87--96}.
 \newblock
 \begin{APACrefURL} \url{https://ac.els-cdn.com/S1532046412001530/
-  1-s2.0-S1532046412001530-main.pdf?{\_}tid=1c161356-6d6f-4e0a
-  -94ae-4e46254f39ed{\&}acdnat=1527329697{\_}01f0958e81e1e12380178df1ec05f63b}
+  1-s2.0-S1532046412001530-main.pdf?{\_}tid=1c161356-6d6f-4e0a-94ae
+  -4e46254f39ed{\&}acdnat=1527329697{\_}01f0958e81e1e12380178df1ec05f63b}
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.jbi.2012.09.006} \end{APACrefDOI}
@@ -120,6 +189,40 @@ NIH.%
 \begin{APACrefURL}
   [{2018-05-26}]\url{https://www.nlm.nih.gov/healthit/snomedct/snomed{\_}overview.html}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Patrick%
+\ \protect \BOthers {.}}{%
+Patrick%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+subset}
+\APACinsertmetastar {%
+subset}%
+\begin{APACrefauthors}%
+Patrick, J.%
+, Wang, Y.%
+, Budd, P.%
+, Rector, A.%
+, Brandt, S.%
+, Rogers, J.%
+\BDBL {}Vazirnezhad, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Developing SNOMED CT subsets from clinical notes for
+  intensive care service}} {{Developing SNOMED CT subsets from clinical notes
+  for intensive care service}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Heal. Care Informatics Rev. Online}{12}{3}{25--30}.
+\newblock
+\begin{APACrefURL}
+  \url{https://cdn.ymaws.com/www.hinz.org.nz/resource/collection/
+  0F09C2E4-7A05-49FB-8324-709F1AB2AA2F/F38{\_}Patrick.pdf} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
