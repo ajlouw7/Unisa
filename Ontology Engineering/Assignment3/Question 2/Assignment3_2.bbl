@@ -26,8 +26,9 @@ Borgo, S.%
 \APACjournalVolNumPages{Handb. Ontol. (Second Ed.}{}{}{361--382}.
 \newblock
 \begin{APACrefURL}
-  \url{https://www.researchgate.net/profile/Stefano{\_}Borgo/publication/225213719{\_}Foundational{\_}choices{\_}in{\_}DOLCE/links/00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf}
-  \end{APACrefURL}
+  \url{https://www.researchgate.net/profile/Stefano{\_}Borgo/publication/
+  225213719{\_}Foundational{\_}choices{\_}in{\_}DOLCE/links/
+  00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
