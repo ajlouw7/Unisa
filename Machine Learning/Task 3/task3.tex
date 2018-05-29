@@ -1,10 +1,13 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[natbibapa]{apacite} 
 \usepackage{amsmath}
+\usepackage{tikz}
 \bibliographystyle{apacite}
 
 \title{Investigation into the inner workings of Concept Learning and Decision Trees}
 \author{ Adriaan Louw (53031377)}
+
+\def\layersep{2.5cm}
 
 \begin{document}
 
@@ -92,12 +95,49 @@ $A$ & $B$ & $A\wedge B$ \\
 \hline
 \end{tabular}
 
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    \node[input neuron, pin=left:A] (I-1) at (0,-0.5) {};
+    \node[input neuron, pin=left:B] (I-2) at (0,-1.5) {};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,2}
+        \path[yshift=0.5cm]
+            node[hidden neuron] (H-\name) at (\layersep,-\y cm) {};
+
+    % Draw the output layer node
+    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H-2] (O) {};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,2}
+        \foreach \dest in {1,...,2}
+            \path (I-\source) edge (H-\dest);
+
+    % Connect every node in the hidden layer with the output layer
+    \foreach \source in {1,...,2}
+        \path (H-\source) edge (O);
+
+    % Annotate the layers
+    \node[annot,above of=H-1, node distance=1cm] (hl) {Hidden layer};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl] {Output layer};
+\end{tikzpicture}
+
+
 We will need a network with 2 input nodes and 1 output node. 
 
 The treshold 
 \subsection{Limitations of Perceptrons}
 
-Perceptrons are linear classifiers and hence cannot used in finding non-linear hypotheses functions. 
+A 2 layer percepron network can implement any boolean function. But no network of perceptrons can implement continuous functions. This is because of the nature of the perceptron, returning -1 or 1 depending on some threshold.
 
 \citep{Michell2009}
 \section{Backpropagation}
@@ -134,5 +174,78 @@ From \cite[p98]{Michell2009}
 
 \subsection{Variants and extentions to Backpropagation}
 
+\subsection{Question 3.4}
+
+\subsection{Question 3.5}
+
+For the play tennis example. We will use 6 input nodes ($x_1,...,x_6$). $x_1$ = Sky, $x_2$ = AirTemp, $x_3$ = Humidity, $x_4$ = Wind, $x_5$ = Water and $x_6$ = Forecast. There will be 6 hidden nodes ($h_1,...,h_6$) and one output node. We additionally have a training rate $\eta = 0.1$.
+
+We need to represent these boolean states ad real numbers. Therefore the first value will be 0.1 and the second 0.9. 
+
+Thus for Sky: Sunny = 0.1 and Rainy = 0.9 
+
+For AirTemp: Warm = 0.1 and Cold = 0.9
+
+For Humidity: Normal = 0.1 and High = 0.9
+
+For Wind: Strong = 0.1 and Weak = 0.9
+
+For Water: Warm = 0.1 and Cool = 0.9
+
+For Forecast: Same = 0.1 and Change = 0.9 
+
+Output layer will return 0.1 for No and 0.9 for Yes.
+
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    \node[input neuron, pin=left:Sky] (I-1) at (0,-0.5) {};
+    \node[input neuron, pin=left:AirTemp] (I-2) at (0,-1.5) {};
+    \node[input neuron, pin=left:Humidity] (I-3) at (0,-2.5) {};
+    \node[input neuron, pin=left:Wind] (I-4) at (0,-3.5) {};
+    \node[input neuron, pin=left:Water] (I-5) at (0,-4.5) {};
+    \node[input neuron, pin=left:Forecast] (I-6) at (0,-5.5) {};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,6}
+        \path[yshift=0.5cm]
+            node[hidden neuron] (H-\name) at (\layersep,-\y cm) {};
+
+    % Draw the output layer node
+    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H-3] (O) {};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,6}
+        \foreach \dest in {1,...,6}
+            \path (I-\source) edge (H-\dest);
+
+    % Connect every node in the hidden layer with the output layer
+    \foreach \source in {1,...,6}
+        \path (H-\source) edge (O);
+
+    % Annotate the layers
+    \node[annot,above of=H-1, node distance=1cm] (hl) {Hidden layer};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl] {Output layer};
+\end{tikzpicture}
+
+From \cite[p101]{Michell2009} we have the error 
+
+\begin{equation}
+E(\vec\omega)=\frac{1}{2}\sum_{k \in outputs}(t_k-o_k)^2
+\end{equation}
+
+and from \cite[p97]{Michell2009} 
+
+\begin{equation}
+o = \frac{1}{1+e^{-\vec\omega.\vec x} }
+\end{equation}
 \bibliography{mybib}
 \end{document}
