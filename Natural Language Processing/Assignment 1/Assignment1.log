@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  13 MAR 2018 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  2 JUN 2018 11:19
 entering extended mode
 **./Assignment1.tex
 (Assignment1.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -475,26 +475,37 @@ T1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OMS/cmsy/m/n/10 gg$\OT1/cmr
 
 [1
 
-{C:/Users/riaanl.THOROUGHTEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-] [2] [3] (Assignment1.aux) ) 
+{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (11.75624pt too wide) in paragraph at lines 144--146
+[]\OT1/cmr/m/n/10 Please run Run-Cor-pora[]TaleOfTwoCities.py and Run-Cor-pora[
+]WrightBrothers.py
+ []
+
+
+Overfull \hbox (97.5194pt too wide) in paragraph at lines 144--146
+\OT1/cmr/m/n/10 and please en-sure that python 3.7 is in-stalled. It can be fou
+nd at https://www.python.org/downloads/ 
+ []
+
+[3] (Assignment1.aux) ) 
 Here is how much of TeX's memory you used:
- 12293 strings out of 493305
- 259227 string characters out of 3138835
- 303972 words of memory out of 3000000
- 15632 multiletter control sequences out of 15000+200000
+ 12293 strings out of 493303
+ 259227 string characters out of 3138856
+ 307973 words of memory out of 3000000
+ 15634 multiletter control sequences out of 15000+200000
  7280 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,68p,626b,910s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment1.pdf (3 pages, 112093 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb>
+Output written on Assignment1.pdf (3 pages, 115197 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

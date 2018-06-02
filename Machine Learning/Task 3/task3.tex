@@ -9,6 +9,22 @@
 
 \def\layersep{2.5cm}
 
+
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
+
+\usetikzlibrary{shapes.misc}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
 \begin{document}
 
 \maketitle
@@ -79,14 +95,15 @@ Therefore combining equations \ref{perceptError} and \ref{full}
 
 Each weight is updated by using the previous value of the weight plus the learning rate $\eta$ times the error for each weight and data point.
 
+\citep{Michell2009}
 \subsection{Examples}
 \subsubsection{Example 1}
 
-Given boolean function $A \wedge B$. This gives can be represented by the truth table
+Given boolean function $x_1 \wedge x_2$. This can be represented by a truth table where -1 is false and 1 is true. Simple boolean functions can be represented by a single perceptron.
 
 \begin{tabular}{|c|c|c|}
 \hline
-$A$ & $B$ & $A\wedge B$ \\
+$x_1$ & $x_2$ & $x_1\wedge x_2$ \\
 \hline
 -1 & -1 & -1 \\
 -1 & 1 & -1 \\
@@ -94,6 +111,42 @@ $A$ & $B$ & $A\wedge B$ \\
 1 & 1 & 1 \\
 \hline
 \end{tabular}
+
+Visually this is:
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1)--(0,1) node[right]{$x_2$};
+\draw [<->](-1,0)--(1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-0.5,1.0) -- (1,-0.5);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,red]{};
+\draw (-1,1) node[cross,red]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+The dashed red line represents the hyperplane that classifies this perceptron ( equation \ref{weight1} ).It clearly classifies the perceptron since all the false points are on one side of the hyperplane and all the true points are on the other side. 
+
+\begin{equation}
+\label{weight1}
+w_0 + w_1x_1 + w_2x_2 = 0
+\end{equation}
+
+Solving equation \ref{weight1} we have $w_0 = -0.5$ and $w_1 = w_2 = 1$.
+
 
 \begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
     \tikzstyle{every pin edge}=[<-,shorten <=1pt]
@@ -104,25 +157,25 @@ $A$ & $B$ & $A\wedge B$ \\
     \tikzstyle{annot} = [text width=4em, text centered]
 
     % Draw the input layer nodes
-    \node[input neuron, pin=left:A] (I-1) at (0,-0.5) {};
-    \node[input neuron, pin=left:B] (I-2) at (0,-1.5) {};
+    \node[input neuron, pin=left:$x_1$] (I-1) at (0,-0.5) {};
+    \node[input neuron, pin=left:$x_2$] (I-2) at (0,-1.5) {};
 
     % Draw the hidden layer nodes
-    \foreach \name / \y in {1,...,2}
+    \foreach \name / \y in {1}
         \path[yshift=0.5cm]
             node[hidden neuron] (H-\name) at (\layersep,-\y cm) {};
 
     % Draw the output layer node
-    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H-2] (O) {};
+    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H-1] (O) {};
 
     % Connect every node in the input layer with every node in the
     % hidden layer.
     \foreach \source in {1,...,2}
-        \foreach \dest in {1,...,2}
+        \foreach \dest in {1}
             \path (I-\source) edge (H-\dest);
 
     % Connect every node in the hidden layer with the output layer
-    \foreach \source in {1,...,2}
+    \foreach \source in {1}
         \path (H-\source) edge (O);
 
     % Annotate the layers
@@ -131,10 +184,73 @@ $A$ & $B$ & $A\wedge B$ \\
     \node[annot,right of=hl] {Output layer};
 \end{tikzpicture}
 
+Now testing the weights
 
-We will need a network with 2 input nodes and 1 output node. 
+\begin{tabular}{|c|c|c|}
+\hline
+$x_1$ & $x_2$ & net = $w_0 + w_1x_1 + w_2x_2$  \\
+\hline
+-1 & -1 & -0.5 + 1(-1) +1(-1) = -2.5 \\
+-1 & 1 & -0.5 + 1(-1) + 1(1) = -0.5 \\
+1 & -1 & -0.5 + 1(1) + 1(-1) = -0.5 \\
+1 & 1 & -0.5 1(1) + 1(1) = 1.5 \\
+\hline
+\end{tabular}
 
-The treshold 
+Each weight is clearly on either side of 0. This perceptron will classify the given function
+
+\subsubsection{Example 2}
+Given boolean function $x_1\oplus x_2$. The truth table will be
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_1\oplus x_2$ \\
+\hline
+-1 & -1 & -1 \\
+-1 & 1 & 1 \\
+1 & -1 & 11 \\
+1 & 1 & -1 \\
+\hline
+\end{tabular}
+
+Visually that would be
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1)--(0,1) node[right]{$x_2$};
+\draw [<->](-1,0)--(1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-0.5,1.0) -- (1,-0.5);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,red]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,green]{};
+\draw (1,1) node[cross,red]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 \subsection{Limitations of Perceptrons}
 
 A 2 layer percepron network can implement any boolean function. But no network of perceptrons can implement continuous functions. This is because of the nature of the perceptron, returning -1 or 1 depending on some threshold.
