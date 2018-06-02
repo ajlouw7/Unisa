@@ -164,6 +164,7 @@ A 2 layer percepron network can implement any boolean function. But no network o
              \end{equation}
          \item Update each network weight $\omega_{ji}$
              \begin{equation}
+             \label{backpropupdate}
              \omega_{ij} \leftarrow \omega_{ij} + \eta \delta_j x_{ji}
              \end{equation}                                          
          \end{enumerate}                 
@@ -174,6 +175,19 @@ From \cite[p98]{Michell2009}
 
 \subsection{Variants and extentions to Backpropagation}
 
+\subsubsection{Adding Momentum}
+
+It is possible to add a momentum term when updating the weights. For example from equation \ref{backpropupdate} we get
+
+\begin{equation}
+\omega_{ij}(n) \leftarrow \omega_{ij}(n-1) + \eta \delta_j x_{ji} + \alpha\bigtriangledown\omega_{ij}(n-1)
+\end{equation}
+
+Here each update is dependant on the previous update. This can help the network to go over local minima or to continue moving over flat regions. \citep[p100]{Michell2009}
+
+\subsubsection{Simulated Annealing}
+
+In this variation, the learning rate is gradually decreased over time. The rational is that if we reach local minima during the beginning of the learning process, the large learning rate will help the network to get out of it. \citep{nils}
 \subsection{Question 3.4}
 
 \subsection{Question 3.5}

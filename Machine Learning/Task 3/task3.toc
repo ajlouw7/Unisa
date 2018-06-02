@@ -9,5 +9,7 @@
 \contentsline {subsection}{\numberline {3.1}Original Paper On Error Propagation}{3}
 \contentsline {subsection}{\numberline {3.2}Most common form of Backpropagation}{3}
 \contentsline {subsection}{\numberline {3.3}Variants and extentions to Backpropagation}{4}
+\contentsline {subsubsection}{\numberline {3.3.1}Adding Momentum}{4}
+\contentsline {subsubsection}{\numberline {3.3.2}Simulated Annealing}{4}
 \contentsline {subsection}{\numberline {3.4}Question 3.4}{4}
 \contentsline {subsection}{\numberline {3.5}Question 3.5}{4}
