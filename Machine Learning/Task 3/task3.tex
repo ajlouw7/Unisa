@@ -118,8 +118,8 @@ Visually this is:
 \begin{tikzpicture}[scale=3.0]
 %\draw [help lines] (-3,-3) grid (3,3);
 % Euclidean
-\draw [<->](0,-1)--(0,1) node[right]{$x_2$};
-\draw [<->](-1,0)--(1,0) node[right]{$x_1$};
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
  
 \draw[red,thick,dashed] (-0.5,1.0) -- (1,-0.5);
 
@@ -208,7 +208,7 @@ $x_1$ & $x_2$ & $x_1\oplus x_2$ \\
 \hline
 -1 & -1 & -1 \\
 -1 & 1 & 1 \\
-1 & -1 & 11 \\
+1 & -1 & 1 \\
 1 & 1 & -1 \\
 \hline
 \end{tabular}
@@ -222,7 +222,8 @@ Visually that would be
 \draw [<->](0,-1)--(0,1) node[right]{$x_2$};
 \draw [<->](-1,0)--(1,0) node[right]{$x_1$};
  
-\draw[red,thick,dashed] (-0.5,1.0) -- (1,-0.5);
+ 
+\draw
 
 %labels
 \foreach \x in {-1,1}
@@ -230,6 +231,8 @@ Visually that would be
 
 \foreach \y/\ytext in {-1,1}
      \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+     
+
  
 \draw (-1,-1) node[cross,red]{};
 \draw (-1,1) node[cross,green]{};
@@ -239,7 +242,7 @@ Visually that would be
 \end{tikzpicture}
 \end{center}
 
-
+From the above figure we can see that it is impossible for a single hyperplane to separate positive and negative cases. Thus it is impossible for a single perceptron to classify the function.
 
 
 
