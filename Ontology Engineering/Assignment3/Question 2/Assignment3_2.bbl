@@ -1,6 +1,67 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arp%
+\ \BBA {} Smith%
+}{%
+Arp%
+\ \BBA {} Smith%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+BFO}
+\APACinsertmetastar {%
+BFO}%
+\begin{APACrefauthors}%
+Arp, R.%
+\BCBT {}\ \BBA {} Smith, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Function , Role , and Disposition in Basic Formal
+  Ontology}} {{Function , Role , and Disposition in Basic Formal
+  Ontology}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{2}{713}{1--4}.
+\newblock
+\begin{APACrefURL}
+  \url{http://precedings.nature.com/documents/1941/version/1/files/npre20081941-1.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/npre.2008.1941.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Borgo%
+, Guarino%
+\BCBL {}\ \BBA {} Masolo%
+}{%
+Borgo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+borgo1996pointless}
+\APACinsertmetastar {%
+borgo1996pointless}%
+\begin{APACrefauthors}%
+Borgo, S.%
+, Guarino, N.%
+\BCBL {}\ \BBA {} Masolo, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A pointless theory of space based on strong connection
+  and congruence}} {{A pointless theory of space based on strong connection and
+  congruence}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{KR}{96}{}{220--229}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Borgo%
 \ \BBA {} Masolo%
 }{%
@@ -31,6 +92,71 @@ Borgo, S.%
   00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{De Cesare}%
+, Henderson-Sellers%
+, Partridge%
+\BCBL {}\ \BBA {} Lycett%
+}{%
+{De Cesare}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+DeCesare}
+\APACinsertmetastar {%
+DeCesare}%
+\begin{APACrefauthors}%
+{De Cesare}, S.%
+, Henderson-Sellers, B.%
+, Partridge, C.%
+\BCBL {}\ \BBA {} Lycett, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Improving Model Quality through Foundational
+  Ontologies: Two Contrasting Approaches to the Representation of Roles}}
+  {{Improving Model Quality through Foundational Ontologies: Two Contrasting
+  Approaches to the Representation of Roles}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Conceptual Modeling}
+  {International conference on conceptual modeling}\ (\BPGS\ 304--314).
+\newblock
+\begin{APACrefURL}
+  \url{https://bura.brunel.ac.uk/bitstream/2438/11978/1/Fulltext.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+J.F.Allen%
+}{%
+J.F.Allen%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+J.F.Allen1984}
+\APACinsertmetastar {%
+J.F.Allen1984}%
+\begin{APACrefauthors}%
+J.F.Allen.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Towards a general theory of action and time}} {{Towards
+  a general theory of action and time}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Artificial Intelligence}{23}{}{123--154}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.cs.ucf.edu/{~}lboloni/Teaching/EEL6938{\_}2007/papers/Allen-GeneralTheoryActionTime.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0004-3702(84)90008-0} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -65,6 +191,59 @@ Pease, A.%
 \begin{APACrefURL}
   \url{http://www.aaai.org/Papers/Workshops/2002/WS-02-11/WS02-11-011.pdf}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Smith%
+}{%
+Smith%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+Smith1996}
+\APACinsertmetastar {%
+Smith1996}%
+\begin{APACrefauthors}%
+Smith, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Mereotopology: A theory of parts and boundaries}}
+  {{Mereotopology: A theory of parts and boundaries}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Data and Knowledge Engineering}{20}{3}{287--303}.
+\newblock
+\begin{APACrefURL}
+  \url{http://ontology.buffalo.edu/smith/articles/Mereotopology.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S0169-023X(96)00015-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sowa%
+}{%
+Sowa%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+sowa}
+\APACinsertmetastar {%
+sowa}%
+\begin{APACrefauthors}%
+Sowa, J\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2000}.
+\newblock
+\APACrefbtitle {{Knowledge representation: logical, philosophical, and
+  computational foundations}} {{Knowledge representation: logical,
+  philosophical, and computational foundations}}\ (\BVOL~13).
+\newblock
+\APACaddressPublisher{}{Brooks/Cole Pacific Grove}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
