@@ -54,18 +54,22 @@ The state $\{4\}$ has no outgoing states so we can ignore this state in terms of
 
 Now we have gone through all the states in Q'. The result is \newline $Q'=\{\{1\},\{1,2,3,4,5\},\{4,5\},\{3,4,5\}, \{4\},\emptyset\,\{2\}\}$ and \newline $A=\{\{1,2,3,4,5\},\{4,5\},\{3,4,5\},\{4\}\}$.
 
-\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+\begin{tikzpicture}[shorten >=1pt,node distance=2.5cm,on grid,auto] 
    \node[state,initial] (q_0)   {$\{1\}$}; 
    \node[state,accepting] (q_1) [above right=of q_0] {$\{1,2,3,4,5\}$}; 
    \node[state,accepting] (q_2) [below right=of q_0] {$\{4,5\}$}; 
-   \node[state,accepting] (q_3) [below right=of q_1] {$\{3,4,5\}$};
-   \node[state,accepting] (q_4) [below right=of q_3] ($\{4\}$
+   \node[state,accepting] (q_3) [right=of q_1] {$\{3,4,5\}$};
+   \node[state,accepting] (q_4) [below right=of q_2] {$\{4\}$};
+   \node[state] (q_5) [below right=of q_3] {$\{2\}$};
     \path[->] 
     (q_0) edge  node {0} (q_1)
           edge  node [swap] {1} (q_2)
     (q_1) edge  node  {1} (q_3)
           edge [loop above] node {0} ()
-    (q_2) edge [loop below] node {1} ();
+    (q_2) edge node {1} (q_4)
+    (q_3) edge node {1} (q_4)
+          edge node {0} (q_5)
+    (q_5) edge node {1} (q_4);
 \end{tikzpicture}
 \end{enumerate}
 
@@ -75,7 +79,7 @@ Now we have gone through all the states in Q'. The result is \newline $Q'=\{\{1\
 \item[2.1] TODO
 
 
-\item[2.2]
+\item[2.2] Please run 
 
 
 \item[2.3]
