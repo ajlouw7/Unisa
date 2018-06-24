@@ -23,8 +23,8 @@ Allen, J.%
 \APACjournalVolNumPages{Artificial Intelligence}{23}{}{123--154}.
 \newblock
 \begin{APACrefURL}
-  \url{http://www.cs.ucf.edu/{~}lboloni/Teaching/EEL6938{\_}2007/papers/Allen-GeneralTheoryActionTime.pdf}
-  \end{APACrefURL}
+  \url{http://www.cs.ucf.edu/{~}lboloni/Teaching/EEL6938{\_}2007/papers/
+  Allen-GeneralTheoryActionTime.pdf} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/0004-3702(84)90008-0} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -56,10 +56,37 @@ Arp, R.%
 \APACjournalVolNumPages{Nature}{2}{713}{1--4}.
 \newblock
 \begin{APACrefURL}
-  \url{http://precedings.nature.com/documents/1941/version/1/files/npre20081941-1.pdf}
-  \end{APACrefURL}
+  \url{http://precedings.nature.com/documents/1941/version/1/files/
+  npre20081941-1.pdf} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/npre.2008.1941.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Arp%
+, Smith%
+\BCBL {}\ \BBA {} Spear%
+}{%
+Arp%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+arp2015building}
+\APACinsertmetastar {%
+arp2015building}%
+\begin{APACrefauthors}%
+Arp, R.%
+, Smith, B.%
+\BCBL {}\ \BBA {} Spear, A\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2015}.
+\newblock
+\APACrefbtitle {{Building ontologies with basic formal ontology}} {{Building
+  ontologies with basic formal ontology}}.
+\newblock
+\APACaddressPublisher{}{Mit Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -121,6 +148,39 @@ Borgo, S.%
   00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Conesa%
+, Storey%
+\BCBL {}\ \BBA {} Sugumaran%
+}{%
+Conesa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Conesa2010}
+\APACinsertmetastar {%
+Conesa2010}%
+\begin{APACrefauthors}%
+Conesa, J.%
+, Storey, V\BPBI C.%
+\BCBL {}\ \BBA {} Sugumaran, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Usability of upper level ontologies: The case of
+  ResearchCyc}} {{Usability of upper level ontologies: The case of
+  ResearchCyc}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Data and Knowledge Engineering}{69}{4}{343--356}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1016/j.datak.2009.08.002}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.datak.2009.08.002} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -189,8 +249,38 @@ Masolo, C.%
 \newblock
 \APACaddressPublisher{}{Laboratory For Applied Ontology - ISTC-CNR}.
 \newblock
-\begin{APACrefURL}
-  \url{https://www.researchgate.net/publication/245584936{\_}WonderWeb{\_}Deliverable{\_}D18{\_}Ontology{\_}Library}
+\begin{APACrefURL} \url{https://www.researchgate.net/publication/
+  245584936{\_}WonderWeb{\_}Deliverable{\_}D18{\_}Ontology{\_}Library}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Niles%
+}{%
+Niles%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Niles2001}
+\APACinsertmetastar {%
+Niles2001}%
+\begin{APACrefauthors}%
+Niles, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Origins of The IEEE Standard Upper Ontology}} {{Origins
+  of The IEEE Standard Upper Ontology}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Joint Conference on Artificial
+  Intelligence}{}{}{4--10}.
+\newblock
+\begin{APACrefURL} \url{http://citeseerx.ist.psu.edu/viewdoc/download?
+  doi=10.1.1.76.8966{\&}rep=rep1{\&}type=pdf http://www.researchgate.net/
+  publication/2374394{\_}Origins{\_}of{\_}The{\_}IEEE{\_}Standard{\_}Upper{\_}Ontology/file/
+  9fcfd511f0fd592888.pdf{\%}5Cnhttp://www.ontologyportal.org/pubs/IJCAI2001.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 

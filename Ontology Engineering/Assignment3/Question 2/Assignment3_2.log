@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.13)  19 JUN 2018 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  24 JUN 2018 10:08
 entering extended mode
 **./Assignment3_2.tex
 (Assignment3_2.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
@@ -127,8 +127,15 @@ LaTeX Info: Redefining \BHBI on input line 130.
 
 [1
 
-{C:/Users/riaanl.THOROUGHTEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-] (Assignment3_2.bbl
+{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+ [2] (Assignment3_2.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 14--31
 []\OT1/cmr/m/n/12 Allen, J.  (1984).  To-wards a gen-eral the-ory of ac-tion an
 d
@@ -141,12 +148,17 @@ Underfull \hbox (badness 7468) in paragraph at lines 14--31
  []
 
 
-Overfull \hbox (192.31554pt too wide) in paragraph at lines 14--31
-\OT1/cmtt/m/n/12 http://www.cs.ucf.edu/ lboloni/Teaching/EEL6938[]2007/papers/A
-llen-GeneralTheoryActionTime.pdf
+Underfull \hbox (badness 10000) in paragraph at lines 14--31
+\OT1/cmtt/m/n/12 http://www.cs.ucf.edu/ lboloni/Teaching/EEL6938[]2007/papers/
  []
 
-[2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--31
+\OT1/cmtt/m/n/12 Allen-GeneralTheoryActionTime.pdf   \OT1/cmr/m/n/12 doi: 10.10
+16/0004-
+ []
+
+
 Underfull \hbox (badness 1910) in paragraph at lines 45--64
 []\OT1/cmr/m/n/12 Arp, R., & Smith, B.  (2008).  Func-tion , Role , and Dis-po-
 si-tion
@@ -159,114 +171,167 @@ Underfull \hbox (badness 1052) in paragraph at lines 45--64
  []
 
 
-Overfull \hbox (101.4195pt too wide) in paragraph at lines 45--64
-\OT1/cmtt/m/n/12 http://precedings.nature.com/documents/1941/version/1/files/np
-re20081941-1.pdf
+Underfull \hbox (badness 10000) in paragraph at lines 45--64
+\OT1/cmtt/m/n/12 http://precedings.nature.com/documents/1941/version/1/files/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--125
+Underfull \hbox (badness 10000) in paragraph at lines 133--152
 []\OT1/cmr/m/n/12 Borgo, S., & Ma-solo, C.  (2009).  Foun-da-tional choices in
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 106--125
+Underfull \hbox (badness 1968) in paragraph at lines 133--152
 \OT1/cmr/m/n/12 DOLCE.  \OT1/cmr/m/it/12 Handb. On-tol. (Sec-ond Ed.\OT1/cmr/m/
 n/12 , 361--382.  Re-trieved from
  []
 
 
-Overfull \hbox (7.06544pt too wide) in paragraph at lines 106--125
+Overfull \hbox (7.06544pt too wide) in paragraph at lines 133--152
 \OT1/cmtt/m/n/12 https://www.researchgate.net/profile/Stefano[]Borgo/publicatio
 n/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--125
+Underfull \hbox (badness 10000) in paragraph at lines 133--152
 \OT1/cmtt/m/n/12 225213719[]Foundational[]choices[]in[]DOLCE/links/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--125
+Underfull \hbox (badness 10000) in paragraph at lines 133--152
 \OT1/cmtt/m/n/12 00b495373a8bd031c3000000/Foundational-choices-in-DOLCE.pdf
  []
 
+[3]
+Underfull \hbox (badness 5217) in paragraph at lines 166--185
+[]\OT1/cmr/m/n/12 Conesa, J., Storey, V. C., & Sug-u-maran, V.  (2010).  Us-abi
+l-
+ []
 
-Underfull \hbox (badness 1635) in paragraph at lines 140--161
+
+Underfull \hbox (badness 2486) in paragraph at lines 166--185
+\OT1/cmr/m/n/12 ity of up-per level on-tolo-gies: The case of Re-search-Cyc.  \
+OT1/cmr/m/it/12 Data
+ []
+
+
+Underfull \hbox (badness 6995) in paragraph at lines 166--185
+\OT1/cmr/m/it/12 and Knowl-edge En-gi-neer-ing\OT1/cmr/m/n/12 , \OT1/cmr/m/it/1
+2 69\OT1/cmr/m/n/12 (4), 343--356.  Re-trieved from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--185
+\OT1/cmtt/m/n/12 http://dx.doi.org/10.1016/j.datak.2009.08.002   \OT1/cmr/m/n/1
+2 doi:
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 200--221
 \OT1/cmr/m/it/12 con-fer-ence on con-cep-tual mod-el-ing \OT1/cmr/m/n/12 (pp.[]
  304--314).  Re-trieved from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--161
+Underfull \hbox (badness 10000) in paragraph at lines 200--221
 \OT1/cmtt/m/n/12 https://bura.brunel.ac.uk/bitstream/2438/11978/1/Fulltext.pdf
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--161
+Underfull \hbox (badness 10000) in paragraph at lines 200--221
 
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 177--196
-[]\OT1/cmr/m/n/12 Masolo, C., Borgo, S., Gangemi, A., Guar-ino, N., & Oltra-mar
-i,
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+[]\OT1/cmr/m/n/12 Masolo, C., Borgo, S., Gangemi, A., Guar-ino, N., & Oltra-
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 177--196
-\OT1/cmr/m/n/12 A.  (2003).  \OT1/cmr/m/it/12 Won-der-Web De-liv-er-able D18 \O
-T1/cmr/m/n/12 (No.[] June).  Lab-
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+\OT1/cmr/m/n/12 mari, A.  (2003).  \OT1/cmr/m/it/12 Won-der-Web De-liv-er-able 
+D18 \OT1/cmr/m/n/12 (No.[]
  []
 
 
-Underfull \hbox (badness 6842) in paragraph at lines 177--196
-\OT1/cmr/m/n/12 o-ra-tory For Ap-plied On-tol-ogy - ISTC-CNR.  Re-trieved from
+Underfull \hbox (badness 4036) in paragraph at lines 237--256
+\OT1/cmr/m/n/12 June).  Lab-o-ra-tory For Ap-plied On-tol-ogy - ISTC-CNR.  Re-
  []
 
 
-Overfull \hbox (185.39952pt too wide) in paragraph at lines 177--196
-\OT1/cmtt/m/n/12 https://www.researchgate.net/publication/245584936[]WonderWeb[
-]Deliverable[]D18[]Ontology[]Library
+Underfull \hbox (badness 10000) in paragraph at lines 237--256
+\OT1/cmr/m/n/12 trieved from \OT1/cmtt/m/n/12 https://www.researchgate.net/publ
+ication/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--196
+Underfull \hbox (badness 1924) in paragraph at lines 268--286
+\OT1/cmr/m/it/12 ter-na-tional Joint Con-fer-ence on Ar-ti-fi-cial In-tel-li-ge
+nce\OT1/cmr/m/n/12 , 4--10.  Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--286
+\OT1/cmr/m/n/12 trieved from \OT1/cmtt/m/n/12 http://citeseerx.ist.psu.edu/view
+doc/download?
+ []
+
+
+Overfull \hbox (21.14445pt too wide) in paragraph at lines 268--286
+\OT1/cmtt/m/n/12 doi=10.1.1.76.8966&rep=rep1&type=pdf http://www.researchgate.n
+et/
+ []
+
+
+Overfull \hbox (33.74144pt too wide) in paragraph at lines 268--286
+\OT1/cmtt/m/n/12 publication/2374394[]Origins[]of[]The[]IEEE[]Standard[]Upper[]
+Ontology/file/
+ []
+
+
+Overfull \hbox (76.71948pt too wide) in paragraph at lines 268--286
+\OT1/cmtt/m/n/12 9fcfd511f0fd592888.pdf%5Cnhttp://www.ontologyportal.org/pubs/I
+JCAI2001.pdf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--286
 
  []
 
 
-Overfull \hbox (27.31946pt too wide) in paragraph at lines 210--230
+Overfull \hbox (27.31946pt too wide) in paragraph at lines 300--320
 \OT1/cmtt/m/n/12 http://www.aaai.org/Papers/Workshops/2002/WS-02-11/WS02-11-011
 .pdf
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--230
+Underfull \hbox (badness 10000) in paragraph at lines 300--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--259
+Underfull \hbox (badness 10000) in paragraph at lines 332--349
 \OT1/cmtt/m/n/12 http://ontology.buffalo.edu/smith/articles/Mereotopology.pdf
  []
 
-) [3] (Assignment3_2.aux) ) 
+) [4] (Assignment3_2.aux) ) 
 Here is how much of TeX's memory you used:
- 1537 strings out of 493305
- 20454 string characters out of 3138835
- 86614 words of memory out of 3000000
- 5132 multiletter control sequences out of 15000+200000
- 5972 words of font info for 22 fonts, out of 3000000 for 9000
+ 1570 strings out of 493303
+ 21035 string characters out of 3138856
+ 87615 words of memory out of 3000000
+ 5164 multiletter control sequences out of 15000+200000
+ 6229 words of font info for 23 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 24i,4n,32p,666b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,5n,32p,803b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Assignment3_2.pdf (3 pages, 74207 bytes).
+cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Assignment3_2.pdf (4 pages, 87334 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
+ 35 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,7 +11,7 @@
 
 \subsection{Nature and Purpose of Foundational Ontologies}
 
-Foundational ontologies, also sometimes called upper ontologies, focuses on modeling the very general and primitive objects and relationships \citep{dolce}. 
+Foundational ontologies, also sometimes called upper or large scale ontologies, focuses on modelling very general and primitive objects and relationships \citep{dolce}. These ontologies are domain agnostic and try to model "the semantics of the real world" \citep{Conesa2010}.
 
 According to \cite{dolce}, foundational ontologies have the following characteristics: "(i) have a large scope, (ii) can be highly reusable in different modeling scenarios, (iii) are philosophically and conceptually well founded, and (iv) are semantically transparent and (therefore) richly axiomatized."
 
@@ -30,32 +30,45 @@ Firstly, using a foundational ontology lets the ontology designer use concepts a
 
 Secondly, using a foundational ontology can reduce the amount of rework that needs to be done on an ontology due to changing requirements. Such ontologies anticipate changes because they have been designed to handle challenging modelling situations \citep{sumo}.
 
+Using a foundational ontology allows interoperability, to a certain extent, between different domain ontologies that are interoperable (compliant) with the foundational ontology \citep{Niles2001}.
 \subsubsection{Differing philosophical positions}
 
 The designers of a foundational ontology need to decide which philosophical standpoints the new ontology will reflect. Here we will only briefly mention some of the more significant ones.  
 
 An ontology can be seen as either descriptive or revisionary. A descriptive ontology builds its models based on the assumed ontological structure of natural language and human thought. These ontologies do not limit their categories to "philosophical or scientific paradigms" \citep{Masolo2003}. Whereas revisonary ontologies limit all assumption to those that can be regarded as scientific.
 
-There are 2 differing views when it comes to the nature of time. The endurantist sees an entity ( as an individual or thing) as always completely or "wholly" present at every moment in time, where the perdurantist believes the same entity has different  constituent parts at different times\citep{dolce}. In this way entities "endure" for the endurantists irrespective of time. 
+There are 2 differing views when it comes to the nature of time. The endurantist sees an entity ( as an individual or thing) as always completely or "wholly" present at every moment in time, where the perdurantist believes the same entity has different constituent parts at different times\citep{dolce}. In this way entities "endure" for the endurantists irrespective of time. As an example, say we want to model an individual named \emph{Jane} in the 2 using the 2 different views on time. In the endurant representation the individual named \emph{Jane} would always be present in the ontology irrespective of time. In the perdurantist representation \emph{Jane} can only be partially present at any time. For instance from her birth to her death \citep{DeCesare}. 
 
 An ontology can also be regarded as either multiplicative or reductionist. Reductionist ontologies aim to have as few as possible primitives. They regard the reduction of complexity as a high priority. Multiplicative ontologies regards the need for expressiveness higher than that of the reduction of complexity and therefor tend to have many more primitives than reductionist ontologies \citep{Masolo2003}. 
 
+\subsubsection{Areas that need improving}
+
+\cite{Conesa2010} list the following areas in which current foundational ontologies needs to be improved.
+\begin{itemize}
+\item Documentation in foundational ontologies needs to be improved. Including which domains the ontology covers.
+\item There is a lack of standardised graphical tools to interact with these ontologies.
+\item The ability to "search and summarize" concepts is also inhibited by the lack of tools.
+\end{itemize}
+
 \subsection{SUMO}
 
-Numerous foundational ontologies were combined to create the Suggested Upper Merged Ontology (SUMO)\citep{sumo}. According \cite{sumo}, amongst those are ontologies from ITBM-CNR, Stanford KSL and content based on the works of Sowa \citep{sowa}, Guarino and colleagues \citep{borgo1996pointless}, Allen \citep{J.F.Allen1984} and Smith \citep{Smith1996}.
+Numerous foundational ontologies were combined to create the Suggested Upper Merged Ontology (SUMO)\citep{sumo}. According \cite{sumo}, amongst those are ontologies from ITBM-CNR, Stanford KSL and content based on the works of Sowa \citep{sowa}, Guarino and colleagues \citep{borgo1996pointless}, Allen \citep{J.F.Allen1984} and Smith \citep{Smith1996}. \cite{Niles2001} describes the main issues that were encountered during the merging process.
 
 There are 11 sections with documented interdependencies. These include sections on structure of relation, entity abstraction, graph theory, and units of measure \citep{sumo}.
+
+In SUMO, entities are grouped into 2 main categories: Physical and Abstract. Physical entities are entities that have positions in space and time. By making the 2 concepts under physical(Object and Process) disjoint, SUMO allows an endurantist approach. Abstract then includes all other entities (those with no time and space coordinates). This includes relationships.
+
+\cite{Niles2001} believes that since SUMO is open source and supported by the IEEE, SUMO has the advantage over commercial ontologies like Cyc. For instance, since it is not proprietary, it is safe to assume more people will use it.
 
 \subsection{DOLCE}
 
 DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering) is another foundational ontology. The originators of DOLCE believe there should be a library of foundational ontologies. This library is called the WonderWeb Foundational Ontologies Library (WFOL). Developers who need a foundational ontology should be able to choose an ontology that best suit their needs and assumptions. DOCLE was intended to be a "reference" ontology. In other words it is intended to be used to in comparison with other ontologies, comparing how relationships are implemented and which fundamental assumptions were made \citep{Masolo2003}.  
 
-DOLCE can classify an entity as either an Endurant or a Perdurant. From the name it is obviously a descriptive ontology and focussed on the ontological meaning in natural language. Additionally DOLCE regards itself as multiplicative \citep{Masolo2003}.
+DOLCE can classify an entity as either an Endurant or a Perdurant. From the name it is a descriptive ontology and focussed on the ontological meaning in natural language. Additionally DOLCE regards itself as multiplicative \citep{Masolo2003}.
 
-\citep{dolce}
 \subsection{BFO}
 
-The aim of BFO is to assist in the integration of scientific data \citep{BFO} and was developed at the IFOMIS institute in Leipzig \citep{Masolo2003}. BFO contains both endurant and perdurant entities while following a multiplicative approach /citep{arp2015building}. Endurant entities are named continuants and perdurant entities are called occurants.
+The aim of BFO is to assist in the integration of scientific data \citep{BFO} and was developed at the IFOMIS institute in Leipzig \citep{Masolo2003}. BFO contains both endurant and perdurant entities while following a multiplicative approach \citep{arp2015building}. Endurant entities are named continuants and perdurant entities are called occurants.
 
 
 \bibliography{mybib}
