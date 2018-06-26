@@ -92,85 +92,52 @@ In 3.22, added comment to Personification.</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">version 1.1</Literal>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Narrative"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#introduces"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOfInformationRealizedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#realizes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRoleOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Classification"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTimeIncludedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
@@ -179,22 +146,325 @@ In 3.22, added comment to Personification.</Literal>
         <AnnotationProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#mappableTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#EventType"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageFamilyName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#covers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Theory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#expresses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Substance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#definesTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#nearTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#unifies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Workflow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swedish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Contract"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#characterizes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Organism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#executesTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#introduces"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#realizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japonic_Languges"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Classification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afroasiatic_Languages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#expands"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Amount"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate"/>
@@ -215,9 +485,6 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Right"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
     </Declaration>
     <Declaration>
@@ -227,22 +494,13 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#covers"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageName"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Theory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf"/>
@@ -251,19 +509,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Project"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#expresses"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy"/>
@@ -281,31 +530,16 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"/>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isOfficialLanguageIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#follows"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasTask"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Substance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition"/>
@@ -317,25 +551,16 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isExecutedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Trans-New_Guinea_Languages"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Transition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#definesTask"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#nearTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
@@ -344,25 +569,19 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#specializes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasMember"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sino-Tibetan_Languages"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#overlaps"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Thing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
@@ -371,43 +590,22 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Pattern"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isActionIncludedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Oto-Manguean_Languages"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#farFrom"/>
@@ -416,10 +614,7 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#unifies"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Kra-Dai_Languages"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
@@ -431,28 +626,16 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collective"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collective"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObjectAttribute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Workflow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
@@ -467,37 +650,37 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Venda"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#precedes"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isMemberLanguageOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
@@ -512,91 +695,55 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParameter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Relation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Contract"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Configuration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Plan"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#characterizes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Organism"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#executesTask"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Austronesian_Languages"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Method"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Organization"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"/>
@@ -605,16 +752,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Group"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isSubordinatedTo"/>
@@ -623,31 +764,28 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Norm"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dravidian_Languages"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Set"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue"/>
@@ -674,10 +812,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#disputed"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Turkey"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Haiti"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Haiti"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Turkey"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Wallis_and_Futuna_Is"/>
@@ -722,10 +860,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Trinidad_and_Tobago"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Iran_Islamic_Rep_of_"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Oceania"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Oceania"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Iran_Islamic_Rep_of_"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
@@ -749,13 +887,13 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mongolia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Samoa"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ghana"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Belarus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ghana"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Samoa"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Grenada"/>
@@ -830,10 +968,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sri_Lanka"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#COMESA"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Antigua_and_Barbuda"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Antigua_and_Barbuda"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#COMESA"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Yugoslavia"/>
@@ -872,10 +1010,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Equatorial_Guinea"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Dominican_Republic_the"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#LDC_1993"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#LDC_1993"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Dominican_Republic_the"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Guadeloupe"/>
@@ -908,10 +1046,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Uzbekistan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#LLDC"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bulgaria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bulgaria"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#LLDC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Aruba"/>
@@ -944,19 +1082,19 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Democratic_Yemen"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Tuvalu"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Gambia__the"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Gambia__the"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Tuvalu"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasOfficialName"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Falkland_Is"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Saudi_Arabia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Saudi_Arabia"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Falkland_Is"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#New_Caledonia"/>
@@ -1010,19 +1148,19 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mauritania"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mauritania"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Saint_Pierre_and_Miquelon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Eritrea"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sweden"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sweden"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Eritrea"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#area"/>
@@ -1064,10 +1202,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#group"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ireland"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Somalia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Somalia"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ireland"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Solomon_Islands"/>
@@ -1112,10 +1250,10 @@ In 3.22, added comment to Personification.</Literal>
         <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Niue"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#CCASG"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#CCASG"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Niue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mexico"/>
@@ -1169,10 +1307,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Democratic_Republic_of_the_Congo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bosnia_and_Herzegovina"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Maldives"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Maldives"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bosnia_and_Herzegovina"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Martinique"/>
@@ -1286,10 +1424,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Slovenia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Madagascar"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Faroe_Islands"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Faroe_Islands"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Madagascar"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sao_Tome_and_Principe"/>
@@ -1409,13 +1547,13 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Africa"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Europe"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bhutan"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#central_Asia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bhutan"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Europe"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Central_African_Republic_the"/>
@@ -1442,10 +1580,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Saint_Helena"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#CAC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#CAC"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Saint_Helena"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Japan"/>
@@ -1511,10 +1649,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Cameroon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_Europe"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Australia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Australia"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_Europe"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Cape_Verde"/>
@@ -1562,10 +1700,10 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Botswana"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Senegal"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Monaco"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Monaco"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Senegal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Democratic_People_s_Republic_of_Korea_the"/>
@@ -1836,6 +1974,13 @@ In 3.22, added comment to Personification.</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+            <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
         <DataMaxCardinality cardinality="1">
             <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#codeCurrency"/>
         </DataMaxCardinality>
@@ -1844,6 +1989,32 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
         <DataMaxCardinality cardinality="1">
             <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#nameCurrencyEN"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Contract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2704,6 +2875,10 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#self_governing"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"/>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
     </DisjointClasses>
@@ -4039,6 +4214,142 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#geographical_region"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afroasiatic_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Austronesian_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dravidian_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japonic_Languges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Kra-Dai_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Oto-Manguean_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sino-Tibetan_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swedish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Trans-New_Guinea_Languages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Venda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#AMU"/>
@@ -7600,6 +7911,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_America"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Canada"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Cape_Verde"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Africa"/>
@@ -8098,6 +8414,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#China"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#China"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -9520,6 +9841,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_Africa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Egypt"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#El_Salvador"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Guatemala"/>
@@ -9558,6 +9884,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#El_Salvador"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#central_America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#El_Salvador"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -13155,6 +13486,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#France"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#French_Guiana"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Brazil"/>
@@ -13170,6 +13506,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#France"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#French_Guiana"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isAdministeredBy"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#French_Polynesia"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#France"/>
@@ -13178,6 +13519,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#French_Polynesia"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#SIDS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#French_Polynesia"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -13380,6 +13726,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Asia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#German_Democratic_Republic_the"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Germany"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Austria"/>
@@ -13453,6 +13804,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Germany"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Germany"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -13943,6 +14299,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Guyana"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#World"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Guyana"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -14565,6 +14926,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_Europe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ireland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Israel"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Egypt"/>
@@ -14608,6 +14974,16 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Israel"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Israel"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Israel"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -14668,6 +15044,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Italy"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Italy"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
@@ -14743,6 +15124,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Japan"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Japan"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -18125,6 +18511,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#south-eastern_Asia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Malaysia"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Maldives"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Asia"/>
@@ -18565,6 +18956,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#central_America"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mexico"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Micronesia"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Kiribati"/>
@@ -18933,6 +19329,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mozambique"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Mozambique"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -20290,6 +20691,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#World"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Paraguay"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Peru"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Bolivia"/>
@@ -20348,6 +20754,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Peru"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#World"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Peru"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
@@ -20458,6 +20869,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Poland"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Poland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
@@ -20808,6 +21224,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Russian_Federation__the"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Russian_Federation__the"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -22340,6 +22761,51 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Africa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_Africa"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#South_America"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Argentina"/>
@@ -22498,6 +22964,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Spain"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Spain"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
@@ -22855,6 +23326,21 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#southern_Africa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Swaziland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Swaziland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Swaziland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sweden"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Finland"/>
@@ -22893,6 +23379,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sweden"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Sweden"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swedish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -22938,6 +23429,21 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -23088,6 +23594,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Tajikistan"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#central_Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Tajikistan"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -23930,6 +24441,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Europe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Ukraine"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#United_Arab_Emirates__the"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Oman"/>
@@ -24155,6 +24671,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#northern_America"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#United_States_of_America"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Uruguay"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Argentina"/>
@@ -24198,6 +24719,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Uruguay"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#World"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Uruguay"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
@@ -25420,6 +25946,11 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Zimbabwe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#World"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Yemen"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Oman"/>
@@ -25683,6 +26214,11 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Zimbabwe"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#eastern_Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Zimbabwe"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
@@ -26463,6 +26999,121 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#Switzerland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afroasiatic_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afroasiatic_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Austronesian_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japonic_Languges"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Venda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sino-Tibetan_Languages"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#nameOfficialEN"/>
@@ -31459,6 +32110,312 @@ In 3.22, added comment to Personification.</Literal>
         <NamedIndividual IRI="http://aims.fao.org/aos/geopolitical.owl#western_Europe"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">western Europe</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">afr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afrikaans"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Afrikaans</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Afroasiatic_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Afroasiatic Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Arabic"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Arabic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Austronesian_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Austronesian Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dravidian_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dravidian Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">eng</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#English"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">English</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">fre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#French"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">French</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#German"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">German</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">heb</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Hebrew"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Hebrew</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indo-European_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Indo_European Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ita</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Italien"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Italien</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">jpn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japanese"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Japanese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Japonic_Languges"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Japonic Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Kra-Dai_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kra-Drai Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">may</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Malaysian"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Malaysian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">chi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Mandarin"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Mandarin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">nbl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Ndebele"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ndebele</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Niger-Congo_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">NIger-Congo Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">nso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Northern_Sotho"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Nothern Sotho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Oto-Manguean_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oto-Manguean Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">pol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Polish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Polish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">por</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portugese"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Portugese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">rus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Russian"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Russian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sino-Tibetan_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sino-Tibetan Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">sot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Southern_Sotho"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Southern Sotho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">spa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Spanish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Spanish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ssw</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swati"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Swati</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swedish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">swe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Swedish"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Swedish</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Trans-New_Guinea_Languages"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Trans-New_Guinea_Languages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">tso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tsonga"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Tsonga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">tsn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Tswana"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Tswana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Venda"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ven</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Venda"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Venda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">xho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Xhosa"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Xhosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">zul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Zulu"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ZULU</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <ObjectProperty IRI="topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <ObjectProperty IRI="topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isMemberLanguageOf"/>
+        <ObjectProperty IRI="topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isOfficialLanguageIn"/>
+        <ObjectProperty IRI="topObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#defines"/>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"/>
@@ -31658,6 +32615,14 @@ In 3.22, added comment to Personification.</Literal>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasMember"/>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isMemberLanguageOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isOfficialLanguageIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"/>
@@ -31879,6 +32844,9 @@ In 3.22, added comment to Personification.</Literal>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#overlaps"/>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#overlaps"/>
     </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+    </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasBorderWith"/>
     </SymmetricObjectProperty>
@@ -31936,6 +32904,22 @@ In 3.22, added comment to Personification.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://aims.fao.org/aos/geopolitical.owl#isInGroup"/>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isMemberLanguageOf"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isOfficialLanguageIn"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"/>
@@ -32358,6 +33342,22 @@ In 3.22, added comment to Personification.</Literal>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#group"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasMemberLanguage"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasOfficialLanguage"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isMemberLanguageOf"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#isOfficialLanguageIn"/>
+        <Class IRI="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"/>
         <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
     </ObjectPropertyRange>
@@ -32778,6 +33778,26 @@ In 3.22, added comment to Personification.</Literal>
         <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasShortName"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageCode"/>
+        <DataProperty IRI="topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageName"/>
+        <DataProperty IRI="topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageCode"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageCode"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageFamilyNameEN"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageFamilyName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#languageNameEN"/>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate"/>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
     </SubDataPropertyOf>
@@ -32804,6 +33824,18 @@ In 3.22, added comment to Personification.</Literal>
     <DataPropertyDomain>
         <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasShortName"/>
         <Class IRI="http://aims.fao.org/aos/geopolitical.owl#area"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageCode"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageFamilyName"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language_Family"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageName"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Language"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
@@ -32839,6 +33871,18 @@ In 3.22, added comment to Personification.</Literal>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://aims.fao.org/aos/geopolitical.owl#hasShortName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageFamilyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasLanguageName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
