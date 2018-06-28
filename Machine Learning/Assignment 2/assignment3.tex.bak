@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{tikz}
+\bibliographystyle{apacite}
+
+\title{Assignment 2 Machine Learning COS4852}
+\author{ Adriaan Louw (53031377) }
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Question 1}
+\subsection{Question 1(a)}
+\subsection{Question 1(b)}
+\subsection{Question 1(c)}
+\subsection{Question 1(d)}
+
+\section{Question 2}
+\subsection{Question 2(a)}
+\subsection{Question 2(b)}
+\subsection{Question 2(c)}
+
+\section{Question 3}
+\subsection{Question 3(a)}
+\subsection{Question 3(b)}
+\subsection{Question 3(c)}
+\subsection{Question 3(d)}
+\subsection{Question 3(e)}
+
+\bibliography{mybib}
+\end{document}
