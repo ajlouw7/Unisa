@@ -1,3 +1,27 @@
 \begin{thebibliography}{}
 
+\bibitem [\protect \citeauthoryear {%
+{Nils J Nilsson}%
+}{%
+{Nils J Nilsson}%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+nils}
+\APACinsertmetastar {%
+nils}%
+\begin{APACrefauthors}%
+{Nils J Nilsson}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1998}.
+\newblock
+\APACrefbtitle {{Introduction to Machine Learning}} {{Introduction to Machine
+  Learning}}.
+\newblock
+\begin{APACrefURL} \url{http://robotics.stanford.edu/people/nilsson/MLBOOK.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}
