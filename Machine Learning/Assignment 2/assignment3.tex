@@ -77,7 +77,7 @@ We need to get equation \ref{weightline} in the form of equation \ref{line}
 \label{simp}
 \omega_1x_1 + \omega_2x_2 + +\omega_3 &= 0\\
 \omega_2x_2 &= -\omega_1x_1 - \omega_3\\ 
-x_2 &= \frac{\omega_1x_1}{\omega_2} - \frac{\omega_3}{\omega_2} \\ 
+x_2 &= -\frac{\omega_1x_1}{\omega_2} - \frac{\omega_3}{\omega_2} \\ 
 \end{split}
 \end{equation}
 
@@ -162,14 +162,239 @@ This is also as expected. The perceptron now classifies the the data correctly
 
 From the above image we can see that any that it is not possible to create a hyperplane that correctly classifies all negative instances and positive instances. The blue line is the line $x_2 = -x_1$ and the teal line is the line $x_2 = -\frac{7}{8}x_1 + \frac{2}{7}$. The any minimum plane that correctly classifies all the negative instances will classify the positive instance (-1,2) incorrectly as negative. 
 
+We can create a hyperplane from regression from all the points close to where the hyperplane should be. Using negative points (-5,6),(2,-2),(5,-5) and positive points (-1,2),(1,-2)
+
+For the equation of the regressed line $x_2=mx_1+c$
+
+\begin{equation}
+\begin{split}
+\label{m}
+m &= r\frac{S(x_2)}{S(x_1)}\\ 
+m &= \frac{\sum((x_1 - \bar{x_1})(x_2-\bar{x_2}))}{\sqrt{\sum (x_1-\bar{x_1})^2 \sum(x_2-\bar{x_2})^2}} \frac{\sqrt{\frac{\sum (x_2-\bar{x_2})^2}{n-1}}}{\sqrt{\frac{\sum (x_1-\bar{x_1})^2}{n-1}}}\\
+\end{split}
+\end{equation}
+
+where r is Pearsons Correlation Coefficient and S is standard deviation of axis $x_2$ or $x_1$.
+
+Here follows the calculation
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_1-\bar{x_1}$ & $x_2-\bar{x_2}$ &$(x_1-\bar{x_1})(x_2-\bar{x_2})$ & $(x_1-\bar{x_1})^2$ & $(x_2-\bar{x_2})^2$ \\ 
+\hline
+-5 &  6 & -5.4 &  6.2 & -33.48 & 29.16 & 38.44\\
+ 2 & -2 &  1.6 & -1.8 &  -2.88 &  2.56 &  3.24\\
+ 5 & -5 &  4.6 & -4.8 & -22.08 & 21.16 & 23.04\\
+-1 &  2 & -1.4 &  2.2 &  -3.08 &  1.96 &  4.84\\
+ 1 & -2 &  0.6 & -1.8 &  -1.08 &  0.36 &  3.24\\
+\hline
+\end{tabular}
+
+From the above table we have $\bar{x_1} = 0.4, \bar{x_2} = -0.2, \sum((x_1 - \bar{x_1})(x_2-\bar{x_2})) = -62.6, (x_1-\bar{x_1})^2 = 55.2,and (x_2-\bar{x_2})^2 = 72.8$ 
+
+Passing these into equation \ref{m} we get m = -1.13
+
+\begin{equation}
+\begin{split}
+c &= \bar{x_2} - m\bar{x_1}\\
+  &= -0.2 - (-1.13)(0.4)\\
+  &= 0.25\\  
+\end{split}
+\end{equation}
+
+Which gives us equation 
+
+\begin{equation}
+x_2 = -1.13x_1 + 0.25
+\end{equation}
+
+Visually it would be
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-8)--(0,8) node[right]{$X_2$};
+\draw [<->](-8,0)--(8,0) node[right]{$X_1$};
+ 
+%labels
+\foreach \x in {-8,-6,-4,-2,2,4,6,8}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-8,-6,-4,-2,2,4,6,8}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,2) node[cross,green]{};
+\draw (1,-2) node[cross,green]{};
+\draw (-2,-5) node[cross,green]{};
+\draw (-5,-2) node[cross,green]{}; 
+
+\draw (-5,6) node[cross,red]{};
+\draw (3,5) node[cross,red]{};
+\draw (2,-2) node[cross,red]{};
+\draw (5,-5) node[cross,red]{};
+
+\draw [blue] (-8,9.32) -- (8,-8.81);
+ 
+\end{tikzpicture}
+\end{center}
+
+This will minimise the error even though it would incorrectly classify (-1,2)
 
 \subsection{Question 1(c)}
 \subsection{Question 1(d)}
 
 \section{Question 2}
 \subsection{Question 2(a)}
+
+The truth table for this function is
+ 
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $\neg x_1$ & $\neg x_1 \vee x_2$ \\
+\hline
+-1 &-1 &1 &-1\\
+-1 &1 &1 &1\\
+1 &-1 &-1 &-1\\
+1 &1 &-1 &-1\\
+\hline
+\end{tabular}
+
+Visually this is:
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[teal,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,red]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,red]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+The dashed line represents the function
+
+\begin{equation}
+x_2 = x_1 + 0.5
+\end{equation}
+
+This hyperplane will classify the boolean function correctly because it separates all the positive instances from the negative ones.
+
+The equation for the hyperplane with weights are given by equation \ref{weightline} and we know from equation \ref{simp} what the relationship is from the weight equation to the line equation. Thus for case
+
+\begin{equation}
+\begin{split}
+m &= -\frac{\omega_1}{\omega_2} \\
+1 &= -\frac{\omega_1}{\omega_2} \\
+\omega_2 &= -\omega_1 \\
+\end{split}
+\end{equation}
+
+and
+
+\begin{equation}
+\begin{split}
+c &= -\frac{\omega_0}{\omega_2}\\
+0.5 &= -\frac{\omega_0}{\omega_2}\\
+\omega_0 &= -\frac{\omega_2}{2}\\
+\end{split}
+\end{equation}
+
+
 \subsection{Question 2(b)}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_1 \bigoplus x_2$ & $\neg x_1 \bigoplus x_2$ \\
+\hline
+-1 &-1 &-1 &1\\
+-1 &1 &1 &-1\\
+1 &-1 &1 &-1\\
+1 &1 &-1 &1\\
+\hline
+\end{tabular}
+
+Visually this is:
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,green]{};
+\draw (-1,1) node[cross,red]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+
 \subsection{Question 2(c)}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $\neg x_1$ & $\neg x_2$ & $x_1 \vee x_2$ & $\neg x_1 \vee \neg x_2$ & $(x_1 \vee x_2)\wedge (\neg x_1 \vee \neg x_2)$\\
+\hline
+-1 &-1 &1 &1 & -1& 1 & -1\\
+-1 &1 &1 &-1 & 1& 1 & 1\\
+1 &-1 &-1 &1 & 1& 1 & 1\\
+1 &1 &-1 &-1 & 1& -1 & -1\\
+\hline
+\end{tabular}
+
+Visually this is:
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,red]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,green]{};
+\draw (1,1) node[cross,red]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+
 
 \section{Question 3}
 \subsection{Question 3(a)}
