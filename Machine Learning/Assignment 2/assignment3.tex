@@ -292,7 +292,7 @@ The dashed line represents the function
 x_2 = x_1 + 0.5
 \end{equation}
 
-This hyperplane will classify the boolean function correctly because it separates all the positive instances from the negative ones.
+This hyperplane will classify the boolean function correctly because it linearly separates all the positive instances from the negative ones.
 
 The equation for the hyperplane with weights are given by equation \ref{weightline} and we know from equation \ref{simp} what the relationship is from the weight equation to the line equation. Thus for case
 
@@ -314,12 +314,70 @@ c &= -\frac{\omega_0}{\omega_2}\\
 \end{split}
 \end{equation}
 
+Now we have the relationship between the weights. If we try $\omega_0 = 1$ we get $\omega_1 = 2$ and $\omega_2 = -2$ 
+
+Which makes our weight equation
+
+\begin{equation}
+2x_1 - 2x_2 + 1
+\end{equation}
+
+Testing for polarity with point (-1,-1) we get
+\begin{equation}
+\begin{split}
+2(-1) -2(-1) + 1 &= 1
+\end{split}
+\end{equation}
+
+which indicates a positive result but we expect a negative result. Thus our polarity is wrong
+
+We try $\omega_0 = -1$ which gives $\omega_1 = -2$ and $\omega_2 = 2$
+
+Which makes the weight equation
+
+\begin{equation}
+-2x_1 + 2x_2 - 1
+\end{equation}
+
+Trying all our data we can sum it up in the following table
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_1$ & $x_2$ & Result \\
+\hline
+-1 &-1 & -1\\
+-1 & 1 & 4\\
+1  &-1 & -5\\
+1  & 1 & -1 \\
+\hline
+\end{tabular}
+
+This shows that weights $\omega_0 = -1$; $\omega_1 = -2$ and $\omega_2 = 2$ correctly classify the data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Question 2(b)}
 
 \begin{tabular}{|c|c|c|c|}
 \hline
-$x_1$ & $x_2$ & $x_1 \bigoplus x_2$ & $\neg x_1 \bigoplus x_2$ \\
+$x_1$ & $x_2$ & $x_1 \bigoplus x_2$ & $f_2 =\neg (x_1 \bigoplus x_2)$ \\
 \hline
 -1 &-1 &-1 &1\\
 -1 &1 &1 &-1\\
@@ -338,6 +396,7 @@ Visually this is:
 \draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
  
 \draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+\draw[red,thick,dashed] (-0.5,-1.0) -- (1.0,0.5);
 
 %labels
 \foreach \x in {-1,1}
@@ -353,6 +412,251 @@ Visually this is:
 
 \end{tikzpicture}
 \end{center}
+
+We can see from the previous diagram that $f_2$ cannot be linearly separated by 1 hyperplane. In other words a single perceptron cannot classify this function. We need to try to decompose $f_2$ into multiple linearly separable functions that can be modelled by multiple perceptrons.
+
+\begin{equation}
+\begin{split}
+f_2 &= \neg ( x_1 \bigoplus x_2 ) \\
+    &= \neg( (x_1 \wedge \neg x_2) \vee (\neg x_1 \wedge x_2))\\
+    &= \neg(x_1\wedge \neg x_2) \wedge \neg(\neg x_1 \wedge x_2)\\
+    &= (\neg x_1 \vee x_2) \wedge (x_1 \vee \neg x_2)\\
+\end{split}
+\end{equation}  
+
+We can thus create new function which is equivalent to $f_2$
+
+\begin{equation}
+g(h_1,h_2) = h_1 \wedge h_2 
+\end{equation} 
+
+where 
+
+\begin{equation}
+h_1 = \neg x_1 \vee x_2
+\end{equation}
+
+and 
+
+\begin{equation}
+h_2 = x_1 \vee \neg x_2
+\end{equation}
+
+The truth table will thus become
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_1 \bigoplus x_2$ & $f_2 =\neg (x_1 \bigoplus x_2)$ & $h_1$ & $h_2$ &$g(h_1,h_2)$\\
+\hline
+-1 &-1 &-1 & 1 & 1 & 1 & 1  \\
+-1 & 1 & 1 &-1 & 1 &-1 & -1 \\
+ 1 &-1 & 1 &-1 &-1 & 1 & -1 \\
+ 1 & 1 &-1 & 1 & 1 & 1 & 1  \\
+\hline
+\end{tabular}
+
+Drawing $h_1$ gives
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+%\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+\draw[red,thick,dashed] (-0.5,-1.0) -- (1.0,0.5);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,green]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+Using equation \ref{weightline} and knowing this hyperplane goes through points (-0.5,-1) and (1.0,0.5).
+We have  
+\begin{equation}
+\label{2bh1p1}
+\begin{split}
+\omega_1(-0.5) + \omega_2(-1) + \omega_0 &= 0 \\
+\frac{-\omega_1}{2} - \omega_2 + \omega_0 &= 0 \\
+\end{split}
+\end{equation}
+for the point (-0.5,-1) and
+
+\begin{equation}
+\label{2bh1p2}
+\begin{split}
+\omega_1(1) + \omega_2(0.5) + \omega_0 &= 0 \\
+\omega_1 + \frac{\omega_2}{2} + \omega_0 &= 0 \\
+\end{split}
+\end{equation}
+
+for point (1.0,0.5)
+
+Equating equations \ref{2bh1p1} and \ref{2bh1p2} we get
+
+\begin{equation}
+\label{2bh1i}
+\begin{split}
+\frac{-\omega_1}{2} - \omega_2 + \omega_0 &= \omega_1 + \frac{\omega_2}{2} + \omega_0\\
+\frac{3\omega_1}{2} &= \frac{3\omega_2}{2}\\
+\omega_2 =& - \omega_1\\
+\end{split}
+\end{equation}
+
+Passing equation \ref{2bh1i} into \ref{2bh1p2} we get
+
+\begin{equation}
+\begin{split}
+\omega_1 + \frac{-\omega_1}{2} + \omega_0 &= 0 \\
+\omega_0 &= -\frac{\omega_1}{2}\\
+\end{split}
+\end{equation}
+
+If we take $\omega_0 = 1$ then $\omega_1 = -2$ and $\omega_2 = 2$.
+
+Testing for polarity we use the point (-1,-1) where we expect a positive answer 
+
+For point (-1,-1)
+
+\begin{equation}
+\begin{split}
+-2x_1+2x_2 + 1 &=\\
+-1(-1) + 2(-1) + 1& = 1\\
+\end{split}
+\end{equation}
+
+Which is greater than 0 as expected. Thus the weights for $h_1$ is $\omega_0 = 1; \omega_1 = -2; \omega_2 = 2$ 
+
+Now drawing $h_2$
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+%\draw[red,thick,dashed] (-0.5,-1.0) -- (1.0,0.5);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,green]{};
+\draw (-1,1) node[cross,red]{};
+\draw (1,-1) node[cross,green]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+This is a similar perceptron from as in Question 2a. It uses the same hyperplane but the polarity is reversed. Thus from question 2a $\omega_2 = -\omega_1; \omega_0 = -\frac{\omega_2}{2}$. 
+
+Testing polarity with $\omega_0 = 1$ then $\omega_1=2;\omega_2=-2$. This gives with positive instance (-1,-1)
+
+\begin{equation}
+\begin{split}
+2x_1 - 2x_2 +1 &= \\
+2(-1) - 2(-1) +1 &= 1 \\
+\end{split}
+\end{equation}  
+
+Which indicates the preceptron calssifies the point (-1,-1) correctly as a positive instance
+
+This means $\omega_0 = 1;\omega_1=2;\omega_2=-2$ for $h_2$
+
+
+Now we need to create a perceptron for function g. The domain of g as a function of $h_1$ and $h_2$ can be shown as follows
+
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$h_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$h_1$};
+ 
+\draw[red,thick,dashed] (1.1,-0.1) -- (-0.1,1.1);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,1) node[cross,red]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+
+From the above diagram we can see that a hyperplane through the points (0,1) and (1,0) will classify this perceptron
+
+From applying equation \ref{weightline} to point $(h_1,h_2) = (1,0)$
+
+\begin{equation}
+\label{2bc1}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_0 &= 0 \\
+\omega_1(1) + \omega_2(0) + \omega_0 &= 0 \\
+\omega_1 &= -\omega_0\\
+\end{split}
+\end{equation}
+
+and for point $(h_1,h_2) = (0,1)$
+
+\begin{equation}
+\label{2bc2}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_0 &= 0 \\
+\omega_1(0) + \omega_2(1) + \omega_0 &= 0 \\
+\omega_2 &= -\omega_0\\
+\end{split}
+\end{equation}
+
+Now equation equations \ref{2bc1} and \ref{2bc2} we get $\omega_1 = \omega_2$
+
+If we let $\omega_0 = -1$ then from substitution into equations \ref{2bc1} and \ref{2bc2} we get$\omega_1=\omega_2=1$.
+
+Testing for polarity we have positive instance (1,1) 
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_0 &= \\
+x_1 + x_2 -1 &= \\
+(1) + (1) - 1 &= 1
+\end{split}
+\end{equation}
+
+Which is positive as expected
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \subsection{Question 2(c)}
