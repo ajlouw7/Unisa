@@ -21,6 +21,17 @@
 \tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
 %default radius will be 1pt. 
 cross/.default={1pt}}
+
+
+\tikzset{basic/.style={draw,fill=blue!50!green!20,
+                       text badly centered,minimum width=3em}}
+\tikzset{input/.style={basic,circle}}
+\tikzset{weights/.style={basic,rectangle,minimum width=2em}}
+\tikzset{functions/.style={basic,circle,fill=blue!50!green!20}}
+\newcommand{\addsymbol}{\draw[thick] (0.5em,0.5em) -- (0,0.5em) -- 
+                        (0,-0.5em) --  (-0.5em,-0.5em)
+                        (0em,0.75em) -- (0em,-0.75em)
+                        (0.75em,0em) -- (-0.75em,0em);}
 \begin{document}
 
 \maketitle
@@ -354,7 +365,23 @@ $x_1$ & $x_2$ & Result \\
 
 This shows that weights $\omega_0 = -1$; $\omega_1 = -2$ and $\omega_2 = 2$ correctly classify the data
 
+ \begin{tikzpicture}[scale=1]
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{%
+          \node[input] (f\hi) at (0,\hi*2cm-4 cm) {\h};
+        }
+    \node[functions] (sum) at (5,0) {$\sum$};
+    \foreach \h [count=\hi ] in {$w_2 =2$,$w_1 = -2$,$w_0 = -1$}{%
+          \path (f\hi) -- node[weights] (w\hi) {\h} (sum);
+          \draw[->] (f\hi) -- (w\hi);
+          \draw[->] (w\hi) -- (sum);
+        }        
 
+    \draw[->] (sum) -- ++(1,0);
+    % Labels
+    \node[above=1cm]  at (f3) {inputs};
+    \node[above=1cm] at (w3) {weights};
+    \node[right=1cm] at (sum) {output};
+    \end{tikzpicture}
 
 
 
@@ -648,7 +675,23 @@ Which is positive as expected
 
 
 
+ \begin{tikzpicture}[scale=1]
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{%
+          \node[input] (f\hi) at (0,\hi*2cm-4 cm) {\h};
+        }
+    \node[functions] (sum) at (5,0) {$\sum$};
+    \foreach \h [count=\hi ] in {$w_2 =2$,$w_1 = -2$,$w_0 = -1$}{%
+          \path (f\hi) -- node[weights] (w\hi) {\h} (sum);
+          \draw[->] (f\hi) -- (w\hi);
+          \draw[->] (w\hi) -- (sum);
+        }        
 
+    \draw[->] (sum) -- ++(1,0);
+    % Labels
+    \node[above=1cm]  at (f3) {inputs};
+    \node[above=1cm] at (w3) {weights};
+    \node[right=1cm] at (sum) {output};
+    \end{tikzpicture}
 
 
 
