@@ -659,7 +659,7 @@ and for point $(h_1,h_2) = (0,1)$
 
 Now equation equations \ref{2bc1} and \ref{2bc2} we get $\omega_1 = \omega_2$
 
-If we let $\omega_0 = -1$ then from substitution into equations \ref{2bc1} and \ref{2bc2} we get$\omega_1=\omega_2=1$.
+If we let $\omega_0 = -1$ then from substitution into equations \ref{2bc1} and \ref{2bc2} we get $\omega_1=\omega_2=1$.
 
 Testing for polarity we have positive instance (1,1) 
 
@@ -673,26 +673,71 @@ x_1 + x_2 -1 &= \\
 
 Which is positive as expected
 
+Figure \ref{fig} shows the whole network.
+\begin{figure}
+\begin{tikzpicture}[scale=0.8]
 
+    %input x
+    \node[input] (x1) at (-3,6){$x_1$};    
+    \node[input] (x2) at (-3,4){$x_2$}; 
 
- \begin{tikzpicture}[scale=1]
-    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{%
-          \node[input] (f\hi) at (0,\hi*2cm-4 cm) {\h};
-        }
-    \node[functions] (sum) at (5,0) {$\sum$};
-    \foreach \h [count=\hi ] in {$w_2 =2$,$w_1 = -2$,$w_0 = -1$}{%
-          \path (f\hi) -- node[weights] (w\hi) {\h} (sum);
-          \draw[->] (f\hi) -- (w\hi);
-          \draw[->] (w\hi) -- (sum);
-        }        
+	% inputs of h1
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{
+    	\node[input] (f1\hi) at (0,\hi*2cm +4cm) {\h};
+    }
+    % inputs of h2
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{
+    	\node[input] (f2\hi) at (0,\hi*2cm -2cm) {\h};
+    }
+    
+    \draw[->] (x1) -- (f12);    
+    \draw[->] (x1) -- (f22);  
+    \draw[->] (x2) -- (f11);    
+    \draw[->] (x2) -- (f21);  
+    
+	% sum h1
+	\node[functions] (sumh1) at (5,8) {$\sum$};
+    % sum h2
+	\node[functions] (sumh2) at (5,2) {$\sum$};	
+	
+    % weights of h1
+	\foreach \h [count=\hi ] in {$w_{12} =2$,$w_{11} = -2$,$w_{10} = -1$}{%
+      	\path (f1\hi) -- node[weights] (w\hi) {\h} (sumh1);
+      	\draw[->] (f1\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumh1);
+    } 
+    % weights of h2
+	\foreach \h [count=\hi ] in {$w_{22} =-2$,$w_{21} = 2$,$w_{20} = 1$}{%
+      	\path (f2\hi) -- node[weights] (w\hi) {\h} (sumh2);
+      	\draw[->] (f2\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumh2);
+    } 
+	
+	% inputs of g
+	\foreach \h [count=\hi ] in {$h_2$,$h_1$,$1$}{%
+      \node[input] (h\hi) at (8,\hi*6cm-4 cm) {\h};
+    }
+    % sum g
+	\node[functions] (sumg) at (13,6) {$\sum$};
+	% weights of g
+	\foreach \h [count=\hi ] in {$w_{32} =1$,$w_{31} = 1$,$w_{30} = -1$}{%
+      	\path (h\hi) -- node[weights] (w\hi) {\h} (sumg);
+      	\draw[->] (h\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumg);
+      	\draw[->] (sumh1) -- (h2);
+      	\draw[->] (sumh2) -- (h1);
+    }        
 
-    \draw[->] (sum) -- ++(1,0);
-    % Labels
-    \node[above=1cm]  at (f3) {inputs};
-    \node[above=1cm] at (w3) {weights};
-    \node[right=1cm] at (sum) {output};
-    \end{tikzpicture}
-
+	\draw[->] (sumg) -- ++(1,0);
+	
+	% Labels
+	\node[above=1cm] at (x1) {inputs};
+	\node[above=1cm] at (w3) {weights};
+	\node[right=1cm] at (sumg) {output};
+\end{tikzpicture}
+\caption{Network for question 2b}
+\label{fig}
+\end{figure}
 
 
 
