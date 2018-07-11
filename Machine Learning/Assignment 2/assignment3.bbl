@@ -24,4 +24,36 @@ nils}%
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+Rumelhart%
+, Hinton%
+\BCBL {}\ \BBA {} Williams%
+}{%
+Rumelhart%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1986}}%
+}]{%
+rumel}
+\APACinsertmetastar {%
+rumel}%
+\begin{APACrefauthors}%
+Rumelhart, D\BPBI E.%
+, Hinton, G\BPBI E.%
+\BCBL {}\ \BBA {} Williams, R\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Learning representations by back-propagating errors}}
+  {{Learning representations by back-propagating errors}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{323}{6088}{533--536}.
+\newblock
+\begin{APACrefURL} \url{http://www.cs.toronto.edu/\~hinton/absps/naturebp.pdf}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/323533a0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

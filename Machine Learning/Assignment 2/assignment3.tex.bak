@@ -2,6 +2,7 @@
 \usepackage[natbibapa]{apacite} 
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{physics}
 \bibliographystyle{apacite}
 
 \title{Assignment 2 Machine Learning COS4852}
@@ -16,9 +17,15 @@
   dummy/.style    = {circle,draw}
 }
 
+\newcommand{\eeq}[1]{\begin{equation}
+\begin{split}
+#1
+\end{split}
+\end{equation}}
+
 \usetikzlibrary{shapes.misc}
 
-\tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+\tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt}, 
 %default radius will be 1pt. 
 cross/.default={1pt}}
 
@@ -673,7 +680,7 @@ x_1 + x_2 -1 &= \\
 
 Which is positive as expected
 
-Figure \ref{fig} shows the whole network.
+Figure \ref{fig} shows the whole network where $\omega_{1i}$ denotes the weights for the perceptron modeling $h_1$, $\omega_{2i}$ denotes the weights for the perceptron of $h_2$ and $\omega_{3i}$ denotes the weights of the final perceptron. 
 \begin{figure}
 \begin{tikzpicture}[scale=0.8]
 
@@ -739,14 +746,6 @@ Figure \ref{fig} shows the whole network.
 \label{fig}
 \end{figure}
 
-
-
-
-
-
-
-
-
 \subsection{Question 2(c)}
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
@@ -789,7 +788,277 @@ Visually this is:
 
 
 \section{Question 3}
+
+\cite{rumel} is the original article introducing the Backpropagation algorithm. The URL for this document is in the reference.
+
 \subsection{Question 3(a)}
+
+We start with the following weights (Table \ref{table1}).
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\omega_7$ & $\omega_8$ & $b_1$ & $b_2$\\
+\hline
+0.15 &0.2 &0.25 & 0.3 & 0.4 & 0.45 & 0.5 & 0.55 & 0.35 & 0.6 \\
+\hline
+\end{tabular}
+\caption{Start weights}\label{table1}
+\end{table}
+
+
+\begin{equation}
+net_{h1} = \omega_1 x_1 + \omega_2 x_2 + b_1
+\end{equation}
+
+\begin{equation}
+net_{h2} = \omega_3 x_1 + \omega_4 x_2 + b_1
+\end{equation}
+
+\begin{equation}
+out_{h1} = \frac{1}{1+e^{-net_{h1}}}
+\end{equation}
+
+\begin{equation}
+out_{h2} = \frac{1}{1+e^{-net_{h2}}}
+\end{equation}
+
+\begin{equation}
+net_{o1} = \omega_5 out_{h1} + \omega_6 out_{h2} + b_2
+\end{equation}
+
+\begin{equation}
+net_{o2} = \omega_7 out_{h1} + \omega_8 out_{h2} + b_2
+\end{equation}
+
+\begin{equation}
+out_{o1} = \frac{1}{1+e^{-net_{o1}}}
+\end{equation}
+
+\begin{equation}
+out_{o2} = \frac{1}{1+e^{-net_{o2}}}
+\end{equation}
+
+\begin{equation}
+E_{total} = \sum \frac{1}{2}(target-output)^2
+\end{equation}
+
+\begin{equation}
+\begin{split}
+E_{total} &= E_{o1} + E_{o2} \\
+          &= \frac{1}{2}(target_{o1}-output_{o1})^2 + \frac{1}{2}(target_{o2}-output_{o2})^2 \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\pdv{E_{total}}{\omega_5} = \pdv{E_{total}}{out_{o1}} \pdv{out_{o1}}{net_{o1}} \pdv{net_{01}}{\omega_5}
+\end{equation}
+
+
+\subsubsection{Pattern 1}
+Doing the forward pass. Starting with the values on the hidden units
+\begin{equation}
+\begin{split}
+net_{h1} &= \omega_1 x_1 + \omega_2 x_2 + b_1 \\
+         &= 0.15(0.1) + 0.2(0.1) + 0.35 \\
+         &= 0.385\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-0.385}}\\ 
+         &= 0.595\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{h2} &= \omega_3 x_1 + \omega_4 x_2 + b_1 \\
+         &= 0.25(0.1) + 0.3(0.1) + 0.35 \\
+         &= 0.405\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h2} &= \frac{1}{1+e^{-net_{h2}}}\\ 
+         &= \frac{1}{1+e^{-0.405}}\\ 
+         &= 0.6\\
+\end{split}
+\end{equation}
+
+Continuing with the outputs off the network
+
+\begin{equation}
+\begin{split}
+net_{o1} &= \omega_5 out_{h1} + \omega_6 out_{h2} + b_2 \\
+         &= 0.4(0.595) + 0.45(0.6) + 0.6 \\
+         &= 1.108\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{o1}}}\\ 
+         &= \frac{1}{1+e^{-1.108}}\\ 
+         &= 0.752\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{02} &= \omega_7 out_{h1} + \omega_8 out_{h2} + b_2 \\
+         &= 0.5(0.595) + 0.55(0.6) + 0.6 \\
+         &= 1.227\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-1.223}}\\ 
+         &= 0.773\\
+\end{split}
+\end{equation}
+
+Now we need to calculate the error
+
+\begin{equation}
+\begin{split}
+E_{total} &= E_{o1} + E_{02} \\
+          &= \frac{1}{2}(0.1-0.752)^2 + \frac{1}{2}(0.9 - 0.773)^2 \\
+          &= 0.220 \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o1} &= -(target_o1 -out_{o1}out_{o1}(1-out_{o1})\\
+            &= -(0.1-0.752)(0.752)(1-0.752)\\
+            &= 0.122\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_5} &= \delta_{o1}out_{h1}\\
+                          &= 0.122(0.595)\\
+                          &= 0.073\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_5$
+\begin{equation}
+\begin{split}
+\omega_5^1 &= \omega_5^0 - \eta\pdv{E_{total}}{\omega_5}\\
+           &= 0.4 -0.5(0.073)\\
+           &= 0.364\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_6} &= \delta_{o1}out_{h2}\\
+                          &= 0.122(0.6)\\
+                          &= 0.073\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_6$
+\begin{equation}
+\begin{split}
+\omega_6^1 &= \omega_6^0 - \eta\pdv{E_{total}}{\omega_6}\\
+           &= 0.45 -0.5(0.073)\\
+           &= 0.414\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o2} &= -(target_o2 -out_{o2}out_{o2}(1-out_{o2})\\
+            &= -(0.9-0.773)(0.773)(1-0.773)\\
+            &= -0.022\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_7} &= \delta_{o2}out_{h1}\\
+                          &= -0.022(0.595)\\
+                          &= -0.013\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_7$
+\begin{equation}
+\begin{split}
+\omega_7^1 &= \omega_7^0 - \eta\pdv{E_{total}}{\omega_7}\\
+           &= 0.5 -0.5(-0.013)\\
+           &= 0.507\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_8} &= \delta_{o2}out_{h2}\\
+                          &= -0.022(0.6)\\
+                          &= -0.013\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_6$
+\begin{equation}
+\begin{split}
+\omega_6^1 &= \omega_6^0 - \eta\pdv{E_{total}}{\omega_6}\\
+           &= 0.55 -0.5(-0.013)\\
+           &= 0.557\\
+\end{split}
+\end{equation}
+
+Now we need to pass the error back to the hidden units
+
+\begin{equation}
+\begin{split}
+\delta_{h1} &= (\delta_{o1}\omega_5^0 + \delta_{o2}\omega_7^0)(out_{h1})(1-out_{h1})\\
+&= (0.122(0.4 -0.022(0.5))(0.595)(0.595)\\
+&= 0.009\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_1} &= \delta_{h1}x_1\\ 
+                          &= 0.009(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_1^1 &= \omega_1^0 - \eta\pdv{E_{total}}{\omega_1}\\
+           &= 0.15 -0.5(0.001)\\
+           &= 0.149\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_2} &= \delta_{h1}x_2\\ 
+                          &= 0.009(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_1^1 &= \omega_1^0 - \eta\pdv{E_{total}}{\omega_1}\\
+           &= 0.15 -0.5(0.001)\\
+           &= 0.149\\
+\end{split}
+\end{equation}
+
 \subsection{Question 3(b)}
 \subsection{Question 3(c)}
 \subsection{Question 3(d)}
