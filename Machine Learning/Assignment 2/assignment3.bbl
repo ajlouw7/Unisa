@@ -1,6 +1,28 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Mitchell%
+}{%
+Mitchell%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Michell2009}
+\APACinsertmetastar {%
+Michell2009}%
+\begin{APACrefauthors}%
+Mitchell, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {{Machine Learning}} {{Machine Learning}}.
+\newblock
+\APACaddressPublisher{}{McGraw-Hill}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Nils J Nilsson}%
 }{%
 {Nils J Nilsson}%

@@ -1022,7 +1022,7 @@ Now we need to pass the error back to the hidden units
 \begin{equation}
 \begin{split}
 \delta_{h1} &= (\delta_{o1}\omega_5^0 + \delta_{o2}\omega_7^0)(out_{h1})(1-out_{h1})\\
-&= (0.122(0.4 -0.022(0.5))(0.595)(0.595)\\
+&= (0.122(0.4) -0.022(0.5))(0.595)(0.595)\\
 &= 0.009\\
 \end{split}
 \end{equation}
@@ -1053,13 +1053,57 @@ Now we need to pass the error back to the hidden units
 
 \begin{equation}
 \begin{split}
-\omega_1^1 &= \omega_1^0 - \eta\pdv{E_{total}}{\omega_1}\\
-           &= 0.15 -0.5(0.001)\\
-           &= 0.149\\
+\omega_2^1 &= \omega_2^0 - \eta\pdv{E_{total}}{\omega_2}\\
+           &= 0.2 -0.5(0.001)\\
+           &= 0.199\\
 \end{split}
 \end{equation}
 
+\begin{equation}
+\begin{split}
+\delta_{h2} &= (\delta_{o1}\omega_6^0 + \delta_{o2}\omega_8^0)(out_{h2})(1-out_{h2})\\
+&= (0.122(0.45) -0.022(0.55))(0.6)(0.6)\\
+&= 0.010\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_3} &= \delta_{h2}x_1\\ 
+                          &= 0.010(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_3^1 &= \omega_3^0 - \eta\pdv{E_{total}}{\omega_3}\\
+           &= 0.25 -0.5(0.001)\\
+           &= 0.249\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_4} &= \delta_{h2}x_2\\ 
+                          &= 0.010(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_4^1 &= \omega_4^0 - \eta\pdv{E_{total}}{\omega_4}\\
+           &= 0.3 -0.5(0.001)\\
+           &= 0.299\\
+\end{split}
+\end{equation}
+
+\subsubsection{Pattern 2}
 \subsection{Question 3(b)}
+
+According to \cite{Michell2009} the following functions can be modeled by feed forward networks. Firstly any boolean function can be represented by using 2 layers of units (not counting the input layer). But, in the worst case, the number of hidden unit will grow exponentially with the number of inputs. Secondly any Continuous bounded function can be modeled to an arbitrary level of accuracy with a network with one hidden layer. Thirdly any arbitrary function can be approximated with a network containing 2 layers of hidden units.
+ 
 \subsection{Question 3(c)}
 \subsection{Question 3(d)}
 \subsection{Question 3(e)}
