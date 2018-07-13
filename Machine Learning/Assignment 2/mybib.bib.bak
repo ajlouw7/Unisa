@@ -54,6 +54,17 @@ pages = {414},
 publisher = {McGraw-Hill},
 series = {McGraw-Hill international editions - computer science series},
 title = {{Machine Learning}},
-url = {https://books.google.co.za/books?id=xOGAngEACAAJ http://www.cs.ubbcluj.ro/{~}gabis/ml/ml-books/McGrawHill - Machine Learning -Tom Mitchell.pdf},
+url = {http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill - Machine Learning -Tom Mitchell.pdf},
 year = {1997}
+}
+
+@book{rojas,
+author = {Rojas, Raul},
+booktitle = {Neural Networks},
+file = {:C$\backslash$:/Users/riaanl.THOROUGHTEC/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Berlin et al. - 1996 - Neural Networks A Systematic Introduction.pdf:pdf},
+mendeley-groups = {Machine Learning/Textbooks},
+publisher = {Springer-Verlag Springer-Verlag},
+title = {{Neural Networks A Systematic Introduction}},
+url = {https://page.mi.fu-berlin.de/rojas/neural/neuron.pdf},
+year = {1996}
 }

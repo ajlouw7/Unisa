@@ -806,53 +806,21 @@ $\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\
 \caption{Start weights}\label{table1}
 \end{table}
 
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+pattern & $x_1$ & $x_2$ & $d_1$ & $d_2$ \\
+\hline
+$p_1$ & 0.1 & 0.1 & 0.1 & 0.9 \\
+$p_2$ & 0.1 & 0.9 & 0.9 & 0.1 \\
+$p_3$ & 0.9 & 0.1 & 0.9 & 0.1 \\
+$p_4$ & 0.9 & 0.9 & 0.1 & 0.9 \\
+\hline
+\end{tabular}
+\caption{Input Patterns}\label{inputPatters}
+\end{table}
 
-\begin{equation}
-net_{h1} = \omega_1 x_1 + \omega_2 x_2 + b_1
-\end{equation}
 
-\begin{equation}
-net_{h2} = \omega_3 x_1 + \omega_4 x_2 + b_1
-\end{equation}
-
-\begin{equation}
-out_{h1} = \frac{1}{1+e^{-net_{h1}}}
-\end{equation}
-
-\begin{equation}
-out_{h2} = \frac{1}{1+e^{-net_{h2}}}
-\end{equation}
-
-\begin{equation}
-net_{o1} = \omega_5 out_{h1} + \omega_6 out_{h2} + b_2
-\end{equation}
-
-\begin{equation}
-net_{o2} = \omega_7 out_{h1} + \omega_8 out_{h2} + b_2
-\end{equation}
-
-\begin{equation}
-out_{o1} = \frac{1}{1+e^{-net_{o1}}}
-\end{equation}
-
-\begin{equation}
-out_{o2} = \frac{1}{1+e^{-net_{o2}}}
-\end{equation}
-
-\begin{equation}
-E_{total} = \sum \frac{1}{2}(target-output)^2
-\end{equation}
-
-\begin{equation}
-\begin{split}
-E_{total} &= E_{o1} + E_{o2} \\
-          &= \frac{1}{2}(target_{o1}-output_{o1})^2 + \frac{1}{2}(target_{o2}-output_{o2})^2 \\
-\end{split}
-\end{equation}
-
-\begin{equation}
-\pdv{E_{total}}{\omega_5} = \pdv{E_{total}}{out_{o1}} \pdv{out_{o1}}{net_{o1}} \pdv{net_{01}}{\omega_5}
-\end{equation}
 
 
 \subsubsection{Pattern 1}
@@ -889,7 +857,7 @@ out_{h2} &= \frac{1}{1+e^{-net_{h2}}}\\
 \end{split}
 \end{equation}
 
-Continuing with the outputs off the network
+Continuing with the outputs of the network
 
 \begin{equation}
 \begin{split}
@@ -935,7 +903,7 @@ E_{total} &= E_{o1} + E_{02} \\
 
 \begin{equation}
 \begin{split}
-\delta_{o1} &= -(target_o1 -out_{o1}out_{o1}(1-out_{o1})\\
+\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
             &= -(0.1-0.752)(0.752)(1-0.752)\\
             &= 0.122\\
 \end{split}
@@ -1016,6 +984,12 @@ We calculate the new value for $\omega_6$
            &= 0.557\\
 \end{split}
 \end{equation}
+
+
+
+
+
+
 
 Now we need to pass the error back to the hidden units
 
@@ -1100,13 +1074,98 @@ Now we need to pass the error back to the hidden units
 \end{equation}
 
 \subsubsection{Pattern 2}
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\omega_7$ & $\omega_8$ & $b_1$ & $b_2$\\
+\hline
+0.149 &0.199 &0.249 & 0.299 & 0.364 & 0.414 & 0.507 & 0.557 & 0.35 & 0.6 \\
+\hline
+\end{tabular}
+\caption{Weights after applying pattern 1}\label{tablep2}
+\end{table}
+
+Continuing with the forward pass for pattern 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Question 3(b)}
 
 According to \cite{Michell2009} the following functions can be modeled by feed forward networks. Firstly any boolean function can be represented by using 2 layers of units (not counting the input layer). But, in the worst case, the number of hidden unit will grow exponentially with the number of inputs. Secondly any Continuous bounded function can be modeled to an arbitrary level of accuracy with a network with one hidden layer. Thirdly any arbitrary function can be approximated with a network containing 2 layers of hidden units.
  
 \subsection{Question 3(c)}
+
+The error surface for multi-layered networks contains multiple local minima. The gradient descent method used can only converge to a local minima which is not necessarily the global minimum. When the gradient decent process starts close to a local minimum the algorithm will follow the gradient to the local minimum  \citep{Michell2009}.
+
+Networks with higher dimensions may suffer less from local minima because when the network reches a local minimum in a certain dimension, the other dimentions are not necessarily at a minumum. Their weights can get the network out of some local minima  \citep{Michell2009}.
+ 
+The problem of local minima can also lessened by using a momentum term. As in
+
+\begin{equation}
+\begin{split}
+\omega_i^{j+1} &= \omega_i^j - \eta\pdv{E_{total}}{\omega_i^j} +\alpha (\omega_i^{j}-\omega_i^{j-1})
+\end{split}
+\end{equation}
+
+where alpha is the momentum constant and this depends on the previous change in the weight. This way the algorithm can get out of a relatively small local minimum \citep{Michell2009}.
+
+Another method is simulated annealing \citep{rojas};
 \subsection{Question 3(d)}
+
+A discussion of the identity function can be found in \citep[p106]{Michell2009} at $http://www.cs.ubbcluj.ro/\sim gabis/ml/ml-books/McGrawHill - Machine Learning -Tom Mitchell.pdf$
+
+Using a 8 X 3 X 8 network we want to represent the identity function. In other words when any input node is given an high input we want the corresponding output node to be high. Thus if input 2 is high and all the other nodes are low (01000000), output 2 needs to be high and all other outputs low (01000000).  The problem is that there is not enough nodes in the hidden layer to simply forward the value from the input node to the corresponding output node. 
+
+When we attempt to train such a network the network finds a representation in the hidden layer to represent all 8 inputs. The network uses a binary representation where the input (00100000) will be represented as (011) in the hidden units. This will then be output as (00100000). This way the network learn a new representation that it was not explicitly told.
+
+The values from the book can be found in table \ref{table2}
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|c||}
+\hline
+$Input$ & $h_1$ & $h_2$ & $h_3$ & $Output$ \\
+\hline
+10000000 & 0.89 & 0.04 & 0.08 & 10000000 \\
+01000000 & 0.15 & 0.99 & 0.99 & 01000000 \\
+00100000 & 0.01 & 0.97 & 0.27 & 00100000 \\
+00010000 & 0.99 & 0.97 & 0.71 & 00010000 \\
+00001000 & 0.03 & 0.05 & 0.02 & 00001000 \\
+00000100 & 0.01 & 0.11 & 0.88 & 00000100 \\
+00000010 & 0.80 & 0.01 & 0.98 & 00000010 \\
+00000001 & 0.60 & 0.94 & 0.01 & 00000001 \\
+\hline
+\end{tabular}
+\caption{Hidden unit representation}\label{table2}
+\end{table}
+
 \subsection{Question 3(e)}
+
+The sigmoid function is defined as
+
+\begin{equation}
+\sigma(y) = \frac{1}{1+e^{-y}}
+\end{equation}
 
 \bibliography{mybib}
 \end{document}

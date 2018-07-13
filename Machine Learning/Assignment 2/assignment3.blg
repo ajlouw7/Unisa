@@ -1,6 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: assignment3.aux
 The style file: apacite.bst
 Database file #1: mybib.bib
-Warning--I didn't find a database entry for "p105"
+Repeated entry---line 48 of file mybib.bib
+ : @book{Michell2009
+ :                  ,
+I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-(There was 1 warning)
+(There was 1 error message)
