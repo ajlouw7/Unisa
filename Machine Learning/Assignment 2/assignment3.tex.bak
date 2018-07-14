@@ -3,7 +3,9 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{physics}
+\usepackage[a4paper,margin=1.2in]{geometry} 
 \bibliographystyle{apacite}
+
 
 \title{Assignment 2 Machine Learning COS4852}
 \author{ Adriaan Louw (53031377) }
@@ -24,6 +26,7 @@
 \end{equation}}
 
 \usetikzlibrary{shapes.misc}
+\usetikzlibrary{decorations.pathreplacing}
 
 \tikzset{cross/.style={cross out, draw=black, minimum size=20*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt}, 
 %default radius will be 1pt. 
@@ -260,7 +263,96 @@ Visually it would be
 This will minimise the error even though it would incorrectly classify (-1,2)
 
 \subsection{Question 1(c)}
+
+The equation for the hyperplane is: 
+
+\begin{equation}
+\label{3d}
+\omega_1 x_1 + \omega_2 x_2 + \omega_3 x_3 + \omega_0 = 0
+\end{equation}
+
+Passing in the point (14.0,0) gives us into equation \ref{3d}
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_3 x_3 + \omega_0 &= 0 \\
+\omega_1(14) + \omega_2(0) + \omega_3(0) + \omega_0 &=0\\
+14\omega_1 + \omega_0 &= 0\\
+\omega_1 &= -\frac{\omega_0}{14}\\
+\end{split}
+\end{equation}
+
+Passing the point (0,8,0) into equation \ref{3d}
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_3 x_3 + \omega_0 &= 0 \\
+\omega_1(0) + \omega_2(8) + \omega_3(0) + \omega_0 &=0\\
+8\omega_2 + \omega_0 &= 0\\
+\omega_2 &= -\frac{\omega_0}{8}\\
+\end{split}
+\end{equation}
+
+Passing the point (0,0,6) into equation \ref{3d}
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_3 x_3 + \omega_0 &= 0 \\
+\omega_1(0) + \omega_2(0) + \omega_3(6) + \omega_0 &=0\\
+6\omega_3 + \omega_0 &= 0\\
+\omega_3 &= -\frac{\omega_0}{6}\\
+\end{split}
+\end{equation}
+
+Now we need to solve the 3 simultaneous equations. Any value of $\omega_0$ will solve the equation but we still need to check for polarity
+
+If $\omega_0 = -1$
+
+Then $\omega_1 = \frac{1}{14}$,$\omega_2=\frac{1}{8}$ and $\omega_3 = \frac{1}{6}$.
+
+Checking for polarity with positive instance (3,5,5)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 + \omega_3 x_3 + \omega_0 &= \\
+\frac{1}{14}(3) + \frac{1}{8}(5) + \frac{1}{6}(5) -1 &= \\
+\frac{36 + 105 + 140 -168}{168} &= \\
+\frac{113}{168}\\
+\end{split}
+\end{equation}
+
+Which is positive thus meaning the polarity is correct.
+
+Thus $\omega_0 = -1; \omega_1 = \frac{1}{14} ; \omega_2=\frac{1}{8}; \omega_3 = \frac{1}{6}$.
+
 \subsection{Question 1(d)}
+
+  \begin{tikzpicture}[scale=1.2]
+    \foreach \h [count=\hi ] in {$x_3$,$x_2$,$x_1$,$1$}{%
+          \node[input] (f\hi) at (0,\hi*2cm-5 cm) {\h};
+        }
+    \node[functions] (sum) at (4,0) {$\sum$};
+    \foreach \h [count=\hi ] in {$w_3=\frac{1}{6}$,$w_2=\frac{1}{8}$,$w_1=\frac{1}{14}$,$w_0=-1$}{%
+          \path (f\hi) -- node[weights] (w\hi) {\h} (sum);
+          \draw[->] (f\hi) -- (w\hi);
+          \draw[->] (w\hi) -- (sum);
+        }        
+    \node[functions] (step) at (7,0) {};
+       \begin{scope}[xshift=7cm,scale=.75]
+         \addsymbol
+       \end{scope}
+    \draw[->] (sum) -- (step);
+    \draw[->] (step) -- ++(1,0);
+    % Labels
+    \node[above=1cm] at (f4) {inputs};
+    \node[above=1cm] at (w4) {weights};
+    \node at (5.5,0.4) {net};
+    \node[below=2cm] at (sum){$net = \sum_{i=0}^3 \omega_1 x_i$};
+    \node at (9,0) {output};
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+          (7.0,1.5) -- (7.0,3) node [black,midway,xshift=-0.6cm] 
+          {\footnotesize $o$};
+    \node at (7.9,2.5) {1 if $net > 0$};
+    \node at (7.9,1.9) {-1 if $net < 0$};
+    \end{tikzpicture}
+
 
 \section{Question 2}
 \subsection{Question 2(a)}
@@ -383,11 +475,23 @@ This shows that weights $\omega_0 = -1$; $\omega_1 = -2$ and $\omega_2 = 2$ corr
           \draw[->] (w\hi) -- (sum);
         }        
 
-    \draw[->] (sum) -- ++(1,0);
+    \node[functions] (step) at (7,0) {};
+       \begin{scope}[xshift=7cm,scale=.75]
+         \addsymbol
+       \end{scope}
+    \draw[->] (sum) -- (step);
+    \draw[->] (step) -- ++(1,0);
     % Labels
     \node[above=1cm]  at (f3) {inputs};
     \node[above=1cm] at (w3) {weights};
-    \node[right=1cm] at (sum) {output};
+    \node[right=2cm] at (step) {output};
+        \node at (6,0.4) {net};
+    \node[below=2cm] at (sum){$net = \sum_{i=0}^2 \omega_1 x_i$};
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+          (7.0,1.5) -- (7.0,3) node [black,midway,xshift=-0.6cm] 
+          {\footnotesize $o$};
+    \node at (7.9,2.5) {1 if $net > 0$};
+    \node at (7.9,1.9) {-1 if $net < 0$};
     \end{tikzpicture}
 
 
@@ -697,15 +801,25 @@ Figure \ref{fig} shows the whole network where $\omega_{1i}$ denotes the weights
     	\node[input] (f2\hi) at (0,\hi*2cm -2cm) {\h};
     }
     
-    \draw[->] (x1) -- (f12);    
-    \draw[->] (x1) -- (f22);  
-    \draw[->] (x2) -- (f11);    
-    \draw[->] (x2) -- (f21);  
+    \draw[dotted] (x1) -- (f12);    
+    \draw[dotted] (x1) -- (f22);  
+    \draw[dotted] (x2) -- (f11);    
+    \draw[dotted] (x2) -- (f21);  
     
 	% sum h1
 	\node[functions] (sumh1) at (5,8) {$\sum$};
     % sum h2
-	\node[functions] (sumh2) at (5,2) {$\sum$};	
+	\node[functions] (sumh2) at (5,2) {$\sum$};
+	
+    \node[functions] (steph1) at (6.5,8) {};
+       \begin{scope}[xshift=6.5cm,yshift=8cm,scale=.75]
+         \addsymbol
+       \end{scope}	
+       
+    \node[functions] (steph2) at (6.5,2) {};
+       \begin{scope}[xshift=6.5cm,yshift=2cm,scale=.75]
+         \addsymbol
+       \end{scope}	
 	
     % weights of h1
 	\foreach \h [count=\hi ] in {$w_{12} =2$,$w_{11} = -2$,$w_{10} = -1$}{%
@@ -731,16 +845,24 @@ Figure \ref{fig} shows the whole network where $\omega_{1i}$ denotes the weights
       	\path (h\hi) -- node[weights] (w\hi) {\h} (sumg);
       	\draw[->] (h\hi) -- (w\hi);
       	\draw[->] (w\hi) -- (sumg);
-      	\draw[->] (sumh1) -- (h2);
-      	\draw[->] (sumh2) -- (h1);
+      	\draw[->] (sumh1) -- (steph1);
+      	\draw[->] (steph1) -- (h2);
+      	\draw[->] (sumh2) -- (steph2);
+      	\draw[->] (steph2) -- (h1);
     }        
 
-	\draw[->] (sumg) -- ++(1,0);
+    \node[functions] (stepg) at (15,6) {};
+       \begin{scope}[xshift=15cm,yshift=6cm,scale=.75]
+         \addsymbol
+       \end{scope}
+    
+    \draw[->] (sumg) -- (stepg);       
+	\draw[->] (stepg) -- ++(1,0);
 	
 	% Labels
 	\node[above=1cm] at (x1) {inputs};
 	\node[above=1cm] at (w3) {weights};
-	\node[right=1cm] at (sumg) {output};
+	\node[right=1cm] at (stepg) {output};
 \end{tikzpicture}
 \caption{Network for question 2b}
 \label{fig}
@@ -891,6 +1013,27 @@ out_{o1} &= \frac{1}{1+e^{-net_{h1}}}\\
 \end{split}
 \end{equation}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Now we need to calculate the error
 
 \begin{equation}
@@ -945,7 +1088,7 @@ We calculate the new value for $\omega_6$
 
 \begin{equation}
 \begin{split}
-\delta_{o2} &= -(target_o2 -out_{o2}out_{o2}(1-out_{o2})\\
+\delta_{o2} &= -(target_{o2} -out_{o2})(out_{o2})(1-out_{o2})\\
             &= -(0.9-0.773)(0.773)(1-0.773)\\
             &= -0.022\\
 \end{split}
@@ -976,10 +1119,10 @@ We calculate the new value for $\omega_7$
 \end{split}
 \end{equation}
 
-We calculate the new value for $\omega_6$
+We calculate the new value for $\omega_8$
 \begin{equation}
 \begin{split}
-\omega_6^1 &= \omega_6^0 - \eta\pdv{E_{total}}{\omega_6}\\
+\omega_8^1 &= \omega_8^0 - \eta\pdv{E_{total}}{\omega_8}\\
            &= 0.55 -0.5(-0.013)\\
            &= 0.557\\
 \end{split}
@@ -1087,10 +1230,253 @@ $\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\
 
 Continuing with the forward pass for pattern 2
 
+\begin{equation}
+\begin{split}
+net_{h1} &= \omega_1 x_1 + \omega_2 x_2 + b_1 \\
+         &= 0.149(0.1) + 0.199(0.9) + 0.35 \\
+         &= 0.544\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-0.544}}\\ 
+         &= 0.633\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{h2} &= \omega_3 x_1 + \omega_4 x_2 + b_1 \\
+         &= 0.249(0.1) + 0.299(0.9) + 0.35 \\
+         &= 0.0.644\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h2} &= \frac{1}{1+e^{-net_{h2}}}\\ 
+         &= \frac{1}{1+e^{-0.644}}\\ 
+         &= 0.656\\
+\end{split}
+\end{equation}
+
+Continuing with the outputs of the network
+
+\begin{equation}
+\begin{split}
+net_{o1} &= \omega_5 out_{h1} + \omega_6 out_{h2} + b_2 \\
+         &= 0.364(0.633) + 0.414(0.656) + 0.6 \\
+         &= 1.102\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{o1}}}\\ 
+         &= \frac{1}{1+e^{-1.102}}\\ 
+         &= 0.751\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{02} &= \omega_7 out_{h1} + \omega_8 out_{h2} + b_2 \\
+         &= 0.507(0.633) + 0.557(0.644) + 0.6 \\
+         &= 1.280\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-1.280}}\\ 
+         &= 0.782\\
+\end{split}
+\end{equation}
+
+Now we need to calculate the error
+
+\begin{equation}
+\begin{split}
+E_{total} &= E_{o1} + E_{02} \\
+          &= \frac{1}{2}(0.9-0.751)^2 + \frac{1}{2}(0.1 - 0.782)^2 \\
+          &= 0.244 \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
+            &= -(0.9-0.751)(0.751)(1-0.751)\\
+            &= -0.028\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_5} &= \delta_{o1}out_{h1}\\
+                          &= -0.028(0.633)\\
+                          &= -0.018\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_5$
+\begin{equation}
+\begin{split}
+\omega_5^2 &= \omega_5^1 - \eta\pdv{E_{total}}{\omega_5}\\
+           &= 0.364 -0.5(-0.018)\\
+           &= 0.373\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_6} &= \delta_{o1}out_{h2}\\
+                          &= -0.028(0.656)\\
+                          &= -0.018\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_6$
+\begin{equation}
+\begin{split}
+\omega_6^2 &= \omega_6^1 - \eta\pdv{E_{total}}{\omega_6}\\
+           &= 0.414 -0.5(-0.018)\\
+           &= 0.423\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o2} &= -(target_{o2} -out_{o2})(out_{o2})(1-out_{o2})\\
+            &= -(0.1-0.782)(0.782)(1-0.782)\\
+            &= 0.166\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_7} &= \delta_{o2}out_{h1}\\
+                          &= 0.166(0.633)\\
+                          &= 0.073\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_7$
+\begin{equation}
+\begin{split}
+\omega_7^2 &= \omega_7^1 - \eta\pdv{E_{total}}{\omega_7}\\
+           &= 0.507 -0.5(0.073)\\
+           &= 0.471\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_8} &= \delta_{o2}out_{h2}\\
+                          &= 0.166(0.656)\\
+                          &= 0.076\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_8$
+\begin{equation}
+\begin{split}
+\omega_8^2 &= \omega_8^1 - \eta\pdv{E_{total}}{\omega_8}\\
+           &= 0.557 -0.5(0.076)\\
+           &= 0.519\\
+\end{split}
+\end{equation}
 
 
 
 
+
+
+
+Now we need to pass the error back to the hidden units
+
+\begin{equation}
+\begin{split}
+\delta_{h1} &= (\delta_{o1}\omega_5^0 + \delta_{o2}\omega_7^0)(out_{h1})(1-out_{h1})\\
+&= (-0.028(0.364) +0.116(0.507))(0.507)(0.507)\\
+&= 0.011\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_1} &= \delta_{h1}x_1\\ 
+                          &= 0.011(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_1^2 &= \omega_1^1 - \eta\pdv{E_{total}}{\omega_1}\\
+           &= 0.149 -0.5(0.001)\\
+           &= 0.149\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_2} &= \delta_{h1}x_2\\ 
+                          &= 0.011(0.9)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_2^1 &= \omega_2^0 - \eta\pdv{E_{total}}{\omega_2}\\
+           &= 0.2 -0.5(0.001)\\
+           &= 0.199\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{h2} &= (\delta_{o1}\omega_6^0 + \delta_{o2}\omega_8^0)(out_{h2})(1-out_{h2})\\
+&= (0.122(0.45) -0.022(0.55))(0.6)(0.6)\\
+&= 0.010\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_3} &= \delta_{h2}x_1\\ 
+                          &= 0.010(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_3^1 &= \omega_3^0 - \eta\pdv{E_{total}}{\omega_3}\\
+           &= 0.25 -0.5(0.001)\\
+           &= 0.249\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_4} &= \delta_{h2}x_2\\ 
+                          &= 0.010(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_4^1 &= \omega_4^0 - \eta\pdv{E_{total}}{\omega_4}\\
+           &= 0.3 -0.5(0.001)\\
+           &= 0.299\\
+\end{split}
+\end{equation}
 
 
 

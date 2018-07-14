@@ -1013,6 +1013,27 @@ out_{o1} &= \frac{1}{1+e^{-net_{h1}}}\\
 \end{split}
 \end{equation}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Now we need to calculate the error
 
 \begin{equation}
@@ -1067,7 +1088,7 @@ We calculate the new value for $\omega_6$
 
 \begin{equation}
 \begin{split}
-\delta_{o2} &= -(target_o2 -out_{o2}out_{o2}(1-out_{o2})\\
+\delta_{o2} &= -(target_{o2} -out_{o2})(out_{o2})(1-out_{o2})\\
             &= -(0.9-0.773)(0.773)(1-0.773)\\
             &= -0.022\\
 \end{split}
@@ -1098,10 +1119,10 @@ We calculate the new value for $\omega_7$
 \end{split}
 \end{equation}
 
-We calculate the new value for $\omega_6$
+We calculate the new value for $\omega_8$
 \begin{equation}
 \begin{split}
-\omega_6^1 &= \omega_6^0 - \eta\pdv{E_{total}}{\omega_6}\\
+\omega_8^1 &= \omega_8^0 - \eta\pdv{E_{total}}{\omega_8}\\
            &= 0.55 -0.5(-0.013)\\
            &= 0.557\\
 \end{split}
@@ -1118,7 +1139,7 @@ Now we need to pass the error back to the hidden units
 \begin{equation}
 \begin{split}
 \delta_{h1} &= (\delta_{o1}\omega_5^0 + \delta_{o2}\omega_7^0)(out_{h1})(1-out_{h1})\\
-&= (0.122(0.4) -0.022(0.5))(0.595)(0.595)\\
+&= (0.122(0.4) -0.022(0.5))(0.595)(1-0.595)\\
 &= 0.009\\
 \end{split}
 \end{equation}
@@ -1158,7 +1179,7 @@ Now we need to pass the error back to the hidden units
 \begin{equation}
 \begin{split}
 \delta_{h2} &= (\delta_{o1}\omega_6^0 + \delta_{o2}\omega_8^0)(out_{h2})(1-out_{h2})\\
-&= (0.122(0.45) -0.022(0.55))(0.6)(0.6)\\
+&= (0.122(0.45) -0.022(0.55))(0.6)(1-0.6)\\
 &= 0.010\\
 \end{split}
 \end{equation}
@@ -1201,7 +1222,7 @@ Now we need to pass the error back to the hidden units
 \hline
 $\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\omega_7$ & $\omega_8$ & $b_1$ & $b_2$\\
 \hline
-0.149 &0.99 &0.249 & 0.299 & 0.364 & 0.414 & 0.507 & 0.557 & 0.35 & 0.6 \\
+0.149 &0.199 &0.249 & 0.299 & 0.364 & 0.414 & 0.507 & 0.557 & 0.35 & 0.6 \\
 \hline
 \end{tabular}
 \caption{Weights after applying pattern 1}\label{tablep2}
@@ -1209,12 +1230,265 @@ $\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\
 
 Continuing with the forward pass for pattern 2
 
+\begin{equation}
+\begin{split}
+net_{h1} &= \omega_1 x_1 + \omega_2 x_2 + b_1 \\
+         &= 0.149(0.1) + 0.199(0.9) + 0.35 \\
+         &= 0.544\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-0.544}}\\ 
+         &= 0.633\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{h2} &= \omega_3 x_1 + \omega_4 x_2 + b_1 \\
+         &= 0.249(0.1) + 0.299(0.9) + 0.35 \\
+         &= 0.0.644\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{h2} &= \frac{1}{1+e^{-net_{h2}}}\\ 
+         &= \frac{1}{1+e^{-0.644}}\\ 
+         &= 0.656\\
+\end{split}
+\end{equation}
+
+Continuing with the outputs of the network
+
+\begin{equation}
+\begin{split}
+net_{o1} &= \omega_5 out_{h1} + \omega_6 out_{h2} + b_2 \\
+         &= 0.364(0.633) + 0.414(0.656) + 0.6 \\
+         &= 1.102\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{o1}}}\\ 
+         &= \frac{1}{1+e^{-1.102}}\\ 
+         &= 0.751\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+net_{02} &= \omega_7 out_{h1} + \omega_8 out_{h2} + b_2 \\
+         &= 0.507(0.633) + 0.557(0.644) + 0.6 \\
+         &= 1.280\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+out_{o1} &= \frac{1}{1+e^{-net_{h1}}}\\ 
+         &= \frac{1}{1+e^{-1.280}}\\ 
+         &= 0.782\\
+\end{split}
+\end{equation}
+
+Now we need to calculate the error
+
+\begin{equation}
+\begin{split}
+E_{total} &= E_{o1} + E_{02} \\
+          &= \frac{1}{2}(0.9-0.751)^2 + \frac{1}{2}(0.1 - 0.782)^2 \\
+          &= 0.244 \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
+            &= -(0.9-0.751)(0.751)(1-0.751)\\
+            &= -0.028\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_5} &= \delta_{o1}out_{h1}\\
+                          &= -0.028(0.633)\\
+                          &= -0.018\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_5$
+\begin{equation}
+\begin{split}
+\omega_5^2 &= \omega_5^1 - \eta\pdv{E_{total}}{\omega_5}\\
+           &= 0.364 -0.5(-0.018)\\
+           &= 0.373\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_6} &= \delta_{o1}out_{h2}\\
+                          &= -0.028(0.656)\\
+                          &= -0.018\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_6$
+\begin{equation}
+\begin{split}
+\omega_6^2 &= \omega_6^1 - \eta\pdv{E_{total}}{\omega_6}\\
+           &= 0.414 -0.5(-0.018)\\
+           &= 0.423\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{o2} &= -(target_{o2} -out_{o2})(out_{o2})(1-out_{o2})\\
+            &= -(0.1-0.782)(0.782)(1-0.782)\\
+            &= 0.166\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_7} &= \delta_{o2}out_{h1}\\
+                          &= 0.166(0.633)\\
+                          &= 0.073\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_7$
+\begin{equation}
+\begin{split}
+\omega_7^2 &= \omega_7^1 - \eta\pdv{E_{total}}{\omega_7}\\
+           &= 0.507 -0.5(0.073)\\
+           &= 0.471\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_8} &= \delta_{o2}out_{h2}\\
+                          &= 0.166(0.656)\\
+                          &= 0.076\\
+\end{split}
+\end{equation}
+
+We calculate the new value for $\omega_8$
+\begin{equation}
+\begin{split}
+\omega_8^2 &= \omega_8^1 - \eta\pdv{E_{total}}{\omega_8}\\
+           &= 0.557 -0.5(0.076)\\
+           &= 0.519\\
+\end{split}
+\end{equation}
 
 
 
 
 
 
+
+Now we need to pass the error back to the hidden units
+
+\begin{equation}
+\begin{split}
+\delta_{h1} &= (\delta_{o1}\omega_5^1 + \delta_{o2}\omega_7^1)(out_{h1})(1-out_{h1})\\
+&= (-0.028(0.364) +0.116(0.507))(0.507)(1-0.507)\\
+&= 0.011\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_1} &= \delta_{h1}x_1\\ 
+                          &= 0.011(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_1^2 &= \omega_1^1 - \eta\pdv{E_{total}}{\omega_1}\\
+           &= 0.149 -0.5(0.001)\\
+           &= 0.149\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_2} &= \delta_{h1}x_2\\ 
+                          &= 0.011(0.9)\\
+                          &= 0.010\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_2^2 &= \omega_2^1 - \eta\pdv{E_{total}}{\omega_2}\\
+           &= 0.199 -0.5(0.010)\\
+           &= 0.194\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\delta_{h2} &= (\delta_{o1}\omega_6^1 + \delta_{o2}\omega_8^1)(out_{h2})(1-out_{h2})\\
+&= (-0.028(0.414) + 0.116(0.557))(0.656)(1-0.656)\\
+&= 0.012\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_3} &= \delta_{h2}x_1\\ 
+                          &= 0.012(0.1)\\
+                          &= 0.001\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_3^2 &= \omega_3^1 - \eta\pdv{E_{total}}{\omega_3}\\
+           &= 0.249 -0.5(0.001)\\
+           &= 0.249\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\pdv{E_{total}}{\omega_4} &= \delta_{h2}x_2\\ 
+                          &= 0.012(0.9)\\
+                          &= 0.011\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\omega_4^2 &= \omega_4^1 - \eta\pdv{E_{total}}{\omega_4}\\
+           &= 0.299 -0.5(0.011)\\
+           &= 0.294\\
+\end{split}
+\end{equation}
+
+\subsubsection{Pattern 3}
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\omega_7$ & $\omega_8$ & $b_1$ & $b_2$\\
+\hline
+0.149 &0.194 &0.249 & 0.294 & 0.373 & 0.423 & 0.471 & 0.519 & 0.35 & 0.6 \\
+\hline
+\end{tabular}
+\caption{Weights after applying pattern 2}\label{tablep3}
+\end{table}
 
 
 
