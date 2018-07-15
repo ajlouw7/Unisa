@@ -1,6 +1,56 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+{Avinash Sharma V}%
+}{%
+{Avinash Sharma V}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+AvinashSharmaV2017}
+\APACinsertmetastar {%
+AvinashSharmaV2017}%
+\begin{APACrefauthors}%
+{Avinash Sharma V}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {{Understanding Activation Functions in Neural Networks}.}
+  {{Understanding Activation Functions in Neural Networks}.}
+\newblock
+\begin{APACrefURL}
+  [{2018-07-15}]\url{https://medium.com/the-theory-of-everything/understanding-activation-functions
+  -in-neural-networks-9491262884e0} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{C.M. Bishop}%
+}{%
+{C.M. Bishop}%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+C.M.Bishop}
+\APACinsertmetastar {%
+C.M.Bishop}%
+\begin{APACrefauthors}%
+{C.M. Bishop}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {{Pattern Recognition and Machine Learning}} {{Pattern
+  Recognition and Machine Learning}}.
+\newblock
+\begin{APACrefURL}
+  \url{http://users.isr.ist.utl.pt/{~}wurmd/Livros/school/Bishop - Pattern
+  Recognition And Machine Learning - Springer 2006.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mitchell%
 }{%
 Mitchell%
