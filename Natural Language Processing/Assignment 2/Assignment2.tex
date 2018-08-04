@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{physics}
+\usepackage[a4paper,margin=1in]{geometry} 
 \usetikzlibrary{automata,positioning}
 %\bibliographystyle{apacite}
 
@@ -19,6 +20,7 @@
 \tikzset{input/.style={basic,circle}}
 \tikzset{weights/.style={basic,rectangle,minimum width=2em}}
 \tikzset{functions/.style={basic,circle,fill=blue!50!green!20}}
+\tikzset{dummy/.style    = {circle,draw}}
 \newcommand{\addsymbol}{\draw[thick] (0.5em,0.5em) -- (0,0.5em) -- 
                         (0,-0.5em) --  (-0.5em,-0.5em)
                         (0em,0.75em) -- (0em,-0.75em)
@@ -553,9 +555,184 @@ The path can be seen in Figure \ref{fig2}. In each step going to the node with t
 \end{enumerate}
 
 \section{Question 4}
-\begin{enumerate}[leftmargin=\labelsep]
-\item[4.1]
-\end{enumerate}
+\subsection{Question 4.1}
+The parse tree for this question can be found in Figure \ref{fig41}. 
+
+The following will be added to the lexicon. The verbs: "would", "like" and "ride". The infinitive marker "to". The preposition "with". The proper noun "Golden Arrow".
+
+The following grammar rules will also be added:
+
+VP $\rightarrow$ VP VP
+
+VP $\rightarrow$ Infinitive marker VP
+
+\tikzset{
+  level 0/.style = {sibling distance=0cm},
+  level 1/.style = {sibling distance=3cm},
+  level 2/.style = {sibling distance=3cm},
+  level 3/.style = {sibling distance=3cm}
+}
+
+\begin{figure}
+\begin{tikzpicture}
+ [rotate=0,
+ scale = 1.4]
+ 
+  \node [] {S}
+    child { node [] {NP}  
+      child { node [] {Pronoun} 
+        child { node [] {I} }  } }
+    child { node [] {VP} 
+      child { node [] {VP}
+      	child { node [] {Verb}
+      	  child { node [] {would} } } }
+      child { node [] {VP} 
+        child { node [] {VP}
+          child{ node [] {Verb}
+            child{ node [] {like}}}}
+        child { node [] {VP} 
+          child { node [] {Infinitive marker}
+            child { node [] {to}}}
+          child{ node [] {VP}
+            child{ node [] {Verb}
+              child{ node[] {ride}}}
+            child{ node [] {PP}
+              child{ node [] {Preposition}
+                child{ node[] {with}}}
+              child{ node [] {NP}
+                child{ node [] {Proper noun}
+                  child{ node []{Golden Arrow}}}}}}}       
+        }};
+\end{tikzpicture}
+\caption{Parse tree for question 4.1}
+\label{fig41}
+\end{figure}
+
+\subsection{Question 4.2}
+
+The parse tree for this question can be found in Figure \ref{fig42}.
+
+We add the following words to the lexicon. The pronoun "What", noun "fare", and Propen nouns "Cape Town" and "Bloemfontein". 
+
+
+The following grammar rules will also be added:
+
+S $\rightarrow$ NP VP ?
+
+VP $\rightarrow$ Verb NP PP PP
+
+\tikzset{
+  level 0/.style = {sibling distance=0cm},
+  level 1/.style = {sibling distance=8cm},
+  level 2/.style = {sibling distance=4cm},
+  level 3/.style = {sibling distance=2cm}
+}
+
+\begin{figure}
+\begin{tikzpicture}
+ [rotate=0,
+ scale = 1]
+ 
+  \node [] {S}
+    child{ node [] {NP}
+      child{ node [] {Pronoun}
+        child{ node [] {What}}}}
+    child{ node [] {VP}
+      child{ node [] {Verb}
+        child{ node [] {is}}}
+      child{ node [] {NP}
+        child{ node [] {Det}
+          child{ node [] {the}}}
+        child{ node [] {Nominal}
+          child { node [] {Noun}
+            child{ node [] {fare}}}}}
+      child{ node [] {PP}
+        child{ node [] {Prep}
+          child{ node [] {from}}}
+        child{ node [] {NP}
+          child{ node [] {Proper noun}
+            child{ node [] {Cape Town}}}}}
+      child{ node [] {PP} 
+        child{ node [] {Prep}
+          child{ node [] {to}}}
+        child{ node [] {NP}
+          child{ node [] {Propern Noun}
+            child{ node [] {Bloemfontein}}}}}}
+    child{ node [] {?}};
+
+\end{tikzpicture}
+\caption{Parse tree for question 4.2}
+\label{fig42}
+\end{figure}
+
+
+\subsection{Question 4.3}
+
+The parse tree for this question can be found in Figure \ref{fig42}.
+
+We add the following words to the lexicon. The adverb "there", Nouns "Greyhound" and "route" and proper nouns "Durban" and "Bela-Bela". 
+
+
+The following grammar rules will also be added:
+
+S $\rightarrow$ VP NP PP PP ?
+
+VP $\rightarrow$ VP Adverb
+
+\tikzset{
+  level 0/.style = {sibling distance=0cm},
+  level 1/.style = {sibling distance=6cm},
+  level 2/.style = {sibling distance=3cm},
+  level 3/.style = {sibling distance=1cm}
+}
+
+\begin{figure}
+\begin{tikzpicture}
+ [rotate=90,
+ scale = 1]
+ 
+  \node [rotate=90] {S}
+  child{ node [rotate=90] {VP}
+    child{ node [rotate=90] {VP} 
+      child{ node [rotate=90] {verb} 
+        child { node [rotate=90] {Is}}}}
+    child{ node [rotate=90] {Adverb} 
+      child{ node [rotate=90] {there}}}}
+  child{ node [rotate=90] {NP} 
+    child{ node [rotate=90] {Det} 
+      child {node [rotate=90] {a} }}
+    child{ node [rotate=90] {Nominal}
+      child{ node [rotate=90] {Nominal}
+        child{ node [rotate=90] {Noun}
+          child{ node [rotate=90] {Greyhound} } } }
+      child{ node [rotate=90] {Noun} 
+        child{ node [rotate=90] {route} }} }}
+  child{ node [rotate=90] {PP} 
+    child{ node [rotate=90] {Prep} 
+      child{ node [rotate=90] {from} }}
+    child{ node [rotate=90] {NP} 
+      child{ node [rotate=90] {Proper noun}
+        child{ node [rotate=90] {Durban}}}}}
+  child{ node [rotate=90] {PP}
+    child{ node [rotate=90] {Prep} 
+      child{ node [rotate=90] {to}}}
+    child{ node [rotate=90] {NP} 
+      child{ node [rotate=90] {Proper noun}
+        child{ node [rotate=90] {Bela-Bela}}}}}
+  child{ node [rotate=90] {?} };
+
+\end{tikzpicture}
+\caption{Tree for question 4.3}
+\label{fig43}
+\end{figure}
+
+
+
+
+
+
+
+
 
 \section{Question 5}
 \begin{enumerate}[leftmargin=\labelsep]
