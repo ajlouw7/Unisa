@@ -31,10 +31,28 @@
 \maketitle
 
 \section{Question 1}
-\begin{enumerate}[leftmargin=\labelsep]
-\item[1.1]
-\end{enumerate}
+\subsection{Question 1.1}
+The Markov assumption is that for a model the future state of the model depends only on the current state of the model and not any previous state. This assumption is used in bigrams. Where the probability that a word will appear is dependant only on the previous word i.e. $P(w_n|w_{n-1})$. This is not true for n-grams where $n >2$ since then the probability will depend on more than just the previous word. For example in the sentence "The cat sat on the mat" we will be using a bigram model if we wanted to determine the probability that the word "on" came after "sat" i.e. P(on|sat). Thus we are only looking at the previous word. Using a trigram P(on|cat sat) we will be looking at 2 previous "states" or words and thus not follow the markov assumption.
 
+\subsection{Question 1.2}
+Please run MLE.py and please ensure that python 3.7 is installed. It can be
+found at https://www.python.org/downloads/
+
+\subsection{Question 1.3}
+
+I included the word "tale" in the input set to indicate an example of sparse data. Because we are using a data set there is the possibility that we want the MLE to find the most likely word following a word that is not in the training set.This makes it difficult to use an MLE on a different data set than the one it is trained on. To overcome this limitation we can use Laplace smoothing. Laplace smoothing adds one to the number of each occurrence of a the n-gram. (In this case we will be using a bigram.) Where normally the probability of finding the bigram is
+\begin{equation}
+P(w_n|w_{n-1}) = \frac{C(w_{n-1}w_n)}{C(w_{n-1})}
+\end{equation} 
+
+That is the number of occurrences of the bigram divided by the number of occurrences of $w_{n-1}$. This becomes
+
+\begin{equation}
+P^*(w_n|w_{n-1}) = \frac{C(w_{n-1}w_n)+1}{C(w_{n-1})+V}
+\end{equation}
+
+where V is the total vocabulary size. Coming back to our example of the word "tale" here the vocabulary will be increased by 1 and there will be an occurrence of each word in the vocabulary following "tale" added to the list of bigrams. This way the probability of any word following lame will not be 0.
+ 
 \section{Question 2}
 For $V_2(1):$
 
