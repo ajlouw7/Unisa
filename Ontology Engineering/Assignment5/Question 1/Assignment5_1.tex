@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[natbibapa]{apacite}
+\usepackage[a4paper]{geometry} 
+\bibliographystyle{apacite}
+
+\title{Ontology Engineering Assignment 5}
+\author{Adriaan Louw (53031377)}
+
+\begin{document}
+\maketitle
+\newpage
+\section{Question 1}
+
+\subsection{Methontology}
+
+Methontology \citep{fernandez} is a methodology to describe the steps involved in building an ontology. This methodology can broadly be describe by looking at the stages it prescribes the ontology designers to follow. The first stage is the specification state. In this stage a specification for the ontology is developed which includes things like the purpose of the ontology and its scope. Next is the conceptualisation state, where a conceptual model of the domain in question is developed. This includes a Glossary of Term that defines all the concepts, instances, verbs ect. This is followed by the Integration stage. Here the developers of the ontology need to look at existing ontologies and attempt to reuse as much as possible from those ontologies. Additionally meta-ontologies should be investigated to ensure that the concepts, in the new conceptual model from the previous stage, are compatible with the meta-ontologies. Knowledge acquisition is a stage that runs in parallel with the other stages. In this stage various external sources of information like books or experts are consulted and added to the conceptual model. Following on from the integration stage is the implementation stage. Here the ontology is actually implemented using the chosen technology eg. Prolog. The final stage is the evaluation stage where it is determined wether the ontology has satisfied the initial specification and if not how to correct the ontology \citep{fernandez}.
+
+\subsection{NeOn}
+NeOn \citep{gomez} is also a methodology for the creation of ontologies. According to \cite{gomez} one of the problems with exiting methodologies (including Methontology) is that they do not cater for large ontologies or even address the problem of having distributed teams working in collaboration from different locations. NeOn attempts to address these problems. NeOn breaks the development process up into a set of 9 scenarios. With additional steps to follow within each scenario. In this section we will only briefly describe some of the scenarios. The first scenario is called 'Form specification to implementation' and should be followed when a new ontology is being created without utilizing any existing ontologies. Scenario 3 describes how to reuse ontological resources whether only parts of other ontologies are used or the ontology as a whole. Scenario 7 details how to reuse ontology design patters and scenario 9 describes how to localise an ontology to a new language or culture \cite{gomez}.   
+
+\subsection{Comparing Methontology and NeOn}
+
+The approaches of Methontology and NeOn are quite different. Methontology start with the specification phase. Whereas NeOn forces the designer to determine which scenario their particular problem fits. Forinstance is the ontology using new resources or some form of existing resource \citep{fernandez} \citep{gomez}.
+
+NeOn also uses instructs users to use other methodologies \citep{gomez}. For instance, in the first scenario dealing with creating ontologies from scratch. After creating the ontology requirements specification document and completing the scheduling task, NeOn prescribes using the conceptualization, formalization and implementation stages of other methodologies like Methontology. 
+
+NeOn includes 2 types life cycle models \citep{suarez}. The waterfall life cycle models are models where the process is broken up into discrete stages and each stage has to be completed before the next stage can begin. The different waterfall life cycles vary in length from 4 to 6 stages. Depending on the amount of reuse of other ontologies. The iterative life cycle differs from the waterfall life cycles in that in each iteration only a subset of the requirements are defined, implemented and evaluated. the life cycle in Methontology resembles a waterfall life cycle. Waterfall life cycles are best for ontology projects where the scope of the project is closed and it has a short duration. Whereas iterative life cycles are better suited to projects with a large amount of developers and the scope i.e. requirements are not completely known \citep{suarez}. 
+
+
+
+\bibliography{mybib}
+\end{document}

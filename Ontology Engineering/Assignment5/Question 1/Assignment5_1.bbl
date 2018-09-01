@@ -1,0 +1,88 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Fern{\'a}ndez%
+, G{\'o}mez-P{\'e}rez%
+\BCBL {}\ \BBA {} Juristo%
+}{%
+Fern{\'a}ndez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+fernandez}
+\APACinsertmetastar {%
+fernandez}%
+\begin{APACrefauthors}%
+Fern{\'a}ndez, M.%
+, G{\'o}mez-P{\'e}rez, A.%
+\BCBL {}\ \BBA {} Juristo, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Methontology: from ontological art towards ontological
+  engineering} {Methontology: from ontological art towards ontological
+  engineering}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+G{\'o}mez-P{\'e}rez%
+\ \BBA {} Su{\'a}rez-Figueroa%
+}{%
+G{\'o}mez-P{\'e}rez%
+\ \BBA {} Su{\'a}rez-Figueroa%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+gomez}
+\APACinsertmetastar {%
+gomez}%
+\begin{APACrefauthors}%
+G{\'o}mez-P{\'e}rez, A.%
+\BCBT {}\ \BBA {} Su{\'a}rez-Figueroa, M\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {NeOn methodology for building ontology networks: a
+  scenario-based methodology} {Neon methodology for building ontology networks:
+  a scenario-based methodology}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Su{\'a}rez-Figueroa%
+, G{\'o}mez-P{\'e}rez%
+\BCBL {}\ \BBA {} Fern{\'a}ndez-L{\'o}pez%
+}{%
+Su{\'a}rez-Figueroa%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+suarez}
+\APACinsertmetastar {%
+suarez}%
+\begin{APACrefauthors}%
+Su{\'a}rez-Figueroa, M\BPBI C.%
+, G{\'o}mez-P{\'e}rez, A.%
+\BCBL {}\ \BBA {} Fern{\'a}ndez-L{\'o}pez, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The NeOn methodology for ontology engineering} {The neon
+  methodology for ontology engineering}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Ontology engineering in a networked world} {Ontology
+  engineering in a networked world}\ (\BPGS\ 9--34).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

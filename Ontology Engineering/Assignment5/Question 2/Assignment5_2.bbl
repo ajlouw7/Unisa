@@ -1,0 +1,65 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Guarino%
+\ \BBA {} Welty%
+}{%
+Guarino%
+\ \BBA {} Welty%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Guarino2009}
+\APACinsertmetastar {%
+Guarino2009}%
+\begin{APACrefauthors}%
+Guarino, N.%
+\BCBT {}\ \BBA {} Welty, C\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An Overview of OntoClean}} {{An Overview of
+  OntoClean}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Handbook on Ontologies} {Handbook on ontologies}\
+  (\BPGS\ 201--220).
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-540-92673-3\_9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Parsia%
+, Sirin%
+\BCBL {}\ \BBA {} Kalyanpur%
+}{%
+Parsia%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+Parsia}
+\APACinsertmetastar {%
+Parsia}%
+\begin{APACrefauthors}%
+Parsia, B.%
+, Sirin, E.%
+\BCBL {}\ \BBA {} Kalyanpur, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Debugging OWL Ontologies}} {{Debugging OWL
+  Ontologies}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 14th International Conference on
+  World Wide Web} {Proceedings of the 14th international conference on world
+  wide web}\ (\BPGS\ 633--640).
+\newblock
+\APACaddressPublisher{New York, NY, USA}{ACM}.
+\newblock
+\begin{APACrefDOI} \doi{10.1145/1060745.1060837} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
