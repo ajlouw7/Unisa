@@ -1,0 +1,67 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Baader%
+, Calvanese%
+, McGuinness%
+, Nardi%
+\BCBL {}\ \BBA {} Patel-Schneider%
+}{%
+Baader%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Baader}
+\APACinsertmetastar {%
+Baader}%
+\begin{APACrefauthors}%
+Baader, F.%
+, Calvanese, D.%
+, McGuinness, D\BPBI L.%
+, Nardi, D.%
+\BCBL {}\ \BBA {} Patel-Schneider, P\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2003}.
+\newblock
+\APACrefbtitle {{The Description Logic Handbook: Theory, Implementation, and
+  Applications}} {{The Description Logic Handbook: Theory, Implementation, and
+  Applications}}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/profile/Deborah{\_}Mcguinness/publication/
+  230745455{\_}The{\_}Description{\_}Logic{\_}Handbook{\_}Theory{\_}Implementation{\_}and{\_}
+  Applications/links/0deec51cfb6d8ae9d3000000.pdf} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2277/0521781760} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Horrocks%
+}{%
+Horrocks%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+hor}
+\APACinsertmetastar {%
+hor}%
+\begin{APACrefauthors}%
+Horrocks, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {OWL: A Description Logic Based Ontology Language} {Owl:
+  A description logic based ontology language}.{\BBCQ}
+\newblock
+\BIn{} P.~van Beek\ (\BED), \APACrefbtitle {Principles and Practice of
+  Constraint Programming - CP 2005} {Principles and practice of constraint
+  programming - cp 2005}\ (\BPGS\ 5--8).
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer Berlin Heidelberg}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[natbibapa]{apacite}
-\usepackage[a4paper,margin=1.3in]{geometry} 
+\usepackage[a4paper]{geometry} 
 \bibliographystyle{apacite}
 
 \title{Ontology Engineering Assignment 3}
@@ -8,6 +8,23 @@
 
 \begin{document}
 \section{Question 3}
+
+Description Logics (DL) is the name of a family of knowledge representation formalisms \citep{Baader}.
+It describes the problem domain by defining the domain concepts. Then properties of objects and individuals are defined based on these concepts. Axioms (also called sentences ) are used to define concepts and roles. For instance if $C$ and $D$ are concepts and concept $C$ is subsumend $D$ then we denote it as
+
+\begin{equation}
+C \sqsubseteq D
+\end{equation} 
+
+The key inference type in DL is the subsumption relationship \citep{Baader}. The collection of axioms for a specific DL implementation forms a knowledge base (KB). 
+
+OWL is based on Description Logics for various reasons. Firstly, OWL needs to be based on some form of logic so that it is able to reason about these concepts and deduce implicit knowledge from them. The most expressive form of logic is First Order Logic. While first order logic is capable of the kind of knowledge representation and inference that is needed for systems like OWL, a lot of the machinery of first order logic are not required leading no unnecessary bloat \citep{Baader}. 
+
+Inference problems like class satisfiability and subsumption need to be decidable \citep{hor}. In First Order logic these are not necessarily decidable. 
+
+Also inference problems needed to be solvable in a reasonable amount of time. Even in worse case scenarios. \cite{Baader} showed that if a Description Logics based system is "highly optimised" then this is achievable.
+
+Descriptive logics allows reasoners to reach conclusions within an appropriate amount of time without burdening the reasoner or ontology designer with unnecessary expressive power. 
 
 \bibliography{mybib}
 \end{document}
