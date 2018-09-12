@@ -870,6 +870,14 @@ Figure \ref{fig} shows the whole network where $\omega_{1i}$ denotes the weights
 
 \subsection{Question 2(c)}
 
+Given function
+
+\begin{equation}
+f_3(x_1,x_2) = (x_1 \vee x_2)\wedge(\neg x_1 \vee \neg x_2)
+\end{equation}
+
+The truth table for the function is the following:
+
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 $x_1$ & $x_2$ & $\neg x_1$ & $\neg x_2$ & $x_1 \vee x_2$ & $\neg x_1 \vee \neg x_2$ & $(x_1 \vee x_2)\wedge (\neg x_1 \vee \neg x_2)$\\
@@ -881,8 +889,8 @@ $x_1$ & $x_2$ & $\neg x_1$ & $\neg x_2$ & $x_1 \vee x_2$ & $\neg x_1 \vee \neg x
 \hline
 \end{tabular}
 
-Visually this is:
 
+\begin{figure}
 \begin{center}
 \begin{tikzpicture}[scale=3.0]
 %\draw [help lines] (-3,-3) grid (3,3);
@@ -890,7 +898,7 @@ Visually this is:
 \draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
 \draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
  
-\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
+%\draw[red,thick,dashed] (-1.0,-0.5) -- (0.5,1.0);
 
 %labels
 \foreach \x in {-1,1}
@@ -906,6 +914,401 @@ Visually this is:
 
 \end{tikzpicture}
 \end{center}
+\caption{Sketch of function $f_3(x_1,x_2)$} \label{fig2craw}
+\end{figure}
+
+
+Visually this can be seen in figure \ref{fig2craw}
+
+No single hyperplane can classify all the data points. Multiple perceptrons will be needed. We will break the function up similar to Question 2b.
+
+\begin{equation}
+\begin{split}
+f_3(x_1,x_2) &= g(h_1(x_1,x_2),h_2(x_1,x_2))\\
+             &= h_1(x_1,x_2)\wedge h_2(x_1,x_2)\\
+\end{split}
+\end{equation}
+
+where
+
+\begin{equation}
+h_1(x_1,x_2) = x_1\vee x_2
+\end{equation}
+
+and
+
+\begin{equation}
+h_2{x_1,x_2} = \neg x_1 \vee \neg x_2
+\end{equation}
+
+The truth table for $h_1(x_1,x_2)$ is:
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $x_1 \vee x_2$ \\
+\hline
+-1 &-1 &-1 \\
+-1 & 1 & 1 \\
+ 1 &-1 & 1 \\
+ 1 & 1 & 1 \\
+\hline
+\end{tabular}
+
+Drawing the function $h_1(x_1,x_2)$ in Figure \ref{h1}
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (0.1,-1.1) -- (-1.1,0.1);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,red]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,green]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+\caption{Sketch of function for $h_1(x_1,x_2)$ for Question 2c} \label{h1}
+\end{figure}
+
+We can see that $h_1$ will be classified by the hyperplane
+
+\begin{equation}
+x_2 = -x-1
+\end{equation} 
+
+Now we solve the weights equation (Eqn \ref{weightline}) with the points (0,-1) and (-1,0) on the hyperplane. Firstly with (0,-1)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= 0\\
+\omega_1 (0) + \omega_2 (-1) + \omega_0 &= 0\\
+\omega_2 &= \omega_0\\
+\end{split}
+\end{equation}
+
+and for point (-1,0)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= 0\\
+\omega_1 (-1) + \omega_2 (0) + \omega_0 &= 0\\
+\omega_1 &= \omega_0\\
+\end{split}
+\end{equation}
+
+Thus $\omega_0=\omega_1=\omega_2$. 
+
+Since any value of $\omega_0$ will solve the equation, we try $\omega_0 = 1$. Now we test for polarity with negative instance (-1,-1).
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= \\
+1(-1) +  1(-1) + 1 &= \\
+-1\\
+\end{split}
+\end{equation}
+
+The answer is negative thus correctly classifying the function $h_1(x_1,x_2)$
+
+Now for the function $h_2(x_,x_2)$.
+
+The truth table for $h_2(x_,x_2)$ is:
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $\neg x_1 \vee \neg x_2$ \\
+\hline
+-1 &-1 & 1 \\
+-1 & 1 & 1 \\
+ 1 &-1 & 1 \\
+ 1 & 1 &-1 \\
+\hline
+\end{tabular}
+
+Drawing the function $h_1(x_1,x_2)$ in Figure \ref{h2}
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$x_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$x_1$};
+ 
+\draw[red,thick,dashed] (-0.1,1.1) -- (1.1,-0.1);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,-1) node[cross,green]{};
+\draw (-1,1) node[cross,green]{};
+\draw (1,-1) node[cross,green]{};
+\draw (1,1) node[cross,red]{}; 
+
+\end{tikzpicture}
+\end{center}
+\caption{Sketch of function for $h_2(x_1,x_2)$ for Question 2c} \label{h2}
+\end{figure}
+
+From Figure \ref{h2} we can see that function  $h_2(x_1,x_2)$ will be classified by the hyperplane
+
+\begin{equation}
+x_2 = -x_1 + 1
+\end{equation} 
+
+Now to solve the weights equation (Eqn \ref{weightline}) with the 2 points (0,1) and (1,0). For the point (0,1)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= 0\\
+\omega_1 (0) + \omega_2 (1) + \omega_0 &= 0\\
+\omega_0 &= -\omega_2\\
+\end{split}
+\end{equation}
+
+For the point (1,0)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= 0\\
+\omega_1 (1) + \omega_2 (0) + \omega_0 &= 0\\
+\omega_0 &= -\omega_1\\
+\end{split}
+\end{equation}
+
+Now any value of $\omega_0$ will solve this equation, but we need to check for polarity.
+
+If we assume $\omega_0 = -1$  then $\omega_1=\omega_2=1$. We check with positive instance (-1,-1).
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= \\
+1(-1) +  1(-1) + (-1) &= \\
+-3\\
+\end{split}
+\end{equation}
+
+Which gives a negative answer. Thus the polarity is swapped. Now trying $\omega_0 = 1$ and $\omega_1=\omega_2=-1$ with positive instance (-1,-1)
+
+\begin{equation}
+\begin{split}
+\omega_1 x_1 + \omega_2 x_2 \omega_0 &= \\
+-1(-1) +  -1(-1) + (1) &= \\
+3\\
+\end{split}
+\end{equation}
+
+$\omega_0 = 1$ correctly classifies the function $h_2(x_1,x_2)$
+
+Now we need to determine the values of $g$ with respect to $h_1$ and $h_2$
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x_1$ & $x_2$ & $\neg x_1$ & $\neg x_2$ & $h_1 = x_1 \vee x_2$ & $h_2 = \neg x_1 \vee \neg x_2$ & $g=(x_1 \vee x_2)\wedge (\neg x_1 \vee \neg x_2)$\\
+\hline
+-1 &-1 &1 &1 & -1& 1 & -1\\
+-1 &1 &1 &-1 & 1& 1 & 1\\
+1 &-1 &-1 &1 & 1& 1 & 1\\
+1 &1 &-1 &-1 & 1& -1 & -1\\
+\hline
+\end{tabular}
+
+Now drawing the function $g_(h_1,h_2)$ in Figure \ref{g}. 
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=3.0]
+%\draw [help lines] (-3,-3) grid (3,3);
+% Euclidean
+\draw [<->](0,-1.1)--(0,1.1) node[right]{$h_2$};
+\draw [<->](-1.1,0)--(1.1,0) node[right]{$h_1$};
+ 
+\draw[red,thick,dashed] (-0.1,1.1) -- (1.1,-0.1);
+
+%labels
+\foreach \x in {-1,1}
+     \draw (\x,1pt) -- (\x,-3pt) node[anchor=north] {$\x$};
+
+\foreach \y/\ytext in {-1,1}
+     \draw (1pt,\y) -- (-3pt,\y) node[anchor=east] {$\y$};
+ 
+\draw (-1,1) node[cross,red]{};
+\draw (1,-1) node[cross,red]{};
+\draw (1,1) node[cross,green]{}; 
+
+\end{tikzpicture}
+\end{center}
+\caption{Sketch of function for $g(h_1,h_2)$ for Question 2c} \label{g}
+\end{figure}
+
+Note that the function $g_(h_1,h_2)$ is not defined for the point $(h_1,h_2)=(-1,-1)$.
+This perceptron will be classified by the hyperplane
+
+\begin{equation}
+h_2 = -h_1 + 1
+\end{equation}
+
+Solving the weights equation (Eqn \ref{weightline}) for points $(h_1,h_2) = (0,1)$ and $(h_1,h_2) = (1,0)$.
+
+For $(h_1,h_2) = (0,1)$
+
+\begin{equation}
+\begin{split}
+\omega_1 h_1 + \omega_2 h_2 \omega_0 &= 0\\
+\omega_1 (0) + \omega_2 (1) + \omega_0 &= 0\\
+\omega_0 &= -\omega_2\\
+\end{split}
+\end{equation}
+
+For the point $(h_1,h_2) = (1,0)$
+
+\begin{equation}
+\begin{split}
+\omega_1 h_1 + \omega_2 h_2 \omega_0 &= 0\\
+\omega_1 (1) + \omega_2 (0) + \omega_0 &= 0\\
+\omega_0 &= -\omega_1\\
+\end{split}
+\end{equation}
+
+Since any value of $\omega_0$ will solve this equation we choose $\omega_0 = -1$. This gives $\omega_1 = \omega_2 = 1$. Testing polarity with with positive instance $(h_1,h_2) = (1,1)$
+
+\begin{equation}
+\begin{split}
+\omega_1 h_1 + \omega_2 h_2 \omega_0 &= \\
+1(1) +  1(1) + (-1) &= \\
+1\\
+\end{split}
+\end{equation}
+
+Which is greater than 0 thus classifying the data correctly.
+
+Thus we have weights $\omega_0 = -1$ and $\omega_1=\omega_2=1$ for the perceptron classifying function $g(h_1,h_2)$.
+
+A diagram for this perceptron can be found in Figure \ref{fig2cc}
+\begin{figure}
+\begin{tikzpicture}[scale=0.8]
+
+    %input x
+    \node[input] (x1) at (-3,6){$x_1$};    
+    \node[input] (x2) at (-3,4){$x_2$}; 
+
+	% inputs of h1
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{
+    	\node[input] (f1\hi) at (0,\hi*2cm +4cm) {\h};
+    }
+    % inputs of h2
+    \foreach \h [count=\hi ] in {$x_2$,$x_1$,$1$}{
+    	\node[input] (f2\hi) at (0,\hi*2cm -2cm) {\h};
+    }
+    
+    \draw[dotted] (x1) -- (f12);    
+    \draw[dotted] (x1) -- (f22);  
+    \draw[dotted] (x2) -- (f11);    
+    \draw[dotted] (x2) -- (f21);  
+    
+	% sum h1
+	\node[functions] (sumh1) at (5,8) {$\sum$};
+    % sum h2
+	\node[functions] (sumh2) at (5,2) {$\sum$};
+	
+    \node[functions] (steph1) at (6.5,8) {};
+       \begin{scope}[xshift=6.5cm,yshift=8cm,scale=.75]
+         \addsymbol
+       \end{scope}	
+       
+    \node[functions] (steph2) at (6.5,2) {};
+       \begin{scope}[xshift=6.5cm,yshift=2cm,scale=.75]
+         \addsymbol
+       \end{scope}	
+	
+    % weights of h1
+	\foreach \h [count=\hi ] in {$w_{12} =1$,$w_{11} = 1$,$w_{10} = 1$}{%
+      	\path (f1\hi) -- node[weights] (w\hi) {\h} (sumh1);
+      	\draw[->] (f1\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumh1);
+    } 
+    % weights of h2
+	\foreach \h [count=\hi ] in {$w_{22} =-1$,$w_{21} = -1$,$w_{20} = 1$}{%
+      	\path (f2\hi) -- node[weights] (w\hi) {\h} (sumh2);
+      	\draw[->] (f2\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumh2);
+    } 
+	
+	% inputs of g
+	\foreach \h [count=\hi ] in {$h_2$,$h_1$,$1$}{%
+      \node[input] (h\hi) at (8,\hi*6cm-4 cm) {\h};
+    }
+    % sum g
+	\node[functions] (sumg) at (13,6) {$\sum$};
+	% weights of g
+	\foreach \h [count=\hi ] in {$w_{32} =1$,$w_{31} = 1$,$w_{30} = -1$}{%
+      	\path (h\hi) -- node[weights] (w\hi) {\h} (sumg);
+      	\draw[->] (h\hi) -- (w\hi);
+      	\draw[->] (w\hi) -- (sumg);
+      	\draw[->] (sumh1) -- (steph1);
+      	\draw[->] (steph1) -- (h2);
+      	\draw[->] (sumh2) -- (steph2);
+      	\draw[->] (steph2) -- (h1);
+    }        
+
+    \node[functions] (stepg) at (15,6) {};
+       \begin{scope}[xshift=15cm,yshift=6cm,scale=.75]
+         \addsymbol
+       \end{scope}
+    
+    \draw[->] (sumg) -- (stepg);       
+	\draw[->] (stepg) -- ++(1,0);
+	
+	% Labels
+	\node[above=1cm] at (x1) {inputs};
+	\node[above=1cm] at (w3) {weights};
+	\node[right=1cm] at (stepg) {output};
+\end{tikzpicture}
+\caption{Network for question 2c}
+\label{fig2cc}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1046,7 +1449,7 @@ E_{total} &= E_{o1} + E_{02} \\
 
 \begin{equation}
 \begin{split}
-\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
+\delta_{o1} &= -(target_{o1} -out_{o1})(out_{o1})(1-out_{o1})\\
             &= -(0.1-0.752)(0.752)(1-0.752)\\
             &= 0.122\\
 \end{split}
@@ -1308,7 +1711,7 @@ E_{total} &= E_{o1} + E_{02} \\
 
 \begin{equation}
 \begin{split}
-\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
+\delta_{o1} &= -(target_{o1} -out_{o1})(out_{o1})(1-out_{o1})\\
             &= -(0.9-0.751)(0.751)(1-0.751)\\
             &= -0.028\\
 \end{split}
@@ -1570,7 +1973,7 @@ E_{total} &= E_{o1} + E_{02} \\
 
 \begin{equation}
 \begin{split}
-\delta_{o1} &= -(target_{o1} -out_{o1}out_{o1}(1-out_{o1})\\
+\delta_{o1} &= -(target_{o1} -out_{o1})(out_{o1})(1-out_{o1})\\
             &= -(0.9-0.751)(0.751)(1-0.751)\\
             &= -0.028\\
 \end{split}
@@ -1702,7 +2105,7 @@ Now we need to pass the error back to the hidden units
 
 \begin{equation}
 \begin{split}
-\delta_{h2} &= (\delta_{o1}\omega_6^1 + \delta_{o2}\omega_8^1)(out_{h2})(1-out_{h2})\\
+\delta_{h2} &= (\delta_{o1}\omega_6^2 + \delta_{o2}\omega_8^2)(out_{h2})(1-out_{h2})\\
 &= (-0.028(0.423) + 0.118(0.519))(0.646)(1-0.646)\\
 &= 0.011\\
 \end{split}
@@ -1924,7 +2327,7 @@ Now we need to pass the error back to the hidden units
 
 \begin{equation}
 \begin{split}
-\delta_{h1} &= (\delta_{o1}\omega_5^2 + \delta_{o2}\omega_7^2)(out_{h1})(1-out_{h1})\\
+\delta_{h1} &= (\delta_{o1}\omega_5^3 + \delta_{o2}\omega_7^3)(out_{h1})(1-out_{h1})\\
 &= (0.120(0.382) -0.023(0.434))(0.658)(1-0.658)\\
 &= 0.008\\
 \end{split}
@@ -1964,46 +2367,57 @@ Now we need to pass the error back to the hidden units
 
 \begin{equation}
 \begin{split}
-\delta_{h2} &= (\delta_{o1}\omega_6^1 + \delta_{o2}\omega_8^1)(out_{h2})(1-out_{h2})\\
-&= (0.120(0.432) -0.023(0.480))(0.646)(1-0.646)\\
-&= 0.011\\
+\delta_{h2} &= (\delta_{o1}\omega_6^3 + \delta_{o2}\omega_8^3)(out_{h2})(1-out_{h2})\\
+&= (0.120(0.432) -0.023(0.480))(0.697)(1-0.697)\\
+&= 0.009\\
 \end{split}
 \end{equation}
 
 \begin{equation}
 \begin{split}
 \pdv{E_{total}}{\omega_3} &= \delta_{h2}x_1\\ 
-                          &= 0.011(0.9)\\
-                          &= 0.010\\
+                          &= 0.009(0.9)\\
+                          &= 0.008\\
 \end{split}
 \end{equation}
 
 \begin{equation}
 \begin{split}
-\omega_3^3 &= \omega_3^2 - \eta\pdv{E_{total}}{\omega_3}\\
-           &= 0.249 -0.5(0.010)\\
-           &= 0.244\\
+\omega_3^4 &= \omega_3^3 - \eta\pdv{E_{total}}{\omega_3}\\
+           &= 0.244 -0.5(0.008)\\
+           &= 0.240\\
 \end{split}
 \end{equation}
 
 \begin{equation}
 \begin{split}
 \pdv{E_{total}}{\omega_4} &= \delta_{h2}x_2\\ 
-                          &= 0.011(0.1)\\
-                          &= 0.001\\
+                          &= 0.009(0.9)\\
+                          &= 0.008\\
 \end{split}
 \end{equation}
 
 \begin{equation}
 \begin{split}
 \omega_4^3 &= \omega_4^2 - \eta\pdv{E_{total}}{\omega_4}\\
-           &= 0.294 -0.5(0.001)\\
-           &= 0.294\\
+           &= 0.294 -0.5(0.008)\\
+           &= 0.290\\
 \end{split}
 \end{equation}
 
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$\omega_1$ & $\omega_2$ & $\omega_3$ & $\omega_4$ & $\omega_5$ & $\omega_6$ & $\omega_7$ & $\omega_8$ & $b_1$ & $b_2$\\
+\hline
+0.141 &0.191 &0.240 & 0.290 & 0.342 & 0.390 & 0.441 & 0.488 & 0.35 & 0.6 \\
+\hline
+\end{tabular}
+\caption{Weights after applying pattern 4}\label{tablep5}
+\end{table}
 
 
+The resultant weights after all 4 patters can be found in Table \ref{tablep5}
 
 
 
@@ -2021,7 +2435,7 @@ According to \cite{Michell2009} the following functions can be modeled by feed f
 
 The error surface for multi-layered networks contains multiple local minima. The gradient descent method used can only converge to a local minima which is not necessarily the global minimum. When the gradient decent process starts close to a local minimum the algorithm will follow the gradient to the local minimum  \citep{Michell2009}.
 
-Networks with higher dimensions may suffer less from local minima because when the network reches a local minimum in a certain dimension, the other dimentions are not necessarily at a minumum. Their weights can get the network out of some local minima  \citep{Michell2009}.
+Networks with higher dimensions may suffer less from local minima because when the network reaches a local minimum in a certain dimension, the other dimensions are not necessarily at a minimum. Their weights can get the network out of some local minima  \citep{Michell2009}.
  
 The problem of local minima can also lessened by using a momentum term. As in
 
@@ -2033,7 +2447,11 @@ The problem of local minima can also lessened by using a momentum term. As in
 
 where alpha is the momentum constant and this depends on the previous change in the weight. This way the algorithm can get out of a relatively small local minimum \citep{Michell2009}.
 
+One technique is so called "on-line training". Here the weights are updated after each pattern is processed rather than batch or off-line where the weights are updated after all the patterns are processed. On-line training can add noise to the gradient direction and thereby avoiding some shallow local minima \citep{rojas}.
+
 Another method is simulated annealing \citep{rojas};
+
+
 \subsection{Question 3(d)}
 
 A discussion of the identity function can be found in \citep[p106]{Michell2009} at $http://www.cs.ubbcluj.ro/\sim gabis/ml/ml-books/McGrawHill - Machine Learning -Tom Mitchell.pdf$
@@ -2070,5 +2488,25 @@ The sigmoid function is defined as
 \sigma(y) = \frac{1}{1+e^{-y}}
 \end{equation}
 
+Firstly the output of this activation function is continuous. This makes it easier to connect multiple neurons together and weight different inputs form different neurons. The function is also easily differentiable. Secondly because the function is very steep it tends to force values to be high or low. Which makes it suitable as a classifier. Thirdly because the output of the sigmoid is always bound, our function wont grow out of bounds \citep{AvinashSharmaV2017}.
+
+Another possibility is the $tanh$ function \citep{C.M.Bishop,AvinashSharmaV2017}.
+
+\begin{equation}
+\begin{split}
+f(x) &= tanh(x)\\
+     &= \frac{2}{1-e^{-2x}} - 1
+\end{split}
+\end{equation}
+
+As we can see the $tanh$ function is very similar to the sigmoid function and has thus most of the same advantages. But the angle of $tanh$ is steeper than the sigmoid function. 
+
+Another possibility is the linear function.
+
+\begin{equation}
+f(x) = mx+c 
+\end{equation}
+
+The problem with the linear function is that stacking multiple neurons is always equivalent to 1 linear function. Thus we lose the ability to classify with multiple neurons. Also the derivative of a linear function is not a function of x. Thus the backpropagation step will always make a constant step. This is not desirable.
 \bibliography{mybib}
 \end{document}
