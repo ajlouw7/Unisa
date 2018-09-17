@@ -278,6 +278,33 @@ Mitchell, T\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Sudholt%
+}{%
+Sudholt%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+sud}
+\APACinsertmetastar {%
+sud}%
+\begin{APACrefauthors}%
+Sudholt, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Benefits of Population Diversity in Evolutionary
+  Algorithms: A Survey of Rigorous Runtime Analyses}} {{The Benefits of
+  Population Diversity in Evolutionary Algorithms: A Survey of Rigorous Runtime
+  Analyses}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{1--36}.
+\newblock
+\begin{APACrefURL} \url{http://arxiv.org/abs/1801.10087} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Whitley%
 }{%
 Whitley%

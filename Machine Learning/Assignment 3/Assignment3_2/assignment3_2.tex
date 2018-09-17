@@ -17,15 +17,11 @@
 
 \tableofcontents
 
-\section{Abstract}
-
 \section{Introduction}
 
 This report will detail how Genetic Algorithms (GA) work and how they are used. This includes how to determine a good fitness function. Additionally will attempt answers 2 questions. Firstly how the choice of the initial population in the GA affects the effectiveness of the GA. Secondly whether maintaining diverse population is beneficial to a GA. 
 
 Genetic Algorithms are based on Darwinian evolution. This form of evolution was first described by Charles Darwin in 1859 in his seminal book \textit{On the Origin of Species} \citep{darwin}. In it he describes how life on earth developed through natural selection. Those species best adapted to their environment are more likely to survive and reproduce while those who are poorly adapted are less likely to survive and reproduce. So over time the traits of the better adapted (also called fit) individuals are passed more readily than those from less fit individuals. The whole population becomes better suited to their environment. Genetic Algorithms use these ideas (and others) to determine (evolve) a solution to a problem. In GA's the potential solution to a problem form the population. These individuals are "evolved" to create new solutions based on the old solutions from the previous generation. The fitness of individuals in Genetic Algorithms are based on how well they solve the problem. The first description of this computing model was by \cite{holland}. In it he rigorously defined the mechanics of the first Genetic Algorithm. This computing model can be applied to a varying range of problems. 
-
-\section{Methodology}
 
 \section{Analysis}
 \subsection{How do Genetic Algorithms work?}
@@ -62,8 +58,14 @@ In uniform crossover, the bits of the crossover string is chosen at random \cite
 
 The mutation operator attempts to replicate the random mutations tat happen in the DNA of living organisms. In the simplest case a a random bit in member of the population is flipped \citep{michell}. In a 4-bit entity like 0101, applying mutation might cause the string to become 0111.   
 
-\subsubsection{Selection and fitness function}
+\subsubsection{Fitness function}
 Now that we have created a new generation of candidates we need to be able to determine which of these candidates solve the problem best. Only those candidates can be used to create the next generation. The function to determine how well a candidate solves the problem is called the fitness function. The fitness function is highly problem/domain specific. The designer of the GA needs to decide which features of each candidate is most important in determining its ability to solve the problem \citep{beasley}.
+
+Ideally we want a fitness function to have one "very isolated global maximum" or at least only a verw local maxima \citep{beasley}. This makes it easier for the GA to such maxima.
+
+Sometimes it is easy to determine the fitness function.
+
+\subsubsection{Selection}
 
 Based on input from the fitness function, the selection process then selects those candidates that are to continue to the next generation. Here follows a short description of some of the more common selection schemes.
 
@@ -85,6 +87,13 @@ Ranking selection was proposed by \cite{baker1985adaptive}. The candidates are f
 
 According to \citep{michell}, in tournament selection, 2 candidates are selected at random. The fitter of the 2 candidates is the "winner". Given some predefined probability $p$, the probability that the winner will be selected is $p$ and the probability that the "loser" is selected is $1-p$. This process is followed until enough candidates are selected for the next generation. 
 
+\subsubsection{Convergence}
+
+In a correctly set-up Genetic Algorithm, the individuals in the population should converge to some "global optimum" \citep{beasley}. The individuals should become more and more similar with each generation, bearing in mind that converging on a specific value too fast could mean that only a local optimum is attained.
+
+\subsubsection{Schema}
+But why do Genetic Algoritms work? \cite{holland} tried to explain it via the Schema theorem. A schemata is a string consisting of only 0's,1's or *'s. The symbol * means either a 0 or a 1 \citep{michell}. An example of a schemata would be the string 1*10. This schemata represents the bit patterns 1010 and 1110. The order of the schemata is the number of 0's and 1's in the schemata \citep{beasley}. Thus the order of 01**1 is 3 and the order of 1*1 is 2. In the schema theorem theorem, individuals are given the opportunity to reproduce. That opportunity is given in direct proportion to the individuals fitness. The assumption is made that individuals with high fitness pass on good schemata to its children. Since more fit individuals will pass on more good schemata, the chances of finding a better solution is increased \citep{beasley}. Additionally, \cite{holland} reason for GA's good performance can be attributed to the fact that the effective number of schemata processed by each individual is $n^3$ with $n$ being the size of the population. 
+
 \subsection{How does the choice of initial population affect Genetic Algorithms?}
 The size of the initial population has a "direct effect" on various aspects of a GA \citep{gupta}. Firstly with larger populations the GA requires more memory. Thus on memory intensive domains this will detrimental. Secondly the convergence speed and search speed of the algorithm will also be affected by the population size. There is a balance that needs to be found in the size of the population. 
 
@@ -97,8 +106,23 @@ Conversely, a small population will have fewer opportunities for crossover and m
 
 \subsection{How does the diversity of the population affect Genetic Algorithms?}
 
+As described in \cite{sud}, there are many reasons that a diverse population is beneficial to Genetic Algorithms. 
+
+A diverse population enables "global exploration". Having a diverse population allows the algorithms to search various parts of the search space. This in turn help the algorithm not to prematurely converge on a sub optimum solution.
+
+It helps to "facilitating crossover". When two similar individuals are crossed over, the resulting children will be very similar to their parents. In order for crossover to be more effective, the parents need to be sufficiently different.
+
+Having a diverse population enables more effective decision making. When there are multiple criteria to judge a solution on, having a diverse population, helps when the  decision making process has multiple trade-offs. 
+
+Robustness of the algorithm is also increased. Firstly by reducing the chances of getting bogged down in a weak local optimum. Secondly it makes the algorithm more resilient to noisy fitness functions or even dynamic fitness function when the algorithm is responding to a dynamic problem.
+ 
+One way to increase diversity in certain GA's is to not allow duplicate solutions in the population \citep{sud}. This can be achieved by some form of filtering mechanism given that the filtering mechanism is not too expensive relative to the benefits of having no duplicates.
+
+
+
 \section{Conclusion}
 
+Genetic Algorithms are an integral part of machine learning. Capable of solving solutions in a reasonable amount of time.
 \bibliography{mybib}
 
 \end{document}
