@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Designation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Designation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Designation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Designation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_DateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_DateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Booking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Booking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Levels -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Levels">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#B_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Postcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#C_Postcode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#O_Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#O_Capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#O_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#O_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PA_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PB_Number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#PB_Number">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#R_Level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#R_Level">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#R_Number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#R_Number">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Seminar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Number">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#S_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Seminar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#T_Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#T_Gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Toilet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Booking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Building"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#CoveredBay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#CoveredBay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#OpenBay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#OpenBay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#OpenBay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_OpenToPublic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_ReservedForStaff"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Seminar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Seminar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Administrative"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Cleaning"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Management"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Security"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Toilet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Toilet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_OpenToPublic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_OpenToPublic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_ReservedForStaff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingDesignation_ReservedForStaff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Administrative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Administrative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Cleaning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Cleaning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Booking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Campus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#ParkingBayReservationDesignation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Room"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#StaffDesignation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Kitchen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Office"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Seminar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riaanl/ontologies/2018/8/untitled-ontology-6#Toilet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
