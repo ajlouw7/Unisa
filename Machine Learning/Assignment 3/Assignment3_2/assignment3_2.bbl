@@ -1,3 +1,331 @@
 \begin{thebibliography}{}
 
+\bibitem [\protect \citeauthoryear {%
+Baker%
+}{%
+Baker%
+}{%
+{\protect \APACyear {1985}}%
+}]{%
+baker1985adaptive}
+\APACinsertmetastar {%
+baker1985adaptive}%
+\begin{APACrefauthors}%
+Baker, J\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1985}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Adaptive selection methods for genetic algorithms}
+  {Adaptive selection methods for genetic algorithms}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of an International Conference on Genetic
+  Algorithms and their applications} {Proceedings of an international
+  conference on genetic algorithms and their applications}\ (\BPGS\ 101--111).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Beasley%
+, Bull%
+\BCBL {}\ \BBA {} Martin%
+}{%
+Beasley%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1993}}%
+}]{%
+beasley}
+\APACinsertmetastar {%
+beasley}%
+\begin{APACrefauthors}%
+Beasley, D.%
+, Bull, D\BPBI R.%
+\BCBL {}\ \BBA {} Martin, R\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+\APACrefbtitle {{An Overview of Genetic Algorithms : Part 1, Fundamentals}}
+  {{An Overview of Genetic Algorithms : Part 1, Fundamentals}}\
+  \APACbVolEdTR{\BVOL~15}{\BTR{}\ \BNUM~2}.
+\newblock
+\begin{APACrefURL} \url{http://orca.cf.ac.uk/64436/http://orca.cf.ac.uk/
+  policies.htmlforusagepolicies.} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Darwin%
+}{%
+Darwin%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+darwin}
+\APACinsertmetastar {%
+darwin}%
+\begin{APACrefauthors}%
+Darwin, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {On the origin of species, 1859} {On the origin of species,
+  1859}.
+\newblock
+\APACaddressPublisher{}{Routledge}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{De Jong}%
+\ \BBA {} Spears%
+}{%
+{De Jong}%
+\ \BBA {} Spears%
+}{%
+{\protect \APACyear {1990}}%
+}]{%
+de1990analysis}
+\APACinsertmetastar {%
+de1990analysis}%
+\begin{APACrefauthors}%
+{De Jong}, K\BPBI A.%
+\BCBT {}\ \BBA {} Spears, W\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1990}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{An analysis of the interacting roles of population size
+  and crossover in genetic algorithms}} {{An analysis of the interacting roles
+  of population size and crossover in genetic algorithms}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Parallel Problem Solving
+  from Nature} {International conference on parallel problem solving from
+  nature}\ (\BPGS\ 38--47).
+\newblock
+\begin{APACrefURL}
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.51.630{\&}
+  rep=rep1{\&}type=pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+De~Jong%
+}{%
+De~Jong%
+}{%
+{\protect \APACyear {1975}}%
+}]{%
+de1975analysis}
+\APACinsertmetastar {%
+de1975analysis}%
+\begin{APACrefauthors}%
+De~Jong, K\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Analysis of the behavior of a class of genetic adaptive
+  systems} {Analysis of the behavior of a class of genetic adaptive
+  systems}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gupta%
+\ \BBA {} Others%
+}{%
+Gupta%
+\ \BBA {} Others%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+gupta}
+\APACinsertmetastar {%
+gupta}%
+\begin{APACrefauthors}%
+Gupta, R.%
+\BCBT {}\ \BBA {} Others.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{jun}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Effect of varying the size of initial parent pool in
+  genetic algorithm}} {{Effect of varying the size of initial parent pool in
+  genetic algorithm}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Contemporary Computing and Informatics (IC3I), 2014
+  International Conference on} {Contemporary computing and informatics (ic3i),
+  2014 international conference on}\ (\BPGS\ 785--788).
+\newblock
+\APACaddressPublisher{}{IEEE}.
+\newblock
+\begin{APACrefURL} \url{http://ieeexplore.ieee.org/document/5235649/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/FCC.2009.81} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Harik%
+, Cantu-Paz%
+, Goldberg%
+\BCBL {}\ \BBA {} Miller%
+}{%
+Harik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+harik}
+\APACinsertmetastar {%
+harik}%
+\begin{APACrefauthors}%
+Harik, G.%
+, Cantu-Paz, E.%
+, Goldberg, D\BPBI E.%
+\BCBL {}\ \BBA {} Miller, B\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The gambler's ruin problem, genetic algorithms, and the
+  sizing of populations.}} {{The gambler's ruin problem, genetic algorithms,
+  and the sizing of populations.}}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Evolutionary computation}{7}{3}{231--253}.
+\newblock
+\begin{APACrefDOI} \doi{10.1162/evco.1999.7.3.231} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Holland%
+}{%
+Holland%
+}{%
+{\protect \APACyear {1975}}%
+}]{%
+holland}
+\APACinsertmetastar {%
+holland}%
+\begin{APACrefauthors}%
+Holland, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Adaptation in natural and artificial systems: an
+  introductory analysis with applications to biology, control, and artificial
+  intelligence} {Adaptation in natural and artificial systems: an introductory
+  analysis with applications to biology, control, and artificial
+  intelligence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{USA: University of Michigan}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lipowski%
+\ \BBA {} Lipowska%
+}{%
+Lipowski%
+\ \BBA {} Lipowska%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Lipowski2011}
+\APACinsertmetastar {%
+Lipowski2011}%
+\begin{APACrefauthors}%
+Lipowski, A.%
+\BCBT {}\ \BBA {} Lipowska, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\APACrefbtitle {{Roulette-wheel selection via stochastic acceptance}}
+  {{Roulette-wheel selection via stochastic acceptance}}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/pdf/1109.3627.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mitchell%
+}{%
+Mitchell%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+michell}
+\APACinsertmetastar {%
+michell}%
+\begin{APACrefauthors}%
+Mitchell, T\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {{Machine Learning}} {{Machine Learning}}.
+\newblock
+\APACaddressPublisher{}{McGraw-Hill}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sudholt%
+}{%
+Sudholt%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+sud}
+\APACinsertmetastar {%
+sud}%
+\begin{APACrefauthors}%
+Sudholt, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Benefits of Population Diversity in Evolutionary
+  Algorithms: A Survey of Rigorous Runtime Analyses}} {{The Benefits of
+  Population Diversity in Evolutionary Algorithms: A Survey of Rigorous Runtime
+  Analyses}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{1--36}.
+\newblock
+\begin{APACrefURL} \url{http://arxiv.org/abs/1801.10087} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Whitley%
+}{%
+Whitley%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+whit}
+\APACinsertmetastar {%
+whit}%
+\begin{APACrefauthors}%
+Whitley, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+\APACrefbtitle {{An overview of evolutionary algorithms: practical issues and
+  common pitfalls}} {{An overview of evolutionary algorithms: practical issues
+  and common pitfalls}}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\begin{APACrefURL} \url{www.elsevier.com/locate/infsof} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}
