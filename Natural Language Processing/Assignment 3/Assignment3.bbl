@@ -1,0 +1,29 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Jurafsky%
+\ \BBA {} Martin%
+}{%
+Jurafsky%
+\ \BBA {} Martin%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+jur}
+\APACinsertmetastar {%
+jur}%
+\begin{APACrefauthors}%
+Jurafsky, D.%
+\BCBT {}\ \BBA {} Martin, J\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Speech and language processing} {Speech and language
+  processing}\ (\BVOL~3).
+\newblock
+\APACaddressPublisher{}{Pearson London}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

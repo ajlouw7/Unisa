@@ -1,0 +1,208 @@
+\documentclass[10pt,a4paper]{article}
+%\usepackage[natbibapa]{apacite} 
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage[a4paper,margin=1in]{geometry} 
+\usetikzlibrary{automata,positioning}
+\usepackage[natbibapa]{apacite} 
+\bibliographystyle{apacite}
+
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{decorations.pathreplacing}
+
+\title{Natural Language Processing (COS4861)}
+\author{Adriaan Louw (53031377)}
+                        
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+
+Wordnet has 4 noun senses and 3 verb senses for the word "scrap". Noun senses:
+\begin{enumerate}
+\item[Sense 1:] a small fragment of something broken off from a whole
+\item[Sense 2:] worthless material that is to be disposed of
+\item[Sense 3:] a small piece of something that is left over after the rest has been used
+\item[Sense 4:] the act of fighting; any contest or struggle
+\end{enumerate}
+
+Verb senses:
+\begin{enumerate}
+\item[Sense 5:] dispose of something useless or old
+\item[Sense 6:] have a disagreement over something
+\item[Sense 7:] make into scrap or refuse
+\end{enumerate}
+
+The senses scrap$^1$, scrap$^2$ and scrap$^3$ are related to sense scrap$^4$ by homonymy. 
+
+Sense scrap$^4$ is related to sense scrap $^6$ by polysemy because the idea of having a disagreement and fighting is semantically connected. Otherwise stated, disagreements are a common cause for fighting and also disagreeing with someone can be seen as a form of fighting. 
+
+The sense scrap$^2$ is related to sense scrap$^7$ via polysemy. In that scrap$^2$ denotes what is created when the action sense scrap$^7$ is done.
+
+\section{Question 2}
+
+Simulated Verb senses
+\begin{enumerate}
+\item[Sense 1:] reproduce someone's behavior or looks
+\item[Sense 2:] create a representation or model of
+\item[Sense 3:] make a pretence of
+\end{enumerate}
+
+Simulated Adjective senses:
+\begin{enumerate}
+\item[Sense 4:] (not genuine or real; being an imitation of the genuine article
+\item[Sense 5:] reproduced or made to resemble; imitative in character
+\end{enumerate}
+
+Synthetic Noun senses
+\begin{enumerate}
+\item[Sense 1:] a compound made artificially by chemical reactions
+\end{enumerate}
+
+Synthetic Adjective senses:
+\begin{enumerate}
+\item[Sense 2:] not of natural origin; prepared or made artificially
+\item[Sense 3:] involving or of the nature of synthesis (combining separate elements to form a coherent whole) as opposed to analysis
+\item[Sense 4:] systematic combining of root and modifying elements into single words
+\item[Sense 5:] of a proposition whose truth value is determined by observation or facts
+\item[Sense 6:] artificial as if portrayed in a film
+\item[Sense 7:] not genuine or natural
+\end{enumerate}
+
+Artificial Adjective senses
+\begin{enumerate}
+\item[Sense 1:] contrived by art rather than nature
+\item[Sense 2:] artificially formal
+\item[Sense 3:] not arising from natural growth or characterized by vital processes
+\end{enumerate}
+
+\subsubsection{Similarities}
+Senses simulated$^4$ and synthetic$^7$ are similar in that they relate something that is not natural or genuine.
+Senses synthetic$^2$ and artificial$^3$ both denote something that is not of natural origin. 
+Simulated$^5$ and artificial$^2$ have the meaning of someone being who they are not.
+
+\subsubsection{Differences}
+
+Only one of these have a sense that is a noun. That is synthetic$^1$. This noun can be described by artificial$^3$.
+Simulated is the only lexeme that has verb senses.
+Only synthetic has a sense (synthetic$^3$) that relates to bringing this together. In other words synthesis.
+
+\section{Question 3}
+
+\subsection{Question 3.1.1}
+
+The birr is the currency of Ethiopia. I was using www.google.com as my search engine
+
+Precision would be:
+
+\begin{equation}
+\begin{split}
+Precision &= \frac{\mid R \mid}{\mid T \mid} \\
+&= \frac{6}{10}\\
+&=0.6\\ 
+\end{split}
+\end{equation}
+
+Recall would be:
+
+\begin{equation}
+\begin{split}
+Recall &= \frac{\mid R \mid}{\mid U \mid} \\ 
+&= \frac{6}{26} \\
+&= 0.23 \\
+\end{split}
+\end{equation}
+
+A large source of errors would be that manu currency conversion websites came up. From these websites it is not always obvious from which country a specific currency came from. Correct answers were drowned out by all the currency conversion websites.
+
+\subsection{Question 3.1.2}
+
+António Mascarenhas Monteiro preceded Pedro Pires as the president of Cape Verde. I was using www.google.com as my search engine
+
+Precision would be:
+
+\begin{equation}
+\begin{split}
+Precision &= \frac{\mid R \mid}{\mid T \mid} \\
+&= \frac{3}{10}\\
+&=0.3\\ 
+\end{split}
+\end{equation}
+
+Recall would be:
+
+\begin{equation}
+\begin{split}
+Recall &= \frac{\mid R \mid}{\mid U \mid} \\ 
+&= \frac{3}{6} \\
+&= 0.5 \\
+\end{split}
+\end{equation}
+
+The search engine was focussing on all the websites containing Pedro Peres and was not capable of distinguishing that the important part of the query was who preceded Pedro Peres, not Pedro Peres himself.
+
+\subsection{Question 3.2.1}
+
+Using www.bing.com as the search engine.
+
+\begin{equation}
+\begin{split}
+Precision &= \frac{\mid R \mid}{\mid T \mid} \\
+&= \frac{5}{10}\\
+&=0.5\\ 
+\end{split}
+\end{equation}
+
+Recall would be:
+
+\begin{equation}
+\begin{split}
+Recall &= \frac{\mid R \mid}{\mid U \mid} \\ 
+&= \frac{5}{21} \\
+&= 0.23 \\
+\end{split}
+\end{equation}
+
+The precision of google was higher but the recall was the same. One potential reason for google outperforming bing is that google filtered out  many more of the currency exchange websites that were more numerous. Additionally google managed to return a single answer with the word "Ethiopia". Indicating that it is confident enough that that is the answer.
+
+\subsection{Question 3.2.2}
+
+Using www.bing.com as the search engine
+
+\begin{equation}
+\begin{split}
+Precision &= \frac{\mid R \mid}{\mid T \mid} \\
+&= \frac{3}{10}\\
+&=0.3\\ 
+\end{split}
+\end{equation}
+
+Recall would be:
+
+\begin{equation}
+\begin{split}
+Recall &= \frac{\mid R \mid}{\mid U \mid} \\ 
+&= \frac{3}{17} \\
+&= 0.17 \\
+\end{split}
+\end{equation}
+
+Bing and google had similar recall. But the precision of google was much higher than bing. This is only because bing managed to find more relevant pages in the first 100 results.
+
+\section{Question 4}
+
+Mean reciprocal rank (MRR) is a standard used to compute how effective a specific algorithm is at answering a set of questions over a large dataset. The MRR is calculated as follows:
+
+\begin{equation}
+MRR = \frac{\sum_{i=1}^i\frac{1}{r_i}}{N}
+\end{equation}
+
+where $N$ is the number of questions asked and $r_i$ is the rank of the i'th question. 
+
+Each question returns a set of ranked answers. The rank of the first correct answer is then used to calculate the reciprocal of that rank as in the above equation \citep{jur}. 
+
+\bibliography{mybib}
+\end{document}
