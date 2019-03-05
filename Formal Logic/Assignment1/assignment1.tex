@@ -1,0 +1,87 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+
+%opening
+\title{COS 4807 Assignment 1}
+\author{Adriaan Louw (53031377)}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Question 4.2}
+
+\begin{equation}
+(p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) 
+\end{equation}
+
+By substituting for double implication operator:
+
+\begin{equation}
+ (p \rightarrow ( q \rightarrow r )) \rightarrow (( p \wedge q) \wedge \neg r), (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+Substituting for the implication operator in the first term gives:
+
+\begin{equation}
+\label{421}
+ \neg(p \rightarrow ( q \rightarrow r )),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+and
+
+\begin{equation}
+ ((p \wedge )q \wedge \neg r ),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+Equation \ref{421} becomes
+
+\begin{equation}
+p, \neg ( q \rightarrow r )),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+then 
+
+\begin{equation}
+p, q, \neg r, (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+Substituting for the implication in the above equation gives:
+
+\begin{equation}
+\label{4211}
+p, q, \neg r, \neg (( p \wedge q) \wedge \neg r)
+\end{equation}
+
+and
+
+\begin{equation}
+\label{4212}
+p, q, \neg r, (p \rightarrow ( q \rightarrow r )) 
+\end{equation}
+
+
+Equation \ref{4211} becomes 
+
+
+\begin{equation}
+\label{42111}
+p, q, \neg r, \neg ( p \wedge q)
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{42112}
+p, q, \neg r, r
+\end{equation}
+
+
+
+\end{document}
