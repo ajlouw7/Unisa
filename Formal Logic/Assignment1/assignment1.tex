@@ -2,6 +2,7 @@
 \usepackage[natbibapa]{apacite} 
 \usepackage{amsmath}
 \usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
 
 %opening
 \title{COS 4807 Assignment 1}
@@ -11,13 +12,134 @@
 
 \maketitle
 
-\begin{abstract}
+\section{Question 1.1}
 
-\end{abstract}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $\neg p$ & $ \neg q$ & $p \vee q$ & $(p \vee q) \vee r$ & $\neg p \wedge \neg q$ &  $((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q ))$ & $ ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) \rightarrow r$\\ 
+\hline
+ 0 &  0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1\\
+ 0 &  0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1\\
+ 0 &  1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 0 &  1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 1 &  0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
+ 1 &  0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
+ 1 &  1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 1 &  1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
+\hline
+\end{tabular}
+
+
+\section{Question1.2}
+
+\begin{tabular}{|c|c|c|}
+\hline
+$p$ & $q$ & $r$ \\ 
+\hline
+ 0 &  0 & 0 \\
+ 0 &  0 & 1 \\
+ 0 &  1 & 0 \\
+ 0 &  1 & 1 \\
+ 1 &  0 & 0 \\
+ 1 &  0 & 1 \\
+ 1 &  1 & 0 \\
+ 1 &  1 & 1 \\
+\hline
+\end{tabular}
+
+
+
+\section{Question 4.1}
+For formula
+
+\begin{equation}
+\label{41}
+ ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) \rightarrow r
+\end{equation}
+
+Applying the $\beta$ formula for implication gives
+
+\begin{equation}
+\label{411}
+ \neg  ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q ))
+\end{equation}
+
+and
+
+\begin{equation}
+\label{412}
+ r
+\end{equation}
+
+Where Formula \ref{412} is satisfyable.
+
+Continueing for Formula \ref{411} by applying the $\beta$ formula for $\neg (B_1 \wedge B_2)$ we get
+
+
+
+ \begin{equation}
+ \label{4111}
+  \neg (( p \vee q ) \vee r )
+ \end{equation}
+
+ and 
+ 
+ \begin{equation}
+ \label{4112}
+  \neg ( \neg p \wedge \neg q )
+ \end{equation}
+
+
+Continueing for Formula \ref{4111} and applying $\alpha$ formula $\neg ( A_1 \vee A_2 )$ we get
+
+\begin{equation}
+\label{41111}
+ \neg (p \vee q), \neg r 
+\end{equation}
+
+Then applying formula $\neg ( A_1 \vee A_2 )$ again we get
+
+\begin{equation}
+\label{411111}
+ \neg p, \neg q, \neg r
+\end{equation}
+
+Which is satisfyable.
+
+Going back to Formula \ref{4112} which can by simplified to 
+
+\begin{equation}
+ p \vee q
+\end{equation}
+
+Then applying $\beta$ formula $B_1 \vee B_2$ we get formulas
+
+\begin{equation}
+ \label{41121}
+ p
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{41122}
+q
+\end{equation}
+
+Both of which are satifyable. Now looking at all the leaf nodes namely 
+Formalas \ref{412}, \ref{411111}, \ref{41121} and \ref{41122} we can see that they are all satisfyable. Thus
+Formula \ref{41} is valid.
+
+
+
+
+
+
 
 \section{Question 4.2}
 
 \begin{equation}
+\label{420}
 (p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) 
 \end{equation}
 
@@ -37,7 +159,8 @@ Substituting for the implication operator in the first term gives:
 and
 
 \begin{equation}
- ((p \wedge )q \wedge \neg r ),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\label{422}
+ ((p \wedge q) \wedge \neg r ),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
 \end{equation}
 
 Equation \ref{421} becomes
@@ -49,10 +172,11 @@ p, \neg ( q \rightarrow r )),  (( p \wedge q) \wedge \neg r) \rightarrow (p \rig
 then 
 
 \begin{equation}
+\label{421a}
 p, q, \neg r, (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
 \end{equation}
 
-Substituting for the implication in the above equation gives:
+Substituting for the implication in the above formula gives:
 
 \begin{equation}
 \label{4211}
@@ -67,7 +191,7 @@ p, q, \neg r, (p \rightarrow ( q \rightarrow r ))
 \end{equation}
 
 
-Equation \ref{4211} becomes 
+Formula \ref{4211} becomes 
 
 
 \begin{equation}
@@ -82,6 +206,53 @@ and
 p, q, \neg r, r
 \end{equation}
 
+We can see that Formula \ref{42112} is unsatifyable.  Then Formula \ref{42111} becomes
 
+\begin{equation}
+\label{421111}
+p, q, \neg r, \neg p 
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{421112}
+p, q, \neg r, \neg q 
+\end{equation}
+
+Both of which are unsatifyable. Now having done all the leaves under Formula \ref{4211}, we continue with the leaves under Equation \ref{4212}.
+
+Equation \ref{4212} becomes
+
+\begin{equation}
+\label{42121}
+p, q, \neg r, \neg p 
+\end{equation}
+
+which is unsatifyable and
+ 
+\begin{equation}
+\label{42122}
+p, q, \neg r, q \rightarrow r 
+\end{equation} 
+
+which becomes
+
+\begin{equation}
+\label{421221}
+p, q, \neg r, \neg q,  r 
+\end{equation} 
+ 
+Having finished all the leaves under Formula \ref{421} we continue with Formula \ref{422} which becomes
+
+\begin{equation}
+\label{4221}
+ p, q, \neg r,  (( p \wedge q) \wedge \neg r) \rightarrow (p \rightarrow ( q \rightarrow r )) 
+\end{equation} 
+
+But Formula \ref{4221} is the same as Formula \ref{421a}. Formula \ref{421a} will have the same leaf nodes as Formula \ref{4221}.
+
+Thus we have all the leaf nodes namely Formulas \ref{42112}, \ref{421111}, \ref{421112}, \ref{42121} and \ref{421221}. All of these Formulas are unsatisfyable, 
+therefore the original Formula \ref{420} is unsatisfyable.
 
 \end{document}
