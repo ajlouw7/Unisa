@@ -8,24 +8,35 @@
 \title{COS 4807 Assignment 1}
 \author{Adriaan Louw (53031377)}
 
+\newcommand{\interp}{I}
 \begin{document}
 
 \maketitle
 
 \section{Question 1.1}
 
+For Formula
+
+
+\begin{equation}
+ ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) \rightarrow r
+\end{equation}
+
+To prove the formula is valid we need to show it is true for all possible interpretations. 
+We will use 0 to represent false and 1 to represent true
+
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
 $p$ & $q$ & $r$ & $\neg p$ & $ \neg q$ & $p \vee q$ & $(p \vee q) \vee r$ & $\neg p \wedge \neg q$ &  $((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q ))$ & $ ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) \rightarrow r$\\ 
 \hline
- 0 &  0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1\\
- 0 &  0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1\\
- 0 &  1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
- 0 &  1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
- 1 &  0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
- 1 &  0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
- 1 &  1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
- 1 &  1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1\\
+ 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1\\
+ 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 1 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
+ 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1\\
+ 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
+ 1 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1\\
 \hline
 \end{tabular}
 
@@ -33,20 +44,166 @@ Since this formula is true in all cases (last column), it is valid (tautology).
 
 \section{Question1.2}
 
-\begin{tabular}{|c|c|c|}
+For Formula
+
+\begin{equation}
+(p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) 
+\end{equation}
+
+to show that it is unsatisfiable we need to show that it is false for all interpretations
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-$p$ & $q$ & $r$ \\ 
+$p$ & $q$ & $r$ & $q \rightarrow r$ & $p \rightarrow ( q \rightarrow r )$ & $p \wedge q$ & $\neg r$ & $( p \wedge q) \wedge \neg r $ & $(p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) $\\
 \hline
- 0 &  0 & 0 \\
- 0 &  0 & 1 \\
- 0 &  1 & 0 \\
- 0 &  1 & 1 \\
- 1 &  0 & 0 \\
- 1 &  0 & 1 \\
- 1 &  1 & 0 \\
- 1 &  1 & 1 \\
+ 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0\\
+ 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0\\
+ 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0\\
+ 0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0\\
+ 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0\\
+ 1 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0\\
+ 1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 0\\
+ 1 & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 0\\
 \hline
 \end{tabular}
+
+From this we can see that the Formula is unsatisfiable for all interpretations of p q and r
+
+\section{Question1.3}
+
+For Formula
+\begin{equation}
+(p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q)  \rightarrow r)
+\end{equation}
+
+we need to show that there exists at least 1 interpretation for which this formula is false
+and at least one interpretation for which this formula is true
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $q \rightarrow r$ & $p \rightarrow q$ & $p \rightarrow (q \rightarrow r)$ &$ (p \rightarrow q)  \rightarrow r$ & $(p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q)  \rightarrow r)$ \\ 
+\hline
+ 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0\\
+ 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1\\
+ 0 & 1 & 0 & 0 & 1 & 1 & 0 & 0\\
+ 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+ 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1\\
+ 1 & 0 & 1 & 1 & 0 & 1 & 1 & 1\\
+ 1 & 1 & 0 & 0 & 1 & 0 & 0 & 1\\
+ 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+\hline
+\end{tabular}
+
+The above trusth table shows that the formula is true for some interpretations and thus the Formula is satisfiable. 
+Also the truth table shows that the formula is false for some interpretations and thus the formula is falsifiable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Question2.1}
+
+Given Formula 
+
+
+\newcommand{\ti}{\nu_\interp}
+
+
+\begin{equation}
+ F_1  = ((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) \rightarrow r
+\end{equation}
+
+We need to show that 
+\begin{equation}
+\label{21prove}
+ \ti (F_1) = T
+\end{equation}
+
+for any interpretation of p, q and r.
+
+Using proof by contradiction we assume
+
+\begin{equation}
+\label{21ass}
+ \ti (F_1 ) = F
+\end{equation}
+
+then 
+
+\begin{equation}
+ \ti(r) = F
+\end{equation}
+
+ and
+ 
+ \begin{equation}
+ \label{21}
+\ti((( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )) = T  
+ \end{equation}
+
+The subformula 
+
+\begin{equation}
+(( p \vee q) \vee r ) \wedge ( \neg p \wedge \neg q )
+\end{equation}
+
+is made up of the conjuction between sub formulas
+
+\begin{equation}
+\label{211}
+( p \vee q) \vee r 
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{212}
+\neg p \wedge \neg q 
+\end{equation}
+
+Thus the statement \ref{21} can only be valid if both the statements
+
+\begin{equation}
+ \ti(( p \vee q) \vee r ) = T
+\end{equation}
+
+and 
+
+\begin{equation}
+ \ti( \neg p \wedge \neg q ) = T
+\end{equation}
+
+are true.
+
+But formula \ref{212} is the negation of formula \ref{211} by de Morgans law, taking into account that $\ti(r) = F$ and the disjunction of any statement with a false statement has the tuth value of the original statement. 
+Thereore we have a contradiction. Statement \ref{21} cannot be true because the conjunction of a formula and its negation cannot be True for any interpretation. 
+That means our assumption in statement \ref{21ass} is incorect and therefore statement \ref{21prove} is true. And since $F_1$ is true for all interpretations, it is a valid formula.
+
+\section{2.2}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,7 +229,7 @@ and
  r
 \end{equation}
 
-Where Formula \ref{412} is satisfyable.
+Where Formula \ref{412} is satisfiable.
 
 Continueing for Formula \ref{411} by applying the $\beta$ formula for $\neg (B_1 \wedge B_2)$ we get
 
@@ -105,7 +262,7 @@ Then applying formula $\neg ( A_1 \vee A_2 )$ again we get
  \neg p, \neg q, \neg r
 \end{equation}
 
-Which is satisfyable.
+Which is satisfiable.
 
 Going back to Formula \ref{4112} which can by simplified to 
 
@@ -128,7 +285,7 @@ q
 \end{equation}
 
 Both of which are satifyable. Now looking at all the leaf nodes namely 
-Formalas \ref{412}, \ref{411111}, \ref{41121} and \ref{41122} we can see that they are all satisfyable. Thus
+Formalas \ref{412}, \ref{411111}, \ref{41121} and \ref{41122} we can see that they are all satisfiable. Thus
 Formula \ref{41} is valid.
 
 
@@ -253,7 +410,7 @@ Having finished all the leaves under Formula \ref{421} we continue with Formula 
 
 But Formula \ref{4221} is the same as Formula \ref{421a}. Formula \ref{421a} will have the same leaf nodes as Formula \ref{4221}.
 
-Thus we have all the leaf nodes namely Formulas \ref{42112}, \ref{421111}, \ref{421112}, \ref{42121} and \ref{421221}. All of these Formulas are unsatisfyable, 
-therefore the original Formula \ref{420} is unsatisfyable.
+Thus we have all the leaf nodes namely Formulas \ref{42112}, \ref{421111}, \ref{421112}, \ref{42121} and \ref{421221}. All of these Formulas are unsatisfiable, 
+therefore the original Formula \ref{420} is unsatisfiable.
 
 \end{document}
