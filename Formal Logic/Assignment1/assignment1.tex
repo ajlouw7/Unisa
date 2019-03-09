@@ -189,14 +189,112 @@ But formula \ref{212} is the negation of formula \ref{211} by de Morgans law, ta
 Thereore we have a contradiction. Statement \ref{21} cannot be true because the conjunction of a formula and its negation cannot be True for any interpretation. 
 That means our assumption in statement \ref{21ass} is incorect and therefore statement \ref{21prove} is true. And since $F_1$ is true for all interpretations, it is a valid formula.
 
-\section{2.2}
+\section{Question 2.2}
+
+Given formula
+
+\begin{equation}
+\label{220}
+(p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) 
+\end{equation}
+
+We need to prove that 
+
+\begin{equation}
+\ti((p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) ) = F 
+\end{equation}
+
+Using proof by contradiction, we assume 
+
+\begin{equation}
+\ti((p \rightarrow ( q \rightarrow r )) \leftrightarrow (( p \wedge q) \wedge \neg r) ) = T
+\end{equation}
+
+We know that the equivalence operator only returns true when both sides of the forluma is true. In this case when
+
+\begin{equation}
+\label{221}
+ \ti(p \rightarrow ( q \rightarrow r )) = F
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{222}
+ \ti(( p \wedge q) \wedge \neg r ) = F
+\end{equation}
+
+
+which we will call Case 1 and
+
+\begin{equation}
+\label{223}
+\ti(p \rightarrow ( q \rightarrow r )) = T
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{224}
+ \ti(( p \wedge q) \wedge \neg r ) = T
+\end{equation}
+
+
+which we will call case 2.
+
+For Case 1, formula \ref{221} can only be valid if 
+
+\begin{equation}
+ \ti(p) = T
+\end{equation}
+
+and
+
+\begin{equation}
+\label{2211}
+ \ti( q\rightarrow r ) = F
+\end{equation}
+
+are valid. In turn, for eaqation \ref{2211} to be valid we have to have 
+
+\begin{equation}
+ \ti(q) = T
+\end{equation}
+
+and
+
+\begin{equation}
+ \ti(r) = F
+\end{equation}
+
+Thus in case 1 for equation \ref{221} to be valid we have to have the values $\ti(p) = T$, $\ti(q) = T$ and $\ti(r) = F$.
+Now to prove Case 1 we have to use these values for interpretation \ref{222}. But that gives
+
+\begin{equation}
+ \ti((p\wedge)\wedge \neg r) = T
+\end{equation}
+
+which is a contradiction to equation \ref{222}. Which means formula cannot be true when wh have equations \ref{221} and \ref{222}.
+
+Now for case 2:
+
+Equation \ref{224} can only be true if $\ti(p) = T$, $\ti(q) = T$ and $\ti(r) = F$ due to the definition of conjuctions. 
+Equation \ref{223} need to be true for this interpretation. But using these interpretations for p,q and r gives
+
+\begin{equation}
+\ti(p \rightarrow ( q \rightarrow r )) = F
+\end{equation}
+
+Which is a contradiction with equation \ref{223}.
+
+In both cases when formula \ref{220} could have been True, we have a contradiction. 
+The formula has to be false for all interpretations and is thus unsatisfiable.
 
 
 
 
 
-
-
+\section{Question 3}
 
 
 
@@ -412,5 +510,50 @@ But Formula \ref{4221} is the same as Formula \ref{421a}. Formula \ref{421a} wil
 
 Thus we have all the leaf nodes namely Formulas \ref{42112}, \ref{421111}, \ref{421112}, \ref{42121} and \ref{421221}. All of these Formulas are unsatisfiable, 
 therefore the original Formula \ref{420} is unsatisfiable.
+
+\section{Question 4.3}
+
+For formula 
+
+\begin{equation}
+\label{430}
+(p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q)  \rightarrow r)
+\end{equation}
+
+We have to prove that it is satisfiable and falsifiable using semantic tableaux. Applying the $\beta$ formula fot implication we get
+
+\begin{equation}
+\label{431}
+ \neg (p \rightarrow (q \rightarrow r)) 
+\end{equation}
+
+and
+
+\begin{equation}
+ \label{432}
+ ((p \rightarrow q)  \rightarrow r)
+\end{equation}
+
+Applying the $\alpha$ formula for negated implication, set \ref{431} becomes
+
+
+\begin{equation}
+\label{4311}
+p, \neg (q \rightarrow r)) 
+\end{equation}
+
+Applying the $alpha$ formula for negated implication to set \ref{4311} we get
+
+\begin{equation}
+\label{4311}
+p,q,\neg r
+\end{equation}
+
+We have found a set that does not contain an atom and its negation. Proving formula \ref{430} is satisfiable.
+
+
+
+
+
 
 \end{document}
