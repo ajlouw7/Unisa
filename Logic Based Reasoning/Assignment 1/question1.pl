@@ -1,0 +1,9 @@
+dog('Sasha','Beagle','Nadia').
+dog('Zappa','Labrador','Sjanie').
+dog('Domino','Dalmation','Peter').
+dog('Daisy','Boxer','John').
+dog('Ben','Ridgeback','Ben').
+breed('Beagles','Medium','Hunting').
+breed('Basset','','Hunting').
+breed('Labrador','Large','GuideDog').
+breed('GermanShephard','','GaurdDog').
