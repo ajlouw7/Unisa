@@ -14,7 +14,6 @@ sports(Name,Surname,Sports):-
   student(Name,Surname,_,_,Sports).
 
 playingSport(Name,Surname,Sport):-
-   student(Name,Surname,_,_,[Sport]).
+  student(Name,Surname,_,_,SportList),
+  member(Sport,SportList).
    
-playingSport(Name,Surname,Sport):-
-   student(Name,Surname,_,_,[Sport,_]).
