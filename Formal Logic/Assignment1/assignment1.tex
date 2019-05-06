@@ -296,8 +296,19 @@ The formula has to be false for all interpretations and is thus unsatisfiable.
 
 \section{Question 3}
 
+This is equavalent to proving the contrapositive namely if some tableau for A is open then A is satisfiable. Further we need the concept of a Hintikka set. Where if $U$ is a set of formulas, $U$ is a Hitikka set when:
 
+1. for all atoms $p$ in a formula of $U$ then either $p \notin U$ or $\neg p \notin U$
 
+2. If $A \in U$ is an $\alpha$-formula then, $A_1 \in U$ and $A_2 \in U$
+
+3. if $B \in U$ ia a $\beta$-formula then, $B_1 \in U$ or $B_2 \in U$ 
+
+Now we show that the union of all the formulas from an open leaf to the root of a completed tableau is a Hintikka set. Firstly any literal $p$ or $\neg p$ cannot be decomposed futher in semantic tableau. This means that any literal will copied unitl it is iin the leaf node. But since the leaf node is open the first condition for a Hintikka set holds. For the second condition, since the tableau is completed, when some formula A ($\alpha$-formula) in the set is decomposed, $A_1$ and $A_2$ will be in U. Similarly for some formula B ($\beta$-formula) when it is decomposed in a completed tableau, either $B_1$ or $b_2$ will be in U.
+
+Now a Hintikka set U is satisfiable.
+
+Then if we have an completed open tableau, Then the union of the labels creates a Hintikka set. Since a Hintikka set is satisfiable, then the tableau is satisfiable,  
 
 
 
@@ -553,6 +564,20 @@ We have found a set that does not contain an atom and its negation. Proving form
 
 
 \section{Question 5}
+
+\begin{tabular}{ll}
+1. $\vdash \neg p$     &                                    (axiom) \\
+2. $\vdash \neg q$ & (axiom)\\
+3. $\vdash \neg r$ & (axiom)\\
+4. $\vdash p,q,r$ & (axiom)\\
+5. $\vdash p \vee q,r $              &           $\alpha \vee 4$\\
+6. $\vdash ( p \vee q ) \vee r$     &            $\alpha \vee 5$\\
+7. $\vdash \neg p \wedge \neg q$         &            $\beta \wedge 1,2$\\
+8. $\vdash (( p \vee q ) \vee r ) \wedge (\neg p \wedge \neg q) $ & $\beta \wedge 6,7$     \\
+9. $\vdash (( p \vee q ) \vee r ) \wedge (\neg p \wedge \neg q)) \rightarrow r$ & $\beta \rightarrow 3,8$\\
+\end{tabular}
+
+
 
 
 
