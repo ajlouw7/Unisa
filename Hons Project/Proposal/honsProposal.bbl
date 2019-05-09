@@ -1,20 +1,76 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Bongaarts}{2005}{Bongaarts2005}
+Bongaarts, J.  \harvardyearleft 2005\harvardyearright , {Long-Range Trends in
+  Adult Mortality: Models and Projection Methods}, Technical Report~1.
+\newline\harvardurl{https://0-www-jstor-org.oasis.unisa.ac.za/stable/pdf/1515175.pdf?ab{\_}segments=0{\%}252Fdefault-2{\%}252Fcontrol{\&}refreqid=excelsior{\%}3Aa5dade979716032cde5211a40278cee8}
+
 \harvarditem{Bulled \harvardand\ Sosis}{2010}{Bulled2010}
 Bulled, N.~L. \harvardand\ Sosis, R.  \harvardyearleft 2010\harvardyearright ,
   `{Examining the Relationship between Life Expectancy, Reproduction, and
   Educational Attainment}', {\em Human Nature} {\bf 21}(3),~269--289.
 \newline\harvardurl{https://0-link-springer-com.oasis.unisa.ac.za/content/pdf/10.1007{\%}2Fs12110-010-9092-2.pdf}
 
-\harvarditem[Guarino et~al.]{Guarino, Oberle \harvardand\
-  Staab}{2009}{GuObSt09}
-Guarino, N., Oberle, D. \harvardand\ Staab, S.  \harvardyearleft
-  2009\harvardyearright , {\em {Handbook on Ontologies}}.
+\harvarditem{Gompertz}{1825}{Gompertz}
+Gompertz, B.  \harvardyearleft 1825\harvardyearright , `{XXIV. On the nature of
+  the function expressive of the law of human mortality, and on a new mode of
+  determining the value of life contingencies. In a letter to Francis Baily,
+  Esq. F. R. S. {\&}c}', {\em Philosophical Transactions of the Royal Society
+  of London} {\bf 115},~513--583.
+
+\harvarditem{Grossman}{2000}{Grossman2000}
+Grossman, M.  \harvardyearleft 2000\harvardyearright , {THE HUMAN CAPITAL
+  MODEL}, {\em in} `Handbook of Health Economics, Volume 1', Vol.~1,
+  pp.~348--407.
+\newline\harvardurl{https://pdfs.semanticscholar.org/ecb2/f4d54ef8c970bf2907cab8d684ede1e58a87.pdf}
 
 \harvarditem[Low et~al.]{Low, Hazel, Parker \harvardand\ Welch}{2008}{Low2008}
 Low, B.~S., Hazel, A., Parker, N. \harvardand\ Welch, K.~B.  \harvardyearleft
   2008\harvardyearright , `{Influences on Women's Reproductive Lives}', {\em
   Cross-Cultural Research} {\bf 42}(3),~201--219.
 \newline\harvardurl{http://ccr.sagepub.comhttp//online.sagepub.com}
+
+\harvarditem{Makeham}{1860}{Makeham1860}
+Makeham, W.~M.  \harvardyearleft 1860\harvardyearright , `{On the Law of
+  Mortality and Construction of Annuity Tables}', {\em The Assurance Magazine
+  and Journal of the Institute of Actuaries} {\bf 8}(06),~301--310.
+\newline\harvardurl{http://www.journals.cambridge.org/abstract{\_}S204616580000126X
+  https://ia801701.us.archive.org/21/items/jstor-41134925/41134925.pdf}
+
+\harvarditem[Raftery et~al.]{Raftery, Alkema \harvardand\
+  Gerland}{2014}{Raftery2014}
+Raftery, A.~E., Alkema, L. \harvardand\ Gerland, P.  \harvardyearleft
+  2014\harvardyearright , `{Bayesian Population Projections for the United
+  Nations}', {\em Statistical Science} {\bf 29}(1),~58--68.
+\newline\harvardurl{https://0-www-jstor-org.oasis.unisa.ac.za/stable/pdf/43288451.pdf?ab{\_}segments=0{\%}252Fdefault-2{\%}252Fcontrol{\&}refreqid=excelsior{\%}3Abcd6ef78767127a832ba89f9bb2dd7f7}
+
+\harvarditem[Rajkomar et~al.]{Rajkomar, Oren, Chen, Dai, Hajaj, Liu, Liu, Sun,
+  Sundberg, Yee, Zhang, Duggan, Flores, Hardt, Irvine, Le, Litsch, Marcus,
+  Mossin, Tansuwan, Wang, Wexler, Wilson, Ludwig, Volchenboum, Chou, Pearson,
+  Madabushi, Shah, Butte, Howell, Cui, Corrado \harvardand\
+  Dean}{2018}{Rajkomar2018}
+Rajkomar, A., Oren, E., Chen, K., Dai, A.~M., Hajaj, N., Liu, P.~J., Liu, X.,
+  Sun, M., Sundberg, P., Yee, H., Zhang, K., Duggan, G.~E., Flores, G., Hardt,
+  M., Irvine, J., Le, Q., Litsch, K., Marcus, J., Mossin, A., Tansuwan, J.,
+  Wang, D., Wexler, J., Wilson, J., Ludwig, D., Volchenboum, S.~L., Chou, K.,
+  Pearson, M., Madabushi, S., Shah, N.~H., Butte, A.~J., Howell, M., Cui, C.,
+  Corrado, G. \harvardand\ Dean, J.  \harvardyearleft 2018\harvardyearright ,
+  `{Scalable and accurate deep learning for electronic health records}', {\em
+  Digital Medicine} {\bf 1},~18.
+\newline\harvardurl{www.nature.com/npjdigitalmed
+  http://arxiv.org/abs/1801.07860{\%}0Ahttp://dx.doi.org/10.1038/s41746-018-0029-1}
+
+\harvarditem[Shang et~al.]{Shang, Booth \harvardand\ Hyndman}{2011}{Shang2011}
+Shang, H.~L., Booth, H. \harvardand\ Hyndman, R.~J.  \harvardyearleft
+  2011\harvardyearright , `{Point and interval forecasts of mortality rates and
+  life expectancy: A comparison of ten principal component methods}', {\em
+  Demographic Research} {\bf 25},~173--214.
+\newline\harvardurl{www.demographic-research.org}
+
+\harvarditem[Shaw et~al.]{Shaw, Horrace \harvardand\ Vogel}{2005}{Shaw2005}
+Shaw, J.~W., Horrace, W.~C. \harvardand\ Vogel, R.~J.  \harvardyearleft
+  2005\harvardyearright , {The Determinants of Life Expectancy: An Analysis of
+  the OECD}, Technical Report~4.
+\newline\harvardurl{https://0-www-jstor-org.oasis.unisa.ac.za/stable/pdf/20062079.pdf?ab{\_}segments=0{\%}2Fdefault-2{\%}2Fcontrol{\&}refreqid=search{\%}3Aba83618dfd1073a89888d75df991a4ea}
 
 \end{thebibliography}

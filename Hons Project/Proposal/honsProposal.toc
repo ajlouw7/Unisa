@@ -1,11 +1,22 @@
 \contentsline {section}{\numberline {1}Abstract}{1}
 \contentsline {section}{\numberline {2}Introduction}{1}
-\contentsline {section}{\numberline {3}Literature Review}{1}
-\contentsline {subsection}{\numberline {3.1}Determinants of life expectancy}{1}
-\contentsline {subsubsection}{\numberline {3.1.1}Income}{1}
-\contentsline {subsubsection}{\numberline {3.1.2}Education atainment}{1}
-\contentsline {subsubsection}{\numberline {3.1.3}Per capita spending on health}{1}
-\contentsline {subsubsection}{\numberline {3.1.4}Access to safe drinking water}{1}
-\contentsline {subsubsection}{\numberline {3.1.5}Turmoil}{1}
-\contentsline {section}{\numberline {4}Methodology}{2}
-\contentsline {section}{\numberline {5}Data analysis}{2}
+\contentsline {section}{\numberline {3}Literature Review}{2}
+\contentsline {subsection}{\numberline {3.1}?Grossman?}{2}
+\contentsline {subsection}{\numberline {3.2}Life expectancy projections}{2}
+\contentsline {subsection}{\numberline {3.3}Determinants of life expectancy}{2}
+\contentsline {subsubsection}{\numberline {3.3.1}Income}{2}
+\contentsline {subsubsection}{\numberline {3.3.2}Education atainment}{2}
+\contentsline {subsubsection}{\numberline {3.3.3}Per capita spending on health}{2}
+\contentsline {subsubsection}{\numberline {3.3.4}Access to safe drinking water}{2}
+\contentsline {subsubsection}{\numberline {3.3.5}Turmoil}{2}
+\contentsline {section}{\numberline {4}Methodology/Procedure}{2}
+\contentsline {subsection}{\numberline {4.1}Choice of dataset}{2}
+\contentsline {subsection}{\numberline {4.2}Regression}{2}
+\contentsline {subsection}{\numberline {4.3}k-Nearest Neighbour}{2}
+\contentsline {subsection}{\numberline {4.4}Support Vector Machines}{2}
+\contentsline {subsection}{\numberline {4.5}Cross-validation}{2}
+\contentsline {section}{\numberline {5}Analysis}{2}
+\contentsline {section}{\numberline {6}Conclusion}{2}
+\contentsline {section}{\numberline {7}Recommendations}{2}
+\contentsline {section}{References}{2}
+\contentsline {section}{\numberline {8}Appendices}{3}
