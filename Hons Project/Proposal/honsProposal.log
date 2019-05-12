@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  8 MAY 2019 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  12 MAY 2019 11:48
 entering extended mode
 **./honsProposal.tex
 (honsProposal.tex
@@ -269,46 +269,115 @@ LaTeX Font Info:    ... okay on input line 12.
 
  [1
 
-{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (honsPropos
-al.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
+{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (honsPr
+oposal.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
 a/stable/pdf/1515175.pdf?ab[]segments=0%252Fdefault-
  []
 
-[2]
-Overfull \hbox (52.42245pt too wide) in paragraph at lines 34--39
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
+a/stable/pdf/23310253.pdf?ab[]segments=0%252Fdefault-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\OT1/cmr/m/it/10 2%252Fcontrol&refreqid=excelsior%3A5edcd7b078444473928072ccdf0
+a5005 https://www-jstor-
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+[3]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Overfull \hbox (73.71555pt too wide) in paragraph at lines 90--95
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://about.jstor.org/terms http://www
+.ingentaconnect.com/content/asoca/jhsb/2004/00000045/00000003/art00001 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--111
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-sciencedirect-com.oasis.un
+isa.ac.za/science/article/pii/S0140673616323819
+ []
+
+
+Overfull \hbox (52.42245pt too wide) in paragraph at lines 125--130
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 http://www.journals.cambridge.org/abstra
 ct[]S204616580000126X https://ia801701.us.archive.org/21/items/jstor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
 a/stable/pdf/43288451.pdf?ab[]segments=0%252Fdefault-
  []
 
-
-Overfull \hbox (6.52719pt too wide) in paragraph at lines 52--62
+[4]
+Overfull \hbox (6.52719pt too wide) in paragraph at lines 157--167
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 www.nature.com/npjdigitalmed http://arxi
 v.org/abs/1801.07860%0Ahttp://dx.doi.org/10.1038/s41746-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://pdf.sciencedirectassets.com/2718
+21/1-s2.0-S0277953611X00059/1-s2.0-
+ []
+
+
+Overfull \hbox (8048.39511pt too wide) in paragraph at lines 187--192
+\OT1/cmr/m/it/10 S027795361100044X/main.pdf?x-amz-security-token=AgoJb3JpZ2luX2
+VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBGjR0sbVsb55FZel%2FH
+qYMrTkskQK4P2e8pRdVzeo8PzAiEAgQZhHupLGXnMN2e0ud6T9s9KWILb5UVGZvH%2F%2FymuBm8q4w
+MInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwwNTkwMDM1NDY4NjUiDCRlgGtZfCw3T38O5yq3A
+%2BquE4AJgI2VofoPdWn%2FMV899nEC69hFzBGHUU%2FIfVWYu%2BP3YXM%2FT6MOnPe49ahxG6RWuj
+sSX%2FQKlY71wV33ZTcMVM%2FaNpXt9Fa3RzaNwdsTIkfKWHCjl9IxyFpwZPA3TrsE0pDLKgWXwzhoI
+PPoxQiTLw9WGvp5T3Z0vZLvS3FLqmEuLfiH8wR2jCU5DCmOYljl%2B1kTLR5RDQCKW3MzVK%2FQ%2BW
+p1K9Br9aRVeeOd%2FYSfZwrwDy0j5U1yZ1ygKKGcY%2BwRb60qmCKs22otoGloCFAmSxmZI28L4Ju21
+sJpa3s7TeaHqu7tuy7rnFd%2BJLV30ykONjIsGlNEskZUwdqMj1DolkCk4kfO0UVUk%2Fbf5JO2wSer
+KVifyxdtYHVq8k69ATn%2FNIKAYS2bWhC1S%2BokvuILRVDEkzVl3kM2J%2B4VPCBND9szcQV0q6%2B
+GB%2BNUgavtZceNx3YHv5l6p4ZSKZVrYbN7JlM7aGPUAUVtZWXLMsMZ%2F84Qb9Uk%2F74Eq4gFrGKN
+nnN9o8i4C4BYkdwDA4%2Fo8XtXCTwbprTu8SGnlVELLTVDD8KyMXFwbB7vo4GnsYxZxo%2FgseJP8Jg
+w0NTe5gU6tAHDG96weRz5DnyiqtCKyPSxTuXfTA92KkYB%2FftExjXin8TvSb4xXz1rmS3W6eUriEIL
+X5tmXfNGFBaMW2bD%2B3gQgKAK7HYOinIVfhwKbS%2FrXQYAI57APjej%2BdjnxhpyrYfS7dZnraKJZ
+vmTLVguoI8lzcm%2FJAjRRUZMmBbdUmJK047AB0UrmRjpObO2Oj0xC6MXYkGOHCxYn9t693tethWQcj
+7h75Q%2Fz41XcThuuuUgIOQrizA%3D&AWSAccessKeyId=ASIAQ3PHCVTY3ZTN6ZDH&Expires=1557
+643237&Signature=ZmGcgMBsFW1DGI9w2K7vYLQoKrM%3D&hash=7a7b38352a57850ded9f4a06a7
+c542a58717d0e4ebc4a6c393877e6ef0a6258b&host=68042c943591013ac2b2430a89b270f6af2
+c76d8dfd086a07176afe7c76c2c61&pii=S027795361100044X&tid=spdf-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
 a/stable/pdf/20062079.pdf?ab[]segments=0%2Fdefault-
  []
 
-) [3] (honsProposal.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--228
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.ncbi.nlm.nih.gov/pmc/article
+s/PMC3160637/pdf/nihms315486.pdf
+ []
+
+) [5] (honsProposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2205 strings out of 493303
- 29169 string characters out of 3138856
- 93488 words of memory out of 3000000
- 5767 multiletter control sequences out of 15000+200000
+ 2265 strings out of 493303
+ 30324 string characters out of 3138856
+ 95641 words of memory out of 3000000
+ 5827 multiletter control sequences out of 15000+200000
  9369 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,32p,360b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,32p,1903b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
@@ -316,9 +385,9 @@ mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on honsProposal.pdf (3 pages, 119874 bytes).
+Output written on honsProposal.pdf (5 pages, 132437 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
