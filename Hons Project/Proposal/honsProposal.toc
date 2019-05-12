@@ -7,8 +7,8 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Income}{2}
 \contentsline {subsubsection}{\numberline {3.3.2}Education atainment}{2}
 \contentsline {subsubsection}{\numberline {3.3.3}Per capita spending on health}{2}
-\contentsline {subsubsection}{\numberline {3.3.4}Access to safe drinking water}{2}
-\contentsline {subsubsection}{\numberline {3.3.5}Infant mortality}{2}
+\contentsline {subsubsection}{\numberline {3.3.4}Access to safe drinking water}{3}
+\contentsline {subsubsection}{\numberline {3.3.5}Infant mortality}{3}
 \contentsline {subsubsection}{\numberline {3.3.6}Turmoil}{3}
 \contentsline {subsection}{\numberline {3.4}The gender gap}{3}
 \contentsline {section}{\numberline {4}Methodology/Procedure}{3}
@@ -21,4 +21,4 @@
 \contentsline {section}{\numberline {6}Conclusion}{3}
 \contentsline {section}{\numberline {7}Recommendations}{3}
 \contentsline {section}{References}{3}
-\contentsline {section}{\numberline {8}Appendices}{5}
+\contentsline {section}{\numberline {8}Appendices}{6}

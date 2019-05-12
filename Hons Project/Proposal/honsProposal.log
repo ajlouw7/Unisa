@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  12 MAY 2019 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  12 MAY 2019 15:07
 entering extended mode
 **./honsProposal.tex
 (honsProposal.tex
@@ -299,43 +299,43 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Overfull \hbox (73.71555pt too wide) in paragraph at lines 90--95
+Overfull \hbox (73.71555pt too wide) in paragraph at lines 105--110
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://about.jstor.org/terms http://www
 .ingentaconnect.com/content/asoca/jhsb/2004/00000045/00000003/art00001 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--111
+Underfull \hbox (badness 10000) in paragraph at lines 128--134
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-sciencedirect-com.oasis.un
 isa.ac.za/science/article/pii/S0140673616323819
  []
 
-
-Overfull \hbox (52.42245pt too wide) in paragraph at lines 125--130
+[4]
+Overfull \hbox (52.42245pt too wide) in paragraph at lines 148--153
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 http://www.journals.cambridge.org/abstra
 ct[]S204616580000126X https://ia801701.us.archive.org/21/items/jstor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--151
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
 a/stable/pdf/43288451.pdf?ab[]segments=0%252Fdefault-
  []
 
-[4]
-Overfull \hbox (6.52719pt too wide) in paragraph at lines 157--167
+
+Overfull \hbox (6.52719pt too wide) in paragraph at lines 180--190
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 www.nature.com/npjdigitalmed http://arxi
 v.org/abs/1801.07860%0Ahttp://dx.doi.org/10.1038/s41746-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Underfull \hbox (badness 10000) in paragraph at lines 210--215
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://pdf.sciencedirectassets.com/2718
 21/1-s2.0-S0277953611X00059/1-s2.0-
  []
 
 
-Overfull \hbox (8048.39511pt too wide) in paragraph at lines 187--192
+Overfull \hbox (8048.39511pt too wide) in paragraph at lines 210--215
 \OT1/cmr/m/it/10 S027795361100044X/main.pdf?x-amz-security-token=AgoJb3JpZ2luX2
 VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBGjR0sbVsb55FZel%2FH
 qYMrTkskQK4P2e8pRdVzeo8PzAiEAgQZhHupLGXnMN2e0ud6T9s9KWILb5UVGZvH%2F%2FymuBm8q4w
@@ -358,36 +358,36 @@ c76d8dfd086a07176afe7c76c2c61&pii=S027795361100044X&tid=spdf-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
 a/stable/pdf/20062079.pdf?ab[]segments=0%2Fdefault-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--228
+Underfull \hbox (badness 10000) in paragraph at lines 246--251
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.ncbi.nlm.nih.gov/pmc/article
 s/PMC3160637/pdf/nihms315486.pdf
  []
 
-) [5] (honsProposal.aux) ) 
+[5]) [6] (honsProposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2265 strings out of 493303
- 30324 string characters out of 3138856
- 95641 words of memory out of 3000000
- 5827 multiletter control sequences out of 15000+200000
+ 2274 strings out of 493303
+ 30486 string characters out of 3138856
+ 96803 words of memory out of 3000000
+ 5836 multiletter control sequences out of 15000+200000
  9369 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,32p,1903b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on honsProposal.pdf (5 pages, 132437 bytes).
+ 27i,6n,32p,1903b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on honsProposal.pdf (6 pages, 134526 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
