@@ -1,24 +1,26 @@
 \contentsline {section}{\numberline {1}Abstract}{1}
 \contentsline {section}{\numberline {2}Introduction}{2}
 \contentsline {section}{\numberline {3}Literature Review}{2}
-\contentsline {subsection}{\numberline {3.1}?Grossman?}{2}
-\contentsline {subsection}{\numberline {3.2}Life expectancy projections}{2}
-\contentsline {subsection}{\numberline {3.3}Determinants of life expectancy}{2}
-\contentsline {subsubsection}{\numberline {3.3.1}Income}{2}
-\contentsline {subsubsection}{\numberline {3.3.2}Education atainment}{2}
-\contentsline {subsubsection}{\numberline {3.3.3}Per capita spending on health}{2}
-\contentsline {subsubsection}{\numberline {3.3.4}Access to safe drinking water}{3}
-\contentsline {subsubsection}{\numberline {3.3.5}Infant mortality}{3}
-\contentsline {subsubsection}{\numberline {3.3.6}Turmoil}{3}
-\contentsline {subsection}{\numberline {3.4}The gender gap}{3}
-\contentsline {section}{\numberline {4}Methodology/Procedure}{3}
-\contentsline {subsection}{\numberline {4.1}Choice of dataset}{3}
-\contentsline {subsection}{\numberline {4.2}Regression}{3}
-\contentsline {subsection}{\numberline {4.3}k-Nearest Neighbour}{3}
-\contentsline {subsection}{\numberline {4.4}Support Vector Machines}{3}
-\contentsline {subsection}{\numberline {4.5}Cross-validation}{3}
-\contentsline {section}{\numberline {5}Analysis}{3}
-\contentsline {section}{\numberline {6}Conclusion}{3}
-\contentsline {section}{\numberline {7}Recommendations}{3}
-\contentsline {section}{References}{3}
-\contentsline {section}{\numberline {8}Appendices}{6}
+\contentsline {subsection}{\numberline {3.1}Life tables}{2}
+\contentsline {subsection}{\numberline {3.2}?Grossman?}{2}
+\contentsline {subsection}{\numberline {3.3}Life expectancy projections}{2}
+\contentsline {subsection}{\numberline {3.4}Determinants of life expectancy}{2}
+\contentsline {subsubsection}{\numberline {3.4.1}Income}{2}
+\contentsline {subsubsection}{\numberline {3.4.2}Education atainment}{3}
+\contentsline {subsubsection}{\numberline {3.4.3}Per capita spending on health}{3}
+\contentsline {subsubsection}{\numberline {3.4.4}Access to safe drinking water}{3}
+\contentsline {subsubsection}{\numberline {3.4.5}Infant mortality}{3}
+\contentsline {subsubsection}{\numberline {3.4.6}Turmoil}{3}
+\contentsline {subsection}{\numberline {3.5}The gender gap}{4}
+\contentsline {subsection}{\numberline {3.6}Unemployment}{4}
+\contentsline {section}{\numberline {4}Methodology/Procedure}{4}
+\contentsline {subsection}{\numberline {4.1}Choice of dataset}{4}
+\contentsline {subsection}{\numberline {4.2}Regression}{4}
+\contentsline {subsection}{\numberline {4.3}k-Nearest Neighbour}{4}
+\contentsline {subsection}{\numberline {4.4}Support Vector Machines}{4}
+\contentsline {subsection}{\numberline {4.5}Cross-validation}{4}
+\contentsline {section}{\numberline {5}Analysis}{4}
+\contentsline {section}{\numberline {6}Conclusion}{4}
+\contentsline {section}{\numberline {7}Recommendations}{4}
+\contentsline {section}{References}{4}
+\contentsline {section}{Appendices}{9}

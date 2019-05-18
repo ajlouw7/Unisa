@@ -1,5 +1,20 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Arias}{2007}{Arias2007}
+Arias, E.  \harvardyearleft 2007\harvardyearright , {National Vital Statistics
+  Reports}, Technical Report~6.
+\newline\harvardurl{https://www.cdc.gov/nchs/data/nvsr/nvsr54/nvsr54{\_}14.pdf
+  https://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53{\_}06.pdf}
+
+\harvarditem[Blakely et~al.]{Blakely, Kawachi, Atkinson \harvardand\
+  Fawcett}{2004}{Blakely2004}
+Blakely, T., Kawachi, I., Atkinson, J. \harvardand\ Fawcett, J.
+  \harvardyearleft 2004\harvardyearright , `{Income and mortality: The shape of
+  the association and confounding New Zealand Census - Mortality study,
+  1981-1999}', {\em International Journal of Epidemiology} {\bf
+  33}(4),~874--883.
+\newline\harvardurl{https://academic.oup.com/ije/article-abstract/33/4/874/665537}
+
 \harvarditem[Bonamore et~al.]{Bonamore, Carmignani \harvardand\
   Colombo}{2015}{Bonamore2015}
 Bonamore, G., Carmignani, F. \harvardand\ Colombo, E.  \harvardyearleft
@@ -63,6 +78,19 @@ Deboosere, P., Gadeyne, S. \harvardand\ {Van Oyen}, H.  \harvardyearleft
   data}', {\em European Journal of Population} {\bf 25}(2),~175--196.
 \newline\harvardurl{https://hal.archives-ouvertes.fr/hal-00478421}
 
+\harvarditem{Elo \harvardand\ Preston}{1996}{Elo1996}
+Elo, I.~T. \harvardand\ Preston, S.~H.  \harvardyearleft 1996\harvardyearright
+  , `{Educational differentials in mortality: United States, 1979-85}', {\em
+  Social Science and Medicine} {\bf 42}(1),~47--57.
+\newline\harvardurl{https://s3.amazonaws.com/academia.edu.documents/45825984/0277-9536{\_}2895{\_}2900062-320160521-29671-1i2ecr.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A{\&}Expires=1558193817{\&}Signature=KpCK8qepx5EDMENCibGnJkb8hmU{\%}3D{\&}response-content-disposition=inline{\%}3B
+  filename{\%}3DEducational{\_}differentials{\_}in{\_}mortality{\_}U.pdf}
+
+\harvarditem{Fergany}{1971}{Fergany1971}
+Fergany, N.  \harvardyearleft 1971\harvardyearright , `{On the Human
+  Survivorship Function and Life Table Construction}', {\em Demography} {\bf
+  8}(3),~331--334.
+\newline\harvardurl{https://0-link-springer-com.oasis.unisa.ac.za/content/pdf/10.2307{\%}2F2060621.pdf}
+
 \harvarditem{Gompertz}{1825}{Gompertz}
 Gompertz, B.  \harvardyearleft 1825\harvardyearright , `{XXIV. On the nature of
   the function expressive of the law of human mortality, and on a new mode of
@@ -114,6 +142,15 @@ Kalwij, A.~S.  \harvardyearleft 2014\harvardyearright , `{An empirical analysis
   the income-mortality gradient}', {\em Demographic Research} {\bf
   31}(1),~913--940.
 \newline\harvardurl{https://www.jstor.org/stable/26350084}
+
+\harvarditem[Kalwij et~al.]{Kalwij, Alessie, Knoef, Kalwij, Alessie
+  \harvardand\ Knoef}{2013}{Kalwij2013}
+Kalwij, A.~S., Alessie, R. J.~M., Knoef, M.~G., Kalwij, A.~S., Alessie, R.
+  J.~M. \harvardand\ Knoef, M.~G.  \harvardyearleft 2013\harvardyearright ,
+  `{The Association Between Individual Income and Remaining Life Expectancy at
+  the Age of 65 in the Netherlands}', {\em Demography} {\bf 50}(1),~181--206.
+\newline\harvardurl{https://0-link-springer-com.oasis.unisa.ac.za/content/pdf/10.1007{\%}2Fs13524-012-0139-3.pdf
+  https://doi.org/10.1007/s13524-012-0139-3}
 
 \harvarditem[Kaplan et~al.]{Kaplan, Howard, Safford \harvardand\
   Howard}{2015}{Kaplan2015}
@@ -226,6 +263,14 @@ Shaw, J.~W., Horrace, W.~C. \harvardand\ Vogel, R.~J.  \harvardyearleft
   the OECD}, Technical Report~4.
 \newline\harvardurl{https://0-www-jstor-org.oasis.unisa.ac.za/stable/pdf/20062079.pdf?ab{\_}segments=0{\%}2Fdefault-2{\%}2Fcontrol{\&}refreqid=search{\%}3Aba83618dfd1073a89888d75df991a4ea}
 
+\harvarditem[Shkolnikov et~al.]{Shkolnikov, Andreev, Tursun-zade \harvardand\
+  Leon}{2019}{Shkol2019}
+Shkolnikov, V.~M., Andreev, E.~M., Tursun-zade, R. \harvardand\ Leon, D.~A.
+  \harvardyearleft 2019\harvardyearright , `{Patterns in the relationship
+  between life expectancy and gross domestic product in Russia in 2005–15: a
+  cross-sectional analysis}', {\em The Lancet Public Health} {\bf
+  4}(4),~e181--e188.
+
 \harvarditem[Tarkiainen et~al.]{Tarkiainen, Martikainen, Laaksonen \harvardand\
   Valkonen}{2012}{Tarkiainen2012}
 Tarkiainen, L., Martikainen, P., Laaksonen, M. \harvardand\ Valkonen, T.
@@ -244,9 +289,16 @@ van Baal, P., Peters, F., Mackenbach, J. \harvardand\ Nusselder, W.
 \harvarditem[van Kippersluis et~al.]{van Kippersluis, O'Donnell \harvardand\
   van Doorslaer}{2011}{VanKippersluis2009}
 van Kippersluis, H., O'Donnell, O. \harvardand\ van Doorslaer, E.
-  \harvardyearleft 2011\harvardyearright , `{Long-Run Returns to Education}',
-  {\em Journal of Human Resources} {\bf 46}(4),~695--721.
+  \harvardyearleft 2011\harvardyearright , `{Long Run Returns to Education:
+  Does Schooling Lead to an Extended Old Age?}', {\em Journal of Human
+  Resources} {\bf 46}(4),~695--721.
 \newline\harvardurl{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160637/pdf/nihms315486.pdf
   http://jhr.uwpress.org/lookup/doi/10.3368/jhr.46.4.695}
+
+\harvarditem{von Gaudecker \harvardand\ Scholz}{2007}{VonGaudecker2007}
+von Gaudecker, H.~M. \harvardand\ Scholz, R.~D.  \harvardyearleft
+  2007\harvardyearright , `{Differential mortality by lifetime earnings in
+  Germany}', {\em Demographic Research} {\bf 17},~83--108.
+\newline\harvardurl{http://www.demographic-research.org}
 
 \end{thebibliography}
