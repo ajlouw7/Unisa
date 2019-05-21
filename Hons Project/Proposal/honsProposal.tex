@@ -51,7 +51,22 @@ A life table is a table given for a specific year that contains the probability 
 
 
 
+
+
+
+
+
+
+
 Seminal work \cite{Fergany1971}.
+
+https://www.mortality.org/ place to find mortality info for developed countries
+
+
+\subsection{Used Life Tables}
+\cite{Luy2019}
+
+
 
 \subsection{?Grossman?}
 2017 determinants of health: an economic perspective  ????
@@ -123,9 +138,35 @@ income inequality does not affect health of a a country \cite{JasonBeckfield2004
 
 \cite{Kaplan2015} investigated the relationship between educational atainment and life expectancy in eight states in the United States. They found that even when controlling for variables like income, race, sex and common medical issues like cardiovascular disease, the relationship between educational antainment and life expectance remains statistically significant.
 
+\cite{Luy2019} studied 3 developed nations, namely the United States, Italy and Denmark. They have also found a strong correlation between education levels and longevity.
+
+
+
 But what is the nature of this correlation? According to \cite{Deary2004} Intelligence Quotient or IQ could explain the association. While \cite{Hayward2015} does not believe in a ``causal relationship'' but rather that it depends on factors like ``time, place, and the social environment''.
 
-In an attempt to find a causal relationship between education and life expectancy, \cite{VanKippersluis2009} investigated the result of the Netherlands increasing the mandatory number of years a child had to attend school to 7 years. It was 6 years previously. \cite{VanKippersluis2009} found a decrease in mortality of 3\% for 81 year old males who had the aditional year of schooling. 
+In an attempt to find a causal relationship between education and life expectancy, \cite{VanKippersluis2009} investigated the result of the Netherlands increasing the mandatory number of years a child had to attend school to 7 years. It was 6 years previously. \cite{VanKippersluis2009} found a decrease in mortality of 3\% for 81 year old males who had the additional year of schooling. 
+
+This relationship appears strongest in more developed countries where the life expectancy is already above 60 years \citep{Bulled2010}. In these countries, any educational investment leads to greater compensation for the learner than they would get in a less developed country \cite{Bulled2010,Handwerker1986}. In addition, \cite{Kabir2008} also studied this relationship, among others, with regards to developing countries and did not find a correlation.
+
+The question remains, which educational indicators should be used when investicating the relationship between education and life expectancy?
+
+Various educational indicators have been used in the literature for comparing to life expectancy. One approach is to use the International Classification of Education (ISCED) system \citep{UNESCO2012}. The ISCED 2011 standard consists of 9 levels ranging from ISCED level 0 (Early childhood education) to ISCED level 8 (Doctoral or equivalent level).
+
+\cite{Luy2019} used the United Nations ISCED-97 (consisting of 7 levels) scale to break education attainment down into 3 levels namely Low (None to Lower Secondary), Medium (Upper secondary) and High (Tertiary education). In \cite{VanKippersluis2009} the Dutch SOI system (Standaard Onderwijs Indeling). Which according to \cite{VanKippersluis2009} is similar to the ISCED system. While in \cite{Deboosere2009} educational attainment was broken into 5 levels also ranging from no education to Tertiarty education. 
+
+\cite{Kaplan2015} broke educational attainment into 4 levels ranging from less than high school to college graduate.
+
+In the study \cite{Bulled2010}, the ralationship between educational invesments and fertility against life expectancy, over 193 countries, was investigated. They used adult literacy and the enrolment ratios for primary,secondary and tertiary schooling.
+
+
+For more see \cite{Montez2015} Much information!!!!
+
+
+
+
+
+
+
 
 
 helping individuals to mobilise health resources \cite{Elo1996} from \cite{Deboosere2009}
@@ -158,11 +199,11 @@ medical spending \cite{Cutler2006}
 \subsubsection{Turmoil}
 \citep{Low2008} p211
 
-\subsection{The gender gap}
+\subsubsection{The gender gap}
 
 \cite{Rochelle2015}
 
-\subsection{Unemployment}
+\subsubsection{Unemployment}
 unemployment \cite{Bonamore2015} \cite{Roelfs2011} \cite{Roelfs2015} 
 
 \section{Methodology/Procedure}
@@ -172,10 +213,12 @@ There are many studies that attempt to extrapolate future life expectancy for co
 This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country.
 
 
+independent vs dependant variable. Choice of algorithm is the independant variable
+
 
 segment data into groups where each group has the same amount of data points???
 
-Unlike \cite{Shaw2005}, this study will not take into account the age distribution of eacmh country.
+Unlike \cite{Shaw2005}, this study will not take into account the age distribution of each country.
 
 As for HDI from \cite{Bulled2010}
 Adult literacy rate
@@ -185,9 +228,14 @@ primary secondary and tertiary enrolment ratios
 GDP per Capita (Purchasing power parity )
 
 
+``National datasets must be regarded with some level of caution as data gaps and issues of inconsistency and incoherence remain owing to differences in the effectiveness of infrastructure, political agendas, and additional factors, such as internal conflicts'' \cite{Bulled2010}  
+
+
 The impact of finishing secondary school is different before vs after the seconf world war \cite{Deboosere2009}
 
 \subsection{Choice of dataset}
+
+
 
 \subsection{Regression}
 
@@ -199,6 +247,8 @@ The impact of finishing secondary school is different before vs after the seconf
 
 \section{Analysis}
 
+
+\cite{Murphy} p23 how to compare techniques
 \section{Conclusion}
 
 \section{Recommendations}
@@ -210,16 +260,17 @@ The impact of finishing secondary school is different before vs after the seconf
 \appendixpage
 
 \begin{longtable}{|c|c|c|c|c|c|c|}
-\caption{Life table for the total population: United States, 2003 \citep{Arias2007}}\\
- \hline \\
+\caption{Life table for the total population: United States, 2003 \citep{Arias2007}}
+    \label{LifeTable}\\
+ \hline 
       &               &              &               &               & Total        &              \\
        & Probability   &              & Number        & Person-years  & number of    &              \\
        & of dying      & Number       & dying         & lived         & person-years & Expectation  \\
        & between       & surviving to & between       & between       & lived above  & of life      \\
        & ages x to x+1 & age x        & ages x to x+1 & ages x to x+1 & age x        & at age x     \\
-\hline  \\
+\hline  
 Age    & q(x)          & l(x)         & d(x)          & L(x)          & T(x)         & e(x)         \\
-\hline \\
+\hline 
 0-1    & 0.006865      & 100,000      & 687           & 99,394        & 7,743,016    & 77.4         \\
 1-2    & 0.000469      & 99,313       & 47            & 99,290        & 7,643,622    & 77.0         \\
 2-3    & 0.000337      & 99,267       & 33            & 99,250        & 7,544,332    & 76.0         \\
@@ -320,9 +371,8 @@ Age    & q(x)          & l(x)         & d(x)          & L(x)          & T(x)    
 97-98  & 0.241387      & 5,225        & 1261          & 4,594         & 15,796       & 3.0          \\
 98-99  & 0.259552      & 3,964        & 1029          & 3,449         & 11,202       & 2.8          \\
 99-100 & 0.278539      & 2,935        & 818           & 2,526         & 7,752        & 2.6          \\
-100+   & 1.00000       & 2,118        & 2118          & 5,226         & 5,226        & 2.5          
-\hline 
-\label{LifeTable}
+100+   & 1.00000       & 2,118        & 2118          & 5,226         & 5,226        & 2.5          \\
+\hline
 \end{longtable}
 
 \addappheadtotoc

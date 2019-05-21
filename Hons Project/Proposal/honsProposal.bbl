@@ -32,7 +32,8 @@ Bongaarts, J.  \harvardyearleft 2005\harvardyearright , {Long-Range Trends in
 Bulled, N.~L. \harvardand\ Sosis, R.  \harvardyearleft 2010\harvardyearright ,
   `{Examining the Relationship between Life Expectancy, Reproduction, and
   Educational Attainment}', {\em Human Nature} {\bf 21}(3),~269--289.
-\newline\harvardurl{https://0-link-springer-com.oasis.unisa.ac.za/content/pdf/10.1007{\%}2Fs12110-010-9092-2.pdf}
+\newline\harvardurl{https://s3.amazonaws.com/academia.edu.documents/30578605/BulledSosis2010.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A{\&}Expires=1558253533{\&}Signature=wF34f4UizqM3UIEApL1KAewXIfE{\%}3D{\&}response-content-disposition=inline{\%}3B
+  filename{\%}3DExamining{\_}the{\_}Relationship{\_}Between{\_}Life.pdf}
 
 \harvarditem{{Centers for Disease Control {\&} Prevention}}{1999}{CDC1999}
 {Centers for Disease Control {\&} Prevention}  \harvardyearleft
@@ -104,6 +105,12 @@ Grossman, M.  \harvardyearleft 2000\harvardyearright , {THE HUMAN CAPITAL
   pp.~348--407.
 \newline\harvardurl{https://pdfs.semanticscholar.org/ecb2/f4d54ef8c970bf2907cab8d684ede1e58a87.pdf}
 
+\harvarditem{Handwerker}{1986}{Handwerker1986}
+Handwerker, W.~P.  \harvardyearleft 1986\harvardyearright , `{The Modern
+  Demographic Transition: An Analysis of Subsistence Choices and Reproductive
+  Consequences}', {\em American Anthropologist} {\bf 88}(2),~400--417.
+\newline\harvardurl{http://www.jstor.org/stable/677569}
+
 \harvarditem[Hayward et~al.]{Hayward, Hummer \harvardand\
   Sasson}{2015}{Hayward2015}
 Hayward, M.~D., Hummer, R.~A. \harvardand\ Sasson, I.  \harvardyearleft
@@ -135,6 +142,12 @@ Hu, Y., van Lenthe, F.~J. \harvardand\ Mackenbach, J.~P.  \harvardyearleft
   and Social Behavior} {\bf 45}(3),~231--248.
 \newline\harvardurl{https://about.jstor.org/terms
   http://www.ingentaconnect.com/content/asoca/jhsb/2004/00000045/00000003/art00001}
+
+\harvarditem{Kabir}{2008}{Kabir2008}
+Kabir, M.  \harvardyearleft 2008\harvardyearright , `{Determinants of Life
+  Expectancy in Developing Countries}', {\em The Journal of Developing Areas}
+  {\bf 41}(2),~185--204.
+\newline\harvardurl{http://muse.jhu.edu/journals/jda/summary/v041/41.2kabir.html}
 
 \harvarditem{Kalwij}{2014}{Kalwij2014}
 Kalwij, A.~S.  \harvardyearleft 2014\harvardyearright , `{An empirical analysis
@@ -180,6 +193,15 @@ Low, B.~S., Hazel, A., Parker, N. \harvardand\ Welch, K.~B.  \harvardyearleft
   2008\harvardyearright , `{Influences on Women's Reproductive Lives}', {\em
   Cross-Cultural Research} {\bf 42}(3),~201--219.
 \newline\harvardurl{http://ccr.sagepub.comhttp//online.sagepub.com}
+
+\harvarditem[Luy et~al.]{Luy, Zannella, Wegner-Siegmundt, Minagawa, Lutz
+  \harvardand\ Caselli}{2019}{Luy2019}
+Luy, M., Zannella, M., Wegner-Siegmundt, C., Minagawa, Y., Lutz, W.
+  \harvardand\ Caselli, G.  \harvardyearleft 2019\harvardyearright , `{The
+  impact of increasing education levels on rising life expectancy: a
+  decomposition analysis for Italy, Denmark, and the USA}', {\em Genus} {\bf
+  75}(1),~11.
+\newline\harvardurl{https://doi.org/10.1186/s41118-019-0055-0}
 
 \harvarditem{Makeham}{1860}{Makeham1860}
 Makeham, W.~M.  \harvardyearleft 1860\harvardyearright , `{On the Law of
@@ -278,6 +300,12 @@ Tarkiainen, L., Martikainen, P., Laaksonen, M. \harvardand\ Valkonen, T.
   income from 1988 to 2007: decomposition by age and cause of death}', {\em
   Journal of Epidemiology and Community Health} {\bf 66}(7),~573 LP -- 578.
 \newline\harvardurl{http://jech.bmj.com/content/66/7/573.abstract}
+
+\harvarditem{{UNESCO Institute for Statistics}}{2012}{UNESCO2012}
+{UNESCO Institute for Statistics}  \harvardyearleft 2012\harvardyearright ,
+  {\em {International Standard Classification of Education ISCED 2011}}.
+\newline\harvardurl{http://www.uis.unesco.org
+  http://uis.unesco.org/en/topic/international-standard-classification-education-isced}
 
 \harvarditem[van Baal et~al.]{van Baal, Peters, Mackenbach \harvardand\
   Nusselder}{2016}{VanBaal2016a}
