@@ -1,0 +1,269 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
+
+%opening
+\title{COS 4892 Assignment 1}
+\author{Adriaan Louw (53031377)}
+
+\newcommand{\interp}{I}
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+
+For Formula
+
+
+
+
+
+\section{Question 2}
+Relations used:
+
+\begin{equation}
+ p \Rightarrow q \equiv p \vee q \equiv p
+ \label{onlyif}
+\end{equation}
+
+\begin{equation}
+ p \equiv q \equiv ( p \wedge q) \vee (\neg p \wedge \neg q)
+ \label{DNF}
+\end{equation}
+
+\begin{equation}
+ p \wedge ( p \vee q) \equiv p
+ \label{absorbtion1}
+\end{equation}
+
+\begin{equation}
+ p \vee ( p \wedge q) \equiv p
+ \label{absorbtion2}
+\end{equation}
+
+\section{Question 2.1}
+
+
+\section{Question 2.2}
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (\neg B \Rightarrow (A\wedge B))
+\end{equation}
+
+Only if Eqn \ref{onlyif}
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (\neg B \vee (A\wedge B)\equiv (A\wedge B))
+\end{equation}
+
+Distributivity 
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (((\neg B \vee A)\wedge(\neg B \wedge B)) \equiv (A\wedge B))
+\end{equation}
+
+Simplify 
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (((\neg B \vee A)\wedge false)) \equiv (A\wedge B))
+\end{equation}
+
+Conjunction zero
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow ( false \equiv (A\wedge B))
+\end{equation}
+
+Disjunctive Normal Form
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (( false \wedge (A\wedge B))\vee (\neg false \wedge \neg(A\wedge B)))
+\end{equation}
+
+Conjunction zero
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (false \vee (\neg false \wedge \neg(A\wedge B)))
+\end{equation}
+
+De Morgan and disjunction unit
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow (true \wedge (\neg A\vee \neg B))
+\end{equation}
+
+Conjunction unit
+
+\begin{equation}
+ (A \wedge \neg(B\vee \neg C)) \Rightarrow  (\neg A\vee \neg B)
+\end{equation}
+
+Only if Eqn \ref{onlyif}
+
+\begin{equation}
+(A \wedge \neg(B \vee \neg C)) \vee (\neg A \vee \neg B) \equiv \neg A \vee \neg B 
+\end{equation}
+
+De Morgan
+
+\begin{equation}
+ (A \wedge(\neg B \wedge C)) \vee (\neg A \vee \neg B) \equiv \neg A \vee \neg B 
+\end{equation}
+
+Distributivity
+
+\begin{equation}
+(A \vee (\neg A \vee\neg B))\wedge((\neg B \wedge C) \vee (\neg A \vee \neg B)) \equiv \neg A \vee \neg B
+\end{equation}
+
+Disjunction Zero
+
+\begin{equation}
+true \wedge((\neg B \wedge C) \vee (\neg A \vee \neg B)) \equiv \neg A \vee \neg B
+\end{equation}
+
+Conjunction unit
+
+\begin{equation}
+(((\neg B \wedge C) \vee (\neg A \vee \neg B))) \equiv \neg A \vee \neg B
+\end{equation}
+
+Distributivity
+
+\begin{equation}
+((\neg B \vee (\neg A \vee \neg B ))\wedge(C \vee (\neg A \vee \neg B))) \equiv \neg A \vee \neg B
+\end{equation}
+
+Simplification
+
+\begin{equation}
+((\neg A \vee \neg B )\wedge(C \vee \neg A \vee \neg B)) \equiv \neg A \vee \neg B
+\end{equation}
+
+Disjunctive normal Form Eqn \ref{DNF}
+
+\begin{equation}
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C) \wedge(\neg A\vee\neg B)) \vee (\neg ((\neg A\vee \neg B)\wedge(\neg A\vee\neg B\vee C))\wedge\neg(\neg A\vee \neg B))
+\end{equation}
+
+De Morgan
+
+\begin{equation}
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C) \wedge(\neg A\vee\neg B)) \vee ((\neg(\neg A\vee \neg B)\vee\neg(\neg A\vee\neg B\vee C))\wedge(A\wedge B))
+\end{equation}
+
+Simplification of duplicate term
+
+\begin{equation}
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee ((\neg(\neg A\wedge \neg B)\vee\neg(\neg A\vee\neg B\vee C))\wedge(A\wedge B))
+\end{equation}
+
+De Morgan
+
+\begin{equation}
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee ((( A\wedge B)\vee( A\wedge B\wedge\neg C))\wedge(A\wedge B))
+\end{equation}
+
+
+
+\section{Question 2.3}
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow (A \Rightarrow \neg B)
+\end{equation}
+
+Using Only if Eqn \ref{onlyif}
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow (A \vee \neg B \equiv \neg B)
+\end{equation}
+
+using disjunctive normal form Eqn \ref{DNF}
+
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow ((A \vee \neg B) \wedge \neg B) \vee (\neg(A\vee \neg B) \wedge \neg\neg B)
+\end{equation}
+
+using absorbtion Eqn \ref{absorbtion2}
+
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow ( \neg B) \vee (\neg(A\vee \neg B) \wedge \neg\neg B)
+\end{equation}
+
+de morgans law
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow ( \neg B) \vee (\neg A \wedge \neg B \wedge B)
+\end{equation}
+
+Contradiction
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow \neg B \vee false
+\end{equation}
+
+Unit disjunction 
+
+\begin{equation}
+(\neg A \vee \neg B )  \Leftrightarrow \neg B
+\end{equation}
+
+Disjunctive normal form Eqn \ref{DNF}
+
+\begin{equation}
+((\neg A \vee \neg B)) \vee (\neg(\neg A \vee \neg B) \wedge \neg\neg B)
+\end{equation}
+
+Absorbtion Eqn \ref{absorbtion1}
+
+\begin{equation}
+ \neg B \vee  (\neg(\neg A \vee \neg B) \wedge \neg\neg B)
+\end{equation}
+
+De Morgan
+
+\begin{equation}
+ \neg B \vee  ( A \wedge B \wedge  B)
+\end{equation}
+
+Simplification 
+
+\begin{equation}
+ \neg B \vee  ( A \wedge B)
+\end{equation}
+
+Distributivity
+
+\begin{equation}
+(\neg B \vee A) \wedge (\neg B \vee B) 
+\end{equation}
+
+simplification
+
+\begin{equation}
+(\neg B \vee A) \wedge true 
+\end{equation}
+
+Unit Conjunction 
+
+\begin{equation}
+\neg B \vee A 
+\end{equation}
+
+
+
+\section{Question 3}
+
+\section{Quesstion 4}
+
+
+
+
+
+
+
+\end{document}
