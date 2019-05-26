@@ -9,17 +9,15 @@
 \author{Adriaan Louw (53031377)}
 
 \newcommand{\interp}{I}
+\providecommand{\floor}[1]{\lfloor #1 \rfloor  }
+
 \begin{document}
 
 \maketitle
 
 \section{Question 1}
 
-For Formula
-
-
-
-
+If A is a knight he would have siad he is a knight. If A is a knave he would have said he is a knight. Thus no matter what A is he would have said a knight. That means B heard him say he was a knight. Thus B is a knave since he lied about being A saying he is a knight. C said B was lying and B was lying. Thus C is a knight. We cannot detemine what A is since he would always say he is knight. B and C only responded based on what A said and not on what they know A to be.
 
 \section{Question 2}
 Relations used:
@@ -45,6 +43,44 @@ Relations used:
 \end{equation}
 
 \section{Question 2.1}
+
+\begin{equation}
+ (\neg (B \Rightarrow C)\wedge (\neg(\neg B \Rightarrow(C\vee D)))) \Rightarrow (\neg C \Rightarrow D)
+\end{equation}
+
+Only if
+
+\begin{equation}
+ (\neg(B\vee C \equiv C)\wedge(\neg(\neg B\vee C\vee D) \equiv C \vee D)) \Rightarrow (\neg C \vee D \equiv D)
+\end{equation}
+
+distributibity of $\neg$ and de Morgans law
+
+\begin{equation}
+ ((\neg B\wedge \neg C \equiv C)\wedge((B\wedge \neg C\wedge \neg D) \equiv C \vee D)) \Rightarrow (\neg C \vee D \equiv D)
+\end{equation}
+
+Disjunctive normal form
+
+\begin{multline}
+ (((\neg B \wedge \neg C)\wedge C)\vee(\neg(\neg B \wedge \neg C)\wedge\neg C))\vee \\
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \vee D)\wedge D)\vee(\neg(\neg C\vee D)\wedge\neg D) 
+\end{multline}
+
+arithmatic
+
+\begin{multline}
+ (\neg B\vee(\neg(\neg B \wedge \neg C)\wedge\neg C))\vee \\
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \vee D)\wedge D)\vee(\neg(\neg C\vee D)\wedge\neg D) 
+\end{multline}
+
+de Morgan's law
+
+\begin{multline}
+ (\neg B\vee(( B \vee C)\wedge\neg C))\vee \\
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg B\vee C\vee D)\wedge(\neg C\wedge\neg D)))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\wedge\neg D) 
+\end{multline}
+
 
 
 \section{Question 2.2}
@@ -149,23 +185,117 @@ Disjunctive normal Form Eqn \ref{DNF}
  ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C) \wedge(\neg A\vee\neg B)) \vee (\neg ((\neg A\vee \neg B)\wedge(\neg A\vee\neg B\vee C))\wedge\neg(\neg A\vee \neg B))
 \end{equation}
 
-De Morgan
+Removal of duplicate term
 
 \begin{equation}
- ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C) \wedge(\neg A\vee\neg B)) \vee ((\neg(\neg A\vee \neg B)\vee\neg(\neg A\vee\neg B\vee C))\wedge(A\wedge B))
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee (\neg ((\neg A\vee \neg B)\wedge(\neg A\vee\neg B\vee C))\wedge\neg(\neg A\vee \neg B))
+ \label{replace22}
 \end{equation}
 
-Simplification of duplicate term
+if 
+\begin{equation}
+ q \equiv ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) 
+\end{equation}
+
+and 
 
 \begin{equation}
- ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee ((\neg(\neg A\wedge \neg B)\vee\neg(\neg A\vee\neg B\vee C))\wedge(A\wedge B))
+ p \equiv \neg(\neg A\vee \neg B)
 \end{equation}
 
-De Morgan
+then Equation \ref{replace22} becomes
 
 \begin{equation}
- ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee ((( A\wedge B)\vee( A\wedge B\wedge\neg C))\wedge(A\wedge B))
+ q \vee (\neg q \wedge p)
 \end{equation}
+
+using distributive of disjunctiona and conjuction
+
+\begin{equation}
+ (q \vee \neg q)\wedge (q\vee p)
+\end{equation}
+
+
+\begin{equation}
+ true \wedge (q\vee p)
+\end{equation}
+
+by unit conjunction
+
+\begin{equation}
+ q\vee p
+\end{equation}
+
+which is 
+
+\begin{equation}
+ ((\neg A \vee \neg B) \wedge(\neg A\vee\neg B\vee C)) \vee \neg(\neg A\vee \neg B)
+\label{222}
+\end{equation}
+
+if we have
+
+\begin{equation}
+ R \equiv (\neg A \vee \neg B)
+\end{equation}
+
+and
+
+\begin{equation}
+ S \equiv \neg A\vee\neg B\vee C)
+\end{equation}
+
+then Equation \ref{222} becomes
+
+\begin{equation}
+ (R \wedge S) \vee \neg R
+\end{equation}
+
+Using distributive law of conjunction and disjunction
+
+\begin{equation}
+ (R \vee \neg R) \wedge (S\vee \neg R) 
+\end{equation}
+
+using unit conjunction 
+
+\begin{equation}
+ S \vee \neg R
+\end{equation}
+
+which is 
+
+\begin{equation}
+(\neg A\vee\neg B\vee C) \vee \neg(\neg A \vee \neg B)
+\end{equation}
+
+using the definition of $R$
+
+\begin{equation}
+ R \vee C \vee \neg R
+\end{equation}
+
+\begin{equation}
+ true \vee C
+\end{equation}
+
+Disjunction zero
+
+\begin{equation}
+ true
+\end{equation}
+
+This equation is a tautology
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,11 +384,211 @@ Unit Conjunction
 \neg B \vee A 
 \end{equation}
 
-
+this equation is not a tautology
 
 \section{Question 3}
 
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+ \hline
+ $p$ & $q$ & $\neg p$& $\neg q$& $p\equiv q$ & $p \not\equiv q$ &$\neg p \not\equiv \neg q$\\
+ \hline
+ 0 &0&1&1&1&0&0  \\
+ 0 &1&1&0&0&1&1  \\
+ 1 &0&0&1&0&1&1  \\
+ 1 &1&0&0&1&0&0  \\
+ \hline
+\end{tabular}
+
+
+\begin{equation}
+ p\equiv p \not \equiv q \not\equiv p \equiv q \not \equiv q
+\end{equation}
+
+From truth table $q \not\equiv q \equiv false$
+
+\begin{equation}
+ p\equiv p \not \equiv q \not\equiv p \equiv false
+\end{equation}
+
+From truth table $p \equiv p \equiv true$
+
+\begin{equation}
+true \not \equiv q \not\equiv p \equiv false
+\end{equation}
+
+Given $p \equiv false \equiv \neg p$ from truth table
+
+\begin{equation}
+true \not \equiv q \not\equiv \neg p
+\end{equation}
+
+When $true \not\equiv q \equiv \neq q$ from truth table
+
+
+\begin{equation}
+\neg q \not\equiv \neg p
+\end{equation}
+
+We can see from the truth table this is equivalent to
+
+
+\begin{equation}
+q \not\equiv p
+\end{equation}
+
+
+
+
 \section{Quesstion 4}
+
+The floor function is a common tool in the arenal of any programmer. It can be used in the conversion of real numbers to integer numbers or in rounding down numbers. This essay will discuss how various properties of the floor function
+
+\begin{equation}
+N \le \floor{x} \equiv n \le x
+\label{galois}
+\end{equation}
+
+can be determined.
+
+This style of defining a function is called a Galois connection named after the 19th century French mathematician Evarsite Galois. In a Galois connection 2 functions or relatioships are related. They can be functions from different domains. With regards to Eqn \ref{galois}. When the floor function is applied to some number x, it always has a value at least greater than some integer N and this relationship is the same as the same number always being greater than a real number n. Where the n is equal to N but just a real number. This Galois connection is in effect a connection between the integer and real worlds in order to define the floor function.
+
+The first property we will investigate is that the floor function rounds down. If we pass in the value $\floor{x}$ into Equation \ref{galois} we get as n
+
+\begin{equation}
+\floor{x} \le \floor{x} \equiv \floor{x} \le x
+\label{41}
+\end{equation}
+
+Since 
+
+\begin{equation}
+\floor{x} \le \floor{x} \equiv true
+\end{equation}
+
+then Eqn \ref{41} becomes
+
+\begin{equation}
+\floor{x} \le x
+\label{42}
+\end{equation}
+
+Which means that the floor function either rounds down or does not change the number.
+
+Next we will show that when the floor function is applied to an interger, the integer is returned. We do this by passing in n as the value of x. Thus Eqn \ref{galois} becomes
+
+\begin{equation}
+n \le \floor{n} \equiv n \le n
+\end{equation}
+
+And since n = n we can set the right hand side of the equation to true. Then we have  
+
+\begin{equation}
+n \le \floor{n}
+\end{equation}
+
+And since we already have Eqn \ref{42} we can say that
+
+\begin{equation}
+n = \floor{n}
+\end{equation}
+
+
+Next we want to show the property
+
+\begin{equation}
+ m = \floor{x} \equiv m \le x \le m+1
+ \label{45}
+\end{equation}
+
+In other words, if the floor function maps x to an interger m, then the value of x lies between (inclusively) m and m+1. We do this by first usig the rule of contraposition. Namely:
+
+\begin{equation}
+ p\equiv q \equiv \neg p \equiv \neg q
+\end{equation}
+
+Applying this to Eqn \ref{galois} we get
+
+\begin{equation}
+\neg(n \le \floor{x}) \equiv \neg(n \le x)
+\label{43}
+\end{equation}
+
+Given that 
+
+\begin{equation}
+ \neg(n\le m) \equiv m < n
+\end{equation}
+
+Then Eqn \ref{43} becomes
+
+\begin{equation}
+ \floor{x} < n \equiv x < n
+ \label{44}
+\end{equation}
+
+Now using the equality
+
+\begin{equation}
+ m <n \equiv m+1 \le n
+\end{equation}
+
+Eqn \ref{44} becomes
+
+\begin{equation}
+ \floor{x} +1 \le n \equiv x < n
+\end{equation}
+
+If we set n to $\floor{x} +1$ and use the reflexivity of  of $\le$ we get
+
+\begin{equation}
+x < \floor{x} +1
+\end{equation}
+
+and since we have 
+
+\begin{equation}
+ \floor{x} \le x < \floor{x} + 1
+\end{equation}
+
+we have Eqn \ref{45}
+
+
+The next property is whether Eqn \ref{galois} is monotonic. In this case to prove monotonicity we need to show that
+
+\begin{equation}
+ \floor{x} \le \floor{y} \Leftarrow x \le y
+\end{equation}
+
+In other words, we want to show that if x is smaller than or equal to y then the floor of x should be smaller than or equal to the floor of y.
+
+Now iven
+
+\begin{equation}
+ \floor{x} \le \floor{y}
+\end{equation}
+
+applying Eqn \ref{galois} we get
+
+\begin{equation}
+ \floor{x} \le y
+\end{equation}
+
+Using the transistivity of $le$ we get
+
+\begin{equation}
+ \floor{x}\le x\le y
+\end{equation}
+
+and since $\floor{x} \le x$ we get
+
+\begin{equation}
+ x\le y
+\end{equation}
+
+We have shown some of the properties of the fllor function and additionally have shown how useful it is to use a Galois connection to define it.
+
+
 
 
 
