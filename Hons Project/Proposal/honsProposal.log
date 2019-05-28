@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  21 MAY 2019 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  28 MAY 2019 15:11
 entering extended mode
 **./honsProposal.tex
 (honsProposal.tex
@@ -6,8 +6,8 @@ LaTeX2e <2017-04-15>
 Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -284,12 +284,12 @@ LaTeX Font Info:    ... okay on input line 16.
 * \topmargin=-51.45378pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -368,177 +368,89 @@ G,.JBIG2,.JB2,.eps]
 \tf@lof=\write4
 \openout4 = `honsProposal.lof'.
 
- (honsProposal.lot)
+ [1
+
+{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (honsPropos
+al.lot)
 \tf@lot=\write5
 \openout5 = `honsProposal.lot'.
 
- [1
 
-{C:/Users/Riaan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (20.65329pt too wide) in paragraph at lines 40--41
-[]\OT1/cmr/m/n/10 cohort life ex-pectancy vs pe-riod life ex-pectancy (https://
-ourworldindata.org/life-expectancy-how-is-it-calculated-
+Overfull \hbox (4.89587pt too wide) in paragraph at lines 39--40
+[]\OT1/cmr/m/n/12 cohort life ex-pectancy vs pe-riod life ex-pectancy (https://
+ourworldindata.org/life-expectancy-
  []
 
-<The-original-Preston-Curve-1975.jpg, id=10, 553.06625pt x 348.30125pt>
+[2]
+<The-original-Preston-Curve-1975.jpg, id=12, 553.06625pt x 348.30125pt>
 File: The-original-Preston-Curve-1975.jpg Graphic file (type jpg)
 <use The-original-Preston-Curve-1975.jpg>
 Package pdftex.def Info: The-original-Preston-Curve-1975.jpg  used on input lin
-e 107.
+e 106.
 (pdftex.def)             Requested size: 369.88577pt x 256.08603pt.
-[2] [3 <./The-original-Preston-Curve-1975.jpg>] (honsProposal.bbl
-Overfull \hbox (78.2617pt too wide) in paragraph at lines 4--8
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.cdc.gov/nchs/data/nvsr/nvsr5
-4/nvsr54[]14.pdf https://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53[]06.pdf 
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
-a/stable/pdf/1515175.pdf?ab[]segments=0%252Fdefault-
- []
-
-
-Overfull \hbox (524.59201pt too wide) in paragraph at lines 32--37
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://s3.amazonaws.com/academia.edu.do
-cuments/30578605/BulledSosis2010.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expire
-s=1558253533&Signature=wF34f4UizqM3UIEApL1KAewXIfE%3D&response-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
-a/stable/pdf/23310253.pdf?ab[]segments=0%252Fdefault-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-\OT1/cmr/m/it/10 2%252Fcontrol&refreqid=excelsior%3A5edcd7b078444473928072ccdf0
-a5005 https://www-jstor-
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ” in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-
-Overfull \hbox (210.6188pt too wide) in paragraph at lines 83--88
-\OT1/cmr/m/it/10 29671-1i2ecr.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1
-558193817&Signature=KpCK8qepx5EDMENCibGnJkb8hmU%3D&response-
- []
-
-[5]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-
-Overfull \hbox (73.71555pt too wide) in paragraph at lines 140--145
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://about.jstor.org/terms http://www
-.ingentaconnect.com/content/asoca/jhsb/2004/00000045/00000003/art00001 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-link-springer-com.oasis.unisa.
-ac.za/content/pdf/10.1007%2Fs13524-012-0139-3.pdf
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--184
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-sciencedirect-com.oasis.un
-isa.ac.za/science/article/pii/S0140673616323819
- []
-
+ [3 <./The-original-Preston-Curve-1975.jpg>] [4] [5] (honsProposal.bbl
 [6]
-Overfull \hbox (52.42245pt too wide) in paragraph at lines 207--212
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 http://www.journals.cambridge.org/abstra
-ct[]S204616580000126X https://ia801701.us.archive.org/21/items/jstor-
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [7]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [8]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+)
+Overfull \hbox (36.44365pt too wide) in alignment at lines 275--300
+ [] [] [] [] [] [] [] 
+ []
+
+[9]
+Overfull \hbox (36.44365pt too wide) in alignment at lines 300--320
+ [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
-a/stable/pdf/43288451.pdf?ab[]segments=0%252Fdefault-
+Overfull \hbox (36.44365pt too wide) in alignment at lines 320--340
+ [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.52719pt too wide) in paragraph at lines 239--249
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 www.nature.com/npjdigitalmed http://arxi
-v.org/abs/1801.07860%0Ahttp://dx.doi.org/10.1038/s41746-
+Overfull \hbox (36.44365pt too wide) in alignment at lines 340--360
+ [] [] [] [] [] [] [] 
+ []
+
+[10]
+Overfull \hbox (36.44365pt too wide) in alignment at lines 360--380
+ [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://pdf.sciencedirectassets.com/2718
-21/1-s2.0-S0277953611X00059/1-s2.0-
+Overfull \hbox (36.44365pt too wide) in alignment at lines 380--389
+ [] [] [] [] [] [] [] 
  []
 
-
-Overfull \hbox (8048.39511pt too wide) in paragraph at lines 269--274
-\OT1/cmr/m/it/10 S027795361100044X/main.pdf?x-amz-security-token=AgoJb3JpZ2luX2
-VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBGjR0sbVsb55FZel%2FH
-qYMrTkskQK4P2e8pRdVzeo8PzAiEAgQZhHupLGXnMN2e0ud6T9s9KWILb5UVGZvH%2F%2FymuBm8q4w
-MInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwwNTkwMDM1NDY4NjUiDCRlgGtZfCw3T38O5yq3A
-%2BquE4AJgI2VofoPdWn%2FMV899nEC69hFzBGHUU%2FIfVWYu%2BP3YXM%2FT6MOnPe49ahxG6RWuj
-sSX%2FQKlY71wV33ZTcMVM%2FaNpXt9Fa3RzaNwdsTIkfKWHCjl9IxyFpwZPA3TrsE0pDLKgWXwzhoI
-PPoxQiTLw9WGvp5T3Z0vZLvS3FLqmEuLfiH8wR2jCU5DCmOYljl%2B1kTLR5RDQCKW3MzVK%2FQ%2BW
-p1K9Br9aRVeeOd%2FYSfZwrwDy0j5U1yZ1ygKKGcY%2BwRb60qmCKs22otoGloCFAmSxmZI28L4Ju21
-sJpa3s7TeaHqu7tuy7rnFd%2BJLV30ykONjIsGlNEskZUwdqMj1DolkCk4kfO0UVUk%2Fbf5JO2wSer
-KVifyxdtYHVq8k69ATn%2FNIKAYS2bWhC1S%2BokvuILRVDEkzVl3kM2J%2B4VPCBND9szcQV0q6%2B
-GB%2BNUgavtZceNx3YHv5l6p4ZSKZVrYbN7JlM7aGPUAUVtZWXLMsMZ%2F84Qb9Uk%2F74Eq4gFrGKN
-nnN9o8i4C4BYkdwDA4%2Fo8XtXCTwbprTu8SGnlVELLTVDD8KyMXFwbB7vo4GnsYxZxo%2FgseJP8Jg
-w0NTe5gU6tAHDG96weRz5DnyiqtCKyPSxTuXfTA92KkYB%2FftExjXin8TvSb4xXz1rmS3W6eUriEIL
-X5tmXfNGFBaMW2bD%2B3gQgKAK7HYOinIVfhwKbS%2FrXQYAI57APjej%2BdjnxhpyrYfS7dZnraKJZ
-vmTLVguoI8lzcm%2FJAjRRUZMmBbdUmJK047AB0UrmRjpObO2Oj0xC6MXYkGOHCxYn9t693tethWQcj
-7h75Q%2Fz41XcThuuuUgIOQrizA%3D&AWSAccessKeyId=ASIAQ3PHCVTY3ZTN6ZDH&Expires=1557
-643237&Signature=ZmGcgMBsFW1DGI9w2K7vYLQoKrM%3D&hash=7a7b38352a57850ded9f4a06a7
-c542a58717d0e4ebc4a6c393877e6ef0a6258b&host=68042c943591013ac2b2430a89b270f6af2
-c76d8dfd086a07176afe7c76c2c61&pii=S027795361100044X&tid=spdf-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--287
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://0-www-jstor-org.oasis.unisa.ac.z
-a/stable/pdf/20062079.pdf?ab[]segments=0%2Fdefault-
- []
-
-[7]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--309
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 http://www.uis.unesco.org http://uis.une
-sco.org/en/topic/international-standard-classification-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--325
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.ncbi.nlm.nih.gov/pmc/article
-s/PMC3160637/pdf/nihms315486.pdf
- []
-
-) [8] [9] [10] (honsProposal.aux) ) 
+[11] [12] (honsProposal.aux) ) 
 Here is how much of TeX's memory you used:
- 3671 strings out of 493303
- 51009 string characters out of 3138856
- 151300 words of memory out of 3000000
- 7170 multiletter control sequences out of 15000+200000
- 9975 words of font info for 36 fonts, out of 3000000 for 9000
+ 3682 strings out of 493303
+ 51194 string characters out of 3138856
+ 150431 words of memory out of 3000000
+ 7182 multiletter control sequences out of 15000+200000
+ 10886 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,35p,1903b,286s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on honsProposal.pdf (10 pages, 178403 bytes).
+ 41i,6n,35p,947b,270s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on honsProposal.pdf (12 pages, 136941 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

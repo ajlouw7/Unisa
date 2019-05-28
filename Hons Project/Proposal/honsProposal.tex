@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage[a4paper,margin=0.8in]{geometry} 
@@ -30,8 +30,7 @@ hello
 
 Human attempts to mathematically predict life expectance is not a new endeavour. \cite{Gompertz} introduced an equation to predict life expectancy, which was modified in \cite{Makeham1860} to create the famous Gompertz$-$Makeham law.
 
-
-Why use machine learning? find relationships that regression analysis cannot \cite{Chen2017}.
+This sudy investigates the use of machine learning techniques in determining the life expectancy of coutries. Machine learning techniques can find relationships in the data that regression analysis cannot \cite{Chen2017}.
 
 Machine learning is used in medicine \cite{Chen2017}.
 
@@ -88,7 +87,7 @@ Siminal work \cite{Lee1992}
 
 
 
-\subsubsection{Income}
+\subsubsection{Income} \label{income}
 
 The relationship beteen income and life expectancy has been given a lot of attention in academic circles \citep{Preston1975, Hu2015, Chetty2016, Oeppen2019}. 
 
@@ -212,8 +211,9 @@ There are many studies that attempt to extrapolate future life expectancy for co
 
 This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country.
 
+The philosophical standpoint of this study is Positivism. By using the scientific method, this study will comprise of an experiment to inductively determine whether machine learning techniques can provide more accurate life expectancy models than those created using regression. This cross-sectional study will use life expectancy indicators, shown from the literature, to have some correlation to life expectancy.
 
-independent vs dependant variable. Choice of algorithm is the independant variable
+
 
 
 segment data into groups where each group has the same amount of data points???
@@ -236,12 +236,25 @@ The impact of finishing secondary school is different before vs after the seconf
 \subsection{Choice of dataset}
 
 
+\subsection{Choise of algorithms}
 
-\subsection{Regression}
+\subsubsection{Algorithms Chosen}
+\paragraph{Regression}
+Linear Regression is a popular technique, used to find relationships in data. As the name suggests Linear Regression assumes a linear relationship between the input variables and the result \citep{Murphy}. This might not be the case for the target function. The target function could be any potential function. In the case of life expectancy modelling, we know that according to the Preston curve (Section \ref{income}) the relationship between income and life expectancy is not linear. Thus using Linear Regression should return a sub-optimal result. The same logic applies to Logistic Regression. It assumes a linear relationhip between inputs. The difference is that this linear sum is passed through the sigmoid function \citep{Murphy}. This alsom makes it inappropriate for non-linear target functions. In this study Linear and Logistic Regression will be used as a baseline for comparison on the dataset.
 
-\subsection{k-Nearest Neighbour}
+\paragraph{k-Nearest Neighbour}
 
-\subsection{Support Vector Machines}
+The k-Nearest Neighbour algorithm (kNN) is an instance based form of machine learning. It uses the classification of those datapoints closest to the datapoint to be classied to determine its classification. The kN-algorithm allows for non-linear problems spaces to be classified, because it does not make an assumption on the nature of the problem space. Additionally, how the algorithm determined its output value is transparent and can be used to study how various components affects the end result. In this study the standard kNN-algoritm will be altered to accomodate a real valued output and not just a class classification. This will be accomplised by taking the mean life expectancy for all the datapoints determined to be closest to the target point. Care will have to be taken to reduce the number of features the data, because this algorithm is sensitive to the so-called ``curse of dimentionality'' \citep{Mitchell}.
+
+\paragraph{Support Vector Machines}
+
+
+
+\subsubsection{Ignored Algorithms}
+\paragraph{Neural Networks}
+Even though Neural networks are capable of representing non-linear hypothesis spaces \citep{Mitchell}, theyare not appropriate for this study for a couple of reasons. Firsly, the datasets that are available are not large enough. Neural networks typically require thousands if not tens of thousands of datapoints. Secondly the amount of processing power and processing time required, will not be available to this study. Thirdly, the results of nural networks are hard to interperet. How the Neural Network came to its conclusion is not clear to the researcher. Which makes it unsuitable as a tool to study the relationship between life expectancy and its various indicators.
+
+\paragraph{Decision Trees}
 
 \subsection{Cross-validation}
 

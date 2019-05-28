@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: honsProposal.aux
 The style file: agsm.bst
 Database file #1: mybib.bib
-Repeated entry---line 701 of file mybib.bib
+Repeated entry---line 657 of file mybib.bib
  : @article{Bulled2010
  :                    ,
 I'm skipping whatever remains of this entry
@@ -9,6 +9,7 @@ Warning--empty institution in Arias2007
 Warning--empty institution in Bongaarts2005
 Warning--empty institution in CDC1999
 Warning--empty publisher in Grossman2000
+Warning--empty publisher in Murphy
 Warning--empty institution in Shaw2005
 Warning--empty publisher in UNESCO2012
 (There was 1 error message)
