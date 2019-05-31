@@ -1,5 +1,9 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Alpaydin}{2010}{Alpaydin2010}
+Alpaydin, E.  \harvardyearleft 2010\harvardyearright , {\em {Introduction to
+  Machine Learning}}, second edi edn, MIT Press.
+
 \harvarditem{Arias}{2007}{Arias2007}
 Arias, E.  \harvardyearleft 2007\harvardyearright , {National Vital Statistics
   Reports}, Technical Report~6.
@@ -63,6 +67,10 @@ Deboosere, P., Gadeyne, S. \harvardand\ {Van Oyen}, H.  \harvardyearleft
   2009\harvardyearright , `{The 1991-2004 evolution in life expectancy by
   educational level in Belgium based on linked census and Population register
   data}', {\em European Journal of Population} {\bf 25}(2),~175--196.
+
+\harvarditem[Duda et~al.]{Duda, Hart \harvardand\ Stork}{2001}{Duda2001}
+Duda, R.~O., Hart, P.~E. \harvardand\ Stork, D.~G.  \harvardyearleft
+  2001\harvardyearright , `{Pattern Classification}'.
 
 \harvarditem{Elo \harvardand\ Preston}{1996}{Elo1996}
 Elo, I.~T. \harvardand\ Preston, S.~H.  \harvardyearleft 1996\harvardyearright

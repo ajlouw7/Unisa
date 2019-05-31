@@ -1,32 +1,36 @@
-\contentsline {section}{\numberline {1}Abstract}{2}
-\contentsline {section}{\numberline {2}Introduction}{2}
-\contentsline {section}{\numberline {3}Literature Review}{2}
-\contentsline {subsection}{\numberline {3.1}Life tables}{2}
-\contentsline {subsection}{\numberline {3.2}Used Life Tables}{2}
-\contentsline {subsection}{\numberline {3.3}?Grossman?}{2}
-\contentsline {subsection}{\numberline {3.4}Life expectancy projections}{3}
-\contentsline {subsection}{\numberline {3.5}Determinants of life expectancy}{3}
-\contentsline {subsubsection}{\numberline {3.5.1}Income}{3}
-\contentsline {subsubsection}{\numberline {3.5.2}Education atainment}{4}
-\contentsline {subsubsection}{\numberline {3.5.3}Per capita spending on health}{5}
-\contentsline {subsubsection}{\numberline {3.5.4}Access to safe drinking water}{5}
-\contentsline {subsubsection}{\numberline {3.5.5}Infant mortality}{5}
-\contentsline {subsubsection}{\numberline {3.5.6}Turmoil}{5}
-\contentsline {subsubsection}{\numberline {3.5.7}The gender gap}{5}
-\contentsline {subsubsection}{\numberline {3.5.8}Unemployment}{5}
-\contentsline {section}{\numberline {4}Methodology/Procedure}{5}
-\contentsline {subsection}{\numberline {4.1}Choice of dataset}{6}
-\contentsline {subsection}{\numberline {4.2}Choise of algorithms}{6}
-\contentsline {subsubsection}{\numberline {4.2.1}Algorithms Chosen}{6}
-\contentsline {paragraph}{Regression}{6}
-\contentsline {paragraph}{k-Nearest Neighbour}{6}
-\contentsline {paragraph}{Support Vector Machines}{6}
-\contentsline {subsubsection}{\numberline {4.2.2}Ignored Algorithms}{6}
-\contentsline {paragraph}{Neural Networks}{6}
-\contentsline {paragraph}{Decision Trees}{6}
-\contentsline {subsection}{\numberline {4.3}Cross-validation}{6}
-\contentsline {section}{\numberline {5}Analysis}{6}
-\contentsline {section}{\numberline {6}Conclusion}{7}
-\contentsline {section}{\numberline {7}Recommendations}{7}
-\contentsline {section}{References}{7}
-\contentsline {section}{Appendices}{12}
+\contentsline {section}{\numberline {1}Abstract}{2}% 
+\contentsline {section}{\numberline {2}Introduction}{2}% 
+\contentsline {section}{\numberline {3}Literature Review}{2}% 
+\contentsline {subsection}{\numberline {3.1}Life tables}{2}% 
+\contentsline {subsection}{\numberline {3.2}Used Life Tables}{2}% 
+\contentsline {subsection}{\numberline {3.3}?Grossman?}{2}% 
+\contentsline {subsection}{\numberline {3.4}Life expectancy projections}{3}% 
+\contentsline {subsection}{\numberline {3.5}Determinants of life expectancy}{3}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Income}{3}% 
+\contentsline {subsubsection}{\numberline {3.5.2}Education atainment}{4}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Per capita spending on health}{5}% 
+\contentsline {subsubsection}{\numberline {3.5.4}Access to safe drinking water}{5}% 
+\contentsline {subsubsection}{\numberline {3.5.5}Infant mortality}{5}% 
+\contentsline {subsubsection}{\numberline {3.5.6}Turmoil}{5}% 
+\contentsline {subsubsection}{\numberline {3.5.7}The gender gap}{5}% 
+\contentsline {subsubsection}{\numberline {3.5.8}Unemployment}{5}% 
+\contentsline {section}{\numberline {4}Methodology/Procedure}{5}% 
+\contentsline {subsection}{\numberline {4.1}Choice of dataset}{6}% 
+\contentsline {subsection}{\numberline {4.2}Choise of algorithms}{6}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Algorithms Chosen}{6}% 
+\contentsline {paragraph}{Regression}{6}% 
+\contentsline {paragraph}{Ridge Regression}{6}% 
+\contentsline {paragraph}{k-Nearest Neighbour}{6}% 
+\contentsline {paragraph}{Support Vector Machines}{6}% 
+\contentsline {paragraph}{Bayes}{6}% 
+\contentsline {paragraph}{Priciple Component Analysis (PCA)}{6}% 
+\contentsline {paragraph}{Kernel Methods}{6}% 
+\contentsline {subsubsection}{\numberline {4.2.2}Ignored Algorithms}{6}% 
+\contentsline {paragraph}{Neural Networks}{6}% 
+\contentsline {paragraph}{Decision Trees}{7}% 
+\contentsline {subsection}{\numberline {4.3}Cross-validation}{7}% 
+\contentsline {section}{\numberline {5}Analysis}{7}% 
+\contentsline {section}{\numberline {6}Conclusion}{7}% 
+\contentsline {section}{\numberline {7}Recommendations}{7}% 
+\contentsline {section}{References}{7}% 
+\contentsline {section}{Appendices}{12}% 
