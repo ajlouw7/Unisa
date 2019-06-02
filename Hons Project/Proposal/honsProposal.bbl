@@ -2,11 +2,13 @@
 
 \harvarditem{Alpaydin}{2010}{Alpaydin2010}
 Alpaydin, E.  \harvardyearleft 2010\harvardyearright , {\em {Introduction to
-  Machine Learning}}, second edi edn, MIT Press.
+  Machine Learning}}, second edi edn, MIT Press, London, England.
+\newline\harvardurl{https://kkpatel7.files.wordpress.com/2015/04/alppaydin{\_}machinelearning{\_}2010.pdf}
 
-\harvarditem{Arias}{2007}{Arias2007}
-Arias, E.  \harvardyearleft 2007\harvardyearright , {National Vital Statistics
-  Reports}, Technical Report~6.
+\harvarditem{Anderson \harvardand\ Frogner}{2008}{Anderson2008}
+Anderson, G.~F. \harvardand\ Frogner, B.~K.  \harvardyearleft
+  2008\harvardyearright , `{Health spending in OECD countries: Obtaining value
+  per dollar}', {\em Health Affairs} {\bf 27}(6),~1718--1727.
 
 \harvarditem[Blakely et~al.]{Blakely, Kawachi, Atkinson \harvardand\
   Fawcett}{2004}{Blakely2004}
@@ -23,9 +25,11 @@ Bonamore, G., Carmignani, F. \harvardand\ Colombo, E.  \harvardyearleft
   Non-linearity is the answer}', {\em Social Science and Medicine} {\bf
   126},~67--72.
 
-\harvarditem{Bongaarts}{2005}{Bongaarts2005}
-Bongaarts, J.  \harvardyearleft 2005\harvardyearright , {Long-Range Trends in
-  Adult Mortality: Models and Projection Methods}, Technical Report~1.
+\harvarditem{Brainerd \harvardand\ Cutler}{2005}{Brainerd2005}
+Brainerd, E. \harvardand\ Cutler, D.~M.  \harvardyearleft 2005\harvardyearright
+  , {Autopsy on an Empire: Understanding Mortality in Russia and the Former
+  Soviet Union}, Technical Report~1.
+\newline\harvardurl{http://pubs.aeaweb.org/doi/10.1257/0895330053147921}
 
 \harvarditem{Bulled \harvardand\ Sosis}{2010}{Bulled2010}
 Bulled, N.~L. \harvardand\ Sosis, R.  \harvardyearleft 2010\harvardyearright ,
@@ -50,6 +54,12 @@ Chetty, R., Stepner, M., Abraham, S., Lin, S., Scuderi, B., Turner, N.,
   , `{The association between income and life expectancy in the United States,
   2001-2014}', {\em JAMA - Journal of the American Medical Association} {\bf
   315}(16),~1750--1766.
+
+\harvarditem[Cr{\'{e}}mieux et~al.]{Cr{\'{e}}mieux, Ouellette \harvardand\
+  Pilon}{1999}{cre}
+Cr{\'{e}}mieux, P.-Y., Ouellette, P. \harvardand\ Pilon, C.  \harvardyearleft
+  1999\harvardyearright , `{Health care spending as determinants of health
+  outcomes}', {\em Health Economics} {\bf 8}(7),~627--639.
 
 \harvarditem[Cutler et~al.]{Cutler, Rosen \harvardand\ Vijan}{2006}{Cutler2006}
 Cutler, D.~M., Rosen, A.~B. \harvardand\ Vijan, S.  \harvardyearleft
@@ -76,11 +86,6 @@ Duda, R.~O., Hart, P.~E. \harvardand\ Stork, D.~G.  \harvardyearleft
 Elo, I.~T. \harvardand\ Preston, S.~H.  \harvardyearleft 1996\harvardyearright
   , `{Educational differentials in mortality: United States, 1979-85}', {\em
   Social Science and Medicine} {\bf 42}(1),~47--57.
-
-\harvarditem{Fergany}{1971}{Fergany1971}
-Fergany, N.  \harvardyearleft 1971\harvardyearright , `{On the Human
-  Survivorship Function and Life Table Construction}', {\em Demography} {\bf
-  8}(3),~331--334.
 
 \harvarditem{Gompertz}{1825}{Gompertz}
 Gompertz, B.  \harvardyearleft 1825\harvardyearright , `{XXIV. On the nature of
@@ -121,6 +126,13 @@ Hu, Y., van Lenthe, F.~J. \harvardand\ Mackenbach, J.~P.  \harvardyearleft
   effects study}', {\em European Journal of Epidemiology} {\bf
   30}(8),~615--625.
 
+\harvarditem[Jakovljevic et~al.]{Jakovljevic, Vukovic \harvardand\
+  Fontanesi}{2016}{Jakovljevic2016}
+Jakovljevic, M.~B., Vukovic, M. \harvardand\ Fontanesi, J.  \harvardyearleft
+  2016\harvardyearright , `{Life expectancy and health expenditure evolution in
+  Eastern Europe—DiD and DEA analysis}', {\em Expert Review of
+  Pharmacoeconomics and Outcomes Research} {\bf 16}(4),~537--546.
+
 \harvarditem{{Jason Beckfield}}{2004}{JasonBeckfield2004}
 {Jason Beckfield}  \harvardyearleft 2004\harvardyearright , `{Does Income
   Inequality Harm Health? New Cross-National Evidence}', {\em Journal of Health
@@ -158,11 +170,6 @@ Kontis, V., Bennett, J.~E., Mathers, C.~D., Li, G., Foreman, K. \harvardand\
   in 35 industrialised countries: projections with a Bayesian model ensemble}',
   {\em The Lancet} {\bf 389}(10076),~1323--1335.
 
-\harvarditem{Lee \harvardand\ Carter}{1992}{Lee1992}
-Lee, R.~D. \harvardand\ Carter, L.~R.  \harvardyearleft 1992\harvardyearright ,
-  `{Modeling and forecasting U.S. mortality}', {\em Journal of the American
-  Statistical Association} {\bf 87}(419),~659--671.
-
 \harvarditem[Low et~al.]{Low, Hazel, Parker \harvardand\ Welch}{2008}{Low2008}
 Low, B.~S., Hazel, A., Parker, N. \harvardand\ Welch, K.~B.  \harvardyearleft
   2008\harvardyearright , `{Influences on Women's Reproductive Lives}', {\em
@@ -180,6 +187,12 @@ Luy, M., Zannella, M., Wegner-Siegmundt, C., Minagawa, Y., Lutz, W.
 Makeham, W.~M.  \harvardyearleft 1860\harvardyearright , `{On the Law of
   Mortality and Construction of Annuity Tables}', {\em The Assurance Magazine
   and Journal of the Institute of Actuaries} {\bf 8}(06),~301--310.
+
+\harvarditem{Makuta \harvardand\ O'Hare}{2015}{Makuta2015}
+Makuta, I. \harvardand\ O'Hare, B.  \harvardyearleft 2015\harvardyearright ,
+  `{Quality of governance, public spending on health and health status in Sub
+  Saharan Africa: a panel data regression analysis}', {\em BMC Public Health}
+  {\bf 15}(1),~932.
 
 \harvarditem{Mitchell}{1997}{Mitchell}
 Mitchell, T.~M.  \harvardyearleft 1997\harvardyearright , {\em {Machine
@@ -207,12 +220,6 @@ Oeppen, J.  \harvardyearleft 2019\harvardyearright , {Life Expectancy
 Preston, S.~H.  \harvardyearleft 1975\harvardyearright , `{The Changing
   Relation between Mortality and level of Economic Development}', {\em
   Population Studies} {\bf 29}(2),~231--248.
-
-\harvarditem[Raftery et~al.]{Raftery, Alkema \harvardand\
-  Gerland}{2014}{Raftery2014}
-Raftery, A.~E., Alkema, L. \harvardand\ Gerland, P.  \harvardyearleft
-  2014\harvardyearright , `{Bayesian Population Projections for the United
-  Nations}', {\em Statistical Science} {\bf 29}(1),~58--68.
 
 \harvarditem[Rajkomar et~al.]{Rajkomar, Oren, Chen, Dai, Hajaj, Liu, Liu, Sun,
   Sundberg, Yee, Zhang, Duggan, Flores, Hardt, Irvine, Le, Litsch, Marcus,
@@ -250,12 +257,6 @@ Roelfs, D.~J., Shor, E., Davidson, K.~W. \harvardand\ Schwartz, J.~E.
   systematic review and meta-analysis of unemployment and all-cause
   mortality}', {\em Social Science and Medicine} {\bf 72}(6),~840--854.
 
-\harvarditem[Shang et~al.]{Shang, Booth \harvardand\ Hyndman}{2011}{Shang2011}
-Shang, H.~L., Booth, H. \harvardand\ Hyndman, R.~J.  \harvardyearleft
-  2011\harvardyearright , `{Point and interval forecasts of mortality rates and
-  life expectancy: A comparison of ten principal component methods}', {\em
-  Demographic Research} {\bf 25},~173--214.
-
 \harvarditem[Shaw et~al.]{Shaw, Horrace \harvardand\ Vogel}{2005}{Shaw2005}
 Shaw, J.~W., Horrace, W.~C. \harvardand\ Vogel, R.~J.  \harvardyearleft
   2005\harvardyearright , {The Determinants of Life Expectancy: An Analysis of
@@ -268,6 +269,11 @@ Shkolnikov, V.~M., Andreev, E.~M., Tursun-zade, R. \harvardand\ Leon, D.~A.
   between life expectancy and gross domestic product in Russia in 2005–15: a
   cross-sectional analysis}', {\em The Lancet Public Health} {\bf
   4}(4),~e181--e188.
+
+\harvarditem{Smola \harvardand\ SCH{\"{o}}LKOPF}{2004}{smola2004}
+Smola, A.~J. \harvardand\ SCH{\"{o}}LKOPF, B.  \harvardyearleft
+  2004\harvardyearright , `{A tutorial on support vector regression}', {\em
+  Statistics and Computing} {\bf 14}(3),~199--222.
 
 \harvarditem[Tarkiainen et~al.]{Tarkiainen, Martikainen, Laaksonen \harvardand\
   Valkonen}{2012}{Tarkiainen2012}

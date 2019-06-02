@@ -5,8 +5,8 @@ Repeated entry---line 657 of file mybib.bib
  : @article{Bulled2010
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--empty institution in Arias2007
-Warning--empty institution in Bongaarts2005
+Warning--can't use both author and editor fields in Alpaydin2010
+Warning--empty institution in Brainerd2005
 Warning--empty institution in CDC1999
 Warning--empty publisher in Grossman2000
 Warning--empty publisher in Murphy

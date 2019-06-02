@@ -11,6 +11,8 @@
 \newcommand{\interp}{I}
 \providecommand{\floor}[1]{\lfloor #1 \rfloor  }
 
+\newcommand{\en}{\wedge}
+\newcommand{\of}{\vee}
 \begin{document}
 
 \maketitle
@@ -64,22 +66,44 @@ Disjunctive normal form
 
 \begin{multline}
  (((\neg B \wedge \neg C)\wedge C)\vee(\neg(\neg B \wedge \neg C)\wedge\neg C))\vee \\
- (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \vee D)\wedge D)\vee(\neg(\neg C\vee D)\wedge\neg D) 
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\vee (\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \vee D)\wedge D)\vee(\neg(\neg C\vee D)\wedge\neg D) 
 \end{multline}
 
-arithmatic
+arithmetic
 
 \begin{multline}
  (\neg B\vee(\neg(\neg B \wedge \neg C)\wedge\neg C))\vee \\
- (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \vee D)\wedge D)\vee(\neg(\neg C\vee D)\wedge\neg D) 
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\vee(\neg(B\wedge\neg C\wedge\neg D)\wedge\neg(C\vee D)))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\en\neg D) 
 \end{multline}
 
 de Morgan's law
 
 \begin{multline}
  (\neg B\vee(( B \vee C)\wedge\neg C))\vee \\
- (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\wedge (\neg B\vee C\vee D)\wedge(\neg C\wedge\neg D)))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\wedge\neg D) 
+ (((B \wedge \neg C \wedge \neg D)\wedge (C\vee D))\vee (\neg B\vee C\vee D)\wedge(\neg C\wedge\neg D)))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\en\neg D) 
 \end{multline}
+
+Distributivity
+
+\begin{multline}
+ (\neg B\vee(( B \vee C)\wedge\neg C))\vee \\
+ (((B\en\neg C\en\neg D\en C)\of(B\en \neg C\en\neg D\en D))\vee (\neg B\vee C\vee D)\wedge(\neg C\wedge\neg D))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\en\neg D) 
+\end{multline}
+Distributivity
+
+\begin{multline}
+ (\neg B\vee(( B \wedge \neg C)\vee(C\wedge\neg C))\vee \\
+ (((false)\of(false))\vee (\neg B\vee C\vee D)\wedge(\neg C\wedge\neg D))  \\ \Rightarrow((\neg C \wedge D)\vee D)\vee((C\wedge \neg D)\en\neg D) 
+\end{multline}
+
+
+
+
+
+
+
+
+
 
 
 
