@@ -1,14 +1,26 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{Alpaydin}{2010}{Alpaydin2010}
-Alpaydin, E.  \harvardyearleft 2010\harvardyearright , {\em {Introduction to
-  Machine Learning}}, second edi edn, MIT Press, London, England.
-\newline\harvardurl{https://kkpatel7.files.wordpress.com/2015/04/alppaydin{\_}machinelearning{\_}2010.pdf}
-
 \harvarditem{Anderson \harvardand\ Frogner}{2008}{Anderson2008}
 Anderson, G.~F. \harvardand\ Frogner, B.~K.  \harvardyearleft
   2008\harvardyearright , `{Health spending in OECD countries: Obtaining value
   per dollar}', {\em Health Affairs} {\bf 27}(6),~1718--1727.
+
+\harvarditem{Arias}{2007}{Arias2007}
+Arias, E.  \harvardyearleft 2007\harvardyearright , {National Vital Statistics
+  Reports}, Technical Report~6.
+
+\harvarditem[Arias et~al.]{Arias, Heron \harvardand\ Xu}{2017}{Arias2017}
+Arias, E., Heron, M. \harvardand\ Xu, J.  \harvardyearleft
+  2017\harvardyearright , `{United States Life Tables, 2013.}', {\em National
+  vital statistics reports : from the Centers for Disease Control and
+  Prevention, National Center for Health Statistics, National Vital Statistics
+  System} {\bf 66}(3),~1--64.
+
+\harvarditem{Backhans \harvardand\ Hemmingsson}{2011}{backhans2011unemployment}
+Backhans, M.~C. \harvardand\ Hemmingsson, T.  \harvardyearleft
+  2011\harvardyearright , `{Unemployment and mental health—who is (not)
+  affected?}', {\em The European Journal of Public Health} {\bf
+  22}(3),~429--433.
 
 \harvarditem[Blakely et~al.]{Blakely, Kawachi, Atkinson \harvardand\
   Fawcett}{2004}{Blakely2004}
@@ -29,17 +41,16 @@ Bonamore, G., Carmignani, F. \harvardand\ Colombo, E.  \harvardyearleft
 Brainerd, E. \harvardand\ Cutler, D.~M.  \harvardyearleft 2005\harvardyearright
   , {Autopsy on an Empire: Understanding Mortality in Russia and the Former
   Soviet Union}, Technical Report~1.
-\newline\harvardurl{http://pubs.aeaweb.org/doi/10.1257/0895330053147921}
+
+\harvarditem{Browning \harvardand\ Heinesen}{2012}{BROWNING2012599}
+Browning, M. \harvardand\ Heinesen, E.  \harvardyearleft 2012\harvardyearright
+  , `{Effect of job loss due to plant closure on mortality and
+  hospitalization}', {\em Journal of Health Economics} {\bf 31}(4),~599--616.
 
 \harvarditem{Bulled \harvardand\ Sosis}{2010}{Bulled2010}
 Bulled, N.~L. \harvardand\ Sosis, R.  \harvardyearleft 2010\harvardyearright ,
   `{Examining the Relationship between Life Expectancy, Reproduction, and
   Educational Attainment}', {\em Human Nature} {\bf 21}(3),~269--289.
-
-\harvarditem{{Centers for Disease Control {\&} Prevention}}{1999}{CDC1999}
-{Centers for Disease Control {\&} Prevention}  \harvardyearleft
-  1999\harvardyearright , {Achievements in Public Health, 1900-1999 Healthier:
-  Healthier Mothers and Babies}, Technical report.
 
 \harvarditem{Chen \harvardand\ Asch}{2017}{Chen2017}
 Chen, J.~H. \harvardand\ Asch, S.~M.  \harvardyearleft 2017\harvardyearright ,
@@ -66,10 +77,25 @@ Cutler, D.~M., Rosen, A.~B. \harvardand\ Vijan, S.  \harvardyearleft
   2006\harvardyearright , `{The Value of Medical Spending in the United States,
   1960–2000}'.
 
+\harvarditem[D{\'{a}}valos et~al.]{D{\'{a}}valos, Fang \harvardand\
+  French}{2012}{valos2012}
+D{\'{a}}valos, M.~E., Fang, H. \harvardand\ French, M.~T.  \harvardyearleft
+  2012\harvardyearright , `{EASING THE PAIN OF AN ECONOMIC DOWNTURN:
+  MACROECONOMIC CONDITIONS AND EXCESSIVE ALCOHOL CONSUMPTION}', {\em Health
+  Economics} {\bf 21}(11),~1318--1335.
+\newline\harvardurl{https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.1788}
+
 \harvarditem{Deary \harvardand\ Gottfredson}{2004}{Deary2004}
 Deary, I.~J. \harvardand\ Gottfredson, L.~S.  \harvardyearleft
   2004\harvardyearright , `{Intelligence Predicts Health and Longevity, but
   Why?}', {\em Current Directions in Psychological Science} {\bf 13}(1),~1--4.
+
+\harvarditem[Deb et~al.]{Deb, Gallo, Ayyagari, Fletcher \harvardand\
+  Sindelar}{2011}{DEB2011317}
+Deb, P., Gallo, W.~T., Ayyagari, P., Fletcher, J.~M. \harvardand\ Sindelar,
+  J.~L.  \harvardyearleft 2011\harvardyearright , `{The effect of job loss on
+  overweight and drinking}', {\em Journal of Health Economics} {\bf
+  30}(2),~317--327.
 
 \harvarditem[Deboosere et~al.]{Deboosere, Gadeyne \harvardand\ {Van
   Oyen}}{2009}{Deboosere2009}
@@ -78,14 +104,17 @@ Deboosere, P., Gadeyne, S. \harvardand\ {Van Oyen}, H.  \harvardyearleft
   educational level in Belgium based on linked census and Population register
   data}', {\em European Journal of Population} {\bf 25}(2),~175--196.
 
-\harvarditem[Duda et~al.]{Duda, Hart \harvardand\ Stork}{2001}{Duda2001}
-Duda, R.~O., Hart, P.~E. \harvardand\ Stork, D.~G.  \harvardyearleft
-  2001\harvardyearright , `{Pattern Classification}'.
-
 \harvarditem{Elo \harvardand\ Preston}{1996}{Elo1996}
 Elo, I.~T. \harvardand\ Preston, S.~H.  \harvardyearleft 1996\harvardyearright
   , `{Educational differentials in mortality: United States, 1979-85}', {\em
   Social Science and Medicine} {\bf 42}(1),~47--57.
+
+\harvarditem{Garcy \harvardand\ V{\aa}ger{\"{o}}}{2012}{GARCY20121911}
+Garcy, A.~M. \harvardand\ V{\aa}ger{\"{o}}, D.  \harvardyearleft
+  2012\harvardyearright , `{The length of unemployment predicts mortality,
+  differently in men and women, and by cause of death: A six year mortality
+  follow-up of the Swedish 1992–1996 recession}', {\em Social Science {\&}
+  Medicine} {\bf 74}(12),~1911--1920.
 
 \harvarditem{Gompertz}{1825}{Gompertz}
 Gompertz, B.  \harvardyearleft 1825\harvardyearright , `{XXIV. On the nature of
@@ -170,10 +199,12 @@ Kontis, V., Bennett, J.~E., Mathers, C.~D., Li, G., Foreman, K. \harvardand\
   in 35 industrialised countries: projections with a Bayesian model ensemble}',
   {\em The Lancet} {\bf 389}(10076),~1323--1335.
 
-\harvarditem[Low et~al.]{Low, Hazel, Parker \harvardand\ Welch}{2008}{Low2008}
-Low, B.~S., Hazel, A., Parker, N. \harvardand\ Welch, K.~B.  \harvardyearleft
-  2008\harvardyearright , `{Influences on Women's Reproductive Lives}', {\em
-  Cross-Cultural Research} {\bf 42}(3),~201--219.
+\harvarditem[Lundin et~al.]{Lundin, Falkstedt, Lundberg \harvardand\
+  Hemmingsson}{2014}{Lundin2014}
+Lundin, A., Falkstedt, D., Lundberg, I. \harvardand\ Hemmingsson, T.
+  \harvardyearleft 2014\harvardyearright , `{Unemployment and coronary heart
+  disease among middle-aged men in Sweden: 39 243 men followed for 8 years}',
+  {\em Occupational and Environmental Medicine} {\bf 71}(3),~183 LP -- 188.
 
 \harvarditem[Luy et~al.]{Luy, Zannella, Wegner-Siegmundt, Minagawa, Lutz
   \harvardand\ Caselli}{2019}{Luy2019}
@@ -205,9 +236,21 @@ Montez, J.~K. \harvardand\ Friedman, E.~M.  \harvardyearleft
   conditions is the association causal?}', {\em Social Science and Medicine}
   {\bf 127}(1),~1--7.
 
+\harvarditem[Montgomery et~al.]{Montgomery, Udumyan, Magnuson, Osika, Sundin
+  \harvardand\ Blane}{2013}{Montgomery2013}
+Montgomery, S., Udumyan, R., Magnuson, A., Osika, W., Sundin, P.-O.
+  \harvardand\ Blane, D.  \harvardyearleft 2013\harvardyearright , `{Mortality
+  following unemployment during an economic downturn: Swedish register-based
+  cohort study}', {\em BMJ Open} {\bf 3}(7),~e003031.
+
 \harvarditem{Murphy}{2012}{Murphy}
 Murphy, K.~P.  \harvardyearleft 2012\harvardyearright , {\em {Machine Learning:
   A Probabilistic Perspective}}.
+
+\harvarditem{Neumayer}{2004}{NEUMAYER20041037}
+Neumayer, E.  \harvardyearleft 2004\harvardyearright , `{Recessions lower
+  (some) mortality rates:: evidence from Germany}', {\em Social Science {\&}
+  Medicine} {\bf 58}(6),~1037--1047.
 
 \harvarditem{Oeppen}{2019}{Oeppen2019}
 Oeppen, J.  \harvardyearleft 2019\harvardyearright , {Life Expectancy
@@ -235,13 +278,6 @@ Rajkomar, A., Oren, E., Chen, K., Dai, A.~M., Hajaj, N., Liu, P.~J., Liu, X.,
   `{Scalable and accurate deep learning for electronic health records}', {\em
   Digital Medicine} {\bf 1},~18.
 
-\harvarditem[Rochelle et~al.]{Rochelle, Yeung, Bond \harvardand\
-  Li}{2015}{Rochelle2015}
-Rochelle, T.~L., Yeung, D.~K., Bond, M.~H. \harvardand\ Li, L. M.~W.
-  \harvardyearleft 2015\harvardyearright , `{Predictors of the gender gap in
-  life expectancy across 54 nations}', {\em Psychology, Health and Medicine}
-  {\bf 20}(2),~129--138.
-
 \harvarditem[Roelfs et~al.]{Roelfs, Shor, Blank \harvardand\
   Schwartz}{2015}{Roelfs2015}
 Roelfs, D.~J., Shor, E., Blank, A. \harvardand\ Schwartz, J.~E.
@@ -257,6 +293,15 @@ Roelfs, D.~J., Shor, E., Davidson, K.~W. \harvardand\ Schwartz, J.~E.
   systematic review and meta-analysis of unemployment and all-cause
   mortality}', {\em Social Science and Medicine} {\bf 72}(6),~840--854.
 
+\harvarditem{Ruhm}{2000}{Ruhm2000}
+Ruhm, C.  \harvardyearleft 2000\harvardyearright , `{Are Recessions Good for
+  Your Health?}', {\em The Quarterly Journal of Economics} {\bf
+  115}(2),~617--650.
+
+\harvarditem{Ruhm}{2005}{RUHM2005341}
+Ruhm, C.~J.  \harvardyearleft 2005\harvardyearright , `{Healthy living in hard
+  times}', {\em Journal of Health Economics} {\bf 24}(2),~341--363.
+
 \harvarditem[Shaw et~al.]{Shaw, Horrace \harvardand\ Vogel}{2005}{Shaw2005}
 Shaw, J.~W., Horrace, W.~C. \harvardand\ Vogel, R.~J.  \harvardyearleft
   2005\harvardyearright , {The Determinants of Life Expectancy: An Analysis of
@@ -270,10 +315,25 @@ Shkolnikov, V.~M., Andreev, E.~M., Tursun-zade, R. \harvardand\ Leon, D.~A.
   cross-sectional analysis}', {\em The Lancet Public Health} {\bf
   4}(4),~e181--e188.
 
-\harvarditem{Smola \harvardand\ SCH{\"{o}}LKOPF}{2004}{smola2004}
-Smola, A.~J. \harvardand\ SCH{\"{o}}LKOPF, B.  \harvardyearleft
+\harvarditem{Smola \harvardand\ Sch{\"{o}}lkopf}{2004}{smola2004}
+Smola, A.~J. \harvardand\ Sch{\"{o}}lkopf, B.  \harvardyearleft
   2004\harvardyearright , `{A tutorial on support vector regression}', {\em
   Statistics and Computing} {\bf 14}(3),~199--222.
+
+\harvarditem{Strully}{2009}{Strully2009}
+Strully, K.~W.  \harvardyearleft 2009\harvardyearright , `{Job loss and health
+  in the U.S. labor market.}', {\em Demography} {\bf 46}(2),~221--246.
+
+\harvarditem{{Tapia Granados}}{2005}{TapiaGranados2005}
+{Tapia Granados}, J.~A.  \harvardyearleft 2005\harvardyearright , `{Increasing
+  mortality during the expansions of the US economy, 1900-1996.}', {\em
+  International journal of epidemiology} {\bf 34}(6),~1194--1202.
+
+\harvarditem{{Tapia Granados} \harvardand\ Ionides}{2011}{TapiaGranados2011}
+{Tapia Granados}, J.~A. \harvardand\ Ionides, E.~L.  \harvardyearleft
+  2011\harvardyearright , `{Mortality and Macroeconomic Fluctuations in
+  Contemporary Sweden}', {\em European Journal of Population / Revue
+  europ{\'{e}}enne de D{\'{e}}mographie} {\bf 27}(2),~157--184.
 
 \harvarditem[Tarkiainen et~al.]{Tarkiainen, Martikainen, Laaksonen \harvardand\
   Valkonen}{2012}{Tarkiainen2012}

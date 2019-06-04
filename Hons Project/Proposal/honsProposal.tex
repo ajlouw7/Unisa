@@ -30,7 +30,7 @@ hello
 
 Human beings have always had a fascination with longevity. Myths like the fountain of youth or the Holy Grail are a testiment to this fact. Today, longevity and causes of mortality are studies by profesionals like Demographers and Actuaries. Trying to determine why some people or group have long lives.    
 
-This study investigates the use of Machine Learning techniques in studying the determinants of life expectancy for coutries. Indicators, shown to have some form of correlation with life expectancy, will be selected. Their relationship with life expectancy will be investigated using various techniques from Machine Learning. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between indicators and life expectancy life expectancy. In the hope that the causes of long life expectancies in certain countries can be better understood. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usfullness of machine learning algorithms as a tool. 
+This study investigates the use of Machine Learning techniques in studying the determinants of life expectancy for coutries. Indicators, shown to have some form of correlation with life expectancy, will be selected. Their relationship with life expectancy will be investigated using various techniques from Machine Learning. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between indicators and life expectancy life expectancy. In the hope that the causes of long life expectancies in certain countries can be better understood. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usefullness of machine learning algorithms as a tool. 
 
 Machine learning is used in medicine \cite{Chen2017}.
 
@@ -38,7 +38,7 @@ life expectancy vs mortality rate?
 
 Machine learning techniques can find relationships in the data that regression analysis cannot \cite{Chen2017}
 
-cohort life expectancy vs period life expectancy (https://ourworldindata.org/life-expectancy-how-is-it-calculated-and-how-should-it-be-interpreted)
+
 
 \cite{Rajkomar2018} Google uses machine learning to predict in hospital medical events for patients. 
 
@@ -56,9 +56,21 @@ Forecasting Mortality in Developed Countries Tabeau 2001
 
 \cite{Grossman2000}
 
+\subsection{What do we mean by life expectancy?}
 
+How does the UN calculate life expectancy? Should be the measure this study will use.
+
+
+A life table is a table given for a specific year that contains the probability that a person of a certain age will die in that specific year. Life tables are also called actuarial tables and are used by actuaries in the life insurance industry. Table \ref{LifeTable} is an example of a life table taken from \cite{Arias2007}.
+
+There are 2 types of life tables namely period and cohort life tables. A cohort is a group of people who were born in the same year. A cohort life table will follow a cohort over its lifetime until every member of the cohort has died. A cohort life table requires the mortality information of the cohort over many years. This information is often unavailable. While for a period life table, a hypothetical cohort is created and subjected to current mortality rates. This gives the user of the period timetable a window to see mortality rates at that point in time. This makes period life tables the most common type of life table \citep{Arias2017}.
+
+
+cohort life expectancy vs period life expectancy (https://ourworldindata.org/life-expectancy-how-is-it-calculated-and-how-should-it-be-interpreted)
 
 \subsection{Determinants of life expectancy}
+
+
 
 
 
@@ -194,25 +206,12 @@ medical spending \cite{Cutler2006}
 
 \cite{Grossman2000}
 
-
-
-\subsubsection{Access to safe drinking water}
-
-\subsubsection{Infant mortality}
-
-\cite{CDC1999}
-
-\subsubsection{Turmoil}
-\citep{Low2008} p211
-
-\subsubsection{The gender gap}
-
-\cite{Rochelle2015}
-
 \subsubsection{Unemployment}
-unemployment \cite{Bonamore2015} \cite{Roelfs2011} \cite{Roelfs2015} 
 
-non linear \cite{Bonamore2015}
+According to \cite{Bonamore2015}, the literature has 2 main views on the relationship between unemployment and life expectancy. The first view states that during an economic downturn, people suffer from more stress and depression. This leads to more unhealthy lifestyle choices like smoking and alcohol. Which in turn lower life expectancy. \cite{Bonamore2015} cites the works of \cite{Lundin2014,Montgomery2013,GARCY20121911,BROWNING2012599,valos2012,backhans2011unemployment,DEB2011317} and \cite{Strully2009}, who take this view. The second view focusses on times when there is economic growth i.e. less unemployment. This period of economic growth also cal lead to stress eg. burning out and having less time for activities that benifit ones health. Like going to the gym. This view is held by \cite{TapiaGranados2011,RUHM2005341,TapiaGranados2005,NEUMAYER20041037} and \cite{Ruhm2000}. Then there are also studies express the view that no connection can be established \citep{Bonamore2015}. The view of  \cite{Bonamore2015} is that the relationship is non-linear.
+
+
+unemployment \cite{Bonamore2015} \cite{Roelfs2011} \cite{Roelfs2015} 
 
 \subsection{Cross country studies}
 
@@ -230,7 +229,7 @@ There are many studies that attempt to extrapolate future life expectancy for co
 
 This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country.
 
-The philosophical standpoint of this study is Positivism. By using the scientific method, this study will comprise of an experiment to inductively determine whether machine learning techniques can provide more accurate life expectancy models than those created using regression. This cross-sectional study will use life expectancy indicators, shown from the literature, to have some correlation to life expectancy.
+The philosophical standpoint of this study is Positivism. By using the scientific method, this study will comprise of an experiment to inductively determine whether machine learning techniques can provide more accurate life expectancy models than those created using regression. This cross-sectional study will use life expectancy indicators shown, from the literature, to have some correlation to life expectancy.
 
 
 
@@ -274,14 +273,24 @@ compare different distance metrics
 can be used to determine missing data
 \paragraph{Support Vector Machines}
 
-\cite{smola2004} introduction
-\paragraph{Bayes}
+The classic Support Vector Machine (SVM) is used in classification tasks. It involves determining the decision surface with regards to the datapoints closest to the surface. This study will use a modified SVM algorithm that makes it usefull for regression tasks. The SVN regression is described in \cite{smola2004}. The final model can be descriped as:
 
-\paragraph{Priciple Component Analysis (PCA)}
-\cite{Duda2001}
+\begin{equation}
+ f(x) = \sum_{i=1}^l (\alpha_i-\alpha_i^*)k(x_i,x)+b
+\end{equation}
 
-\paragraph{Kernel Methods}
-\cite{Alpaydin2010}
+where $\alpha_i$ and $\alpha_i^*$ are Lagrange multipliers, $b$ is the bias and the term $k(x_i,x)$ is the kernel. The kernel is a function to determine the similarity between 2 input vectors. Various kernels will be investigated, including the Radial-basis function
+
+\begin{equation}
+ k(x_i,x) = exp(-\frac{\mid\mid x-x_i \mid\mid^2}{2\sigma^2})
+\end{equation}
+
+and the polynomial kernel
+
+\begin{equation}
+ k(x_i,x) = (x_i.x +1)^p
+\end{equation}
+
 
 \subsubsection{Ignored Algorithms}
 \paragraph{Neural Networks}
@@ -290,6 +299,19 @@ Even though Neural networks are capable of representing non-linear hypothesis sp
 \paragraph{Decision Trees}
 
 Traceability and understandability are some of the hallmarks of Decision Trees. These algorithms are well suited problem spaces where the target function and the input attributes are discrete values. It is possible to approximate continuous input attributes by making a branch in the tree when a value is smaller or greter than some value or is between some value. For functions where input attributes span over large ranges, this leads to very large and sub-optimum trees \citep{Mitchell}. The problem of determining life expectancy from socio-economic indices has a continuous target function output and continuous input attributes. Therefor, Decision Trees will be excluded from this study.
+
+\paragraph{Clustering}
+
+Clustering techniques are a form of unsupervised learning where the algorithm tries to group the data in a number of groups. Inessence, classifying the data into categories. This study will not attempt to classify the data, but rather find appropirate machine learning algorithms that could replce linear and logistic regression. While at the same time being able to predict the output of an input vector without needing to classify it first.
+
+\paragraph{Bayes}
+
+
+
+
+
+
+
 
 \subsection{Cross-validation}
 
@@ -324,6 +346,122 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 
 \appendix
 \appendixpage
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+\caption{Life table for the total population: United States, 2003 \citep{Arias2007}}
+    \label{LifeTable}\\
+ \hline 
+      &               &              &               &               & Total        &              \\
+       & Probability   &              & Number        & Person-years  & number of    &              \\
+       & of dying      & Number       & dying         & lived         & person-years & Expectation  \\
+       & between       & surviving to & between       & between       & lived above  & of life      \\
+       & ages x to x+1 & age x        & ages x to x+1 & ages x to x+1 & age x        & at age x     \\
+\hline  
+Age    & q(x)          & l(x)         & d(x)          & L(x)          & T(x)         & e(x)         \\
+\hline 
+0-1    & 0.006865      & 100,000      & 687           & 99,394        & 7,743,016    & 77.4         \\
+1-2    & 0.000469      & 99,313       & 47            & 99,290        & 7,643,622    & 77.0         \\
+2-3    & 0.000337      & 99,267       & 33            & 99,250        & 7,544,332    & 76.0         \\
+3-4    & 0.000254      & 99,233       & 25            & 99,221        & 7,445,082    & 75.0         \\
+4-5    & 0.000194      & 99,208       & 19            & 99,199        & 7,345,861    & 74.0         \\
+5-6    & 0.000177      & 99,189       & 18            & 99,180        & 7,246,663    & 73.1         \\
+6-7    & 0.000160      & 99,171       & 16            & 99,163        & 7,147,482    & 72.1         \\
+7-8    & 0.000147      & 99,156       & 15            & 99,148        & 7,048,319    & 71.1         \\
+8-9    & 0.000132      & 99,141       & 13            & 99,134        & 6,949,171    & 70.1         \\
+9-10   & 0.000117      & 99,128       & 12            & 99,122        & 6,850,036    & 69.1         \\
+10-11  & 0.000109      & 99,116       & 11            & 99,111        & 6,750,914    & 68.1         \\
+11-12  & 0.000118      & 99,105       & 12            & 99,100        & 6,651,803    & 67.1         \\
+12-13  & 0.000157      & 99,094       & 16            & 99,086        & 6,552,704    & 66.1         \\
+13-14  & 0.000233      & 99,078       & 23            & 99,067        & 6,453,618    & 65.1         \\
+14-15  & 0.000339      & 99,055       & 34            & 99,038        & 6,354,551    & 64.2         \\
+15-16  & 0.000460      & 99,022       & 46            & 98,999        & 6,255,513    & 63.2         \\
+16-17  & 0.000577      & 98,976       & 57            & 98,947        & 6,156,514    & 62.2         \\
+17-18  & 0.000684      & 98,919       & 68            & 98,885        & 6,057,566    & 61.2         \\
+18-19  & 0.000769      & 98,851       & 76            & 98,813        & 5,958,681    & 60.3         \\
+19-20  & 0.000832      & 98,775       & 82            & 98,734        & 5,859,868    & 59.3         \\
+20-21  & 0.000894      & 98,693       & 88            & 98,649        & 5,761,134    & 58.4         \\
+21-22  & 0.000954      & 98,605       & 94            & 98,558        & 5,662,485    & 57.4         \\
+22-23  & 0.000990      & 98,511       & 98            & 98,462        & 5,563,928    & 56.5         \\
+23-24  & 0.000997      & 98,413       & 98            & 98,364        & 5,465,466    & 55.5         \\
+24-25  & 0.000982      & 98,315       & 97            & 98,267        & 5,367,101    & 54.6         \\
+25-26  & 0.000960      & 98,219       & 94            & 98,171        & 5,268,835    & 53.6         \\
+26-27  & 0.000942      & 98,124       & 92            & 98,078        & 5,170,663    & 52.7         \\
+27-28  & 0.000936      & 98,032       & 92            & 97,986        & 5,072,585    & 51.7         \\
+28-29  & 0.000947      & 97,940       & 93            & 97,894        & 4,974,599    & 50.8         \\
+29-30  & 0.000974      & 97,847       & 95            & 97,800        & 4,876,705    & 49.8         \\
+30-31  & 0.001008      & 97,752       & 98            & 97,703        & 4,778,906    & 48.9         \\
+31-32  & 0.001046      & 97,654       & 102           & 97,603        & 4,681,203    & 47.9         \\
+32-33  & 0.001097      & 97,551       & 107           & 97,498        & 4,583,600    & 47.0         \\
+33-34  & 0.001162      & 97,444       & 113           & 97,388        & 4,486,102    & 46.0         \\
+34-35  & 0.001244      & 97,331       & 121           & 97,271        & 4,388,715    & 45.1         \\
+35-36  & 0.001336      & 97,210       & 130           & 97,145        & 4,291,444    & 44.1         \\
+36-37  & 0.001441      & 97,080       & 140           & 97,010        & 4,194,299    & 43.2         \\
+37-38  & 0.001567      & 96,940       & 152           & 96,864        & 4,097,289    & 42.3         \\
+38-39  & 0.001714      & 96,788       & 166           & 96,705        & 4,000,424    & 41.3         \\
+39-40  & 0.001874      & 96,623       & 181           & 96,532        & 3,903,719    & 40.4         \\
+40-41  & 0.002038      & 96,442       & 197           & 96,343        & 3,807,187    & 39.5         \\
+41-42  & 0.002207      & 96,245       & 212           & 96,139        & 3,710,844    & 38.6         \\
+42-43  & 0.002389      & 96,033       & 229           & 95,918        & 3,614,705    & 37.6         \\
+43-44  & 0.002593      & 95,803       & 248           & 95,679        & 3,518,787    & 36.7         \\
+44-45  & 0.002819      & 95,555       & 269           & 95,420        & 3,423,108    & 35.8         \\
+45-46  & 0.003064      & 95,285       & 292           & 95,139        & 3,327,688    & 34.9         \\
+46-47  & 0.003322      & 94,993       & 316           & 94,836        & 3,232,548    & 34.0         \\
+47-48  & 0.003589      & 94,678       & 340           & 94,508        & 3,137,713    & 33.1         \\
+48-49  & 0.003863      & 94,338       & 364           & 94,156        & 3,043,205    & 32.3         \\
+49-50  & 0.004148      & 93,974       & 390           & 93,779        & 2,949,049    & 31.4         \\
+50-51  & 0.004458      & 93,584       & 417           & 93,375        & 2,855,270    & 30.5         \\
+51-52  & 0.004800      & 93,167       & 447           & 92,943        & 2,761,895    & 29.6         \\
+52-53  & 0.005165      & 92,719       & 479           & 92,480        & 2,668,952    & 28.8         \\
+53-54  & 0.005554      & 92,241       & 512           & 91,984        & 2,576,472    & 27.9         \\
+54-55  & 0.005971      & 91,728       & 548           & 91,454        & 2,484,487    & 27.1         \\
+55-56  & 0.006423      & 91,181       & 586           & 90,888        & 2,393,033    & 26.2         \\
+56-57  & 0.006925      & 90,595       & 627           & 90,281        & 2,302,145    & 25.4         \\
+57-58  & 0.007496      & 89,968       & 674           & 89,630        & 2,211,864    & 24.6         \\
+58-59  & 0.008160      & 89,293       & 729           & 88,929        & 2,122,234    & 23.8         \\
+59-60  & 0.008927      & 88,565       & 791           & 88,169        & 2,033,305    & 23.0         \\
+60-61  & 0.009827      & 87,774       & 863           & 87,343        & 1,945,136    & 22.2         \\
+61-62  & 0.010831      & 86,911       & 941           & 86,441        & 1,857,793    & 21.4         \\
+62-63  & 0.011872      & 85,970       & 1021          & 85,460        & 1,771,352    & 20.6         \\
+63-64  & 0.012891      & 84,949       & 1095          & 84,402        & 1,685,892    & 19.8         \\
+64-65  & 0.013908      & 83,854       & 1166          & 83,271        & 1,601,490    & 19.1         \\
+65-66  & 0.015003      & 82,688       & 1241          & 82,068        & 1,518,219    & 18.4         \\
+66-67  & 0.016267      & 81,448       & 1325          & 80,785        & 1,436,151    & 17.6         \\
+67-68  & 0.017699      & 80,123       & 1418          & 79,414        & 1,355,366    & 16.9         \\
+68-69  & 0.019320      & 78,705       & 1521          & 77,944        & 1,275,953    & 16.2         \\
+69-70  & 0.021108      & 77,184       & 1629          & 76,369        & 1,198,008    & 15.5         \\
+70-71  & 0.022950      & 75,555       & 1734          & 74,688        & 1,121,639    & 14.8         \\
+71-72  & 0.024904      & 73,821       & 1838          & 72,902        & 1,046,951    & 14.2         \\
+72-73  & 0.027151      & 71,982       & 1954          & 71,005        & 974,050      & 13.5         \\
+73-74  & 0.029784      & 70,028       & 2086          & 68,985        & 903,044      & 12.9         \\
+74-75  & 0.032753      & 67,942       & 2225          & 66,830        & 834,059      & 12.3         \\
+75-76  & 0.035831      & 65,717       & 2355          & 64,540        & 767,230      & 11.7         \\
+76-77  & 0.038987      & 63,362       & 2470          & 62,127        & 702,690      & 11.1         \\
+77-78  & 0.042503      & 60,892       & 2588          & 59,598        & 640,563      & 10.5         \\
+78-79  & 0.046557      & 58,304       & 2714          & 56,947        & 580,965      & 10.0         \\
+79-80  & 0.051200      & 55,589       & 2846          & 54,166        & 524,019      & 9.4          \\
+80-81  & 0.056335      & 52,743       & 2971          & 51,258        & 469,853      & 8.9          \\
+81-82  & 0.061837      & 49,772       & 3078          & 48,233        & 418,595      & 8.4          \\
+82-83  & 0.067856      & 46,694       & 3168          & 45,110        & 370,362      & 7.9          \\
+83-84  & 0.074504      & 43,526       & 3243          & 41,904        & 325,252      & 7.5          \\
+84-85  & 0.081975      & 40,283       & 3302          & 38,632        & 283,348      & 7.0          \\
+85-86  & 0.089682      & 36,981       & 3317          & 35,322        & 244,716      & 6.6          \\
+86-87  & 0.098031      & 33,664       & 3300          & 32,014        & 209,394      & 6.2          \\
+87-88  & 0.107059      & 30,364       & 3251          & 28,739        & 177,380      & 5.8          \\
+88-89  & 0.116804      & 27,113       & 3167          & 25,530        & 148,641      & 5.5          \\
+89-90  & 0.127300      & 23,946       & 3048          & 22,422        & 123,111      & 5.1          \\
+90-91  & 0.138581      & 20,898       & 2896          & 19,450        & 100,689      & 4.8          \\
+91-92  & 0.150676      & 18,002       & 2712          & 16,646        & 81,239       & 4.5          \\
+92-93  & 0.163611      & 15,289       & 2502          & 14,039        & 64,594       & 4.2          \\
+93-94  & 0.177408      & 12,788       & 2269          & 11,654        & 50,555       & 4.0          \\
+94-95  & 0.192080      & 10,519       & 2021          & 9,509         & 38,901       & 3.7          \\
+95-96  & 0.207636      & 8,499        & 1765          & 7,616         & 29,392       & 3.5          \\
+96-97  & 0.224075      & 6,734        & 1509          & 5,980         & 21,776       & 3.2          \\
+97-98  & 0.241387      & 5,225        & 1261          & 4,594         & 15,796       & 3.0          \\
+98-99  & 0.259552      & 3,964        & 1029          & 3,449         & 11,202       & 2.8          \\
+99-100 & 0.278539      & 2,935        & 818           & 2,526         & 7,752        & 2.6          \\
+100+   & 1.00000       & 2,118        & 2118          & 5,226         & 5,226        & 2.5          \\
+\hline
+\end{longtable}
 
 
 \addappheadtotoc

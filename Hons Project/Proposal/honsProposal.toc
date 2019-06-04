@@ -2,30 +2,26 @@
 \contentsline {section}{\numberline {2}Introduction}{2}
 \contentsline {section}{\numberline {3}Literature Review}{2}
 \contentsline {subsection}{\numberline {3.1}?Grossman?}{2}
-\contentsline {subsection}{\numberline {3.2}Determinants of life expectancy}{2}
-\contentsline {subsubsection}{\numberline {3.2.1}Income}{2}
-\contentsline {subsubsection}{\numberline {3.2.2}Education atainment}{3}
-\contentsline {subsubsection}{\numberline {3.2.3}Per capita spending on health}{4}
-\contentsline {subsubsection}{\numberline {3.2.4}Access to safe drinking water}{5}
-\contentsline {subsubsection}{\numberline {3.2.5}Infant mortality}{5}
-\contentsline {subsubsection}{\numberline {3.2.6}Turmoil}{5}
-\contentsline {subsubsection}{\numberline {3.2.7}The gender gap}{5}
-\contentsline {subsubsection}{\numberline {3.2.8}Unemployment}{5}
-\contentsline {subsection}{\numberline {3.3}Cross country studies}{5}
-\contentsline {section}{\numberline {4}Methodology/Procedure}{5}
+\contentsline {subsection}{\numberline {3.2}What do we mean by life expectancy?}{2}
+\contentsline {subsection}{\numberline {3.3}Determinants of life expectancy}{3}
+\contentsline {subsubsection}{\numberline {3.3.1}Income}{3}
+\contentsline {subsubsection}{\numberline {3.3.2}Education atainment}{4}
+\contentsline {subsubsection}{\numberline {3.3.3}Per capita spending on health}{5}
+\contentsline {subsubsection}{\numberline {3.3.4}Unemployment}{5}
+\contentsline {subsection}{\numberline {3.4}Cross country studies}{5}
+\contentsline {section}{\numberline {4}Methodology/Procedure}{6}
 \contentsline {subsection}{\numberline {4.1}Choice of dataset}{6}
 \contentsline {subsection}{\numberline {4.2}Choise of algorithms}{6}
 \contentsline {subsubsection}{\numberline {4.2.1}Algorithms Chosen}{6}
 \contentsline {paragraph}{Regression}{6}
-\contentsline {paragraph}{Ridge Regression}{6}
-\contentsline {paragraph}{k-Nearest Neighbour}{6}
+\contentsline {paragraph}{Ridge Regression}{7}
+\contentsline {paragraph}{k-Nearest Neighbour}{7}
 \contentsline {paragraph}{Support Vector Machines}{7}
-\contentsline {paragraph}{Bayes}{7}
-\contentsline {paragraph}{Priciple Component Analysis (PCA)}{7}
-\contentsline {paragraph}{Kernel Methods}{7}
 \contentsline {subsubsection}{\numberline {4.2.2}Ignored Algorithms}{7}
 \contentsline {paragraph}{Neural Networks}{7}
 \contentsline {paragraph}{Decision Trees}{7}
-\contentsline {subsection}{\numberline {4.3}Cross-validation}{7}
-\contentsline {section}{References}{7}
-\contentsline {section}{Appendices}{10}
+\contentsline {paragraph}{Clustering}{8}
+\contentsline {paragraph}{Bayes}{8}
+\contentsline {subsection}{\numberline {4.3}Cross-validation}{8}
+\contentsline {section}{References}{8}
+\contentsline {section}{Appendices}{14}
