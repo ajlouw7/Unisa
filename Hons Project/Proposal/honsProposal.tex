@@ -10,12 +10,25 @@
 \bibliographystyle{agsm}
 
 %opening
-\title{COS 4807 Assignment 1}
+\title{An investgation into the use of machine learning techniques as a tool in the study of the factors that affect life expectancy on a global scale}
 \author{Adriaan Louw (53031377)}
+
+
+
 
 \begin{document}
 
 \maketitle
+
+\newpage
+
+\thispagestyle{plain}
+\begin{center}
+    \Large
+    \textbf{Abstract}
+\end{center}
+
+\newpage
 
 \tableofcontents
 
@@ -23,14 +36,13 @@
 
 \listoftables
 
-
-\section{Abstract}
-hello
 \section{Introduction}
 
-Human beings have always had a fascination with longevity. Myths like the fountain of youth or the Holy Grail are a testiment to this fact. Today, longevity and causes of mortality are studies by profesionals like Demographers and Actuaries. Trying to determine why some people or group have long lives.    
+Human beings have always had a fascination with longevity. Myths like the fountain of youth or the Holy Grail are a testament to this fact. Today, longevity and causes of mortality are studies by profesionals like Demographers and Actuaries. Trying to determine why some people or group live long lives.    
 
-This study investigates the use of Machine Learning techniques in studying the determinants of life expectancy for coutries. Indicators, shown to have some form of correlation with life expectancy, will be selected. Their relationship with life expectancy will be investigated using various techniques from Machine Learning. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between indicators and life expectancy life expectancy. In the hope that the causes of long life expectancies in certain countries can be better understood. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usefullness of machine learning algorithms as a tool. 
+This study investigates the use of Machine Learning techniques in studying the determinants of life expectancy for coutries. Selecting indicators that have shown to have some form of correlation with life expectancy. Their relationship with life expectancy will be investigated using various techniques from Machine Learning and contrasted to various form of regression that is used ubiquitously in the literature. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between these indicators and life expectancy. It is the hypothesis of this study that machine learning techniques like k-Nearest Neighbour and Support Vector Machines will model the indicator/life expectancy relationship better than regression techniques can. Also that these techniques can create more accurate models. In the hope that the causes of long life expectancies in certain countries can be better understood. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usefullness of machine learning algorithms as a tool. 
+
+Statistical regression techniques are predominantly used algorithm for data analysis. Linear regression (Section \ref{regression}) forinstance assumes a linear relationships between the independant variables and the dependant variable. Which might not be the case. This we will discuss in Literature Review (Section \ref{lit}).
 
 Machine learning is used in medicine \cite{Chen2017}.
 
@@ -44,7 +56,16 @@ Machine learning techniques can find relationships in the data that regression a
 
 Human attempts to mathematically predict life expectance is not a new endeavour. \cite{Gompertz} introduced an equation to predict life expectancy, which was modified in \cite{Makeham1860} to create the famous Gompertz$-$Makeham law.
 
-\section{Literature Review}
+\section{Literature Review} \label{lit}
+
+Life expectancy and mortality are 2 related terms. Mortality is generally expressed as a mortality rate. It describes the rate that people die under certain circumstances. Life expectancy (Section \ref{LifeExpectancy}) is the amount of years an individual or group of pople are expected to life. If the amount of people who are dying increses, the mortality rate increases and the life expecancy for people in that group decreases. And visa versa.
+
+
+
+
+
+
+
 
 Forecasting Mortality in Developed Countries Tabeau 2001
 
@@ -56,23 +77,17 @@ Forecasting Mortality in Developed Countries Tabeau 2001
 
 \cite{Grossman2000}
 
-\subsection{What do we mean by life expectancy?}
+\subsection{What do we mean by life expectancy?} \label{LifeExpectancy}
 
-How does the UN calculate life expectancy? Should be the measure this study will use.
+A life table is a table given for a specific year that contains the probability that a person of a certain age will die in that specific year. Life tables are also called actuarial tables and are used by actuaries in the life insurance industry. Table \ref{LifeTable} is an example of a life table taken from \cite{Arias2007}. Life expectancy is one element of a life table. Life tables are created by countries and the United Nations
 
-
-A life table is a table given for a specific year that contains the probability that a person of a certain age will die in that specific year. Life tables are also called actuarial tables and are used by actuaries in the life insurance industry. Table \ref{LifeTable} is an example of a life table taken from \cite{Arias2007}.
-
-There are 2 types of life tables namely period and cohort life tables. A cohort is a group of people who were born in the same year. A cohort life table will follow a cohort over its lifetime until every member of the cohort has died. A cohort life table requires the mortality information of the cohort over many years. This information is often unavailable. While for a period life table, a hypothetical cohort is created and subjected to current mortality rates. This gives the user of the period timetable a window to see mortality rates at that point in time. This makes period life tables the most common type of life table \citep{Arias2017}.
+There are 2 types of life tables namely period and cohort life tables. A cohort is a group of people who were born in the same year. A cohort life table will follow a cohort over its lifetime until every member of the cohort has died. A cohort life table requires the mortality information of the cohort over many years. This information is often unavailable. While for a period life table, a hypothetical cohort is created and subjected to current mortality rates. This gives the user of the period timetable a window to see mortality rates at that point in time. This makes period life tables the most common type \citep{Arias2017}.
 
 
-cohort life expectancy vs period life expectancy (https://ourworldindata.org/life-expectancy-how-is-it-calculated-and-how-should-it-be-interpreted)
 
 \subsection{Determinants of life expectancy}
 
-
-
-
+This section summarises the relationship some of the most well known indicators have with life expectancy.
 
 \subsubsection{Income} \label{income}
 
@@ -223,16 +238,18 @@ unemployment \cite{Bonamore2015} \cite{Roelfs2011} \cite{Roelfs2015}
 
 The study \cite{Hu2015}, also used a linear regression model of GDP per capita, Gini indeces, ect with respect to life expectancy. The intention of the study was to link income inequality to mortality rates and life expectancy.
 
+\subsection{Multi variate studies}
+
 \section{Methodology/Procedure}
 
-There are many studies that attempt to extrapolate future life expectancy for countries based on current data. This includes studies for high income countries \citep{Kontis2017} and low income countries ????{cite}.
 
-This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country.
+This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country. Then evaluate how well various machine learning techniques model the relationships.
 
 The philosophical standpoint of this study is Positivism. By using the scientific method, this study will comprise of an experiment to inductively determine whether machine learning techniques can provide more accurate life expectancy models than those created using regression. This cross-sectional study will use life expectancy indicators shown, from the literature, to have some correlation to life expectancy.
 
 
 
+There are many studies that attempt to extrapolate future life expectancy for countries based on current data. This includes studies for high income countries \citep{Kontis2017} and low income countries ????{cite}.
 
 segment data into groups where each group has the same amount of data points???
 
@@ -249,15 +266,29 @@ GDP per Capita (Purchasing power parity )
 ``National datasets must be regarded with some level of caution as data gaps and issues of inconsistency and incoherence remain owing to differences in the effectiveness of infrastructure, political agendas, and additional factors, such as internal conflicts'' \cite{Bulled2010}  
 
 
-The impact of finishing secondary school is different before vs after the seconf world war \cite{Deboosere2009}
+The impact of finishing secondary school is different before vs after the second world war \cite{Deboosere2009}
 
 \subsection{Choice of dataset}
+
+\subsubsection{Life Expectancy}
+For life expectancy data, this study will use the indicator ``Life expectancy at birth, total(years) \{SP.DYN.LE00.IN\}'' from the World Bank's Development Indicators Database \citep{WDI}. This is a weighted average combining both male and female life expectancy and is calculated in a period life table (see Section \ref{LifeExpectancy}). Only the data that is available for the last 30 years (1988-2017) will be used. This is in keeping with other studies where the amount of years that their studies look back on is limited to relatively recently \citep{Luy2019, Hu2015,Tarkiainen2012,Kabir2008, Shaw2005}. 
+
+\subsubsection{Income}
+
+This study will use GDP per capita as was used in \cite{Oeppen2019,Shkol2019,Mackenbach2013} and \cite{DeVogli2005}. The source will be GDP per capita, PPP (constant 2011 international \$)\{NY.GDP.PCAP.PP.KD\} from the World Bank \citep{WorldBank_gdp}.
+
+\subsubsection{Educational Atainment}
+
+Just as in \cite{Bulled2010}, this study will use adult literacy, and primary, secondary and tertiary enrolment ratios. For adult literacy indicator SE.ADT.LITR.ZS will be used from the world bank website \citep{adultLiteracy}. The world bank credits UNESCO for the data. The indicator describes the percentage of adults, from the eage of 15, who can read and write to a certain level of proficiency.  
+
+
+
 
 
 \subsection{Choise of algorithms}
 
 \subsubsection{Algorithms Chosen}
-\paragraph{Regression}
+\paragraph{Regression} \label{regression}
 Linear Regression is a popular technique, used to find relationships in data. As the name suggests Linear Regression assumes a linear relationship between the input variables and the result \citep{Murphy}. This might not be the case for the target function. The target function could be any potential function. In the case of life expectancy modelling, we know that according to the Preston curve (Section \ref{income}) the relationship between income and life expectancy is not linear. Thus using Linear Regression should return a sub-optimal result. The same logic applies to Logistic Regression. It assumes a linear relationhip between inputs. The difference is that this linear sum is passed through the sigmoid function \citep{Murphy}. This alsom makes it inappropriate for non-linear target functions. In this study Linear and Logistic Regression will be used as a baseline for comparison on the dataset.
 
 \paragraph{Ridge Regression}
@@ -341,8 +372,6 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 
 %\section{Recommendations}
 
-\addcontentsline{toc}{section}{References}
-\bibliography{mybib}
 
 \appendix
 \appendixpage
@@ -465,6 +494,8 @@ Age    & q(x)          & l(x)         & d(x)          & L(x)          & T(x)    
 
 
 \addappheadtotoc
+\addcontentsline{toc}{section}{References}
+\bibliography{mybib}
 
 
 

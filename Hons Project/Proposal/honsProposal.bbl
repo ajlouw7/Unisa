@@ -85,6 +85,15 @@ D{\'{a}}valos, M.~E., Fang, H. \harvardand\ French, M.~T.  \harvardyearleft
   Economics} {\bf 21}(11),~1318--1335.
 \newline\harvardurl{https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.1788}
 
+\harvarditem[{De Vogli} et~al.]{{De Vogli}, Mistry, Gnesolto \harvardand\
+  Cornia}{2005}{DeVogli2005}
+{De Vogli}, R., Mistry, R., Gnesolto, R. \harvardand\ Cornia, G.~A.
+  \harvardyearleft 2005\harvardyearright , `{Has the relation between income
+  inequality and life expectancy disappeared? Evidence from Italy and top
+  industrialised countries}', {\em Journal of Epidemiology and Community
+  Health} {\bf 59}(2),~158--162.
+\newline\harvardurl{http://jech.bmj.com/}
+
 \harvarditem{Deary \harvardand\ Gottfredson}{2004}{Deary2004}
 Deary, I.~J. \harvardand\ Gottfredson, L.~S.  \harvardyearleft
   2004\harvardyearright , `{Intelligence Predicts Health and Longevity, but
@@ -213,6 +222,13 @@ Luy, M., Zannella, M., Wegner-Siegmundt, C., Minagawa, Y., Lutz, W.
   impact of increasing education levels on rising life expectancy: a
   decomposition analysis for Italy, Denmark, and the USA}', {\em Genus} {\bf
   75}(1),~11.
+
+\harvarditem{Mackenbach \harvardand\ Looman}{2013}{Mackenbach2013}
+Mackenbach, J.~P. \harvardand\ Looman, C.~W.  \harvardyearleft
+  2013\harvardyearright , `{Life expectancy and national income in Europe,
+  1900-2008: An update of Preston's analysis}', {\em International Journal of
+  Epidemiology} {\bf 42}(4),~1100--1110.
+\newline\harvardurl{http://www.ggdc.net/MADDISON/oriindex.}
 
 \harvarditem{Makeham}{1860}{Makeham1860}
 Makeham, W.~M.  \harvardyearleft 1860\harvardyearright , `{On the Law of
@@ -363,5 +379,20 @@ van Kippersluis, H., O'Donnell, O. \harvardand\ van Doorslaer, E.
 von Gaudecker, H.~M. \harvardand\ Scholz, R.~D.  \harvardyearleft
   2007\harvardyearright , `{Differential mortality by lifetime earnings in
   Germany}', {\em Demographic Research} {\bf 17},~83--108.
+
+\harvarditem{{World Bank Group}}{2019{\em a}}{WorldBank_gdp}
+{World Bank Group}  \harvardyearleft 2019{\em a}\harvardyearright , `{GDP per
+  capita, PPP (constant 2011 international {\$})}'.
+\newline\harvardurl{https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD}
+
+\harvarditem{{World Bank Group}}{2019{\em b}}{adultLiteracy}
+{World Bank Group}  \harvardyearleft 2019{\em b}\harvardyearright , `{Literacy
+  rate, adult total ({\%} of people ages 15 and above)}'.
+\newline\harvardurl{https://data.worldbank.org/indicator/SE.ADT.LITR.ZS}
+
+\harvarditem{{World Bank Group}}{2019{\em c}}{WDI}
+{World Bank Group}  \harvardyearleft 2019{\em c}\harvardyearright , `{World
+  Development Indicators}'.
+\newline\harvardurl{http://datatopics.worldbank.org/world-development-indicators/}
 
 \end{thebibliography}
