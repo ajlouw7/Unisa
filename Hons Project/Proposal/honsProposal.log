@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  7 JUN 2019 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  8 JUN 2019 13:52
 entering extended mode
 **./honsProposal.tex
 (honsProposal.tex
@@ -246,24 +246,24 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 (honsProposal.aux)
 \openout1 = `honsProposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -375,48 +375,48 @@ G,.JBIG2,.JB2,.eps]
 \openout5 = `honsProposal.lot'.
 
  [3] [4]
-<The-original-Preston-Curve-1975.jpg, id=18, 553.06625pt x 348.30125pt>
+<The-original-Preston-Curve-1975.jpg, id=17, 553.06625pt x 348.30125pt>
 File: The-original-Preston-Curve-1975.jpg Graphic file (type jpg)
 <use The-original-Preston-Curve-1975.jpg>
 Package pdftex.def Info: The-original-Preston-Curve-1975.jpg  used on input lin
-e 108.
+e 129.
 (pdftex.def)             Requested size: 369.88577pt x 256.08603pt.
- [5 <./The-original-Preston-Curve-1975.jpg>] [6] [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 274.
+ [5] [6 <./The-original-Preston-Curve-1975.jpg>] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 220.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
- [8] [9] [10]
-Overfull \hbox (36.44365pt too wide) in alignment at lines 379--404
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
+ [8] [9]
+Overfull \hbox (36.44365pt too wide) in alignment at lines 296--321
+ [] [] [] [] [] [] [] 
+ []
+
+[10]
+Overfull \hbox (36.44365pt too wide) in alignment at lines 321--341
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (36.44365pt too wide) in alignment at lines 404--424
+Overfull \hbox (36.44365pt too wide) in alignment at lines 341--361
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (36.44365pt too wide) in alignment at lines 424--444
+Overfull \hbox (36.44365pt too wide) in alignment at lines 361--381
  [] [] [] [] [] [] [] 
  []
 
 [11]
-Overfull \hbox (36.44365pt too wide) in alignment at lines 444--464
+Overfull \hbox (36.44365pt too wide) in alignment at lines 381--401
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (36.44365pt too wide) in alignment at lines 464--484
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (36.44365pt too wide) in alignment at lines 484--493
+Overfull \hbox (36.44365pt too wide) in alignment at lines 401--410
  [] [] [] [] [] [] [] 
  []
 
@@ -427,14 +427,13 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
  [13]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
- [14]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -444,19 +443,19 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no … in font cmr12!
- [15]
+ [14]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [16]) [17] (honsProposal.aux) ) 
+ [15]) [16] (honsProposal.aux) ) 
 Here is how much of TeX's memory you used:
- 3764 strings out of 493303
- 52702 string characters out of 3138856
- 146385 words of memory out of 3000000
- 7258 multiletter control sequences out of 15000+200000
+ 3751 strings out of 493303
+ 52666 string characters out of 3138856
+ 150910 words of memory out of 3000000
+ 7245 multiletter control sequences out of 15000+200000
  11924 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,35p,1171b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,6n,35p,1205b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Riaan\AppData\Local\MiKTeX\2.9\fonts
 \pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
@@ -468,9 +467,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on honsProposal.pdf (17 pages, 201660 bytes).
+Output written on honsProposal.pdf (16 pages, 199826 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

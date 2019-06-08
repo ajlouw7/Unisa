@@ -1,30 +1,28 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1}Introduction}{4}
 \contentsline {section}{\numberline {2}Literature Review}{4}
-\contentsline {subsection}{\numberline {2.1}?Grossman?}{4}
-\contentsline {subsection}{\numberline {2.2}What do we mean by life expectancy?}{4}
+\contentsline {subsection}{\numberline {2.1}What do we mean by life expectancy?}{4}
+\contentsline {subsection}{\numberline {2.2}Multi indicator studies}{5}
 \contentsline {subsection}{\numberline {2.3}Determinants of life expectancy}{5}
 \contentsline {subsubsection}{\numberline {2.3.1}Income}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}Education atainment}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Education atainment}{5}
 \contentsline {subsubsection}{\numberline {2.3.3}Per capita spending on health}{7}
 \contentsline {subsubsection}{\numberline {2.3.4}Unemployment}{7}
-\contentsline {subsection}{\numberline {2.4}Cross country studies}{7}
-\contentsline {subsection}{\numberline {2.5}Multi variate studies}{8}
-\contentsline {section}{\numberline {3}Methodology/Procedure}{8}
+\contentsline {section}{\numberline {3}Methodology/Procedure}{7}
 \contentsline {subsection}{\numberline {3.1}Choice of dataset}{8}
 \contentsline {subsubsection}{\numberline {3.1.1}Life Expectancy}{8}
-\contentsline {subsubsection}{\numberline {3.1.2}Income}{9}
-\contentsline {subsubsection}{\numberline {3.1.3}Educational Atainment}{9}
+\contentsline {subsubsection}{\numberline {3.1.2}Income}{8}
+\contentsline {subsubsection}{\numberline {3.1.3}Educational Atainment}{8}
+\contentsline {subsubsection}{\numberline {3.1.4}Per Capita spending on health}{9}
+\contentsline {subsubsection}{\numberline {3.1.5}Unemployment}{9}
 \contentsline {subsection}{\numberline {3.2}Choise of algorithms}{9}
 \contentsline {subsubsection}{\numberline {3.2.1}Algorithms Chosen}{9}
 \contentsline {paragraph}{Regression}{9}
-\contentsline {paragraph}{Ridge Regression}{9}
 \contentsline {paragraph}{k-Nearest Neighbour}{9}
 \contentsline {paragraph}{Support Vector Machines}{9}
 \contentsline {subsubsection}{\numberline {3.2.2}Ignored Algorithms}{10}
 \contentsline {paragraph}{Neural Networks}{10}
 \contentsline {paragraph}{Decision Trees}{10}
 \contentsline {paragraph}{Clustering}{10}
-\contentsline {paragraph}{Bayes}{10}
 \contentsline {subsection}{\numberline {3.3}Cross-validation}{10}
 \contentsline {section}{Appendices}{13}
 \contentsline {section}{References}{13}
