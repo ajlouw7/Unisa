@@ -7,22 +7,22 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Education attainment}{5}
 \contentsline {subsubsection}{\numberline {2.3.3}Spending on health}{7}
 \contentsline {subsubsection}{\numberline {2.3.4}Unemployment}{7}
-\contentsline {section}{\numberline {3}Methodology/Procedure}{7}
+\contentsline {section}{\numberline {3}Methodology/Procedure}{8}
 \contentsline {subsection}{\numberline {3.1}Choice of dataset}{8}
 \contentsline {subsubsection}{\numberline {3.1.1}Life Expectancy}{8}
 \contentsline {subsubsection}{\numberline {3.1.2}Income}{8}
 \contentsline {subsubsection}{\numberline {3.1.3}Educational Attainment}{8}
 \contentsline {subsubsection}{\numberline {3.1.4}Per Capita spending on health}{9}
 \contentsline {subsubsection}{\numberline {3.1.5}Unemployment}{9}
-\contentsline {subsection}{\numberline {3.2}Choise of algorithms}{9}
+\contentsline {subsection}{\numberline {3.2}Choice of algorithms}{9}
 \contentsline {subsubsection}{\numberline {3.2.1}Algorithms Chosen}{9}
-\contentsline {paragraph}{Regression}{9}
-\contentsline {paragraph}{k-Nearest Neighbour}{9}
-\contentsline {paragraph}{Support Vector Machines}{9}
-\contentsline {subsubsection}{\numberline {3.2.2}Ignored Algorithms}{10}
-\contentsline {paragraph}{Neural Networks}{10}
-\contentsline {paragraph}{Decision Trees}{10}
-\contentsline {paragraph}{Clustering}{10}
-\contentsline {subsection}{\numberline {3.3}Cross-validation}{10}
-\contentsline {section}{Appendices}{10}
-\contentsline {section}{References}{10}
+\contentsline {paragraph}{Linear Regression}{9}
+\contentsline {paragraph}{k-Nearest Neighbour}{10}
+\contentsline {paragraph}{Support Vector Machines}{10}
+\contentsline {paragraph}{Clustering}{11}
+\contentsline {subsubsection}{\numberline {3.2.2}Ignored Algorithms}{12}
+\contentsline {paragraph}{Logistic regression}{12}
+\contentsline {paragraph}{Neural Networks}{12}
+\contentsline {paragraph}{Decision Trees}{12}
+\contentsline {subsection}{\numberline {3.3}Cross-validation}{12}
+\contentsline {section}{References}{12}

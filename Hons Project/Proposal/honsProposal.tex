@@ -73,7 +73,7 @@ to model their data and Vector Error Correction Model to anlyse the data.
 
 By using the componets of the Human Development index and Pearsons r with multivariate regression, \cite{Bulled2010} investigated the link between life expectancy, education and reproduction.
 
-
+This study aims to add machiine learning algorithms as a tool to life expectancy studies, like these, that look at multiple factors that affect life expectancy.
 
 
 
@@ -87,7 +87,7 @@ This section summarises the relationship some indicators have with life expectan
 
 \subsubsection{Income} \label{income}
 
-The relationship between income and life expectancy has been given a lot of attention in academic circles \citep{Preston1975, Hu2015, Chetty2016, Oeppen2019}. 
+The relationship between life expectancy and income has been given a lot of attention in academic circles \citep{Preston1975, Hu2015, Chetty2016, Oeppen2019}. 
 
 \cite{Preston1975} was the first to show the correlation between life expectancy and per capita income. His original curve can be seen in Figure \ref{Preston}. As we can see from Figure \ref{Preston}, for low income countries, life expectancy increases rapidly with per capita income. Whereas in high income countries a small increase in per capita income does not have a large effect on life expectancy.
 
@@ -110,11 +110,13 @@ Just 16\% of the improvement in life expectancy between the 1930s and 1960s coul
 
 \cite{Luy2019} studied 3 developed nations, namely the United States, Italy and Denmark. They have also found a strong correlation between education levels and longevity.
 
-But what is the nature of this correlation? According to \cite{Deary2004} Intelligence Quotient or IQ could explain the association. While \cite{Hayward2015} does not believe in a ``causal relationship'', but rather that it depends on factors like ``time, place, and the social environment''.
+But what is the nature of this correlation? According to \cite{Deary2004}, Intelligence Quotient or IQ could explain the association. While \cite{Hayward2015} does not believe in a ``causal relationship'', but rather that it depends on factors like ``time, place, and the social environment''.
 
 In an attempt to find a causal relationship between education and life expectancy, \cite{VanKippersluis2009} investigated the result of the Netherlands increasing the mandatory number of years a child had to attend school for to 7 years. It was 6 years previously. \cite{VanKippersluis2009} found a decrease in mortality of 3\% for 81-year old males who had the additional year of schooling. 
 
-This relationship appears strongest in more developed countries where the life expectancy is already above 60 years \citep{Bulled2010}. In these countries, any educational investment leads to greater compensation for the learner than they would get in a less developed country \cite{Bulled2010,Handwerker1986}. In addition, \cite{Kabir2008} also studied this relationship, among others, with regards to developing countries and did not find a correlation.
+This relationship appears strongest in more developed countries where the life expectancy is already above 60 years \citep{Bulled2010}. In these countries, any educational investment leads to greater compensation for the learner than they would get in a less developed country \cite{Bulled2010,Handwerker1986}. In addition, \cite{Kabir2008} also studied this relationship, among others, with regards to developing countries and did not find a correlation. 
+
+The literature appears not to be in agreement.
 
 The question remains, which educational indicators should be used when investigating the relationship between education and life expectancy?
 
@@ -195,10 +197,17 @@ For life expectancy data, this study will use the indicator ``Life expectancy at
 
 This study will use GDP per capita as was used in \cite{Oeppen2019,Shkol2019,Mackenbach2013} and \cite{DeVogli2005}. The source will be GDP per capita, PPP (constant 2011 international \$)\{NY.GDP.PCAP.PP.KD\} from the World Bank \citep{WorldBank_gdp}.
 
-\subsubsection{Educational Attainment}
+\subsubsection{Educational Attainment} \label{edudata}
 
-Just as in \cite{Bulled2010}, this study will use adult literacy, and primary, secondary and tertiary enrolment ratios. For an adult literacy indicator, SE.ADT.LITR.ZS will be used from the world bank website \citep{adultLiteracy}. This indicator describes the percentage of adults, from the age of 15, who can read and write to a certain level of proficiency. The indicator SE.PRM.ENRR will serve as the enrollment ratio for primary education \citep{worldbankenrollmentprimary}. For secondary enrolment, SE.SEC.ENRR  \citep{worldbankenrollmentsecondary} will be used and SE.TER.ENRR \citep{worldbankenrollmenttertiary} for tertiary enrollment. The world bank credits \cite{UNESCOInstituteofStatistics2019} for all of theses educational indicator data.
+This study will use the same indicators and was used in \cite{Bulled2010}. For an adult literacy indicator, SE.ADT.LITR.ZS will be used from the world bank website \citep{adultLiteracy}. This indicator describes the percentage of adults, from the age of 15, who can read and write to a certain level of proficiency. Determining the literacy level of a country is a difficult endeavour. The definition of literacy might be exactly the same between countries, because this indicator uses a lot of data that each country determines on its own. This also might include some measure of competancy with numbers.
 
+The indicator SE.PRM.ENRR will serve as the enrollment ratio for primary education \citep{worldbankenrollmentprimary}. As the name suggests, it is the pecentage of students in primary school. It is calculated as the fraction of students in primary school over the amount of students that should be in prmary school basaed on population figures. This can lead to a value greater than 100\%. This is due to older students or adults that should have completed primary school that are now undergoing primary school education. This can be a sign of a poorly performing school system. This indicator also does not take issues like truancy into account. 
+
+For secondary school enrolment, SE.SEC.ENRR  \citep{worldbankenrollmentsecondary} will be used. This   indicator can be higer than expected or above 100\% for the same reasons as the primary school enrollment indicator. 
+
+SE.TER.ENRR \citep{worldbankenrollmenttertiary} will be used for tertiary enrollment. A high number here tends to indicate that it is a number from an developed country, because tertiary education is much more of a luxury in developing countries.
+
+It is expected that the enrollment at tertiary and secondary will be highly correlated to industrialised countries and thus with life expectancy. The world bank credits \cite{UNESCOInstituteofStatistics2019} for all of theses educational indicator data.
 
 \subsubsection{Per Capita spending on health}
 To represent Per capita spending on health in this study's model, SH.XPD.CHEX.PP.CD \citep{pphealthspending} which describes Current health expenditure per capita, will be used.
@@ -206,25 +215,29 @@ To represent Per capita spending on health in this study's model, SH.XPD.CHEX.PP
 \subsubsection{Unemployment}
 Unemployment will be ignored for this study because sufficient data on unemployment per country is not available. This can be seen by looking at indictors like SL.UEM.TOTL.NE.ZS \citep{unemploymentdata} which describe percentage unemployment per country for both sexes.
 
-\subsection{Choise of algorithms} \label{algo}
+\subsection{Choice of algorithms} \label{algo}
+
+In this study Linear Regression will be used as a baseline for comparison on the dataset.
 
 \subsubsection{Algorithms Chosen}
-\paragraph{Regression} \label{regression}
-Linear Regression is a popular technique, used to find relationships in data. As the name suggests Linear Regression assumes a linear relationship between the input variables and the result \citep{Murphy}. This might not be the case for the target function. The target function could be any potential function. In the case of life expectancy modelling, we know that according to the Preston curve (Section \ref{income}), the relationship between income and life expectancy is not linear. Thus using Linear Regression should return a sub-optimal result. The same logic applies to Logistic Regression. It assumes a linear relationship between inputs. The difference is that this linear sum is passed through the sigmoid function \citep{Murphy}. This also makes it inappropriate for non-linear target functions. In this study Linear and Logistic Regression will be used as a baseline for comparison on the dataset.
+\paragraph{Linear Regression} \label{regression}
+Linear Regression is a popular technique, used to find relationships in data. As the name suggests Linear Regression assumes a linear relationship between the input variables and the result \citep{Murphy}. This might not be the case for the target function. The target function could be any potential function. In the case of life expectancy modelling, we know that according to the Preston curve (Section \ref{income}), the relationship between income and life expectancy is not linear. Thus using Linear Regression should return a sub-optimal result unles the data is transformes using some non-linear function into a linear space. Linear regression was used in the following studies: \cite{Chetty2016,Jakovljevic2016,Hu2015,Mackenbach2013,Bulled2010}. 
 
 \paragraph{k-Nearest Neighbour}
 
-The k-Nearest Neighbour algorithm (kNN) is an instance based form of machine learning. It uses the classification of those datapoints closest to the data point to be classied to determine its classification. The kNN-algorithm allows for non-linear problem spaces to be classified, because it does not make an assumption on the nature of the problem space. Additionally, how the algorithm determined its output value is transparent and can be used to study how various components affect the end result. In this study, the standard kNN-algoritm will be altered to accomodate a real valued output and not just a class classification. This will be accomplished by taking the mean life expectancy for all the data points determined to be closest to the target point. Care will have to be taken to reduce the number of features of the data, because this algorithm is sensitive to the so-called ``curse of dimentionality'' \citep{Mitchell}.
+The k-Nearest Neighbour algorithm (kNN) is an instance based form of machine learning. It uses the classification of those datapoints closest to the data point to be classified to determine its classification. The kNN-algorithm allows for non-linear problem spaces to be classified, because it does not make an assumption on the nature of the problem space. It just sees a data point as a function of its closes neighbours. This is usefull for indicators like income that are highly non-linear as described in Section \ref{income}. Additionally, how the algorithm determined its output value is transparent and can be used to study how various components affect the end result. This is important , because if the algorithm was not transparent it can not be seen as a replacement for other algorithms that are transparent like regression alorithms. In this study, the standard kNN-algoritm will be altered to accomodate a real valued output and not just a class classification. This will be accomplished by taking the mean life expectancy for all the data points determined to be closest to the target point. Care will have to be taken to reduce the number of features of the data, because this algorithm is sensitive to the so-called ``curse of dimentionality'' \citep{Mitchell}. As discussed in Section \ref{edudata}, educational attainment will comprise of many indicators. This could lead to educational attainment being weighted more than other indicators. Thus each educational indicator will be given a fractional weight. If there are 4 educational attainment then each indicator will have a 4th of the weight of other indicators. 
+
+The value of $k$ will have to be found experimentally and will be affected by the density of the data points. One potential issue could be if the data tends to cluster around certain points. This could happen if developing countries clster together and developed countries cluster together. That could make developing countries, that are on the higher end of the development scale, more difficult to classify, since not a lot of data points will be very close to them. 
 
 \paragraph{Support Vector Machines}
 
-The classic Support Vector Machine (SVM) is used in classification tasks. It involves determining the decision surface with regards to the data points closest to the surface. This study will use a modified SVM algorithm that makes it useful for regression tasks. The SVN regression is described in \cite{smola2004}. The final model can be described as:
+The classic Support Vector Machine (SVM) is used in classification tasks. It involves determining the decision surface with regards to the data points closest to the surface. This study will use a modified SVM algorithm that makes it useful for regression tasks. This is called Support Vector Regression (SVR). The SVR algorithm is described in \cite{smola2004}. The final model can be described as:
 
 \begin{equation}
  f(x) = \sum_{i=1}^l (\alpha_i-\alpha_i^*)k(x_i,x)+b
 \end{equation}
 
-where $\alpha_i$ and $\alpha_i^*$ are Lagrange multipliers, $b$ is the bias and the term $k(x_i,x)$ is the kernel. The kernel is a function to determine the similarity between 2 input vectors. Various kernels will be investigated, including the Radial-basis function
+where $\alpha_i$ and $\alpha_i^*$ are Lagrange multipliers, $b$ is the bias and the term $k(x_i,x)$ is the kernel function. The kernel is a function to determine the similarity between 2 input vectors. Kernel functions are used to map a non-linear problem space into a smaller subspace where the features are linearly seperable. A kernel has to map from the dimension of the problem space down to 1 dimension. Instead if computing the dot product of 2 datapoints, we can replace it with a kernel that requires less computation. Various kernels will be investigated, including the Radial-basis function
 
 \begin{equation}
  k(x_i,x) = exp(-\frac{\mid\mid x-x_i \mid\mid^2}{2\sigma^2})
@@ -236,18 +249,42 @@ and the polynomial kernel
  k(x_i,x) = (x_i.x +1)^p
 \end{equation}
 
+Unfortunately, SVR models are difficult to analyse. Making it hard to determine how the input features of the model affect the output. In order for SVR to be seen as a viable alternative to multivariate regression, an appropriate technique has to be found that can assist in this dilemma. For purpose, this study will use the techniques described in \cite{USTUN2007299} to understand which input feature the SVR model deems most important for the modelling of our life expectancy problem space.
+
+In the algorithm described in \cite{USTUN2007299}, a kernel matrix or Gram matrix has to be computed. This matrix $K$ will be of size $N X N$ and contains in each cell the kernel function corresponding to the input vectors of the same index such that
+
+\begin{equation}
+ K_{ij} = k(x_i,x_j)
+\end{equation}
+
+The vector of input data(I) is of size $M X N$ where $M$ is the number of input features and $N$ is the size of the dataset. The Correlation matrics(R) is calculated by correlating each row of I with each column in K. This gives a resultant vector R of size $N X M$. Now we have a measure of the impotance of each input to the kernel matrix. This resultant matrix is then converted to an image so that the relationships can be seen visually.
+
+\paragraph{Clustering}
+
+Clustering techniques are a form of unsupervised learning where the algorithm tries to group the data in a number of groups. In essence, classifying the data into categories. This cannot be easily compared to regression techniques. This study will rather follow the approach of Clustered linear regression(CLR) \citep{Ari2002}. In CLR, clustering techniques are used to break the dataset into clusters. Then apply linear regression to the datapoints in each cluster. In this way one linear regression model does not have to account for all data the data in the data set. Each regression model can be tailored to data similar to it, thereby increasing the chance of getting a good linear fit on the data. This technique also allows the researcher to gain information about the dataset. If the data is very clustered, it could mean that the promlem space in not very linear and that data tends to ``jump'' between clusters. Comparisons will be made to how the number of clusters affect the results from the regression analyses.
+
+Various clustering algorithms exist. They can be classified into 2 broad groups. The first group is flat clustering. In this group, the algorithms break the data into various groups that have no hierarchy. In other words, there are no group of groups. The second type in hierarchical clustering \citep{Murphy}. 
+
+Agglomerative clustering and divisive clustering are the 2 types of hierarchical clustering. Agglomerative clustering starts of withm each data point being a cluster and then combining clusters until some condition is reached. Divisive clustering adds all the datapoints to one cluster and then breaks them into smaller sub-clusters until some condition is met \citep{Murphy}.
+
+The k-means algorithm will be used for clustering. It is flat clusterig algorithm. A number $k$ will be selected, and that will be the number of clusters the algorithm will attempt to find. Each cluster is assigned a centroid that devines the middle of the cluster. The number k will have to be found experimentally, but it should correspond to broad catagories these countries can be placed in with regards to life expectancy. Forinstance, we could assume that these countries can only be grouped whether they are developing or developed countries. Then k would be 2. Another possibility is to group the countries according to their geographical location. That assumes countries that are close geographicaly also have similar life expectancies. Then k can be 6. one for each continent, excluding antarctica. Further subdevisions are possible \citep{Murphy}.
+
+Each cluster has an initial start point, i.e. the initial position of its centroid. The centroid will be randomly placed in the hypothesis space. Each data point is the assigned to the nearest centroid, determined by Euclidean distance. The centroids position will then by updated to be the mean of all its newly assigned datapoints. The algorithms then repeatedly updated the position of each centroid based on the closest data points, until the centroid stop moving. It is worth noting that the algorithm might not coverge to the optimum solution. Therefor multiple runs of this algorithm will be necessary \citep{Murphy}.
 
 \subsubsection{Ignored Algorithms}
+\paragraph{Logistic regression}
+This regression is appropriate when the dependant variable is discrete, e.g. a yes/no answer. It also assumes a linear relationship between inputs. In contrast to linear regression, this linear sum is passed through the sigmoid function \citep{Murphy}. All of this makes it inappropriate for non-linear target functions and this study.
+
 \paragraph{Neural Networks}
 Even though Neural networks are capable of representing non-linear hypothesis spaces \citep{Mitchell}, they are not appropriate for this study for a couple of reasons. Firstly, the datasets that are available are not large enough. Neural networks typically require thousands if not tens of thousands of data points. Secondly, the amount of processing power and processing time required, will not be available to this study. Thirdly, the results of neural networks are hard to interpret. How the Neural Network came to its conclusion is not clear to the researcher. Which makes it unsuitable as a tool to study the relationship between life expectancy and its various indicators.
 
 \paragraph{Decision Trees}
 
-Traceability and understandability are some of the hallmarks of Decision Trees. These algorithms are suited problem spaces where the target function and the input attributes are discrete values. It is possible to approximate continuous input attributes by making a branch in the tree when a value is smaller or greater than some value, or is between some value. For functions where input attributes span over large ranges, this leads to very large and sub-optimum trees \citep{Mitchell}. The problem of determining life expectancy from socio-economic indices has a continuous target function output and continuous input attributes. Therefor, Decision Trees will be excluded from this study.
+Traceability and understandability are some of the hallmarks of Decision Trees. These algorithms are suited problem spaces where the target function and the input attributes are discrete values. It is possible to approximate continuous input attributes by making a branch in the tree when a value is smaller or greater than some value, or is between some value. For functions where input attributes span over large ranges, this leads to very large and sub-optimum trees \citep{Mitchell}. Many decision tree algorithms exist, like ID3 and C4.5. The problem of determining life expectancy from socio-economic indices has a continuous target function output and continuous input attributes. Therefor, Decision Trees will be excluded from this study.
 
-\paragraph{Clustering}
 
-Clustering techniques are a form of unsupervised learning where the algorithm tries to group the data in a number of groups. In essence, classifying the data into categories. This study will not attempt to classify the data, but rather find appropriate machine learning algorithms that could replace linear and logistic regression. While at the same time being able to predict the output of an input vector without needing to classify it first.
+
+
 
 \subsection{Cross-validation} \label{cross}
 
@@ -265,7 +302,7 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 %\appendix
 %\appendixpage
 
-\addappheadtotoc
+%\addappheadtotoc
 \addcontentsline{toc}{section}{References}
 \bibliography{mybib}
 

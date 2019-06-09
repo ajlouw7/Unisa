@@ -5,9 +5,11 @@ Anderson, G.~F. \harvardand\ Frogner, B.~K.  \harvardyearleft
   2008\harvardyearright , `{Health spending in OECD countries: Obtaining value
   per dollar}', {\em Health Affairs} {\bf 27}(6),~1718--1727.
 
-\harvarditem{Arias}{2007}{Arias2007}
-Arias, E.  \harvardyearleft 2007\harvardyearright , {National Vital Statistics
-  Reports}, Technical Report~6.
+\harvarditem{Ari \harvardand\ G{\"{u}}venir}{2002}{Ari2002}
+Ari, B. \harvardand\ G{\"{u}}venir, H.~A.  \harvardyearleft
+  2002\harvardyearright , `{Clustered linear regression}', {\em Knowledge-Based
+  Systems} {\bf 15}(3),~169--175.
+\newline\harvardurl{www.elsevier.com/locate/knosys}
 
 \harvarditem[Arias et~al.]{Arias, Heron \harvardand\ Xu}{2017}{Arias2017}
 Arias, E., Heron, M. \harvardand\ Xu, J.  \harvardyearleft
@@ -296,6 +298,13 @@ Tarkiainen, L., Martikainen, P., Laaksonen, M. \harvardand\ Valkonen, T.
 {UNESCO Institute of Statistics}  \harvardyearleft 2019\harvardyearright ,
   `{UNESCO Institute of Statistics}'.
 \newline\harvardurl{http://uis.unesco.org/}
+
+\harvarditem[{\"{U}}st{\"{u}}n et~al.]{{\"{U}}st{\"{u}}n, Melssen \harvardand\
+  Buydens}{2007}{USTUN2007299}
+{\"{U}}st{\"{u}}n, B., Melssen, W.~J. \harvardand\ Buydens, L. M.~C.
+  \harvardyearleft 2007\harvardyearright , `{Visualisation and interpretation
+  of Support Vector Regression models}', {\em Analytica Chimica Acta} {\bf
+  595}(1),~299--309.
 
 \harvarditem[van Kippersluis et~al.]{van Kippersluis, O'Donnell \harvardand\
   van Doorslaer}{2011}{VanKippersluis2009}
