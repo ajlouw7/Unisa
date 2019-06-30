@@ -4,12 +4,28 @@
 \usepackage{textcomp}
 \usepackage[a4paper,margin=0.8in]{geometry} 
 \usepackage{latexsym}
+\usepackage{tikz}
+\usepackage{etoolbox}
 
 %opening
 \title{COS 4807 Assignment 2}
 \author{Adriaan Louw (53031377)}
 
 \newcommand{\interp}{I}
+
+
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
+
+\usetikzlibrary{shapes.misc}
+
+
 \begin{document}
 
 \maketitle
@@ -175,5 +191,100 @@ Now for the resolution refutation
 
 Because resolution refutation shows that the set of clauses is unsatidfiable we can conslude that 
 $\{p\rightarrow q,q \rightarrow r\} \models p \rightarrow (q \wedge r)$
+
+\section{Question 4}
+
+For 
+
+\begin{equation}
+(p\vee q)\rightarrow r 
+\end{equation}
+
+using ordering (p,q,r)
+
+
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+ \node [circle,draw] {p}
+    child[dashed] { node [circle,draw] {q}
+      child[dashed] { node[dummy] {r}
+      	 child[dashed] { node[dummy] {T}
+         	edge from parent node [below] {0} }
+         child[solid] { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {0} }
+      child[solid] { node[dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {1} }    
+      edge from parent node[below] {0} }
+    child { node [circle,draw] {q}
+      child[dashed] { node [dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child[solid] { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {0} } 
+      child { node [dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {1} }  
+      edge from parent node[below] {1}};
+\end{tikzpicture}
+
+
+
+
+
+\begin{tikzpicture}
+ [level/.style={sibling distance=60mm/#1}]
+ 
+  \node [circle,draw] {p}
+    child[dashed] { node [circle,draw] {q}
+      child[dashed] { node[dummy] {r}
+      	 child[dashed] { node[dummy] {T}
+         	edge from parent node [below] {0} }
+         child[solid] { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {0} }
+      child[solid] { node[dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {1} }    
+      edge from parent node[below] {0} }
+    child { node [circle,draw] {q}
+      child[dashed] { node [dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child[solid] { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {0} } 
+      child { node [dummy] {r}
+         child[dashed] { node[dummy] {F}
+         	edge from parent node [below] {0} }
+         child { node[dummy] {T}
+         	edge from parent node [below] {1} }
+         edge from parent node [below] {1} }  
+      edge from parent node[below] {1}};
+\end{tikzpicture}
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}

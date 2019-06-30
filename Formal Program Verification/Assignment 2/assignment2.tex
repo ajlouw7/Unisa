@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
+
+%opening
+\title{COS 4892 Assignment 2}
+\author{Adriaan Louw (53031377)}
+
+\newcommand{\interp}{I}
+\providecommand{\floor}[1]{\lfloor #1 \rfloor  }
+
+\newcommand{\en}{\wedge}
+\newcommand{\of}{\vee}
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+
+We will define
+
+\begin{equation}
+\label{q1}
+Q = ((Q_1 \wedge B) \vee (Q_2 \wedge \neg B))
+\end{equation}
+
+Now we calculate from Equation \ref{q1}
+
+\begin{equation}
+\begin{split}
+ Q\wedge B &= ((Q_1\wedge B)\vee(Q_2\wedge B))\wedge B\\
+ &= (Q_1\wedge B \wedge B)\vee (Q_2\wedge \neg B \wedge B)\\
+ &= Q_1\wedge B
+ \end{split}
+\end{equation}
+
+and
+
+\begin{equation}
+\begin{split}
+ Q\wedge B &= ((Q_1\wedge B)\vee(Q_2\wedge B))\wedge B\\
+ &= (Q_1\wedge B \wedge \neg B)\vee (Q_2\wedge \neg B \wedge \neg B)\\
+ &= Q_2\wedge \neg B
+ \end{split}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+\end{document}
