@@ -55,4 +55,89 @@ and
 
 
 
+
+
+
+
+
+
+
+\section{Question 2.1}
+
+\begin{equation}
+\{?\} x:=3.2z\{wy-2w^2<z\} 
+\end{equation}
+
+\begin{equation}
+\{wy-2w^2<z\}  x:=3.2z\{wy-2w^2<z\} 
+\end{equation}
+
+The post condition is not dependant on $x$. Thus there is notihing to replace by using the assignment Axiom
+
+\section{Question 2.2}
+
+\begin{equation}
+ \{?\} x:=x-1;y:=y-1\{z-1\leq y < x \leq w\}
+\end{equation}
+
+\begin{equation}
+ \{z-1\leq y-1<x-1\leq w\} x:=x-1;y:=y-1\{z-1\leq y < x \leq w\}
+\end{equation}
+
+\begin{equation}
+ \{z\leq y<x\leq w+1\} x:=x-1;y:=y-1\{z-1\leq y < x \leq w\}
+\end{equation}
+
+\section{Question 2.3}
+\begin{equation}
+ \{?\} if  even(x) \rightarrow x:=x-1 else  odd(x) \rightarrow z:= z+yx\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+
+
+
+Using the retrogressive theorem for the if statement:
+
+Taking the case as of $S1 = even(x)\rightarrow x:=x-1$
+
+\begin{equation}
+ \{?\}x:x-1\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+
+\begin{equation}
+\{x\geq 0 \wedge z + y(x-1) = ab \}x:x-1\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+
+\begin{equation}
+\{x\geq 0 \wedge z + yx-y = ab \}x:x-1\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+Taking the case as of $S2 = odd(x)\rightarrow z:=z+yx$
+
+\begin{equation}
+ \{?\}z:z+yx\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+\begin{equation}
+\{x\geq 0 \wedge (z+yx) + yx = ab \}z:z+yx\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+\begin{equation}
+\{x\geq 0 \wedge z+ 2yx = ab \}z:z+yx\{x\geq 0 \wedge z + yx = ab \}
+\end{equation}
+
+Now applying the retrogressive theorem for the if statement
+\begin{equation}
+\begin{split}
+ \{(x\geq 0 \wedge z + yx-y = ab \wedge even(x) )\vee (x\geq 0 \wedge z+ 2yx = ab \wedge odd(x))\}\\ if  even(x) \rightarrow x:=x-1 else  odd(x) \rightarrow z:= z+yx \\ \{x\geq 0 \wedge z + yx = ab \}
+\end{split}
+ \end{equation}
+
+\section{Question 2.4}
+
+
+
+
 \end{document}
