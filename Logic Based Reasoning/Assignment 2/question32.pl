@@ -35,7 +35,7 @@ calcIntersection([H1|A],B,L):-
         L= L1
         .
 
-mergeIfNotInIntersection(A,I,L):-
+mergeIfNotInIntersection(A,I,L).
 	
 
 
