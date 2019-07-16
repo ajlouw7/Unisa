@@ -195,6 +195,16 @@ $Z_3$ is false thus the preconditions of S are
  \end{split}
 \end{equation}
 
+\section{Question 3}
+
+A Hoare triple ,{P}S{Q}, is valid if before execution statement s, P is valid and directly after executing S, Q is valid. Therefor for each possible value of P, statement S has to be exercuted and determined whether the result causes Q to be valid or not.  
+
+\section{Question 4}
+
+In this example P can have value of  x = 3, x= -3, x = 4 or x=-4. In the the first case when x = 3, after applying the statement we get y = 3. For the case of x = -3 then y = 3. When x = 4 the results in y = 4 and for x = -4, after apllying the if statement, y = 4. In each of the 4 cases the value of y is within the range defined by the postcondition. Thus the statement is valid.   
+
+\section{Question 5}
+
 \end{document}
 
 
