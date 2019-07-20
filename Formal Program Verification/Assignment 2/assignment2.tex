@@ -197,13 +197,158 @@ $Z_3$ is false thus the preconditions of S are
 
 \section{Question 3}
 
-A Hoare triple ,{P}S{Q}, is valid if before execution statement s, P is valid and directly after executing S, Q is valid. Therefor for each possible value of P, statement S has to be exercuted and determined whether the result causes Q to be valid or not.  
+A Hoare triple ,\{P\}S\{Q\}, is valid if before execution statement s, P is valid and directly after executing S, Q is valid. Therefor for each possible value of P, statement S has to be exercuted and determined whether the result causes Q to be valid or not.  
 
 \section{Question 4}
 
 In this example P can have value of  x = 3, x= -3, x = 4 or x=-4. In the the first case when x = 3, after applying the statement we get y = 3. For the case of x = -3 then y = 3. When x = 4 the results in y = 4 and for x = -4, after apllying the if statement, y = 4. In each of the 4 cases the value of y is within the range defined by the postcondition. Thus the statement is valid.   
 
-\section{Question 5}
+\section{Question 5.1}
+
+The programmer specified the loop invariant as:
+
+\begin{equation}
+ n \in Z \wedge k \in Z \wedge 1\leq k \leq n+1 \wedge i = 1^{k-1}A(i)\neq X
+\end{equation}
+
+n and k must be integers because they were integers in the precondition and their type cannot be changed.
+
+We know that tyhe invariant should contain 
+
+\begin{equation}
+ <\sum k: 1 \leq k \leq n \wedge A(i)\neq X:1> \wedge <\sum k:k=n+1:1>
+\end{equation}
+
+because the loops starts with k = 1 up to n where A(i) is not equal to X and k is larger than n for the end condition.
+
+thus
+
+
+\begin{equation}
+\begin{split}
+ <\sum k: 1 \leq k \leq n \wedge A(i)\neq X:1> \wedge <\sum k:k=n+1:1> &= \\
+ <\sum k:1 \leq k \leq n \wedge A(i)\neq X \vee k=n+1:1 >&=\\
+ <\sum k:1 \leq k \leq n +1 \wedge i = 1^{k-1}A(i)\neq X:1 >
+\end{split}
+\end{equation}
+
+
+
+
+\section{Question 5.2}
+We need to verify the Hoare tripple
+\begin{equation}
+\begin{split}
+ \{ n \in Z \wedge 0 \leq n \} \\
+ k:=1 \\
+ \{ n in Z \wedge k\in Z \wedge 1 \leq k \leq n+1 \wedge i = 1^{k-1}A(i)\neq X \}
+\end{split}
+\end{equation}
+
+
+Using the assignment statement we need to show that
+
+\begin{equation}
+\begin{split}
+ n \in Z \wedge 0 \leq n \\
+ \rightarrow n \in Z \wedge 1 \in Z \wedge 1 \leq 1\leq n+1 \wedge i = 1^{1-1}A(i)\neq x\\
+ \rightarrow n \in Z \wedge true \wedge 0 \leq n \wedge true\\
+ \rightarrow n \in Z \wedge 0 \leq n\\
+\end{split}
+ \end{equation}
+ 
+ where 1 is an element of Z by definition 
+ 
+\section{Question 5.3}
+
+We need to prove that 
+
+\begin{equation}
+\label{53}
+ n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X \wedge k \leq n \wedge A(k) \neq X \rightarrow  n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X
+\end{equation}
+
+For the first part of the implication 
+\begin{equation}
+  n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X \wedge k \leq n \wedge A(k) \neq X
+\end{equation}
+
+$k \leq n$ is a subset of $ k \in Z \wedge 1 \leq k \leq n+1$ and $A(k) \neq X$ is just the kase when k = 1 in the term $ 1^{k-1}A(i)\neq X $. Thus Equation \ref{53} becomes  
+
+\begin{equation}
+ n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X \rightarrow  n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X
+\end{equation}
+
+Which is true
+
+\section{Question 5.4}
+
+we need to prove that $[inv \wedge done \rightarrow Q]$
+
+\begin{equation}
+ \neg done = k \leq n \wedge A(k) \neq X
+\end{equation}
+
+Thus by de Morgans Law
+
+\begin{equation}
+done = k > n \vee A(k) = X
+\end{equation}
+
+Thus 
+
+\begin{equation}
+\begin{split}
+n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X \wedge ( k > n \vee A(k) = X) &\rightarrow\\
+n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge 1^{k-1}A(i)\neq X \wedge ( k = n + 1 \vee A(k) = X)
+\end{split}
+\end{equation}
+
+Since k = n+1 is a subset of k > n
+
+\section{Question 5.5}
+
+Using bounding function
+
+\begin{equation}
+ bf = n-k+1
+\end{equation}
+
+We know that to gaurentee temination the following tripple has to be valid
+
+\begin{equation}
+\begin{split}
+\{inv \wedge \neg done ]wedge bf > C\}T\{inv \wedge (bf < C \vee done)\}
+\end{split}
+\end{equation}
+
+By filling in the post conditions we will apply the assignment statement to reach the precondition.
+
+\begin{equation}
+\begin{split}
+\{inv \wedge (bf < C \vee done)\} &=\\
+n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge i = i^{k-1}A(i) \neq X \wedge (n-k+1<1\vee k>n\vee A(k) = X)
+\end{split}
+\end{equation}
+
+Applying the assiggnments statement
+
+\begin{equation}
+\begin{split}
+n \in Z \wedge k +1 \in Z \wedge 1 \leq k+1 \leq n+1 \wedge i = i^{k+1-1}A(i) \neq X \wedge (n-k+1+1<1\vee k+1>n\vee A(k+1) = X)&=\\
+n \in Z \wedge k +1 \in Z \wedge 0 \leq k \leq n \wedge  i = i^{k}A(i) \neq X \wedge (n<k-1<1\vee n<k+1\vee A(k+1) = X)&=
+(n \in Z \wedge k \in Z \wedge 1 \leq k \leq n+1 \wedge i = i^{k-1}A(i) \neq X) \wedge ( k \leq n \wedge A(k) \neq X) \wedge n-k+1 > 0
+\end{split}
+\end{equation}
+
+
+
+
+
+
+
+
+
 
 \end{document}
 
