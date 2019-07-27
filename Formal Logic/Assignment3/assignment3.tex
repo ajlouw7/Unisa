@@ -1,0 +1,48 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
+\usepackage{latexsym}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{mathrsfs}
+
+%opening
+\title{COS 4807 Assignment 3}
+\author{Adriaan Louw (53031377)}
+
+\newcommand{\interp}{\mathscr{I}}
+
+
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
+
+\usetikzlibrary{shapes.misc}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Question 1i}
+Let $\interp$ be an arbitrary interpretation such that $v_\interp(\forall x p(x)\vee\exists x q(x))=F$. From the truth value of disjunction $v_\interp(\forall xp(x) = F $ and $v_\interp\exists x q(x)) = F$. From this using Theorem 7.22 we for all assignments $v_{\sigma\interp}(p(x)) = F$ and for some assignments $v_{\sigma\interp}(q(x)) = F$. Then by the truth value of disjunction $v_{\sigma\interp}(p(x)\vee q(x)) = F$. Then by using Theorem 7.22 $v_I(\forall(p(x)\vee q(x))) = F$. Then if $v_I(\forall x p(x) \vee \exists x q(x)) = F$ then $v_\interp (\forall x(p(x)\vee q(x) \rightarrow(\forall x p(x)\vee \exists x q(x)) = T))$ by the truth value of implication. And since $\interp$ is an arbitrary interpretation, the formula is valid
+
+\section{Question 1ii}
+Let $\interp$ ba an arbitrary interpretation such that $v_\interp (\forall x \neg p(x)\vee\forall x \neg q(x))= F$. Then from the definition of disjunction $v_\interp (\forall x \neg p(x)) = F$ and $v_\interp (\forall x\neg q(x))=F$. Using the theorem from question 3ii we get for all assignments $v_{\sigma\interp} (\neg p(x))=F$ and for all assignmets $v_{\sigma\interp}(\neg q(x))=F$. Then by the truth values of negation, $v_{\sigma\interp}p(x) =T$ and $v_{\sigma\interp}q(x)= T$. Then by theorem 7.22 and the definition of conjunction $v_\interp (\exists x p(x)\wedge q(x))=T$. Now we have shown that  $v_\interp (\forall x \neg p(x)\vee\forall x \neg q(x))= F$ and $v_\interp \exists (x p(x)\wedge q(x))=T$. Combining these into the original formula we get $v_\interp( \exists x (p(x)\wedge q(x)) \wedge (\forall x \neg p(x)\vee\forall x \neg q(x)))= F$ by the definition of conjunction. And since $\interp$ is an arbitrary interpretation, the formula is unsatifiable.
+
+
+
+
+
+
+
+
+\end{document}
