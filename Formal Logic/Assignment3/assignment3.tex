@@ -38,6 +38,187 @@ Let $\interp$ be an arbitrary interpretation such that $v_\interp(\forall x p(x)
 \section{Question 1ii}
 Let $\interp$ ba an arbitrary interpretation such that $v_\interp (\forall x \neg p(x)\vee\forall x \neg q(x))= F$. Then from the definition of disjunction $v_\interp (\forall x \neg p(x)) = F$ and $v_\interp (\forall x\neg q(x))=F$. Using the theorem from question 3ii we get for all assignments $v_{\sigma\interp} (\neg p(x))=F$ and for all assignmets $v_{\sigma\interp}(\neg q(x))=F$. Then by the truth values of negation, $v_{\sigma\interp}p(x) =T$ and $v_{\sigma\interp}q(x)= T$. Then by theorem 7.22 and the definition of conjunction $v_\interp (\exists x p(x)\wedge q(x))=T$. Now we have shown that  $v_\interp (\forall x \neg p(x)\vee\forall x \neg q(x))= F$ and $v_\interp \exists (x p(x)\wedge q(x))=T$. Combining these into the original formula we get $v_\interp( \exists x (p(x)\wedge q(x)) \wedge (\forall x \neg p(x)\vee\forall x \neg q(x)))= F$ by the definition of conjunction. And since $\interp$ is an arbitrary interpretation, the formula is unsatifiable.
 
+\section{Question 2i}
+
+\begin{equation}
+ \forall x(\neg p(x) \leftrightarrow \exists y(q(a,x,y) \wedge r(x,y))
+\end{equation}
+
+\section{Question 2ii}
+$\{\mathscr{N},prime,equals,less\_than\}$
+
+
+\section{Question 3i}
+
+
+
+\section{Question 3ii}
+
+
+\section{Question 4i}
+
+To prove that 
+\begin{equation}
+ \forall x(p(x)\vee q(x)) \rightarrow (\forall x p(x)\vee\exists x q(x))
+\end{equation}
+
+is valid with sematic tableau we need to show that 
+
+\begin{equation}
+ \neg \forall x(p(x)\vee q(x)) \rightarrow (\forall x p(x)\vee\exists x q(x))
+\end{equation}
+
+closes. 
+
+Applying rule $\neg(A_1\rightarrow A_2)$ we get
+
+\begin{equation}
+ \forall x(p(x)\vee q(x)),\neg(\forall x p(x)\vee\exists x q(x)))
+\end{equation}
+
+Applying rule $\neg(A_1 \vee A_2)$ we get
+
+\begin{equation}
+ \forall x(p(x)\vee q(x)),\neg\forall xp(x),\neg\exists xq(x)
+\end{equation}
+
+Using the dual of the 2 quantifiers
+\
+\begin{equation}
+ \forall x(p(x)\vee q(x)),\exists\neg xp(x),\forall\neg xq(x)
+\end{equation}
+
+Using the $\gamma$ rule ofr existential qualification
+
+\begin{equation}
+ \forall x(p(x)\vee q(x)),\neg p(a_1),\forall\neg xq(x)
+\end{equation}
+
+\begin{equation}
+ \forall x(p(x)\vee q(x)),p(a_1)\vee q(a_1),\neg p(a_1),\forall\neg xq(x),\neg q(a_1)
+ \end{equation}
+ 
+ Using $B_1\vee B_2$the branches split into
+ 
+ \begin{equation}
+ \forall x(p(x)\vee q(x)),p(a_1),\neg p(a_1),\forall\neg xq(x),\neg q(a_1)
+ \end{equation}
+ 
+ and
+ 
+ \begin{equation}
+ \forall x(p(x)\vee q(x)), q(a_1),\neg p(a_1),\forall\neg xq(x),\neg q(a_1)
+ \end{equation}
+ 
+ Both of which close. THus the original formula is valid
+
+ 
+ 
+ \section{Question 4ii}
+ 
+ 
+ We need to prove that
+ 
+ \begin{equation}
+  \exists x(p(x)\wedge q(x))\wedge(\forall x\neg p(x) \vee \forall x \neg q(x))
+ \end{equation}
+
+ is unsatisfiable. Thus the tableau for this formula has to close.
+ 
+ Applying rule $A_1\wedge A_2$
+ 
+ \begin{equation}
+  \exists x(p(x)\wedge q(x)),\forall x\neg p(x) \vee \forall x \neg q(x)
+ \end{equation}
+ 
+ Applying rule $B_1 \vee B_2$ we get 
+ 
+ \begin{equation}
+ \label{421}
+ \exists x(p(x)\wedge q(x)),\forall x \neg p(x)
+ \end{equation}
+
+ \begin{equation}
+ \label{422}
+  \exists x(p(x)\wedge q(x)),\forall x \neg q(x)
+ \end{equation}
+ 
+ For branch of Equation \ref{421}
+ 
+ \begin{equation}
+  p(a_1) \wedge q(a_1),\forall x\neg p(x)
+ \end{equation}
+ 
+  \begin{equation}
+  p(a_1) \wedge q(a_1),\forall x\neg p(x),\neg p(a_1)
+ \end{equation}
+ 
+using $A_1\wedge A_2$
+
+  \begin{equation}
+  p(a_1), q(a_1),\forall x\neg p(x),\neg p(a_1)
+ \end{equation}
+ 
+ which closes.
+ 
+ Now for the branch of Equation \ref{422}
+
+ \begin{equation}
+  p(a_1) \wedge q(a_1),\forall x\neg q(x)
+ \end{equation}
+ 
+  \begin{equation}
+  p(a_1) \wedge q(a_1),\forall x\neg q(x),\neg q(a_1)
+ \end{equation}
+ 
+using $A_1\wedge A_2$
+
+  \begin{equation}
+  p(a_1), q(a_1),\forall x\neg q(x),\neg q(a_1)
+ \end{equation}
+ 
+ which closes.
+
+ Thus the original formula is unsatisfiable
+ 
+ 
+ \section{Question 5i}
+ We need to show that the tableau for this formula has an open branch
+ \begin{equation}
+ (\forall x(p(x) \vee q(x)))\rightarrow (\forall x p(x) \vee \forall xq(x))
+\end{equation}
+
+Using rule $B_1 \rightarrow B_2$ we get
+
+\begin{equation}
+\label{511}
+ \neg\forall x (p(x)\vee q(x))
+\end{equation}
+
+and 
+
+\begin{equation}
+\label{512}
+ \forall x p(x) \vee \forall x q(x)
+\end{equation}
+
+We will continue with Equation \ref{511}
+
+\begin{equation}
+ \exists \neg x (p(x)\vee q(x))
+\end{equation}
+
+\begin{equation}
+ \neg(p(a_1)\vee q(a_1))
+\end{equation}
+
+Using rule $\neg(A_1\vee A_2)$
+
+\begin{equation}
+ \neg p(a_1),\neg q(a_1)
+\end{equation}
+
+Which is an open branch. So the original formula is satisfiable and there is no need to continue with the other branch on Equation \ref{512} 
 
 
 
@@ -45,4 +226,78 @@ Let $\interp$ ba an arbitrary interpretation such that $v_\interp (\forall x \ne
 
 
 
+
+
+
+ \section{Question 5ii}
+ 
+ We need to prove that the negation of the formula is satisfiable i.e. has an open branch
+ 
+ 
+\begin{equation}
+ \neg ((\forall x(p(x) \vee q(x)))\rightarrow (\forall x p(x) \vee \forall xq(x)))
+\end{equation}
+
+Using rule $\neg(A_1 \rightarrow A_2)$
+
+\begin{equation}
+ \forall x (p(x) \vee q(x)),\neg(\forall x p(x) \vee \forall x q(x))
+\end{equation}
+
+ Using rule $\neg(A_1 \vee A_2)$
+
+ \begin{equation}
+ \forall x (p(x) \vee q(x)), \neg \forall x p(x), \neg \forall x q(x)
+\end{equation}
+
+ \begin{equation}
+ \forall x (p(x) \vee q(x)), \exists\neg x p(x), \exists \neg x q(x)
+\end{equation}
+
+ \begin{equation}
+ \forall x (p(x) \vee q(x)),\neg p(a_1), \exists \neg x q(x)
+\end{equation}
+
+ \begin{equation}
+ \forall x (p(x) \vee q(x)),p(a_1)\vee q(a_1) ,\neg p(a_1), \exists \neg x q(x)
+\end{equation}
+ \begin{equation}
+ \forall x (p(x) \vee q(x)),p(a_1)\vee q(a_1) ,\neg p(a_1),  \neg q(a_2)
+\end{equation}
+
+ \begin{equation}
+ \forall x (p(x) \vee q(x)),p(a_1)\vee q(a_1) ,\neg p(a_1),  \neg q(a_2), p(a_2)\vee q(a_2)
+\end{equation}
+
+ Using rule $B_1 \vee B_2$ on the term $p(a_1)\vee q(a_1)$ we get 2 branches.
+ 
+  \begin{equation}
+  \label{51}
+ \forall x (p(x) \vee q(x)),p(a_1) ,\neg p(a_1),  \neg q(a_2), p(a_2)\vee q(a_2)
+\end{equation}
+
+and 
+
+ \begin{equation}
+ \label{52}
+ \forall x (p(x) \vee q(x)), q(a_1) ,\neg p(a_1),  \neg q(a_2), p(a_2)\vee q(a_2)
+\end{equation}
+ 
+Equation \ref{51} closes so we continue with Equation \ref{52}. Using rule $B_1 \vee B_2$ gives 
+
+ \begin{equation}
+ \label{53}
+ \forall x (p(x) \vee q(x)), q(a_1) ,\neg p(a_1),  \neg q(a_2), p(a_2)
+\end{equation} 
+
+and
+
+\begin{equation}
+ \label{54}
+ \forall x (p(x) \vee q(x)), q(a_1) ,\neg p(a_1),  \neg q(a_2), q(a_2)
+\end{equation}
+
+Equation \ref{54} closes but Equation \ref{53} is an open branch. Therefor the original equation is falsifiable.
+
+ 
 \end{document}
