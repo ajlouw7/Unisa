@@ -65,7 +65,7 @@ To prove that
 is valid with sematic tableau we need to show that 
 
 \begin{equation}
- \neg \forall x(p(x)\vee q(x)) \rightarrow (\forall x p(x)\vee\exists x q(x))
+ \neg (\forall x(p(x)\vee q(x)) \rightarrow (\forall x p(x)\vee\exists x q(x)))
 \end{equation}
 
 closes. 
@@ -88,7 +88,7 @@ Using the dual of the 2 quantifiers
  \forall x(p(x)\vee q(x)),\exists\neg xp(x),\forall\neg xq(x)
 \end{equation}
 
-Using the $\gamma$ rule ofr existential qualification
+Using the $\gamma$ rule of existential qualification
 
 \begin{equation}
  \forall x(p(x)\vee q(x)),\neg p(a_1),\forall\neg xq(x)
@@ -110,7 +110,7 @@ Using the $\gamma$ rule ofr existential qualification
  \forall x(p(x)\vee q(x)), q(a_1),\neg p(a_1),\forall\neg xq(x),\neg q(a_1)
  \end{equation}
  
- Both of which close. THus the original formula is valid
+ Both of which close. Thus the original formula is valid
 
  
  
@@ -300,4 +300,18 @@ and
 Equation \ref{54} closes but Equation \ref{53} is an open branch. Therefor the original equation is falsifiable.
 
  
+ \section{Question 6}
+ 
+ \begin{tabular}{ll}
+1. $\neg \forall x(p(x)\vee q)x)),\neg p(a),p(a),\neg\forall\neg x q(x),q(a)$     &                                    (axiom) \\
+2. $\neg \forall x(p(x)\vee q)x)),\neg q(a),p(a),\neg\forall\neg x q(x),q(a)$  & (axiom)\\
+3. $\neg \forall x(p(x)\vee q)x)),\neg(p(a)\vee q(a)),p(a),\neg\forall\neg x q(x),g(a)$ & $1,2\beta\vee$\\
+4. $\neg \forall x(p(x)\vee q)x)),p(a),\neg\forall\neg x q(x),q(a)$ & $3\gamma \forall$\\
+5. $\neg \forall x(p(x)\vee q)x)),p(a),\exists x q(x),q(a)$ & $4 dual, \exists\forall$\\
+6. $\neg \forall x(p(x)\vee q)x)),p(a),\exists x q(x)$ & $5\gamma\exists$\\
+7. $\neg \forall x(p(x)\vee q)x)),\forall x p(a),\exists x q(x)$ & $6\delta\forall$\\
+8. $\neg \forall x(p(x)\vee q)x)),\forall x p(a)\vee\exists x q(x)$ & $7\alpha\vee$\\
+9. $\forall x(p(x)\vee q)x))->(\forall x p(a)\vee\exists x q(x))$ & $8\alpha\rightarrow$\\
+\end{tabular}
+
 \end{document}
