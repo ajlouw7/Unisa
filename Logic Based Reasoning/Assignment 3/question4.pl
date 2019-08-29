@@ -4,20 +4,37 @@
 t(R):-
     solve([[1,2,3,4,5,6,7,8,9,10],[],[]],R).
 
+% can always add to empty stack
+canAdd(_,[]).
+
+% can add to stack if item is smaller than head of stack
+canAdd(A,[H|_]):-
+  A < H.
+
+t1to2():-
+	s([[1,2,3,4,5,6,7,8,9,10],[],[]],[[2,3,4,5,6,7,8,9,10],[1],[]]).
+
+t1to3():-
+	s([[1,2,3,4,5,6,7,8,9,10],[],[]],[[2,3,4,5,6,7,8,9,10],[],[1]]).
+
+
+
+
 %stack 1 to 2
-s(Stacks,[Stack1,[Top1|Stack2]|Otherstacks]):-
-    del([Top1|Stack1],Stacks,Stacks1),
-    del(Stack2,Stacks1,Otherstacks).
+s(Stacks,[TailStack1,[HeadStack1|Stack2]|Stack3]):-
+    del([HeadStack1|TailStack1],Stacks,Last2Stacks),
+    del(Stack2,Last2Stacks,Stack3),
+    canAdd(HeadStack1,Stack2).
 
 %stack 1 to 3
-s(Stacks,[Stack1,[NewTopOfStack2|Stack2]|Otherstacks]):-
-    del([Top1|Stack1],Stacks,Stacks1),
-    del([Top2|Stack2],Stacks1,Otherstacks),
-    NewTopOfStack2 = [Top1|Top2],
-    Top1 < Top2.
+s(Stacks,[TailStack1,Stack2,[HeadStack1|OldStack3]]):-
+    del([HeadStack1|TailStack1],Stacks,Last2Stacks),
+    del(Stack2,Last2Stacks,[OldStack3]),
+    canAdd(HeadStack1,OldStack3).
 
-s([[Hcol1|Tcol1],[Hcol2|Tcol2]])
-
+%stack 2 to 3
+s(Stacks,[Stack1,TailStack2,[HeadStack2|OldStack3]]):-
+	del
 
 
 
