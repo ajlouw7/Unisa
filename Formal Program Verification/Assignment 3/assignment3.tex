@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
+
+%opening
+\title{COS 4892 Assignment 3}
+\author{Adriaan Louw (53031377)}
+
+\newcommand{\interp}{I}
+\providecommand{\floor}[1]{\lfloor #1 \rfloor  }
+
+\newcommand{\en}{\wedge}
+\newcommand{\of}{\vee}
+\begin{document}
+
+\maketitle
+
+\section{The Integer Remainder Computation Algorithm}
+
+The concept of a remainder is a very important concept in computing. It is used in fields like encryption and error checking. This essay will discuss how the pinciples developed in ``Progam Construction'' by Roland Backhouse was used to develop an algorithm for Remainder Computation in Chapter 15 of said book.
+
+For integers, the remainder can be defined as what is left over after one number is divided by another. For instance, when we devide 10 by 3 we get a quotient of 3 and a remainder of 1. Or when we devide 4 by 2 we get a quotient of 2 and a remainder of 0. 
+
+Given an integer P divided by a positive natural number Q gives remainder r and quotient d. This can be expressed in the following way:
+
+\begin{equation}
+\label{1}
+ 0\le r < Q \wedge P = Q.d +r
+\end{equation}
+
+Where r will always be positive and less than Q by definition.
+
+We can define the 2nd half of Formula \ref{1} more precisely as:
+
+\begin{equation}
+\label{2}
+ 0\le r < Q \wedge \langle \exists d::P = Q.d +r\rangle 
+\end{equation}
+
+This uses the Quantifier Notation from Chapter 11. This notation has the general form 
+
+\begin{equation}
+ \langle q v :r:t \rangle
+\end{equation}
+
+Where q is the quatifier that apllies to the dummy variable v. This could be the existential quatifier $\exists v$, the summation quantifier $\sum v$ or even the universal quantifier $\forall v$. r defines the range over which the quatifier operates. This is a boolean expression that determines the set of values the dummy variable  can take. Then t is the term to which the dummy variable applies. In Formula \ref{2} this means that there exists a value for d such that the expression $P = Q.d + r$ is valid. Here the range is not specified. Therefor d could be any integer.
+
+The question remains whether in Formula \ref{1} the values of r and d are unique for some value of P and Q. To prove this we need the concept of substitution of equals for equals or Liebniz's rule for short.
+
+
+
+\end{document}
