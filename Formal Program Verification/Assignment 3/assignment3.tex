@@ -47,7 +47,50 @@ This uses the Quantifier Notation from Chapter 11. This notation has the general
 
 Where q is the quatifier that apllies to the dummy variable v. This could be the existential quatifier $\exists v$, the summation quantifier $\sum v$ or even the universal quantifier $\forall v$. r defines the range over which the quatifier operates. This is a boolean expression that determines the set of values the dummy variable  can take. Then t is the term to which the dummy variable applies. In Formula \ref{2} this means that there exists a value for d such that the expression $P = Q.d + r$ is valid. Here the range is not specified. Therefor d could be any integer.
 
-The question remains whether in Formula \ref{1} the values of r and d are unique for some value of P and Q. To prove this we need the concept of substitution of equals for equals or Liebniz's rule for short.
+The question remains whether in Formula \ref{1} the values of r and d are unique for some value of P and Q. To prove this we need the concept of substitution of equals for equals or Liebniz's rule (Formula \ref{Liebniz}) for short which was discussed in Chapter 7.
+
+\begin{equation}
+\label{Liebniz}
+ (e=f)\equiv (e=f)\wedge (E[x:=e]=E[x:=f])
+\end{equation}
+
+This formula states that the ``..application of a function to equal values gives equal results...''(From Chapter 7).
+
+Now to prove the uniqueness of r and d we assume that 2 pairs (r,d) and (r',d') satisfy Formula \ref{1} then we have
+
+\begin{equation}
+ (0\le r < Q \wedge P=Q.d+r)\wedge (0\le r' < Q \wedge P=Q.d'+r')
+\end{equation}
+
+which is equivalent to 
+
+\begin{equation}
+ (0\le r < Q \wedge P=Q.d+r)\wedge (Q > r' \ge 0 \wedge P=Q.d'+r')
+\end{equation}
+
+Then to introduce r-r'  and d-d' we see that by 'subtraction' the 2 terms, the previous statement will imply
+
+\begin{equation}
+ -Q<r-r'<Q \wedge 0 = Q.(d-d')+(r-r')
+\end{equation}
+
+Now using Liebniz and some some arithmatic, the above statement is equivalent to 
+
+\begin{equation}
+ -Q<-(Q.(d-d'))<Q \wedge -(Q.(d-d')) = r-r'
+\end{equation}
+
+which becomes for Q > 0
+
+\begin{equation}
+%  -1<-(d-d')<1 \wedge -(Q.{d-d'})=r-r'
+\end{equation}
+
+which with some arithmatic becomes
+
+\begin{equation}
+ d=d' \wedge r=r'
+\end{equation}
 
 
 
