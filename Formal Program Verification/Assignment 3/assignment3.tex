@@ -92,6 +92,92 @@ which with some arithmatic becomes
  d=d' \wedge r=r'
 \end{equation}
 
+Now that we know that r and d is unique, we can start to develop an algoritm to compute the remainder.
 
+Backhouse's book suggests splitting Formula \ref{1} in to 2 giving:
+
+\begin{equation}
+\label{P=}
+ P = Q.d +r
+\end{equation}
+
+and
+
+\begin{equation}
+\label{0le}
+ 0\le r < Q 
+\end{equation}
+
+where Formula \ref{P=} can be established via the following initialization
+
+\begin{equation}
+ r,d:=P,0
+\end{equation}
+
+This implies that this algorithm should consist of a loop with Formula \ref{P=} as the loop invariant and Formula \ref{0le} as the termination condition.
+
+We have seen in chapter 3 of Bader - The spine of Software that there are 5 steps in proving the correctness of a loop.
+\begin{enumerate}
+\item Determine the loop invariant.
+\item Prove that the initialization establishes the truth of the loop invariant.
+\item Prove that the body of the loop preserves the truth of the loop invariant
+\item Prove that the truth of the loop invariant and the termination condition together implies the correctness of the final result.
+\item Prove that the termination condition will terminate in a finite number of executions of the loop.
+\end{enumerate}
+
+For the case where $p\ge 0$, Backhouse suggests the following algorithm.
+
+\begin{equation}
+ \begin{split}
+ \{0<Q\} \\
+ r,d:=P,0;\\
+ \{Invariant: 0 \le r \wedge P = Q.d +r Bound function r \} \\
+ do \\
+ r \ge Q \rightarrow r,d := r-m,n \\
+ od\\
+ \{0\le r<Q\wedge P=Q.d+r\}
+ \end{split}
+\end{equation}
+
+This loop body is executed while $r\ge Q$ which means m and n need to satisfy the following conditions:
+
+\begin{equation}
+ 0<m
+\end{equation}
+
+and
+
+\begin{equation}
+ (0\le r \wedge P = Q.d + r)[r,d:= r-m,n] 
+\end{equation}
+
+Now we  need to calculate the values for m and n that satisfy the invariant
+
+\begin{equation}
+  (0\le r \wedge P = Q.d + r)[r,d:= r-m,n] 
+\end{equation}
+
+which when doing the substitution becomes 
+
+\begin{equation}
+  0\le r -m \wedge P = Q.n + (r-m)
+\end{equation}
+
+Now we assuming $r\ge Q$ which suggests that $m=Q$. Then the above equation implies
+
+\begin{equation}
+ m=Q \wedge r\geQ \wedge P=Q.n+(r-Q)
+\end{equation}
+
+Now by choosing n=d+1 the above statement implies
+\begin{equation}
+ n=d+1\wedge m=Q\wedge r\ge Q \wedge O=Q(d+1)+(r-Q)
+\end{equation}
+
+which can be simpliefied into
+
+\begin{equation}
+ n=d+1\wedge m=Q\wedge r\ge Q \wedge O=Q.d+r
+\end{equation}
 
 \end{document}
