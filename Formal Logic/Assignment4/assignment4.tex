@@ -134,4 +134,50 @@ Using distributivity of $\vee$ and $\wedge$
 \begin{equation}
  \{\{q(x,x),\neg q(x,g(x))\},\{q(x,x),q(f(x),x)\}\}
 \end{equation}
+
+
+
+\section{Question 1ii}
+
+
+\begin{equation}
+ \forall x \forall y(\exists z p(z) \leftrightarrow q(x,y))
+\end{equation}
+
+Using $A\leftrightarrow B \equiv (A\rightarrow B)\wedge (B\rightarrow A)$
+
+\begin{equation}
+ \forall x \forall y((\exists z p(z) \rightarrow q(x,y))\wedge(q(x,y)\rightarrow \exists z p(z)))
+\end{equation}
+
+\begin{equation}
+ \forall x \forall y((\exists z p(z) \rightarrow q(x,y))\wedge(q(x,y)\rightarrow \exists k p(k)))
+\end{equation}
+
+
+Using $A\rightarrow B \equiv \neg A \vee B$
+
+
+\begin{equation}
+ \forall x \forall y((\neg\exists z p(z) \vee q(x,y))\wedge(\neg q(x,y) \vee \exists k p(k)))
+\end{equation}
+
+\begin{equation}
+ \forall x \forall y(( \forall z \neg p(z) \vee q(x,y))\wedge(\neg q(x,y) \vee \exists k p(k)))
+\end{equation}
+
+\begin{equation}
+ \forall x \forall y \forall z \exists k(( \neg p(z) \vee q(x,y))\wedge(\neg q(x,y) \vee p(k)))
+\end{equation}
+
+\begin{equation}
+ \forall x \forall y \forall z (( \neg p(z) \vee q(x,y))\wedge(\neg q(x,y) \vee p(f(x,y,z))))
+\end{equation}
+
+
+\begin{equation}
+ \{\{\neg p(z),q(x,y)\},\{\neg q(x,y),p(f(x,y,z)\}\}
+\end{equation}
+
+
 \end{document}
