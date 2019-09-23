@@ -1,0 +1,137 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[natbibapa]{apacite} 
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[a4paper,margin=0.8in]{geometry} 
+\usepackage{latexsym}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{mathrsfs}
+
+%opening
+\title{COS 4807 Assignment 4}
+\author{Adriaan Louw (53031377)}
+
+\newcommand{\interp}{\mathscr{I}}
+
+
+\tikzset{
+  treenode/.style = {shape=rectangle, rounded corners,
+                     draw, align=center,
+                     top color=white, bottom color=blue!20},
+  root/.style     = {treenode, font=\Large, bottom color=red!30},
+  env/.style      = {treenode, font=\ttfamily\normalsize},
+  dummy/.style    = {circle,draw}
+}
+
+\usetikzlibrary{shapes.misc}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Question 1i}
+
+\begin{equation}
+ \exists x p(x)\rightarrow \exists y(p(y)\wedge\exists x q(x,y))
+\end{equation}
+
+\begin{equation}
+ \exists x p(x)\rightarrow \exists y(p(y)\wedge\exists z q(z,y))
+\end{equation}
+
+Using $A\rightarrow B \equiv \neg A \vee B$
+
+\begin{equation}
+ \neg\exists x p(x)\rightarrow \exists y(p(y)\wedge\exists z q(z,y))
+\end{equation}
+
+\begin{equation}
+ \forall x \neg p(x)\rightarrow \exists y(p(y)\wedge\exists z q(z,y))
+\end{equation}
+
+\begin{equation}
+ \forall x (\neg p(x)\rightarrow \exists y(p(y)\wedge\exists z q(z,y)))
+\end{equation}
+
+\begin{equation}
+ \forall x\exists y (\neg p(x)\rightarrow (p(y)\wedge\exists z q(z,y)))
+\end{equation}
+
+\begin{equation}
+ \forall x\exists y \exists z (\neg p(x)\rightarrow (p(y)\wedge q(z,y)))
+\end{equation}
+
+Using distributivity of $\vee$ and $\wedge$
+
+\begin{equation}
+ \forall x\exists y \exists z ((\neg p(x) \vee p(y))\wedge(\neg (p(x) \vee q(z,y))))
+\end{equation}
+
+\begin{equation}
+ \forall x\exists y ((\neg p(x) \vee p(y))\wedge(\neg (p(x) \vee q(f(x),y))))
+\end{equation}
+
+
+\begin{equation}
+ \forall x ((\neg p(x) \vee p(g(x)))\wedge(\neg (p(x) \vee q(f(x),g(x)))))
+\end{equation}
+
+\begin{equation}
+ \{\{\neg p(x),p(g(x))\},\{\neg p(x),q(f(x),g(x))\}\}
+\end{equation}
+
+
+
+\section{Question 1ii}
+
+\begin{equation}
+ \forall x ((\forall y q(x,y) \vee \forall z q(z,x))\rightarrow g(x,x))
+\end{equation}
+
+Using $A\rightarrow B \equiv \neg A \vee B$
+
+\begin{equation}
+ \forall x (\neg(\forall y q(x,y) \vee \forall z q(z,x))\vee g(x,x))
+\end{equation}
+
+
+\begin{equation}
+ \forall x ((\neg\forall y q(x,y) \wedge \neg \forall z q(z,x))\vee g(x,x))
+\end{equation}
+
+\begin{equation}
+ \forall x (( \exists y \neg q(x,y) \wedge  \exists z \neg q(z,x))\vee g(x,x))
+\end{equation}
+
+\begin{equation}
+ \forall x \exists y((  \neg q(x,y) \wedge  \exists z \neg q(z,x))\vee g(x,x))
+\end{equation}
+\begin{equation}
+ \forall x \exists y\exists z((  \neg q(x,y) \wedge   \neg q(z,x))\vee g(x,x))
+\end{equation}
+
+
+Using distributivity of $\vee$ and $\wedge$
+
+
+\begin{equation}
+ \forall x \exists y\exists z(( q(x,x) \vee \neg q(x,y))\wedge (q(x,x) \vee \neg q(z,x)))
+\end{equation}
+
+
+\begin{equation}
+ \forall x \exists y(( q(x,x) \vee \neg q(x,y))\wedge (q(x,x) \vee \neg q(f(x),x)))
+\end{equation}
+
+\begin{equation}
+ \forall x (( q(x,x) \vee \neg q(x,g(x)))\wedge (q(x,x) \vee \neg q(f(x),x)))
+\end{equation}
+
+
+\begin{equation}
+ \{\{q(x,x),\neg q(x,g(x))\},\{q(x,x),q(f(x),x)\}\}
+\end{equation}
+\end{document}
