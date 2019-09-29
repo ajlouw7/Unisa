@@ -137,7 +137,7 @@ Using distributivity of $\vee$ and $\wedge$
 
 
 
-\section{Question 1ii}
+\section{Question 1iii}
 
 
 \begin{equation}
@@ -178,6 +178,118 @@ Using $A\rightarrow B \equiv \neg A \vee B$
 \begin{equation}
  \{\{\neg p(z),q(x,y)\},\{\neg q(x,y),p(f(x,y,z)\}\}
 \end{equation}
+
+
+
+\section{Question 2i}
+
+Given the formula for Question 1i in clausal form is
+
+\begin{equation}
+ \{\{\neg p(x),p(g(x))\},\{\neg p(x),q(f(x),g(x))\}\}
+\end{equation}
+
+The Herbrand universe is:
+
+\begin{equation}
+ \{ a,f(a),g(a),f(g(a)),g(f(a)),f(f(a)),g(g(a)),f(g(f(a))),f(g(g(a))),...     \}
+\end{equation}
+
+The Herbrand base is:
+
+\begin{equation}
+ \{ p(a), q(f(a),g(a)),p(f(a)),q(f(f(a)),g(f(a))),p(f(f(a))), q(f(f(g((a))),g(f(a))),...    \}
+\end{equation}
+
+Then 
+
+\begin{equation}
+ \{ v_{I1}(p(a)) = F \}
+\end{equation}
+
+and 
+
+\begin{equation}
+  \{ v_{I2}(p(g(a))) = T, v_{I2}(q(f(a),g(a))) = T, v_{I2}(p(g(f(a)))) = T, v_{I2}(q(f(a),g(a))) = T,v_{I2},... \}
+\end{equation}
+
+are Herbrand models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Question 2ii}
+
+Given the formula for Question 1ii in clausal form is
+
+\begin{equation}
+ \{\{q(x,x),\neg q(x,g(x))\},\{q(x,x),q(f(x),x)\}\}
+\end{equation}
+
+The Herbrand universe is:
+
+\begin{equation}
+ \{ a,f(a),g(a),f(g(a)),g(f(a)),f(f(a)),g(g(a)),f(g(f(a))),f(g(g(a))),...     \}
+\end{equation}
+
+The Herbrand base is:
+
+\begin{equation}
+ \{ q(a,a,),q(f(a),a),q(g(a),a),q(a,f(a)),q(a,g(a)),q(f(f(a)),f(a)),...    \}
+\end{equation}
+
+2 Herbrand models are:
+
+\begin{equation}
+ \{ v_{I1}(q(a,a) = T)   \}
+\end{equation}
+
+and
+
+\begin{equation}
+ \{ v_{I2}(q,a,g(a)) = F,v_{I2}(q(f(a),a)) ) = T            \}
+\end{equation}
+
+
+\section{Question 2iii}
+
+Given the formula for Question 1iii in clausal form is
+
+\begin{equation}
+ \{\{\neg p(z),q(x,y)\},\{\neg q(x,y),p(f(x,y,z)\}\}
+\end{equation}
+
+The Herbrand universe is:
+\begin{equation}
+ \{ a,f(a,a,a),f(f(a,a,a),a,a),f(a,f(a,a,a),a),f(a,a,f(a,a,a)),f(f(f(a,a,a),a,a),a,a),...   \}
+\end{equation}
+
+The Herbrand base is:
+
+\begin{equation}
+ \{ p(a),q(a,a),p(f(a,a,a)),q(f(a,a,a),a),p(f(f(a,a,a),a,a)),q(f(f(a,a,a),a,a),a),...   \}
+\end{equation}
+
+2 Herbrand models are:
+
+\begin{equation}
+ \{ v_{I1}(p(a))=F,v_{I1}(p(f(a,a,a)))= T,v_{I1}(p(f(f(a,a,a),a,a)))= T,...    \}
+\end{equation}
+
+\begin{equation}
+ \{ v_{I2}(p(a))=F,v_{I2}(q(a,a))= F\}
+\end{equation}
+
 
 
 \end{document}
