@@ -1,4 +1,5 @@
 import math
+import pandas as pd
 
 class Result:
     distance = 0.0
@@ -33,3 +34,8 @@ def avgOfKNN(df,target,k):
     for r in results:
         sumLifeExpectancy+=r.lifeExpectancy
     return sumLifeExpectancy/k
+
+df = pd.read_csv("test.csv")
+
+rrs = KNN.getKNN(df, df.head(1),3)
+av = KNN.avgOfKNN(df,df.head(1),3)
