@@ -1,5 +1,6 @@
 import math
 import pandas as pd
+import Utils as utils
 
 class Result:
     distance = 0.0
@@ -37,5 +38,11 @@ def avgOfKNN(df,target,k):
 
 df = pd.read_csv("test.csv")
 
-rrs = KNN.getKNN(df, df.head(1),3)
-av = KNN.avgOfKNN(df,df.head(1),3)
+rrs = getKNN(df, df.head(1),3)
+av = avgOfKNN(df,df.head(1),3)
+
+x_df = df[['Health_Expenditure','GDP_Per_Capita','Primary_School_Enrollment','Secondary_School_Enrollment','Tertiary_School_Enrollment','Unemployment']]
+y_df = df[['Life_Expectancy']]
+
+x = x_df.to_numpy()
+y = y_df.to_numpy()

@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np 
+import Utils as utils
 
 #caluclate training coefficcients array
 #y - 1d array of results or dependant variable instances
@@ -10,11 +11,17 @@ def Get_B_Coefficients(y,x):
     return np.matmul(np.matmul(inv,xt),y)
 
 df = pd.read_csv("test.csv")
-x_df = df[['Health_Expenditure','GDP_Per_Capita','Primary_School_Enrollment','Secondary_School_Enrollment','Tertiary_School_Enrollment','Unemployment']]
+x_df = df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]
 y_df = df[['Life_Expectancy']]
 
 x = x_df.to_numpy()
 y = y_df.to_numpy()
+
+trainingX = x_df.head(400).to_numpy()
+trainingY = y_df.head(400).to_numpy()
+
+testX = x_df.tail(400).to_numpy()
+testY = y_df.head(400).to_numpy()
 
 firstx = x_df.head(1).to_numpy() 
 firsty = y_df.head(1).to_numpy()
@@ -53,26 +60,33 @@ class OLSRun:
     itemCount = 0
     averageError = 0
 
-
-def RunDataset(ys,featureVectors):
+def RunDataset(trainingLifeExpectancies,
+               trainingFeatureVectors,
+               testLifeExpectancies,
+               testFeaturevectors):
     # calculate B
-    b = Get_B_Coefficients(ys,featureVectors)
+    b = Get_B_Coefficients(trainingLifeExpectancies,trainingFeatureVectors)
     run = OLSRun()
     errorSum = 0
     
     # itterate through data items to get predicted values
-    for i in range(len(featureVectors)):
+    for i in range(len(testFeaturevectors)):
         item = RunResult()
-        item.lifeExpectancy = ys[i]
-        item.inputFeatureVector = featureVectors[i]
+        item.lifeExpectancy = testLifeExpectancies[i]
+        item.inputFeatureVector = testFeaturevectors[i]
         item.predictedLifeExpectancy = EvaluateModel(item.inputFeatureVector,b)
         item.error = abs(item.lifeExpectancy - item.predictedLifeExpectancy)
         run.results.append( item )
         errorSum += item.error
     
-    run.itemCount = len(featureVectors)
+    #calculate statistics
+    run.itemCount = len(trainingFeatureVectors)
     run.averageError = errorSum/run.itemCount
     return run
 
-r = RunDataset(y,x)
+r = RunDataset(trainingY,trainingX,testY,testX)
+
+mean = utils.GetMeanPointOfDataset(testX)
+
+absoluteMeanDeviation = utils.GetMeanAbsoluteDeviationOfFeatureSet(testX)
 a = 0

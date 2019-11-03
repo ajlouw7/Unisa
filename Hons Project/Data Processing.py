@@ -84,6 +84,22 @@ merged_df = merged_df[merged_df['Country_Name'] != 'IDA & IBRD total']
 merged_df = merged_df[merged_df['Country_Name'] != 'IBRD only']
 merged_df = merged_df[merged_df['Country_Name'] != 'World']
 
+
+def NormaliseColumn(df,columnName):
+    columnMax = df[columnName].max()
+    columnMin = df[columnName].min()
+    df[columnName] = (df[columnName]-columnMin )/( columnMax - columnMin)
+
+
+NormaliseColumn(merged_df,'GDP_Per_Capita')
+NormaliseColumn(merged_df,'Health_Expenditure')
+NormaliseColumn(merged_df,'Primary_School_Enrollment')
+NormaliseColumn(merged_df,'Secondary_School_Enrollment')
+NormaliseColumn(merged_df,'Tertiary_School_Enrollment')
+NormaliseColumn(merged_df,'Unemployment')
+
+merged_df['Education'] =  (merged_df['Primary_School_Enrollment'] + merged_df['Secondary_School_Enrollment'] + merged_df['Tertiary_School_Enrollment'])/3
+
 merged_df.to_csv("test.csv")
 print ("hello")
 
