@@ -90,6 +90,10 @@ def NormaliseColumn(df,columnName):
     columnMin = df[columnName].min()
     df[columnName] = (df[columnName]-columnMin )/( columnMax - columnMin)
 
+raw_df = merged_df
+raw_df['Education'] =  (raw_df['Primary_School_Enrollment'] + raw_df['Secondary_School_Enrollment'] + raw_df['Tertiary_School_Enrollment'])/3
+raw_df.to_csv("raw.csv")
+
 
 NormaliseColumn(merged_df,'GDP_Per_Capita')
 NormaliseColumn(merged_df,'Health_Expenditure')
