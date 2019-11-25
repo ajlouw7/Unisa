@@ -10,44 +10,44 @@ def Get_B_Coefficients(y,x):
     inv = np.linalg.inv(np.matmul(xt,x))
     return np.matmul(np.matmul(inv,xt),y)
 
-df = pd.read_csv("test.csv")
-x_df = df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]
-y_df = df[['Life_Expectancy']]
+#df = pd.read_csv("test.csv")
+#x_df = df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]
+#y_df = df[['Life_Expectancy']]
 
-x = x_df.to_numpy()
-y = y_df.to_numpy()
+#x = x_df.to_numpy()
+#y = y_df.to_numpy()
 
-trainingX = x_df.head(400).to_numpy()
-trainingY = y_df.head(400).to_numpy()
+#trainingX = x_df.head(400).to_numpy()
+#trainingY = y_df.head(400).to_numpy()
 
-testX = x_df.tail(400).to_numpy()
-testY = y_df.head(400).to_numpy()
+#testX = x_df.tail(400).to_numpy()
+#testY = y_df.head(400).to_numpy()
 
-firstx = x_df.head(1).to_numpy() 
-firsty = y_df.head(1).to_numpy()
+#firstx = x_df.head(1).to_numpy() 
+#firsty = y_df.head(1).to_numpy()
 
-b = Get_B_Coefficients(y,x)
+#b = Get_B_Coefficients(y,x)
 
-print('B: ')
-print(b)
+#print('B: ')
+#print(b)
 
-print('X vector')
-print(firstx)
+#print('X vector')
+#print(firstx)
 
 def EvaluateModel(featureVector, B_Coefficients):
     return np.matmul(featureVector,B_Coefficients)
 
-estimate = EvaluateModel(firstx,b)
+#estimate = EvaluateModel(firstx,b)
 
-print('Y')
-print(firsty)
+#print('Y')
+#print(firsty)
 
-print('Estimate')
-print(estimate)
-error = estimate - firsty
+#print('Estimate')
+#print(estimate)
+#error = estimate - firsty
 
-print('Error')
-print( error ) 
+#print('Error')
+#print( error ) 
 
 class RunResult:
     inputFeatureVector = []
@@ -69,8 +69,9 @@ def RunDataset(trainingLifeExpectancies,
     run = OLSRun()
     errorSum = 0
     
+    noOfItemsToTest = len(testFeaturevectors)
     # itterate through data items to get predicted values
-    for i in range(len(testFeaturevectors)):
+    for i in range(noOfItemsToTest):
         item = RunResult()
         item.lifeExpectancy = testLifeExpectancies[i]
         item.inputFeatureVector = testFeaturevectors[i]
@@ -80,13 +81,13 @@ def RunDataset(trainingLifeExpectancies,
         errorSum += item.error
     
     #calculate statistics
-    run.itemCount = len(trainingFeatureVectors)
+    run.itemCount = noOfItemsToTest
     run.averageError = errorSum/run.itemCount
     return run
 
-r = RunDataset(trainingY,trainingX,testY,testX)
+#r = RunDataset(trainingY,trainingX,testY,testX)
 
-mean = utils.GetMeanPointOfDataset(testX)
+#mean = utils.GetMeanPointOfDataset(testX)
 
-absoluteMeanDeviation = utils.GetMeanAbsoluteDeviationOfFeatureSet(testX)
-a = 0
+#absoluteMeanDeviation = utils.GetMeanAbsoluteDeviationOfFeatureSet(testX)
+#a = 0

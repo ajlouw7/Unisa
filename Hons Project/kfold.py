@@ -1,5 +1,9 @@
 import pandas as pd
 
+class TestSet:
+    trainingDF = []
+    testingDF = []
+
 def getX(df):
     return df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]
     
@@ -58,3 +62,18 @@ def create_df(i):
     elif( i == 10 ):
         return create_df10()
     
+def testSet(i):
+    ts = TestSet()
+    ts.testingDF = create_df(i)
+    isTrainingDFSet = False
+    for j in range(1,10):
+        #look for dataset with index that is not the same as the index of the testing set 
+        if i != j:
+            if not isTrainingDFSet:
+                #create the start of the training set
+                isTrainingDFSet = True
+                ts.trainingDF = create_df(j)
+            else:
+                #append the other folds to make up the training set
+                ts.trainingDF = pd.concat([ts.trainingDF, create_df(j) ], ignore_index=True)
+    return ts
