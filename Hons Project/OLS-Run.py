@@ -3,11 +3,12 @@ import numpy as np
 import Utils as utils
 import OLS as ols
 import kfold as kfold
+import csv
 
 
 
-
-ts = kfold.testSet(1)
+i=8
+ts = kfold.testSet(i)
 
 trainingX = kfold.getX(ts.trainingDF).to_numpy()
 trainingY = kfold.getY(ts.trainingDF).to_numpy()
@@ -16,6 +17,12 @@ testingY = kfold.getY(ts.testingDF).to_numpy()
 
 
 results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
+fileName = 'OLS_Results' + str(i) + '.csv'
+with open(fileName,mode='w', newline='') as resultsFile:
+    resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment'])
+    for r in results.results:   
+        resultsWriter.writerow([float(r.lifeExpectancy), float(r.predictedLifeExpectancy), float(r.error), r.inputFeatureVector[0], r.inputFeatureVector[1],r.inputFeatureVector[2],r.inputFeatureVector[3]])
 
-i = 0
+j=9
 
