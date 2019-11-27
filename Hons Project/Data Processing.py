@@ -205,66 +205,6 @@ df10.to_csv("df10.csv")
 top_df.to_csv("topRmainder.csv")
 bottom_df.to_csv("bottomRmainder.csv")
 
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df1 = pd.concat([topSample, bottomSample ], ignore_index=True)
-
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df2 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df2.to_csv("df2.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df3 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df3.to_csv("df3.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df4 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df4.to_csv("df4.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df5 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df5.to_csv("df5.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df6 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df6.to_csv("df6.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df7 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df7.to_csv("df7.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df8 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df8.to_csv("df8.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df9 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df9.to_csv("df9.csv")
-
-#topSample = top_df.sample(n=53)
-#bottomSample = bottom_df.sample(n=53)
-
-#df10 = pd.concat([topSample, bottomSample ], ignore_index=True)
-#df10.to_csv("df10.csv")
-
 print ("hello")
 
 

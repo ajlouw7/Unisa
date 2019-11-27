@@ -5,7 +5,7 @@ import kNN as kNN
 import kfold as kfold
 import csv
 
-k=9
+k=6
 i=5
 
 
@@ -16,5 +16,3 @@ with open(fileName,mode='w', newline='') as resultsFile:
     resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment'])
     for r in results.results:   
         resultsWriter.writerow([float(r.lifeExpectancy), float(r.predictedLifeExpectancy), float(r.error), r.inputFeatureVector.Health_Expenditure, r.inputFeatureVector.GDP_Per_Capita,r.inputFeatureVector.Education,r.inputFeatureVector.Unemployment])
-
-i =1
