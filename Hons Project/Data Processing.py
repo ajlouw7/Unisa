@@ -116,71 +116,154 @@ sorted_df.to_csv("sorted.csv")
 count = 1062
 half = (int)(count/2)
 
+#get top half of sorted dataframe
 top_df = sorted_df.head(half)
+#randomise order of new dataframe
+top_df = top_df.sample(frac=1).reset_index(drop=True)
+#write new dataframe to file
 top_df.to_csv("top.csv")
 
+#get bottom half of sorted dataframe
 bottom_df = sorted_df.tail(half)
+#randomise order of new dataframe
+bottom_df = bottom_df.sample(frac=1).reset_index(drop=True)
+#write new dataframe to file
 bottom_df.to_csv("bottom.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
+def createKFoldDataframe(size):
+    halfSize = int(size/2)
+    #create nef dataframe
+    df = pd.DataFrame(columns=sorted_df.columns)
+    # get first halfSize rows from top df 
+    rows = top_df.iloc[:halfSize]
+    #add rows to new dataframe
+    df = df.append(rows, ignore_index=True)
+    #remove rows from top dataframe
+    top_df.drop(rows.index, inplace=True)
+    # get first halfSize rows from bottom df
+    rows = bottom_df.iloc[:halfSize]
+    #add rows to new dataframe 
+    df = df.append(rows, ignore_index=True)
+    #remove rows from top dataframe
+    bottom_df.drop(rows.index, inplace=True)
+    #randomise entries in new dataframe 
+    df = df.sample(frac=1).reset_index(drop=True)
+    return df
 
-df1 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df1 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df1.to_csv("df1.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df2 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df2 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df2.to_csv("df2.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df3 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df3 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df3.to_csv("df3.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df4 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df4 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df4.to_csv("df4.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df5 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df5 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df5.to_csv("df5.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df6 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df6 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df6.to_csv("df6.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df7 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df7 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df7.to_csv("df7.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df8 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df8 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df8.to_csv("df8.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df9 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df9 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df9.to_csv("df9.csv")
 
-topSample = top_df.sample(n=53)
-bottomSample = bottom_df.sample(n=53)
-
-df10 = pd.concat([topSample, bottomSample ], ignore_index=True)
+# create new kfold dataframe 
+df10 = createKFoldDataframe( 106 )   
+#write new dataframe to file
 df10.to_csv("df10.csv")
+
+
+
+top_df.to_csv("topRmainder.csv")
+bottom_df.to_csv("bottomRmainder.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df1 = pd.concat([topSample, bottomSample ], ignore_index=True)
+
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df2 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df2.to_csv("df2.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df3 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df3.to_csv("df3.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df4 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df4.to_csv("df4.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df5 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df5.to_csv("df5.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df6 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df6.to_csv("df6.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df7 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df7.to_csv("df7.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df8 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df8.to_csv("df8.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df9 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df9.to_csv("df9.csv")
+
+#topSample = top_df.sample(n=53)
+#bottomSample = bottom_df.sample(n=53)
+
+#df10 = pd.concat([topSample, bottomSample ], ignore_index=True)
+#df10.to_csv("df10.csv")
 
 print ("hello")
 

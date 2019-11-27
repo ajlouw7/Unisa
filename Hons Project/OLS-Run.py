@@ -7,7 +7,7 @@ import csv
 
 
 
-i=8
+i=10
 ts = kfold.testSet(i)
 
 trainingX = kfold.getX(ts.trainingDF).to_numpy()
