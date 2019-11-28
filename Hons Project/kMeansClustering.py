@@ -45,17 +45,26 @@ def getInitialCentroidDatas(k,df):
         centroidDatas.append(centroidData)
     return centroidDatas
 
-def getClosestCentroid(datapoint,centroidDatas):
+
+#onlySelectCentroidIfNearsestPointsIsEmpty means that thre needs to be nearest points already selected 
+def getClosestCentroid(datapoint,centroidDatas,onlySelectCentroidIfNearsestPointsIsEmpty):
     closestCentroidData = []
     closestDistance = 9999999999.9
     for i in range(len(centroidDatas)):
         #distance = knn.distance(centroidDatas[i].centoid, datapoint)
         distance = utils.GetEuclideanDistanceBetweenFeatureVectors(kfold.getX(centroidDatas[i].centoid),kfold.getX(datapoint) )
-
-
         if( distance < closestDistance):
-            closestCentroidData = centroidDatas[i]
-            closestDistance = distance
+            #this centroid can oly be selected if nearest points exists. This is in the case for selecting centroids for testing data
+            if onlySelectCentroidIfNearsestPointsIsEmpty:
+                if not centroidDatas[i].nearestDataPoints.empty:
+                    closestCentroidData = centroidDatas[i]
+                    closestDistance = distance
+                else:
+                    uu = 0
+            #select centroid regardless
+            else:
+                closestCentroidData = centroidDatas[i]
+                closestDistance = distance
     return closestCentroidData
 
 
@@ -80,7 +89,7 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
         #assign training data point to closest centroid
         for i in range(len(trainingData)):
             dataRow = trainingData.iloc[i]
-            centroidData = getClosestCentroid( dataRow, centroidDatas)
+            centroidData = getClosestCentroid( dataRow, centroidDatas, onlySelectCentroidIfNearsestPointsIsEmpty = False)
             centroidData.nearestDataPointsTempList.append(dataRow)
             #centroidData.nearestDataPoints = centroidData.nearestDataPoints.append( dataRow, ignore_index=True,sort=False )
 
@@ -92,8 +101,12 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
             # centroidDatas[i].nearestDataPoints = pd.concat( [centroidDatas[i].nearestDataPoints, centroidDatas[i].nearestDataPointsTempList])
             #clear temp list 
             centroidDatas[i].nearestDataPointsTempList = []
-            newCentroid = getMeanPoint(centroidDatas[i].nearestDataPoints,trainingData)
-           
+
+            #if no points are assosiated with the centroid then the centroid does not move
+            if not centroidDatas[i].nearestDataPoints.empty:
+                newCentroid = getMeanPoint(centroidDatas[i].nearestDataPoints,trainingData)
+            else:
+                newCentroid = centroidDatas[i].centoid
         
         
         
@@ -117,9 +130,6 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
     # return if a 100 itterations have been reached
     return centroidDatas
 
-
-k = 2
-
 #cen = CalculateCentroids(kfold.testSet(1).trainingDF, k)
 
 
@@ -136,38 +146,43 @@ def RunClustering(testSet, k, movingThreshold):
 
     centroidDatas = getInitialCentroidDatas(k,testSet.trainingDF)  
 
-    cen = CalculateCentroids(testSet.trainingDF, k, movingThreshold, centroidDatas)
+    centroidDatas = CalculateCentroids(testSet.trainingDF, k, movingThreshold, centroidDatas)
     
     #associate testing data to centroids
     for i in range(len(testSet.testingDF)):
         dataRow = testSet.testingDF.iloc[i]
-        centroidData = getClosestCentroid( dataRow, centroidDatas)
+        centroidData = getClosestCentroid( dataRow, centroidDatas, onlySelectCentroidIfNearsestPointsIsEmpty = True)
         centroidData.nearestDataPointsTempListForTestingData.append(dataRow)
     
     for i in range(k):
-        cen[i].testingData = pd.DataFrame(centroidDatas[i].nearestDataPointsTempListForTestingData, columns=testSet.testingDF.columns)
+        centroidDatas[i].testingData = pd.DataFrame(centroidDatas[i].nearestDataPointsTempListForTestingData, columns=testSet.testingDF.columns)
 
-        trainingX = kfold.getX(cen[i].nearestDataPoints).to_numpy()
-        trainingY = kfold.getX(cen[i].nearestDataPoints).to_numpy()
-        testingX = kfold.getX(cen[i].testingData).to_numpy()
-        testingY = kfold.getY(cen[i].testingData).to_numpy()
-        results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
+        trainingX = kfold.getX(centroidDatas[i].nearestDataPoints).to_numpy()
+        trainingY = kfold.getY(centroidDatas[i].nearestDataPoints).to_numpy()
+        testingX = kfold.getX(centroidDatas[i].testingData).to_numpy()
+        testingY = kfold.getY(centroidDatas[i].testingData).to_numpy()
+        
+        #training data and testing data has to be available for the OLS regression to run
+        results = ols.OLSRun()
+        if not centroidDatas[i].nearestDataPoints.empty and not centroidDatas[i].testingData.empty:
+            results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
+
         #store centroid data in results
-        centroidResults.centroidData.append(cen[i])
+        centroidResults.centroidData.append(centroidDatas[i])
         #store results of running ols on the test data for that centroid
         centroidResults.olsRuns.append( results )
     return centroidResults
 
-r = RunClustering(kfold.testSet(1), k, 0.1 )
+
 #l = getKCentroids(2)
 
 #a = randomN()
 
-dist = utils.GetEuclideanDistanceBetweenFeatureVectors( a, x_df.head(1).to_numpy())
+#dist = utils.GetEuclideanDistanceBetweenFeatureVectors( a, x_df.head(1).to_numpy())
 
 
 
 
 
 
-b = 1
+#b = 1

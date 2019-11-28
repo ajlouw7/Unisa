@@ -1,8 +1,9 @@
 import pandas as pd
 
 class TestSet:
-    trainingDF = []
-    testingDF = []
+    def __init__(self):
+        self.trainingDF = []
+        self.testingDF = []
 
 def getX(df):
     return df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]

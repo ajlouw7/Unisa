@@ -50,15 +50,17 @@ def EvaluateModel(featureVector, B_Coefficients):
 #print( error ) 
 
 class RunResult:
-    inputFeatureVector = []
-    lifeExpectancy = 0.0
-    predictedLifeExpectancy = 0
-    error = 0
+    def __init__(self):
+        self.inputFeatureVector = []
+        self.lifeExpectancy = 0.0
+        self.predictedLifeExpectancy = 0
+        self.error = 0
 
 class OLSRun:
-    results = []
-    itemCount = 0
-    averageError = 0
+    def __init__(self):
+        self.results = []
+        self.itemCount = 0
+        self.averageError = 0
 
 def RunDataset(trainingLifeExpectancies,
                trainingFeatureVectors,
@@ -82,7 +84,10 @@ def RunDataset(trainingLifeExpectancies,
     
     #calculate statistics
     run.itemCount = noOfItemsToTest
-    run.averageError = errorSum/run.itemCount
+    if run.itemCount > 0:
+        run.averageError = errorSum/run.itemCount
+    else:
+        run.averageError = 0
     return run
 
 #r = RunDataset(trainingY,trainingX,testY,testX)

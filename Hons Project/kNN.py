@@ -5,10 +5,11 @@ import kfold as kfold
 import OLS as ols
 
 class Result:
-    distance = 0.0
-    lifeExpectancy = 0.0
-    country = ''
-    year = 0
+    def __init__(self):
+        self.distance = 0.0
+        self.lifeExpectancy = 0.0
+        self.country = ''
+        self.year = 0
 
 def distance(p1,p2):
     squareDistance = 0
