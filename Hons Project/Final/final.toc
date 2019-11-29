@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Literature Review}{4}
+\contentsline {subsection}{\numberline {2.1}What do we mean by life expectancy?}{4}
+\contentsline {subsection}{\numberline {2.2}Multi indicator studies}{5}
+\contentsline {subsection}{\numberline {2.3}Determinants of life expectancy}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Income}{5}
+\contentsline {subsubsection}{\numberline {2.3.2}Education attainment}{5}
+\contentsline {subsubsection}{\numberline {2.3.3}Spending on health}{7}
+\contentsline {subsubsection}{\numberline {2.3.4}Unemployment}{7}
+\contentsline {subsection}{\numberline {2.4}Modelling Techniques}{8}
+\contentsline {subsubsection}{\numberline {2.4.1}Linear Regression}{8}
+\contentsline {subsubsection}{\numberline {2.4.2}Logistic regression}{8}
+\contentsline {subsubsection}{\numberline {2.4.3}k-Nearest Neighbour}{8}
+\contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{8}
+\contentsline {subsubsection}{\numberline {2.4.5}Clustering}{9}
+\contentsline {subsubsection}{\numberline {2.4.6}Neural Networks}{10}
+\contentsline {subsubsection}{\numberline {2.4.7}Decision Trees}{10}
+\contentsline {subsection}{\numberline {2.5}Datasets}{11}
+\contentsline {subsubsection}{\numberline {2.5.1}Life Expectancy}{11}
+\contentsline {subsubsection}{\numberline {2.5.2}Income}{11}
+\contentsline {subsubsection}{\numberline {2.5.3}Educational Attainment}{11}
+\contentsline {subsubsection}{\numberline {2.5.4}Per Capita spending on health}{11}
+\contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{12}
+\contentsline {section}{\numberline {3}Methodology/Procedure}{12}
+\contentsline {subsection}{\numberline {3.1}Choice of algorithms}{12}
+\contentsline {subsection}{\numberline {3.2}Cross-Validation}{12}
+\contentsline {section}{References}{13}
