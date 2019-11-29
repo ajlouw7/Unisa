@@ -108,6 +108,7 @@ merged_df['Education'] =  (merged_df['Primary_School_Enrollment'] + merged_df['S
 # output data to file
 merged_df.to_csv("test.csv")
 
+#create a sorted data frame by life expectancy
 sorted_df = merged_df
 sorted_df = sorted_df.sort_values(by='Life_Expectancy', ascending = False)
 
