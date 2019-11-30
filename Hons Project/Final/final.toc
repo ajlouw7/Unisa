@@ -24,4 +24,8 @@
 \contentsline {section}{\numberline {3}Methodology/Procedure}{12}
 \contentsline {subsection}{\numberline {3.1}Choice of algorithms}{12}
 \contentsline {subsection}{\numberline {3.2}Cross-Validation}{12}
-\contentsline {section}{References}{13}
+\contentsline {section}{\numberline {4}Results}{14}
+\contentsline {section}{\numberline {5}Discussion}{14}
+\contentsline {section}{\numberline {6}Conclusions and limitations}{14}
+\contentsline {section}{\numberline {7}Recommendations}{14}
+\contentsline {section}{References}{14}
