@@ -14,7 +14,7 @@ for i in range(1,11):
     testingX = kfold.getX(ts.testingDF).to_numpy()
     testingY = kfold.getY(ts.testingDF).to_numpy()
     results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
-    fileName = 'OLS_Results' + str(i) + '.csv'
+    fileName = 'OLS-Results\OLS_Results' + str(i) + '.csv'
     with open(fileName,mode='w', newline='') as resultsFile:
         resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment'])
@@ -26,6 +26,6 @@ for i in range(1,11):
     analysisdf.at[i,'stdDev'] = df['Error'].std()
     pp=0
 
-analysisdf.to_csv('OlS-Analysis.csv')
+analysisdf.to_csv('Analysis\OlS-Analysis.csv')
 j=9
 
