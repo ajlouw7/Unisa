@@ -14,11 +14,11 @@ analysisdf = pd.DataFrame( columns=['Series','k','centroidNum','Mean','stdDev','
 
 #results[centroidIndex].centroidData
 #results[centroidIndex].olsRuns.results
-for i in range(1,2):
-    for k in range(2,3):
+for i in range(1,11):
+    for k in range(2,11):
         results = cluster.RunClustering(kfold.testSet(i), k, movingThreshold )
         for centroidIndex in range(k):
-            fileName = 'Cluster_Results' + str(i) + 'cluster=' + str(centroidIndex +1) + 'of' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
+            fileName = 'Cluster-Results\Cluster_Results' + str(i) + 'cluster=' + str(centroidIndex +1) + 'of' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
             with open(fileName,mode='w', newline='') as resultsFile:
                 resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                 resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment'])
