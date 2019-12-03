@@ -164,7 +164,7 @@ def RunClustering(testSet, k, movingThreshold):
         
         #training data and testing data has to be available for the OLS regression to run
         results = ols.OLSRun()
-        if not centroidDatas[i].nearestDataPoints.empty and not centroidDatas[i].testingData.empty:
+        if not centroidDatas[i].nearestDataPoints.empty and not centroidDatas[i].testingData.empty and ols.givesSingularMatrix(trainingX) == False:
             results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
 
         #store centroid data in results

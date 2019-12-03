@@ -10,6 +10,10 @@ def Get_B_Coefficients(y,x):
     inv = np.linalg.inv(np.matmul(xt,x))
     return np.matmul(np.matmul(inv,xt),y)
 
+def givesSingularMatrix(x):
+    xt = np.transpose(x)
+    return np.linalg.det(np.matmul(xt,x)) == 0
+
 #df = pd.read_csv("test.csv")
 #x_df = df[['Health_Expenditure','GDP_Per_Capita','Education','Unemployment']]
 #y_df = df[['Life_Expectancy']]
