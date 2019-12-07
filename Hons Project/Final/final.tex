@@ -296,7 +296,7 @@ Firsly appropriate data sets will be chosen. Taking into account that some indic
 
 Once the dataset is finalised, the algorithms and their permutations described in Section \ref{algo} will be applied. Three models will be created for each algorithm and permutation thereof. The first model will be using all the data. The second will only use data from developed countries and the third will only use data from developing countries, data permitting. Cross-validation will be applied to the created models as described in Section \ref{cross}. The k data subsets will be determined before starting the validation. Each algorithm will  then be run on the same data sets to facilitate comparison.
 
-The mean squared error will be calculated for each of the k Cross-Validation datasets for each of the algorithms. The average of each of these mean squared errrs will be calculated for each algorithm.This number will be used to determine the fitness of each algorithm and enables comparison. THe mean squared error was chosen as the method of comparison due to its ease of use and that it can be applied to all the algorithms.
+The mean squared error will be calculated for each of the k Cross-Validation datasets for each of the algorithms. The average of each of these mean squared errrs will be calculated for each algorithm.This number will be used to determine the fitness of each algorithm and enables comparison. The mean squared error was chosen as the method of comparison due to its ease of use and that it can be applied to all the algorithms.
 
 \subsection{Choice of algorithms} \label{algo}
 
@@ -313,6 +313,19 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 
 
 \section{Results}
+The data set for each indicator was downloaded seperately. The data was then combined based on country and year. Sparse data became a problem. If at least one indicator did not have data for a specific year and country, then the entry for that that year and country was removed from the dataset. The indicator for Adult Literacy was also removed from all entrys due to that indicator having very sparce data. The total number of accepted data points were 1062. For each of those data points, every indicator (except adult literacy) was defined. 
+
+The values for Primary-, Secondary-, and Tertiary Enrollment was added together and divided by 3 to create a new Indicator namely ``Education''. This was done in order to reduce the dimentionality of this 7-dimentional data set to a more manageble 5-dimentional data set. The dataset can be visually seen in a matrix scatter plot in Figure \ref{scatter}. It is worth noting that the Preston curve can be seen in this catter plot where Life Expectancy and GDP Per Capita intersect.
+
+The following procedure was followed in order to get 10 stratified folds. The dataset was then sorted according to decending life expectancy. The dataset was then split in half such that the life expectancy of each data point in the ``top'' data set is higher than the life expectancy of each data point in the ``bottom'' data set. Then 10 datasets of equal size was created from the ``top'' and ``bottom'' data sets, by taking 53 data points from each set. Thus each fold has 106 data points, with 53 high life expectancy points and 53 low life expectancy points  
+
+\subsection{Linear Regression}
+
+As described in Section \ref{regression}
+
+
+
+
 \begin{figure}
 \centering
 \includegraphics[height=16cm, width=16cm]{matrixScatterPlot.png}
