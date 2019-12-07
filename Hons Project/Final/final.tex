@@ -36,7 +36,7 @@ The pursuit of increasing ones life expectancy is a very human endeavour. In ord
 
 \listoffigures
 
-%\listoftables
+\listoftables
 
 \newpage
 
@@ -179,6 +179,8 @@ According to \cite{Bonamore2015}, the literature has 2 main views on the relatio
 \subsubsection{Linear Regression} \label{regression}
 Linear Regression is a popular technique, used to find relationships in data. As the name suggests Linear Regression assumes a linear relationship between the input variables and the result \citep{Murphy}. This might not be the case for the target function. The target function could be any potential function. In the case of life expectancy modelling, we know that according to the Preston curve (Section \ref{income}), the relationship between income and life expectancy is not linear. Thus using Linear Regression should return a sub-optimal result unless the data is transformed using some non-linear function into a linear space. Linear regression was used in the following studies: \cite{Chetty2016,Jakovljevic2016,Hu2015,Mackenbach2013,Bulled2010}. 
 
+The Ordinary Least Square (OLS) method of estimation will be used. This algorithm will be implemented in Python and used to analyse how well this technique models the problem.
+
 \subsubsection{Logistic regression}
 This regression is appropriate when the dependant variable is discrete, e.g. a yes/no answer. It also assumes a linear relationship between inputs. In contrast to linear regression, this linear sum is passed through the sigmoid function \citep{Murphy}. All of this makes it inappropriate for non-linear target functions and this study.
 
@@ -317,11 +319,37 @@ The data set for each indicator was downloaded seperately. The data was then com
 
 The values for Primary-, Secondary-, and Tertiary Enrollment was added together and divided by 3 to create a new Indicator namely ``Education''. This was done in order to reduce the dimentionality of this 7-dimentional data set to a more manageble 5-dimentional data set. The dataset can be visually seen in a matrix scatter plot in Figure \ref{scatter}. It is worth noting that the Preston curve can be seen in this catter plot where Life Expectancy and GDP Per Capita intersect.
 
-The following procedure was followed in order to get 10 stratified folds. The dataset was then sorted according to decending life expectancy. The dataset was then split in half such that the life expectancy of each data point in the ``top'' data set is higher than the life expectancy of each data point in the ``bottom'' data set. Then 10 datasets of equal size was created from the ``top'' and ``bottom'' data sets, by taking 53 data points from each set. Thus each fold has 106 data points, with 53 high life expectancy points and 53 low life expectancy points  
+The following procedure was followed in order to get 10 stratified folds. The dataset was then sorted according to decending life expectancy. The dataset was then split in half such that the life expectancy of each data point in the ``top'' data set is higher than the life expectancy of each data point in the ``bottom'' data set. Then 10 datasets of equal size was created from the ``top'' and ``bottom'' data sets, by taking 53 data points from each set. Thus each fold has 106 data points, with 53 high life expectancy points and 53 low life expectancy points.  
 
-\subsection{Linear Regression}
+\subsection{Linear Regression Results}
 
-As described in Section \ref{regression}
+As described in Section \ref{regression} the OLS algorihm was implemented in Python and run for each fold of the data. The results can be see in Table \ref{OLSResults} 
+
+\begin{table}
+\begin{tabular}{|c|c|c|}
+\hline
+Fold & Mean Error & Standard Deviation of Error\\
+\hline
+1  & 10.29874164 & 9.017297877 \\
+2  & 9.081106784 & 6.890622426 \\
+3  & 9.125215292 & 7.464715809 \\
+4  & 8.356464123 & 6.178963524 \\
+5  & 9.975440028 & 7.974842017 \\
+6  & 8.703226052 & 6.236500583 \\
+7  & 9.56450367  & 6.710214979 \\
+8  & 10.73726516 & 8.829969189 \\
+9  & 9.546407917 & 8.136121573 \\
+10 & 10.60011289 & 8.510052534 \\
+\hline
+Average: &9.598848355 & 7.594930051 \\
+\hline
+\end{tabular}
+\caption{OLS Regression Results}\label{OLSResults}
+\end{table}
+
+\subsection{k-Nearest Neighbour Results}
+
+
 
 
 

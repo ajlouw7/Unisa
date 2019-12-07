@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{\numberline {2.4.1}Linear Regression}{8}
 \contentsline {subsubsection}{\numberline {2.4.2}Logistic regression}{8}
 \contentsline {subsubsection}{\numberline {2.4.3}k-Nearest Neighbour}{8}
-\contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{8}
+\contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{9}
 \contentsline {subsubsection}{\numberline {2.4.5}Clustering}{9}
 \contentsline {subsubsection}{\numberline {2.4.6}Neural Networks}{10}
 \contentsline {subsubsection}{\numberline {2.4.7}Decision Trees}{10}
@@ -25,8 +25,9 @@
 \contentsline {subsection}{\numberline {3.1}Choice of algorithms}{12}
 \contentsline {subsection}{\numberline {3.2}Cross-Validation}{12}
 \contentsline {section}{\numberline {4}Results}{13}
-\contentsline {subsection}{\numberline {4.1}Linear Regression}{13}
-\contentsline {section}{\numberline {5}Discussion}{13}
-\contentsline {section}{\numberline {6}Conclusions and limitations}{13}
-\contentsline {section}{\numberline {7}Recommendations}{13}
-\contentsline {section}{References}{13}
+\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{13}
+\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{14}
+\contentsline {section}{\numberline {5}Discussion}{14}
+\contentsline {section}{\numberline {6}Conclusions and limitations}{14}
+\contentsline {section}{\numberline {7}Recommendations}{14}
+\contentsline {section}{References}{14}
