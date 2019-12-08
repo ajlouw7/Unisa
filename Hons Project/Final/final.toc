@@ -1,33 +1,33 @@
-\contentsline {section}{\numberline {1}Introduction}{4}
-\contentsline {section}{\numberline {2}Literature Review}{4}
-\contentsline {subsection}{\numberline {2.1}What do we mean by life expectancy?}{4}
-\contentsline {subsection}{\numberline {2.2}Multi indicator studies}{5}
-\contentsline {subsection}{\numberline {2.3}Determinants of life expectancy}{5}
-\contentsline {subsubsection}{\numberline {2.3.1}Income}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}Education attainment}{5}
-\contentsline {subsubsection}{\numberline {2.3.3}Spending on health}{7}
-\contentsline {subsubsection}{\numberline {2.3.4}Unemployment}{7}
-\contentsline {subsection}{\numberline {2.4}Modelling Techniques}{8}
-\contentsline {subsubsection}{\numberline {2.4.1}Linear Regression}{8}
-\contentsline {subsubsection}{\numberline {2.4.2}Logistic regression}{8}
-\contentsline {subsubsection}{\numberline {2.4.3}k-Nearest Neighbour}{8}
-\contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{9}
-\contentsline {subsubsection}{\numberline {2.4.5}Clustering}{9}
-\contentsline {subsubsection}{\numberline {2.4.6}Neural Networks}{10}
-\contentsline {subsubsection}{\numberline {2.4.7}Decision Trees}{10}
-\contentsline {subsection}{\numberline {2.5}Datasets}{11}
-\contentsline {subsubsection}{\numberline {2.5.1}Life Expectancy}{11}
-\contentsline {subsubsection}{\numberline {2.5.2}Income}{11}
-\contentsline {subsubsection}{\numberline {2.5.3}Educational Attainment}{11}
-\contentsline {subsubsection}{\numberline {2.5.4}Per Capita spending on health}{11}
-\contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{12}
-\contentsline {section}{\numberline {3}Methodology/Procedure}{12}
-\contentsline {subsection}{\numberline {3.1}Choice of algorithms}{12}
-\contentsline {subsection}{\numberline {3.2}Cross-Validation}{12}
-\contentsline {section}{\numberline {4}Results}{13}
-\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{13}
-\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{14}
-\contentsline {section}{\numberline {5}Discussion}{14}
-\contentsline {section}{\numberline {6}Conclusions and limitations}{14}
-\contentsline {section}{\numberline {7}Recommendations}{14}
-\contentsline {section}{References}{14}
+\contentsline {section}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {2}Literature Review}{5}
+\contentsline {subsection}{\numberline {2.1}What do we mean by life expectancy?}{5}
+\contentsline {subsection}{\numberline {2.2}Multi indicator studies}{6}
+\contentsline {subsection}{\numberline {2.3}Determinants of life expectancy}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Income}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Education attainment}{6}
+\contentsline {subsubsection}{\numberline {2.3.3}Spending on health}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}Unemployment}{8}
+\contentsline {subsection}{\numberline {2.4}Modelling Techniques}{9}
+\contentsline {subsubsection}{\numberline {2.4.1}Linear Regression}{9}
+\contentsline {subsubsection}{\numberline {2.4.2}Logistic regression}{9}
+\contentsline {subsubsection}{\numberline {2.4.3}k-Nearest Neighbour}{9}
+\contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{10}
+\contentsline {subsubsection}{\numberline {2.4.5}Clustering}{10}
+\contentsline {subsubsection}{\numberline {2.4.6}Neural Networks}{11}
+\contentsline {subsubsection}{\numberline {2.4.7}Decision Trees}{11}
+\contentsline {subsection}{\numberline {2.5}Datasets}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}Life Expectancy}{12}
+\contentsline {subsubsection}{\numberline {2.5.2}Income}{12}
+\contentsline {subsubsection}{\numberline {2.5.3}Educational Attainment}{12}
+\contentsline {subsubsection}{\numberline {2.5.4}Per Capita spending on health}{12}
+\contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{13}
+\contentsline {section}{\numberline {3}Methodology/Procedure}{13}
+\contentsline {subsection}{\numberline {3.1}Choice of algorithms}{13}
+\contentsline {subsection}{\numberline {3.2}Cross-Validation}{13}
+\contentsline {section}{\numberline {4}Results}{14}
+\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
+\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{15}
+\contentsline {section}{\numberline {5}Discussion}{15}
+\contentsline {section}{\numberline {6}Conclusions and limitations}{15}
+\contentsline {section}{\numberline {7}Recommendations}{15}
+\contentsline {section}{References}{15}
