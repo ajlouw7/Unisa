@@ -316,6 +316,13 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 
 
 \section{Results}
+\begin{figure}
+\centering
+\includegraphics[height=16cm, width=16cm]{matrixScatterPlot.png}
+\caption{Matrix scatter plot of data}
+\label{scatter}
+\end{figure}
+
 The data set for each indicator was downloaded seperately. The data was then combined based on country and year. Sparse data became a problem. If at least one indicator did not have data for a specific year and country, then the entry for that that year and country was removed from the dataset. The indicator for Adult Literacy was also removed from all entrys due to that indicator having very sparce data. The total number of accepted data points were 1062. For each of those data points, every indicator (except adult literacy) was defined. 
 
 The values for Primary-, Secondary-, and Tertiary Enrollment was added together and divided by 3 to create a new Indicator namely ``Education''. This was done in order to reduce the dimentionality of this 7-dimentional data set to a more manageble 5-dimentional data set. The dataset can be visually seen in a matrix scatter plot in Figure \ref{scatter}. It is worth noting that the Preston curve can be seen in this catter plot where Life Expectancy and GDP Per Capita intersect.
@@ -348,19 +355,6 @@ Average: &9.598848355 & 7.594930051 \\
 \caption{OLS Regression Results}\label{OLSResults}
 \end{table}
 
-\subsection{k-Nearest Neighbour Results}
-In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data
-
-
-
-\begin{figure}
-\centering
-\includegraphics[height=16cm, width=16cm]{kNNErrorPlot.png}
-\caption{kNN Error Data Plot with standard deviation}
-\label{kNNResultsAllFolds}
-\end{figure}
-
-
 \begin{figure}
 \begin{tabular}{ccc}
 \subfloat[Fold 1]{\includegraphics[width = 2in]{kNNErrorPlot1.png}} &
@@ -374,16 +368,47 @@ In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life e
 \subfloat[Fold 9]{\includegraphics[width = 2in]{kNNErrorPlot9.png}} \\
 \subfloat[Fold 10]{\includegraphics[width = 2in]{kNNErrorPlot10.png}} 
 \end{tabular}
-\label{kNNResultsPerFold}
-\caption{Mean Error in Predicted Life Expectancy per Fold for the kNN Algortihm}
+\caption{Mean Error in Predicted Life Expectancy per Fold for the kNN Algortihm}\label{kNNResultsPerFold}
 \end{figure}
+
+\subsection{k-Nearest Neighbour Results}
+The kNN-algorithm was run for the values of k from 1 to 106 for each fold. The mean error was calculated for each fold and value of k. These values can be seen in Figure \ref{kNNResultsPerFold} where the mean error is graphed with respect to the value of k for each fold. In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data. 
+
+The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we can see that the best performing value of k ( in other words the value of k for which the mean error is the smallest ) differs wildly between folds. The average being 30.4.
 
 \begin{figure}
 \centering
-\includegraphics[height=16cm, width=16cm]{matrixScatterPlot.png}
-\caption{Matrix scatter plot of data}
-\label{scatter}
+\includegraphics[height=16cm, width=16cm]{kNNErrorPlot.png}
+\caption{kNN Error Data Plot with standard deviation}
+\label{kNNResultsAllFolds}
 \end{figure}
+
+
+
+
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Fold & k & Mean Error & Standard Deviation of Error\\
+\hline
+1 & 	32 & 	2.35979959	 & 2.94988107  \\
+2 & 	16 & 	2.168031418	 & 1.806913134 \\
+3 & 	31 & 	1.974412948	 & 2.721274262 \\
+4 & 	39 & 	1.882756335	 & 2.408243797 \\
+5 & 	25 & 	1.550020316	 & 1.271036442 \\
+6 & 	4 & 	1.748667376	 & 1.891826963 \\
+7 & 	64 & 	2.321097425	 & 3.279927484 \\
+8 & 	41 & 	2.150680693	 & 2.185943479 \\ 
+9 & 	4 & 	2.411306404	 & 2.073836258 \\
+10 & 	48 & 	2.261508095	 & 3.010802076 \\
+\hline
+Average: & 30.4& 2.08282806 & 2.359968496 \\
+\hline
+\end{tabular}
+\caption{kNN Results}\label{kNNResults}
+\end{table}
+
 
 
 \section{Discussion}

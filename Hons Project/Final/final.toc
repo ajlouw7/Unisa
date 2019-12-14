@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {3.1}Choice of algorithms}{13}
 \contentsline {subsection}{\numberline {3.2}Cross-Validation}{13}
 \contentsline {section}{\numberline {4}Results}{14}
-\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
+\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{15}
 \contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{15}
 \contentsline {section}{\numberline {5}Discussion}{18}
 \contentsline {section}{\numberline {6}Conclusions and limitations}{18}
