@@ -6,6 +6,7 @@
 \usepackage{longtable}
 \usepackage[pdftex]{graphicx}
 \usepackage{appendix}
+\usepackage{subfig}
 
 \bibliographystyle{agsm}
 
@@ -348,19 +349,34 @@ Average: &9.598848355 & 7.594930051 \\
 \end{table}
 
 \subsection{k-Nearest Neighbour Results}
-Figure \ref{kNNResults}
+In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data
 
 
 
 \begin{figure}
 \centering
 \includegraphics[height=16cm, width=16cm]{kNNErrorPlot.png}
-\caption{kNN Error Data Plot}
-\label{kNNResults}
+\caption{kNN Error Data Plot with standard deviation}
+\label{kNNResultsAllFolds}
 \end{figure}
 
 
-
+\begin{figure}
+\begin{tabular}{ccc}
+\subfloat[Fold 1]{\includegraphics[width = 2in]{kNNErrorPlot1.png}} &
+\subfloat[Fold 2]{\includegraphics[width = 2in]{kNNErrorPlot2.png}} &
+\subfloat[Fold 3]{\includegraphics[width = 2in]{kNNErrorPlot3.png}} \\
+\subfloat[Fold 4]{\includegraphics[width = 2in]{kNNErrorPlot4.png}} &
+\subfloat[Fold 5]{\includegraphics[width = 2in]{kNNErrorPlot5.png}} &
+\subfloat[Fold 6]{\includegraphics[width = 2in]{kNNErrorPlot6.png}} \\
+\subfloat[Fold 7]{\includegraphics[width = 2in]{kNNErrorPlot7.png}} &
+\subfloat[Fold 8]{\includegraphics[width = 2in]{kNNErrorPlot8.png}} &
+\subfloat[Fold 9]{\includegraphics[width = 2in]{kNNErrorPlot9.png}} \\
+\subfloat[Fold 10]{\includegraphics[width = 2in]{kNNErrorPlot10.png}} 
+\end{tabular}
+\label{kNNResultsPerFold}
+\caption{Mean Error in Predicted Life Expectancy per Fold for the kNN Algortihm}
+\end{figure}
 
 \begin{figure}
 \centering
