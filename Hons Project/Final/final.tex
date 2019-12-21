@@ -325,7 +325,7 @@ By using stratified \textit{k}-fold cross validation, this study will aim to red
 \label{scatter}
 \end{figure}
 
-The data set for each indicator was downloaded seperately. The data was then combined based on country and year. Sparse data became a problem. If at least one indicator did not have data for a specific year and country, then the entry for that that year and country was removed from the dataset. The indicator for Adult Literacy was also removed from all entrys due to that indicator having very sparce data. The total number of accepted data points were 1062. For each of those data points, every indicator (except adult literacy) was defined. 
+The data set for each indicator was downloaded seperately. The data was then combined based on country and year. Sparse data became a problem. If at least one indicator did not have data for a specific year and country, then the entry for that that year and country was removed from the dataset. The indicator for Adult Literacy was also removed from all entries due to that indicator having very sparce data. The total number of accepted data points were 1062. For each of those data points, every indicator (except adult literacy) was defined. 
 
 The values for Primary-, Secondary-, and Tertiary Enrollment was added together and divided by 3 to create a new Indicator namely ``Education''. This was done in order to reduce the dimentionality of this 7-dimentional data set to a more manageble 5-dimentional data set. The dataset can be visually seen in a matrix scatter plot in Figure \ref{scatter}. It is worth noting that the Preston curve can be seen in this catter plot where Life Expectancy and GDP Per Capita intersect.
 
@@ -408,7 +408,30 @@ Fold & k & Mean Error & Standard Deviation of Error\\
 Average: & 30.4& 2.08282806 & 2.359968496 \\
 \hline
 \end{tabular}
-\caption{kNN Results}\label{kNNResults}
+\caption{kNN Results tabulating the value of k for which each fold had the smallest error}\label{kNNResults}
+\end{table}
+
+
+\begin{table}
+\begin{tabular}{|c|c|c|}
+\hline
+Fold & Mean Error k = 30 & Mean Error k = 31\\
+\hline
+1 & 2.368749226	&2.361272642\\
+2 & 2.243774499	&2.254901804\\
+3 & 1.990101446	&1.974412948\\
+4 & 1.966454765	&1.951704915\\
+5 & 1.586040998	&1.570644923\\
+6 & 1.790011747	&1.801034007\\
+7 & 2.34855691	&2.347208751\\
+8 & 2.187162436	&2.174740754\\
+9 & 2.506916164	&2.51679621\\
+10 &2.34591783	&2.348668221\\
+\hline
+Average: & 2.133368602 & 2.130138517 \\
+\hline
+\end{tabular}
+\caption{kNN Results for k = 30 and k = 31}\label{kNNResultsk=3031}
 \end{table}
 
 \subsection{Clustering Results}
@@ -417,11 +440,18 @@ At first, random centroids were selected for each run of the clustering algorith
 
 \section{Discussion}
 
+\subsection{Linear Regression}
+Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. When using 10 folds, the average of the mean error per fold was 9.599 with an average standard deviation per fold of 7.599. This means that on average the prediction that OLS regression made for the life expectancy of a country, based on its indicators, was off by 9.6 years.
 
+The kNN-alogortihm fared much better. Table \ref{kNNResults} indicates which value of k performed the best for each fold. The average error when the optimum k is used for each fold is 2.083 years. But, if we consider only one value of k across all the folds, then the optimum value of k is 41 with an average mean error of 2.120 years.  
 
 \section{Conclusions and limitations}
 
-The source code and raw results can be found on GitHub at \cite{rawData}
+
+
+Multi-dimentional data is hard to visualise and thus hard to understand and study. The situation gets worse with each additional dimention. Combining Primary- , Secondary- and Tertiary School Enrollment, meant that the amount of dimentions studied reduced from 7 to 5. Which is unfortunately still difficult to analyse, mostly becuase it is impossible to visualise mentally. Techniques like a matrix scatter plot from Figure \ref{scatter} helped but still require interpretation. 
+
+The source code and raw results can be found on GitHub \citep{rawData}.
 
 
 \section{Recommendations}
