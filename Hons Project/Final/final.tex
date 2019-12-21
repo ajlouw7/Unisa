@@ -291,7 +291,9 @@ Unemployment will be ignored for this study because sufficient data on unemploym
 \section{Methodology/Procedure}
 
 
-This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country over a 30-year period. Then evaluate how well various machine learning techniques model these relationships. Unlike \cite{Shaw2005}, this study will not take into account the age distribution of each country.
+This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country over a 30-year period. This will be done by implementing the various algorithms discussed in Section \ref{moddelingTechniques} in Python. Then these programs will be applied to the dataset. Python is a common tool used in machine learning applications, with a wide variety of libraries that can be used. The algorithms will be newly implemented for this project but libraries like Numpy will be used to help with reading data from files and writing data to files.
+
+Then by using thise programs we will evaluate how well these machine learning techniques model the relationship between Life expectancy and the chosen indicators. Unlike \cite{Shaw2005}, this study will not take into account the age distribution of each country.
 
 The philosophical standpoint of this study is Positivism. By using the scientific method, this study will comprise of an experiment to inductively determine whether machine learning techniques can provide more accurate life expectancy models than those created using regression. This cross-sectional study will use life expectancy indicators shown, from the literature, to have some correlation to life expectancy.
 
@@ -331,7 +333,7 @@ The following procedure was followed in order to get 10 stratified folds. The da
 
 \subsection{Linear Regression Results}
 
-As described in Section \ref{regression} the OLS algorihm was implemented in Python and run for each fold of the data. The results can be see in Table \ref{OLSResults} 
+As described in Section \ref{regression} the OLS algorihm was implemented in Python and run for each fold of the data. The results can be see in Table \ref{OLSResults}. The average of the mean error for each fold was 9.598848355. 
 
 \begin{table}
 \begin{tabular}{|c|c|c|}
@@ -374,7 +376,7 @@ Average: &9.598848355 & 7.594930051 \\
 \subsection{k-Nearest Neighbour Results}
 The kNN-algorithm was run for the values of k from 1 to 106 for each fold. The mean error was calculated for each fold and value of k. These values can be seen in Figure \ref{kNNResultsPerFold} where the mean error is graphed with respect to the value of k for each fold. In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data. 
 
-The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we can see that the best performing value of k ( in other words the value of k for which the mean error is the smallest ) differs wildly between folds. The average being 30.4.
+The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we can see that the best performing value of k (in other words the value of k for which the mean error is the smallest) differs wildly between folds. The average being 30.4.
 
 \begin{figure}
 \centering
@@ -409,6 +411,8 @@ Average: & 30.4& 2.08282806 & 2.359968496 \\
 \caption{kNN Results}\label{kNNResults}
 \end{table}
 
+\subsection{Clustering Results}
+At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done.
 
 
 \section{Discussion}
@@ -417,7 +421,7 @@ Average: & 30.4& 2.08282806 & 2.359968496 \\
 
 \section{Conclusions and limitations}
 
-
+The source code and raw results can be found on GitHub at \cite{rawData}
 
 
 \section{Recommendations}

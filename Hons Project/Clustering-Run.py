@@ -6,16 +6,20 @@ import csv
 
 #i=1
 #k=5
-movingThreshold= 0.001
+movingThreshold= 0.001 #0.001
 index = 0
 
 
 analysisdf = pd.DataFrame( columns=['Series','k','centroidNum','Mean','stdDev','count'])
 
+
+
+
+
 #for each fold
-for i in range(1,11):
+for i in range(5,6): #11
     #for each number of clusters
-    for k in range(2,16):
+    for k in range(1296,1297): #2,16
         results = cluster.RunClustering(kfold.testSet(i), k, movingThreshold )
         #for each centroid    
         fileName = 'Cluster-Results\Cluster_Results' + str(i) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'

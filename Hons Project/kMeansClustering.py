@@ -29,14 +29,38 @@ def getKCentroids(k,df):
     for i in range(k):
         list.append( randomN(df) )
     return list
-    
+
+def getKSpacedCentroids(k,df):
+    list = []
+    delta = 0.2
+    for i in np.arange(0.0,1.1,delta):
+        for j in np.arange(0,1.1,delta):
+            for k in np.arange(0,1.1,delta):
+                for l in np.arange(0,1.1,delta):
+                    centroid = randomN(df)
+                    centroid.head(1).Health_Expenditure = i
+                    centroid.head(1).GDP_Per_Capita = j
+                    centroid.head(1).Unemployment = k
+                    centroid.head(1).Education = l
+                    list.append( centroid )
+    return list   
+
+def getSpacedCentoids(ddf):
+    centroidsDF = pd.read_csv("clustering-InitialCentroids1.csv")
+    l = []
+    for i in range(len(centroidsDF)):
+            df = pd.DataFrame( columns=ddf.columns)
+            df = df.append(centroidsDF.iloc[i])
+            l.append(df)
+    return l
 
 #sort datapoints according to nearest centroid
 
 
 def getInitialCentroidDatas(k,df):    
     centroidDatas = []
-    centroids = getKCentroids(k,df)
+    centroids = getKSpacedCentroids(k,df)
+    #centroids = getSpacedCentoids(df)
     for i in range(len(centroids)):
         centroidData = CentroidData()
         centroidData.centoid = centroids[i]
@@ -82,8 +106,6 @@ def getMeanPoint(nearestDataPoints,trainingData):
 
 
 
-
-
 def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
     for j in range(100):
         #assign training data point to closest centroid
@@ -101,7 +123,7 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
             # centroidDatas[i].nearestDataPoints = pd.concat( [centroidDatas[i].nearestDataPoints, centroidDatas[i].nearestDataPointsTempList])
             #clear temp list 
             centroidDatas[i].nearestDataPointsTempList = []
-
+            
             #if no points are assosiated with the centroid then the centroid does not move
             if not centroidDatas[i].nearestDataPoints.empty:
                 newCentroid = getMeanPoint(centroidDatas[i].nearestDataPoints,trainingData)

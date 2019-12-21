@@ -23,11 +23,12 @@
 \contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{13}
 \contentsline {section}{\numberline {3}Methodology/Procedure}{13}
 \contentsline {subsection}{\numberline {3.1}Choice of algorithms}{13}
-\contentsline {subsection}{\numberline {3.2}Cross-Validation}{13}
+\contentsline {subsection}{\numberline {3.2}Cross-Validation}{14}
 \contentsline {section}{\numberline {4}Results}{14}
-\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{15}
-\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{15}
-\contentsline {section}{\numberline {5}Discussion}{18}
-\contentsline {section}{\numberline {6}Conclusions and limitations}{18}
+\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
+\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{14}
+\contentsline {subsection}{\numberline {4.3}Clustering Results}{17}
+\contentsline {section}{\numberline {5}Discussion}{17}
+\contentsline {section}{\numberline {6}Conclusions and limitations}{17}
 \contentsline {section}{\numberline {7}Recommendations}{18}
 \contentsline {section}{References}{18}
