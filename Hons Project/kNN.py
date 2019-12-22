@@ -64,7 +64,28 @@ def kNNRunDataset(k,testset):
         run.results.append( result )
     return run
 
-
+def weightedkNNRunDataset(k,testset):
+    trainingDF = testset.trainingDF
+    testingDF = testset.testingDF
+    run = ols.OLSRun()
+    for testDataPoint in testingDF.itertuples():
+        result = ols.RunResult()
+        knnResults = getKNN(trainingDF, testDataPoint,k)
+        #calculate averageOfPoints
+        sumLifeExpectancy = 0.0
+        sumWeights = 0.0
+        for r in knnResults:
+            weight = math.exp(-r.distance)
+            sumLifeExpectancy += r.lifeExpectancy * weight
+            sumWeights += weight
+        predictedLifeExpectancy = sumLifeExpectancy/sumWeights
+        #calculate Error
+        result.error = abs( predictedLifeExpectancy - testDataPoint.Life_Expectancy )
+        result.lifeExpectancy = testDataPoint.Life_Expectancy
+        result.predictedLifeExpectancy = predictedLifeExpectancy
+        result.inputFeatureVector = testDataPoint
+        run.results.append( result )
+    return run
 
 #def RunDataset(trainingLifeExpectancies,
 #               trainingFeatureVectors,

@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
 \contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{14}
 \contentsline {subsection}{\numberline {4.3}Clustering Results}{17}
-\contentsline {section}{\numberline {5}Discussion}{17}
+\contentsline {section}{\numberline {5}Discussion}{19}
 \contentsline {section}{\numberline {6}Conclusions and limitations}{19}
 \contentsline {section}{\numberline {7}Recommendations}{19}
 \contentsline {section}{References}{19}
