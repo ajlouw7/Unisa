@@ -381,7 +381,7 @@ The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we c
 \begin{figure}
 \centering
 \includegraphics[height=16cm, width=16cm]{kNNErrorPlot.png}
-\caption{kNN Error Data Plot with standard deviation}
+\caption{kNN Error Data Plot with standard deviation over all folds}
 \label{kNNResultsAllFolds}
 \end{figure}
 
@@ -440,16 +440,15 @@ At first, random centroids were selected for each run of the clustering algorith
 
 \section{Discussion}
 
-\subsection{Linear Regression}
-Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. When using 10 folds, the average of the mean error per fold was 9.599 with an average standard deviation per fold of 7.599. This means that on average the prediction that OLS regression made for the life expectancy of a country, based on its indicators, was off by 9.6 years.
+Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. When using 10 folds, the average of the mean error per fold was 9.599 with an average standard deviation per fold of 7.599. This means that on average the prediction that OLS regression made for the life expectancy of a country, based on its indicators, was off by 9.6 years. The large error is to be expected since the data is not linear, as can be seen in Figure \ref{scatter}. More specifically, the Preston Curve discussed in Section \ref{income} can be seen in Figure \ref{scatter} where Life Expectancy and GDP per Capita intersect. Thus Linear Regression when done over the whole dataset, gives such a bad result. 
 
-The kNN-alogortihm fared much better. Table \ref{kNNResults} indicates which value of k performed the best for each fold. The average error when the optimum k is used for each fold is 2.083 years. But, if we consider only one value of k across all the folds, then the optimum value of k is 41 with an average mean error of 2.120 years.  
+The kNN-alogortihm fared much better. Table \ref{kNNResults} indicates which value of k performed the best for each fold. The average error when the optimum k is used for each fold is 2.083 years. But, if we consider only one value of k across all the folds, then the optimum value of k is 41 with an average mean error of 2.120 years. As we can see from Figure \ref{kNNResultsAllFolds}, the error was at its highest when k=1 and then rapidly drops until it reaches between k=20. Then it slowly drops til around k=40 and then slowly starts to rise. Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into account that are local to the point in question. Therefor, not caring about the general structure of the whole dataset. One disadvantage of this algorithms was the need to run the data for so many different values of k. The max value of k was 106. This meant that for each fold the kNN-algorithm was run for 1 Nearest Neighbour up to all the Neighbours in the fold. Given that a fold only contained 106 data points. 
 
 \section{Conclusions and limitations}
 
 
 
-Multi-dimentional data is hard to visualise and thus hard to understand and study. The situation gets worse with each additional dimention. Combining Primary- , Secondary- and Tertiary School Enrollment, meant that the amount of dimentions studied reduced from 7 to 5. Which is unfortunately still difficult to analyse, mostly becuase it is impossible to visualise mentally. Techniques like a matrix scatter plot from Figure \ref{scatter} helped but still require interpretation. 
+Multi-dimentional data is hard to visualise and thus hard to understand and study. The situation gets worse with each additional dimention. Combining Primary- , Secondary- and Tertiary School Enrollment, meant that the amount of dimentions studied reduced from 7 to 5. Which is unfortunately still difficult to analyse, mostly becuase it is impossible to visualise mentally. Techniques like a matrix scatter plot from Figure \ref{scatter} helped but still require interpretation.
 
 The source code and raw results can be found on GitHub \citep{rawData}.
 

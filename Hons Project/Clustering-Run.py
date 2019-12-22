@@ -17,7 +17,7 @@ analysisdf = pd.DataFrame( columns=['Series','k','centroidNum','Mean','stdDev','
 
 
 #for each fold
-for i in range(5,6): #11
+for i in range(6,7): #11
     #for each number of clusters
     for k in range(1296,1297): #2,16
         results = cluster.RunClustering(kfold.testSet(i), k, movingThreshold )
