@@ -331,29 +331,31 @@ The data for each indicatr was normalised between 0 and 1. For each indicator, t
 
 The values for Primary-, Secondary-, and Tertiary Enrollment was added together and divided by 3 to create a new Indicator namely ``Education''. This was done in order to reduce the dimentionality of this 7-dimentional data set to a more manageble 5-dimentional data set. The dataset can be visually seen in a matrix scatter plot in Figure \ref{scatter}. It is worth noting that the Preston curve can be seen in this catter plot where Life Expectancy and GDP Per Capita intersect.
 
-The following procedure was followed in order to get 10 stratified folds. The dataset was then sorted according to decending life expectancy. The dataset was then split in half such that the life expectancy of each data point in the ``top'' data set is higher than the life expectancy of each data point in the ``bottom'' data set. Then 10 datasets of equal size was created from the ``top'' and ``bottom'' data sets, by taking 53 data points from each set. Thus each fold has 106 data points, with 53 high life expectancy points and 53 low life expectancy points.  
+The following procedure was followed in order to get 10 stratified folds. The dataset was then sorted according to decending life expectancy. The dataset was then split in half such that the life expectancy of each data point in the ``top'' data set is higher than the life expectancy of each data point in the ``bottom'' data set. Then 10 folds of equal size was created from the ``top'' and ``bottom'' data sets, by taking 53 data points from each set. Thus each fold has 106 data points, with 53 high life expectancy points and 53 low life expectancy points. 
+
+This process was done 10 times to create 10 runs of 10 folds each. Each dataset contains the same data but the data is spread around the different folds randomly.
 
 \subsection{Linear Regression Results}
 
-As described in Section \ref{regression} the OLS algorihm was implemented in Python and run for each fold of the data. The results can be see in Table \ref{OLSResults}. The average of the mean error for each fold was 9.598848355. 
+As described in Section \ref{regression} the OLS algorihm was implemented in Python and run for each fold each dataset. The results can be see in Table \ref{OLSResults}. The table shows the Average Mean Error per dataset. This is done by calculating the mean error of each fold in a dataset and then computing the average over all the folds in the dataset. The same process was followed for the Standard Deviation. The average Error over all the runs and thus all the runs of the algorithm was 9.609 years. While the Standard Deviation was 7.619. 
 
 \begin{table}
 \begin{tabular}{|c|c|c|}
 \hline
-Fold & Mean Error & Standard Deviation of Error\\
+Run & Average Mean Error & Average Standard Deviation of Error\\
 \hline
-1  & 10.29874164 & 9.017297877 \\
-2  & 9.081106784 & 6.890622426 \\
-3  & 9.125215292 & 7.464715809 \\
-4  & 8.356464123 & 6.178963524 \\
-5  & 9.975440028 & 7.974842017 \\
-6  & 8.703226052 & 6.236500583 \\
-7  & 9.56450367  & 6.710214979 \\
-8  & 10.73726516 & 8.829969189 \\
-9  & 9.546407917 & 8.136121573 \\
-10 & 10.60011289 & 8.510052534 \\
+1 & 9.598848355 & 7.594930051 \\
+2 & 9.626031548 & 7.633113769 \\
+3 & 9.609315926 & 7.621318362 \\
+4 & 9.605118586 & 7.635851148 \\
+5 & 9.606997134 & 7.65353075 \\
+6 & 9.6332431 & 7.622023874 \\
+7 & 9.590347552 & 7.621950019 \\
+8 & 9.607112393 & 7.611794799 \\
+9 & 9.598032704 & 7.608716795 \\
+10 & 9.619144548 & 7.590407725 \\
 \hline
-Average: &9.598848355 & 7.594930051 \\
+Average: &9.609419185 & 7.619363729 \\
 \hline
 \end{tabular}
 \caption{OLS Regression Results}\label{OLSResults}
@@ -376,9 +378,64 @@ Average: &9.598848355 & 7.594930051 \\
 \end{figure}
 
 \subsection{k-Nearest Neighbour Results}
-The kNN-algorithm was run for the values of k from 1 to 106 for each fold. The mean error was calculated for each fold and value of k. These values can be seen in Figure \ref{kNNResultsPerFold} where the mean error is graphed with respect to the value of k for each fold. In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data. 
 
-The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we can see that the best performing value of k (in other words the value of k for which the mean error is the smallest) differs wildly between folds. The average being 30.4.
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Run & k & Average Mean Error & Average Standard Deviation of Error\\
+\hline
+1 & 41 & 2.120386929 & 2.389743605\\
+2 & 35 & 2.118507644 & 2.330946813\\
+3 & 39 & 2.120214137 & 2.343546292\\
+4 & 39 & 2.122089962 & 2.345210974\\
+5 & 39 & 2.122707998 & 2.339231525\\
+6 & 39 & 2.122234215 & 2.336469553\\
+7 & 39 & 2.120867119 & 2.339882294\\
+8 & 39 & 2.11824741 & 2.340979544\\
+9 & 39 & 2.119204169 & 2.339061524\\
+10 & 39 & 2.118872887 & 2.338973832\\
+\hline
+Average: & 38.8& 2.120333247 & 2.344404596 \\
+\hline
+\end{tabular}
+\caption{Unweighted kNN Results for best value of k}\label{kNNResultsUnweighted}
+\end{table}
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Run & k & Average Mean Error & Average Standard Deviation of Error\\
+\hline
+1 & 41 & 2.121160816 & 2.381492154\\
+2 & 28 & 2.110539349 & 2.262304954\\
+3 & 39 & 2.11851791 & 2.314154022\\
+4 & 41 & 2.127764586 & 2.358604755\\
+5 & 40 & 2.124401498 & 2.315950553\\
+6 & 41 & 2.119369173 & 2.327937177\\
+7 & 38 & 2.112441118 & 2.344628653\\
+8 & 39 & 2.101194006 & 2.343523783\\
+9 & 41 & 2.125380836 & 2.322854298\\
+10 & 37 & 2.091687809 & 2.275117546\\
+\hline
+Average: & 38.5& 2.11524571 & 2.324656789 \\
+\hline
+\end{tabular}
+\caption{Weighted kNN Results for best value of k}\label{kNNResultsWeighted}
+\end{table}
+
+There were 2 versions of the kNN-algorithm. The first was an unweighted implementation where the predicted Life Expectancy was calculated as an average of the life expectancy of the k nearest neighbours. The second version was a weighted nearest neighbour algorithm. The predicted life expectancy($LE_p$) was calculated with the following formula:
+
+\begin{equation}
+ LE_p = \frac{\sum_i^k{LE_ie^{d_i}}}{\sum_i^k{e^{d_i}}}
+\end{equation}
+
+where $LE_i$ is the life expectancy of the ith data point and $d_i$ is the distance from the ith data point to the point in question. The results of the unweighted kNN-algorithm can be see in Table \ref{kNNResultsUnweighted} and the results for the weighted kNN-algorithm can be found in Table \ref{kNNResultsWeighted}.
+
+
+% The kNN-algorithm was run for the values of k from 1 to 106 for each fold. The mean error was calculated for each fold and value of k. These values can be seen in Figure \ref{kNNResultsPerFold} where the mean error is graphed with respect to the value of k for each fold. In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data. 
+% 
+% The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we can see that the best performing value of k (in other words the value of k for which the mean error is the smallest) differs wildly between folds. The average being 30.4.
 
 \begin{figure}
 \centering
@@ -388,53 +445,51 @@ The final results for the kNN-algorithm is in Table \ref{kNNResults}. Where we c
 \end{figure}
 
 
+% 
+% \begin{table}
+% \begin{tabular}{|c|c|c|c|}
+% \hline
+% Fold & k & Mean Error & Standard Deviation of Error\\
+% \hline
+% 1 & 	32 & 	2.35979959	 & 2.94988107  \\
+% 2 & 	16 & 	2.168031418	 & 1.806913134 \\
+% 3 & 	31 & 	1.974412948	 & 2.721274262 \\
+% 4 & 	39 & 	1.882756335	 & 2.408243797 \\
+% 5 & 	25 & 	1.550020316	 & 1.271036442 \\
+% 6 & 	4 & 	1.748667376	 & 1.891826963 \\
+% 7 & 	64 & 	2.321097425	 & 3.279927484 \\
+% 8 & 	41 & 	2.150680693	 & 2.185943479 \\ 
+% 9 & 	4 & 	2.411306404	 & 2.073836258 \\
+% 10 & 	48 & 	2.261508095	 & 3.010802076 \\
+% \hline
+% Average: & 30.4& 2.08282806 & 2.359968496 \\
+% \hline
+% \end{tabular}
+% \caption{kNN Results tabulating the value of k for which each fold had the smallest error}\label{kNNResults}
+% \end{table}
 
 
-
-\begin{table}
-\begin{tabular}{|c|c|c|c|}
-\hline
-Fold & k & Mean Error & Standard Deviation of Error\\
-\hline
-1 & 	32 & 	2.35979959	 & 2.94988107  \\
-2 & 	16 & 	2.168031418	 & 1.806913134 \\
-3 & 	31 & 	1.974412948	 & 2.721274262 \\
-4 & 	39 & 	1.882756335	 & 2.408243797 \\
-5 & 	25 & 	1.550020316	 & 1.271036442 \\
-6 & 	4 & 	1.748667376	 & 1.891826963 \\
-7 & 	64 & 	2.321097425	 & 3.279927484 \\
-8 & 	41 & 	2.150680693	 & 2.185943479 \\ 
-9 & 	4 & 	2.411306404	 & 2.073836258 \\
-10 & 	48 & 	2.261508095	 & 3.010802076 \\
-\hline
-Average: & 30.4& 2.08282806 & 2.359968496 \\
-\hline
-\end{tabular}
-\caption{kNN Results tabulating the value of k for which each fold had the smallest error}\label{kNNResults}
-\end{table}
-
-
-\begin{table}
-\begin{tabular}{|c|c|c|}
-\hline
-Fold & Mean Error k = 30 & Mean Error k = 31\\
-\hline
-1 & 2.368749226	&2.361272642\\
-2 & 2.243774499	&2.254901804\\
-3 & 1.990101446	&1.974412948\\
-4 & 1.966454765	&1.951704915\\
-5 & 1.586040998	&1.570644923\\
-6 & 1.790011747	&1.801034007\\
-7 & 2.34855691	&2.347208751\\
-8 & 2.187162436	&2.174740754\\
-9 & 2.506916164	&2.51679621\\
-10 &2.34591783	&2.348668221\\
-\hline
-Average: & 2.133368602 & 2.130138517 \\
-\hline
-\end{tabular}
-\caption{kNN Results for k = 30 and k = 31}\label{kNNResultsk=3031}
-\end{table}
+% \begin{table}
+% \begin{tabular}{|c|c|c|}
+% \hline
+% Fold & Mean Error k = 30 & Mean Error k = 31\\
+% \hline
+% 1 & 2.368749226	&2.361272642\\
+% 2 & 2.243774499	&2.254901804\\
+% 3 & 1.990101446	&1.974412948\\
+% 4 & 1.966454765	&1.951704915\\
+% 5 & 1.586040998	&1.570644923\\
+% 6 & 1.790011747	&1.801034007\\
+% 7 & 2.34855691	&2.347208751\\
+% 8 & 2.187162436	&2.174740754\\
+% 9 & 2.506916164	&2.51679621\\
+% 10 &2.34591783	&2.348668221\\
+% \hline
+% Average: & 2.133368602 & 2.130138517 \\
+% \hline
+% \end{tabular}
+% \caption{kNN Results for k = 30 and k = 31}\label{kNNResultsk=3031}
+% \end{table}
 
 \subsection{Clustering Results}
 At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done.
@@ -442,9 +497,15 @@ At first, random centroids were selected for each run of the clustering algorith
 
 \section{Discussion}
 
-Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. When using 10 folds, the average of the mean error per fold was 9.599 with an average standard deviation per fold of 7.599. This means that on average the prediction that OLS regression made for the life expectancy of a country, based on its indicators, was off by 9.6 years. The large error is to be expected since the data is not linear, as can be seen in Figure \ref{scatter}. More specifically, the Preston Curve discussed in Section \ref{income} can be seen in Figure \ref{scatter} where Life Expectancy and GDP per Capita intersect. Thus Linear Regression when done over the whole dataset, gives such a bad result. 
+Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. From Table \ref{OLSResults} we can see that the Error value averaged 9.609 years iver all the data sets.The large error is to be expected since the data is not linear, as can be seen in Figure \ref{scatter}. More specifically, the Preston Curve discussed in Section \ref{income} can be seen in Figure \ref{scatter} where Life Expectancy and GDP per Capita intersect. Thus Linear Regression when done over the whole dataset, gives a result with such high error. 
 
-The kNN-alogortihm fared much better. Table \ref{kNNResults} indicates which value of k performed the best for each fold. The average error when the optimum k is used for each fold is 2.083 years. But, if we consider only one value of k across all the folds, then the optimum value of k is 41 with an average mean error of 2.120 years. As we can see from Figure \ref{kNNResultsAllFolds}, the error was at its highest when k=1 and then rapidly drops until it reaches between k=20. Then it slowly drops til around k=40 and then slowly starts to rise. Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into account that are local to the point in question. Therefor, not caring about the general structure of the whole dataset. One disadvantage of this algorithms was the need to run the data for so many different values of k. The max value of k was 106. This meant that for each fold the kNN-algorithm was run for 1 Nearest Neighbour up to all the Neighbours in the fold. Given that a fold only contained 106 data points. Another disadvantage was the algorithm taook longer to run every time the value of k was increased.
+The kNN-alogortihm fared much better. The kNN-algorithm was first implemented without weighting the nearest neighbours. Table \ref{kNNResultsUnweighted} shows that result. This table only takes the Average Mean Error into account for the value of k for which the Average Mean Error is the smallest. The value of k does change per run but averages around 39. Over the 10 the best value of the Average Mean Error averaged 2.12 years. 
+
+The weighted version of the kNN algorithm was them implemented in order to improve on the numbers found in Table \ref{kNNResultsUnweighted}. The results for the 10 runs of the Weighted kNN-algorithm is shown in Table \ref{kNNResultsWeighted}. 
+
+The weighted version of the algorithm did improve on the results of the unweighted algorithm. The weitghted algorithm had an average Mean Error of 2.115 years. Which is an improvement of 0.0051 years. THe standard deviatio of both kNN-Algorithms also improved more than 3 fold over the standard deviation of the errors for the OLS-Regression algorithm.
+
+Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into account that are local to the point in question. Therefor, not caring about the general structure of the whole dataset. One disadvantage of this algorithms was the need to run the data for so many different values of k. The max value of k was 106. This meant that for each fold the kNN-algorithm was run for 1 Nearest Neighbour up to all the Neighbours in the fold. Given that a fold only contained 106 data points. 
 
 \section{Conclusions and limitations}
 

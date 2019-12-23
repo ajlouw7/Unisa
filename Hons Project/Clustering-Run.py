@@ -17,10 +17,10 @@ analysisdf = pd.DataFrame( columns=['Series','k','centroidNum','Mean','stdDev','
 
 
 #for each fold
-for i in range(6,7): #11
+for i in range(6,11): #11   6,11
     #for each number of clusters
-    for k in range(1296,1297): #2,16
-        results = cluster.RunClustering(kfold.testSet(i), k, movingThreshold )
+    for k in range(1296,1297): #2,16  1296,1297
+        results = cluster.RunClustering(kfold.testSet(i,1), k, movingThreshold )
         #for each centroid    
         fileName = 'Cluster-Results\Cluster_Results' + str(i) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
         with open(fileName,mode='w', newline='') as resultsFile:
@@ -43,7 +43,7 @@ for i in range(6,7): #11
             analysisdf.at[index,'Mean'] = filtereddf['Error'].mean()
             analysisdf.at[index,'stdDev'] = filtereddf['Error'].std()
             analysisdf.at[index,'count'] = filtereddf['Error'].count()
-
-analysisdf.to_csv('Analysis\Cluster-Analysis.csv')
+    analysisdf.to_csv('Analysis\Cluster-Analysis-Even-Fold' + str(i) + '-Run.csv')
+    analysisdf.dropna()
 l = 0
 

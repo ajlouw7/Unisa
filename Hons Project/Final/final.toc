@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {3.2}Cross-Validation}{14}
 \contentsline {section}{\numberline {4}Results}{14}
 \contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
-\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{14}
+\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{17}
 \contentsline {subsection}{\numberline {4.3}Clustering Results}{17}
 \contentsline {section}{\numberline {5}Discussion}{19}
 \contentsline {section}{\numberline {6}Conclusions and limitations}{19}
