@@ -189,7 +189,7 @@ This regression is appropriate when the dependant variable is discrete, e.g. a y
 
 The k-Nearest Neighbour algorithm (kNN) is an instance based form of machine learning. It uses the classification of those datapoints closest to the data point to be classified to determine its classification. The kNN-algorithm allows for non-linear problem spaces to be classified, because it does not make an assumption on the nature of the problem space. It just sees a data point as a function of its closes neighbours. This is usefull for indicators like income that are highly non-linear as described in Section \ref{income}. Additionally, how the algorithm determined its output value is transparent and can be used to study how various components affect the end result. This is important , because if the algorithm was not transparent it can not be seen as a replacement for other algorithms that are transparent like regression alorithms. In this study, the standard kNN-algoritm will be altered to accomodate a real valued output and not just a class classification. This will be accomplished by taking the mean life expectancy for all the data points determined to be closest to the target point. Care will have to be taken to reduce the number of features of the data, because this algorithm is sensitive to the so-called ``curse of dimentionality'' \citep{Mitchell}. As discussed in Section \ref{edudata}, educational attainment will comprise of many indicators. This could lead to educational attainment being weighted more than other indicators. Thus each educational indicator will be given a fractional weight. If there are 4 educational attainment then each indicator will have a 4th of the weight of other indicators. 
 
-The value of $k$ will have to be found experimentally and will be affected by the density of the data points. One potential issue could be if the data tends to cluster around certain points. This could happen if developing countries clster together and developed countries cluster together. That could make developing countries, that are on the higher end of the development scale, more difficult to classify, since not a lot of data points will be very close to them. 
+The value of $k$ will have to be found experimentally and will be affected by the density of the data points. One potential issue could be if the data tends to cluster around certain points. This could happen if developing countries cluster together and developed countries cluster together. That could make developing countries, that are on the higher end of the development scale, more difficult to classify, since not a lot of data points will be very close to them. 
 
 \subsubsection{Support Vector Machines}
 
@@ -492,6 +492,24 @@ where $LE_i$ is the life expectancy of the ith data point and $d_i$ is the dista
 % \end{table}
 
 \subsection{Clustering Results}
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Run & Average Mean Error & Average Standard Deviation of Error\\
+\hline
+1 & 9.740346466 & 3.921416011\\
+2 & 31.32104966 & 2.332399296\\
+3 & 5.883284899 & 2.711148601\\
+4 & 8.483479693 & 3.029508192\\
+5 & 3.02759275 & 1.949908716\\
+\hline
+Average: & 0.0 & 0.0 \\
+\hline
+\end{tabular}
+\caption{Clustering algorithm results with 1296 evenly placed centroids}\label{CentroidResults1296}
+\end{table}
+
 At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done.
 
 
