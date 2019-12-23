@@ -151,8 +151,8 @@ def createKFoldDataframe(size):
     df = df.sample(frac=1).reset_index(drop=True)
     return df
 
-dataset = 2
-path = "PreparedDatasets\Dataset" + str(dataset) + "\"
+dataset = 10
+path = "PreparedDatasets\Dataset" + str(dataset) + "\\"
 
 # create new kfold dataframe 
 df1 = createKFoldDataframe( 106 )   

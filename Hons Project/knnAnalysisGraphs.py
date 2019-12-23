@@ -6,20 +6,24 @@ import kfold as kfold
 import csv
 import seaborn as sns
 
-df = pd.read_csv('Analysis\\kNN-Analysis.csv')
 
-k=10
-#for k in range(1,11):
 
-seriesData = df.loc[df['Series'] == k]
-#seriesData = df
+for dataset in range(1,11):
+    df = pd.read_csv('Analysis\\kNN-Analysis-Weighted-Run'+str(dataset) + '.csv')
 
-seriesData = seriesData.rename(columns={"Mean": "Mean Error in Predicted Life Expectancy"})
+    k=10
 
-fileName = "kNNErrorPlot\kNNErrorPlot" + str(k) + ".png"
+    #for k in range(1,11):
 
-#fileName = "kNNErrorPlot\kNNErrorPlot.png"
+    #seriesData = df.loc[df['Series'] == k]
+    seriesData = df
 
-sns.lineplot( x='k', y='Mean Error in Predicted Life Expectancy',ci="sd", data=seriesData).get_figure().savefig(fileName)
+    seriesData = seriesData.rename(columns={"Mean": "Mean Error in Predicted Life Expectancy"})
+
+    fileName = "kNNErrorPlot\kNNErrorPlotWeightedDataset=" + str(dataset) + ".png"
+
+    #fileName = "kNNErrorPlot\kNNErrorPlot.png"
+
+    sns.lineplot( x='k', y='Mean Error in Predicted Life Expectancy',ci="sd", data=seriesData).get_figure().savefig(fileName)
 
 l=0

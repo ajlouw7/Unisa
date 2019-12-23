@@ -10,12 +10,12 @@ index = 0
 
 analysisdf = pd.DataFrame( columns=['Series','k','Mean','stdDev'])
 
-for run in range(1,2):
-    for k in range(1,107):
+for dataset in range(1,11):
+    for k in range(1,107): 
         for i in range(1,11):
-            #results = kNN.kNNRunDataset(k,kfold.testSet(i))
-            results = kNN.weightedkNNRunDataset(k,kfold.testSet(i))
-            fileName = 'kNN-Results-Weighted\\kNN-Results-Weighted-Run' + str(run) + '\\kNN_Results-Weighted' + str(i) + 'k=' + str(k) + '.csv'
+            results = kNN.kNNRunDataset(k,kfold.testSet(i,dataset))
+            #results = kNN.weightedkNNRunDataset(k,kfold.testSet(i, dataset))
+            fileName = 'kNN-Results-UnWeighted\\kNN-Results-UnWeighted-Run' + str(dataset) + '\\kNN_Results-UnWeighted' + str(i) + 'k=' + str(k) + '.csv'
             with open(fileName,mode='w', newline='') as resultsFile:
                 resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                 resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment'])
@@ -29,4 +29,4 @@ for run in range(1,2):
             analysisdf.at[index,'stdDev'] = df['Error'].std()
 
 
-    analysisdf.to_csv('Analysis\\kNN-Analysis-Weighted-Run' + str(run) + '.csv')
+    analysisdf.to_csv('Analysis\\kNN-Analysis-UnWeighted-Run' + str(dataset) + '.csv')
