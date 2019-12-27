@@ -498,7 +498,9 @@ Average: & 9.909412981 & 2.618906287\\
 \caption{Clustering algorithm results with 1296 evenly spaced centroids}\label{CentroidResults1296}
 \end{table}
 
-At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done. The algorithm terminated when all the datapoints assigned to each centroid was within a euclidean distance of 0.001. This number was determined experimentally. That number was the smallest distance the datapoints could be from the centroids while the algorithm would still terminate within a reasonable amount of time. The number dis dimentionless, since it is calculated using the normalised values of each indicator or dimension. WHich in turn is also dimensionless. The averaged results of these random runs can be seen in Table \ref{CentroidRandomResults}.
+At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done. The algorithm terminated when all the datapoints assigned to each centroid was within a euclidean distance of 0.001. This number was determined experimentally. That number was the smallest distance the datapoints could be from the centroids while the algorithm would still terminate within a reasonable amount of time. The number dis dimentionless, since it is calculated using the normalised values of each indicator or dimension. Which in turn is also dimensionless. The averaged results of these random runs can be seen in Table \ref{CentroidRandomResults}.
+
+
 
 
 \section{Discussion}
@@ -513,7 +515,24 @@ The weighted version of the algorithm did improve on the results of the unweight
 
 Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into account that are local to the point in question. Therefor, not caring about the general structure of the whole dataset. One disadvantage of this algorithms was the need to run the data for so many different values of k. The max value of k was 106. This meant that for each fold the kNN-algorithm was run for 1 Nearest Neighbour up to all the Neighbours in the fold. Given that a fold only contained 106 data points. 
 
-The first results from the custering alogortihm was where the optimum number of clusters was being determined using random positions of the centroids. As discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15.  
+The first results from the custering alogortihm was where the optimum number of clusters was being determined using random positions of the centroids. As discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15. 
+
+plotting no of centroids vs error
+
+no of runs arent enough like 10 for knn and OLS
+
+Trying to randomly find the optimum number of centroids and the optimum initial placement of these centroids, did not yield better results than the kNN algorithm (See Table \ref{kNNResultsWeighted}). Having more runs could have yeilded better results. But, given the limited computing power available, another approach was followed.
+
+Table of optimum run random clustering vs average mean error
+
+dimension explosion
+
+delta of 0.2 
+
+1296
+
+0.0,0.0,0.0,0.0 to 1.0,1.0,1.0,1.0
+
 
 
 \section{Conclusions and limitations}
@@ -524,7 +543,9 @@ Multi-dimentional data is hard to visualise and thus hard to understand and stud
 
 The source code and raw results can be found on GitHub \citep{rawData}.
 
-The greatest limitation for the analysis of the centroid algorithm was the computation time. Running through all the folds of a dataset could take more than a week, not icluding external factors like load shedding or technical issues on the chosen computer. Python is not an ideal language to scientific computation when all the computation, especially long loops, are not being done in a more merformant language like c or c++ \citep{Cai2005}. It would have been more efficient to implement the clustering algorithm in a more performant language and then calling those libraries from python. If that was the case then the algorithm could have been tested against more clusters. The threshold distance that the datapoints had to be from the centroids, for the algorithm to terminate, could also have been reduced. 
+The greatest limitation for the analysis of the centroid algorithm was the computation time. Running through all the folds of a dataset could take more than a week, not icluding external factors like load shedding or technical issues on the chosen computer. Python is not an ideal language to scientific computation when all the computation, especially long loops, are not being done in a more performant language like c or c++ \citep{Cai2005}. It would have been more efficient to implement the clustering algorithm in a more performant language and then calling those libraries from python. If that was the case then the algorithm could have been tested against more clusters. The threshold distance that the datapoints had to be from the centroids, for the algorithm to terminate, could also have been reduced. 
+
+Multiple CPU cores should also have been taken into account. The algorithm only ran on one core of a 4-core I7-4770k, which also supports multi-threading. Multiple runs of the algorithm could have been done in parallel since they are mutually exclusive. 
 
 
 \section{Recommendations}
