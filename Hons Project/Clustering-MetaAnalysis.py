@@ -10,7 +10,7 @@ analysisdf = pd.DataFrame( columns=['dataset','k','Average Mean Error','Average 
 
 index = 0
 
-for dataset in range(1,6):
+for dataset in range(1,11):
     fileName = 'Analysis\\Cluster-Analysis-Even-Fold' + str(dataset) + '-Run.csv'
     df = pd.read_csv(fileName)
     index = index + 1
