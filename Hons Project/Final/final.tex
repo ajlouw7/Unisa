@@ -221,7 +221,7 @@ In the algorithm described in \cite{USTUN2007299}, a kernel matrix or Gram matri
 
 The vector of input data(I) is of size $M X N$ where $M$ is the number of input features and $N$ is the size of the dataset. The Correlation matrics(R) is calculated by correlating each row of I with each column in K. This gives a resultant vector R of size $N X M$. Now we have a measure of the impotance of each input to the kernel matrix. This resultant matrix is then converted to an image so that the relationships can be seen visually.
 
-\subsubsection{Clustering}
+\subsubsection{Clustering} \label{clustering}
 
 Clustering techniques are a form of unsupervised learning where the algorithm tries to group the data in a number of groups. In essence, classifying the data into categories. This cannot be easily compared to regression techniques. This study will rather follow the approach of Clustered linear regression(CLR) \citep{Ari2002}. In CLR, clustering techniques are used to break the dataset into clusters. Then apply linear regression to the datapoints in each cluster. In this way one linear regression model does not have to account for all data the data in the data set. Each regression model can be tailored to data similar to it, thereby increasing the chance of getting a good linear fit on the data. This technique also allows the researcher to gain information about the dataset. If the data is very clustered, it could mean that the promlem space in not very linear and that data tends to ``jump'' between clusters. Comparisons will be made to how the number of clusters affect the results from the regression analyses.
 
@@ -372,7 +372,7 @@ Average: &9.609419185 & 7.619363729 \\
 \subfloat[Fold 9]{\includegraphics[width = 2in]{kNNErrorPlot9.png}} \\
 \subfloat[Fold 10]{\includegraphics[width = 2in]{kNNErrorPlot10.png}} 
 \end{tabular}
-\caption{Mean Error in Predicted Life Expectancy per Fold for the kNN Algortihm}\label{kNNResultsPerFold}
+\caption{Mean Error in Predicted Life Expectancy per Fold for the unweighted kNN Algorithm for run 1}\label{kNNResultsPerFold}
 \end{figure}
 
 \subsection{k-Nearest Neighbour Results}
@@ -428,7 +428,7 @@ There were 2 versions of the kNN-algorithm. The first was an unweighted implemen
  LE_p = \frac{\sum_i^k{LE_ie^{d_i}}}{\sum_i^k{e^{d_i}}}
 \end{equation}
 
-where $LE_i$ is the life expectancy of the ith data point and $d_i$ is the distance from the ith data point to the point in question. The results of the unweighted kNN-algorithm can be see in Table \ref{kNNResultsUnweighted} and the results for the weighted kNN-algorithm can be found in Table \ref{kNNResultsWeighted}.
+where $LE_i$ is the life expectancy of the ith data point and $d_i$ is the distance from the ith data point to the point in question. The results of the unweighted kNN-algorithm can be see in Table \ref{kNNResultsUnweighted} and the results for the weighted kNN-algorithm can be found in Table \ref{kNNResultsWeighted}. Figure \ref{kNNResultsPerFold} shows the results from the 1st run of the Unweighted kNN-algorithm per fold. 
 
 
 % The kNN-algorithm was run for the values of k from 1 to 106 for each fold. The mean error was calculated for each fold and value of k. These values can be seen in Figure \ref{kNNResultsPerFold} where the mean error is graphed with respect to the value of k for each fold. In Figure \ref{kNNResultsAllFolds} we can see a plot of the mean error in life expectancy over all 10 folds versus k. The bands indicate the standard deviation of the data. 
@@ -515,9 +515,28 @@ The weighted version of the algorithm did improve on the results of the unweight
 
 Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into account that are local to the point in question. Therefor, not caring about the general structure of the whole dataset. One disadvantage of this algorithms was the need to run the data for so many different values of k. The max value of k was 106. This meant that for each fold the kNN-algorithm was run for 1 Nearest Neighbour up to all the Neighbours in the fold. Given that a fold only contained 106 data points. 
 
-The first results from the custering alogortihm was where the optimum number of clusters was being determined using random positions of the centroids. As discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15. 
+As discussed in Section \ref{clustering}, the CLR algorithm assigns data points to various clusters and then updates the position of the centroid of each cluster based on the average position of all the assigned datapoints. When some form of equalibrium is reached, Linear regression is applied to each of the clusters. The same code that was used in the OLS regression algorithm above, was used for the Linear Regression part of the CLR algorithm.
 
-plotting no of centroids vs error
+The first results from the custering algorithm was where the optimum number of clusters was being determined using random positions of the centroids. Unfortunately, as discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15. A plot of this data can be seen in Figure \ref{clusteringRandom}. There is no obvious pattern in the data from this graph. Unlike the graphs for the kNN algorithms where accuracy clearly increased to a point around k=40. This can be seen in Figure \ref{kNNResultsPerFold}. Also we can see from Table \ref{CentroidRandomResults} that the average error, from randomly trying to find the correct initial positions of the centroids, is also worse that the average error achieved by the weighted kNN-algorithm. This data does not prove that it is impossible to find good initial positions for a small number of centroids randomly. A greater number of runs would have had to be performed in order to have gotten a sense of what randomised initial position could have delivered in terms of better modelling the data. The number of runs were also reduced when compared to the other algorithms (see Section \ref{Clustering Results}). Which does not make this a fair comparison.
+
+
+\begin{figure}
+\centering
+\includegraphics[height=14cm, width=14cm]{clusteringRandomPlot.png}
+\caption{Average Error vs the number of randomly initiated centroids}
+\label{clusteringRandom}
+\end{figure}
+
+Randomly trying to find appropriate initial starting position for the centroids was not successful. Therefor evenly spaced initial centroids were chosen. If the starting points were evenly spaced over the problem domain, then outlying data points should have their own centroids, thus improving predictave performance.
+
+The next question was how small should those intervals be. Larger intervals means fewer centroids and will improve the running performance of the algorithm and enable more runs over more folds, but will pair data points that are more different together. Which makes the predictave performance worse. Conversely, a smaller interval leads to more centroids. Which would allow only more similar data points to be grouped together and thus improve predictave performance of the algorithm, but at the cost of running performance. 
+
+From a practical point of view, this new evely spaced form of CLS should not run more than 12 hours. That was the amount of time the random version of CLS ran for per fold. Thus a full run should be approximately 120 hours, which is 5 full days. The random version of CLS also had to do the calculations for $\sum_{2}^{15} i = $
+
+
+
+
+
 
 no of runs arent enough like 10 for knn and OLS
 
@@ -532,6 +551,7 @@ delta of 0.2
 1296
 
 0.0,0.0,0.0,0.0 to 1.0,1.0,1.0,1.0
+
 
 
 

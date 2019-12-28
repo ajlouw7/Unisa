@@ -29,6 +29,6 @@
 \contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{15}
 \contentsline {subsection}{\numberline {4.3}Clustering Results}{18}
 \contentsline {section}{\numberline {5}Discussion}{20}
-\contentsline {section}{\numberline {6}Conclusions and limitations}{20}
-\contentsline {section}{\numberline {7}Recommendations}{21}
-\contentsline {section}{References}{21}
+\contentsline {section}{\numberline {6}Conclusions and limitations}{22}
+\contentsline {section}{\numberline {7}Recommendations}{22}
+\contentsline {section}{References}{22}

@@ -92,8 +92,6 @@ def getClosestCentroid(datapoint,centroidDatas,onlySelectCentroidIfNearsestPoint
     return closestCentroidData
 
 
-#closest = getClosestCentroid(df.head(1),centroidDatas )
-
 
 def getMeanPoint(nearestDataPoints,trainingData):
     meanPoint = randomN(trainingData)
@@ -107,7 +105,7 @@ def getMeanPoint(nearestDataPoints,trainingData):
 
 
 def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
-    for j in range(100):
+    for j in range(150):
         #assign training data point to closest centroid
         for i in range(len(trainingData)):
             dataRow = trainingData.iloc[i]
@@ -148,20 +146,11 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
 
         #return if none of the centroids have moved
         if( numberOfCentroidsThatDidNotMove >= k):
+            print( "no centroids have moved with threshold=" + str(movingThreshold) + " on itteration " + str(j))
             return centroidDatas
-    # return if a 100 itterations have been reached
+    # return if j itterations have been reached
+    print("returning after " + str(j) + "itterations")
     return centroidDatas
-
-#cen = CalculateCentroids(kfold.testSet(1).trainingDF, k)
-
-
-#trainingX = kfold.getX(ts.trainingDF).to_numpy()
-#trainingY = kfold.getY(ts.trainingDF).to_numpy()
-#testingX = kfold.getX(ts.testingDF).to_numpy()
-#testingY = kfold.getY(ts.testingDF).to_numpy()
-
-
-#results = ols.RunDataset( trainingY, trainingX, testingY, testingX)
 
 def RunClustering(testSet, k, movingThreshold):
     centroidResults = CentroidResults()
