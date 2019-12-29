@@ -6,23 +6,23 @@ import csv
 
 #i=1
 #k=5
-movingThreshold= 0.0001 #0.001
+movingThreshold= 0.001
 index = 0
 
 
 analysisdf = pd.DataFrame( columns=['Series','k','centroidNum','Mean','stdDev','count'])
 
-
-
+dataset = 1
+numberOfCentroids = 81
 
 
 #for each fold
-for i in range(1,11): #11   6,11
+for fold in range(1,11): #11   6,11
     #for each number of clusters
-    for k in range(1296,1297): #2,16  1296,1297
-        results = cluster.RunClustering(kfold.testSet(i,1), k, movingThreshold )
+    for k in range(numberOfCentroids,numberOfCentroids+1): #2,16  1296,1297
+        results = cluster.RunClustering(kfold.testSet(fold,dataset), k, movingThreshold )
         #for each centroid    
-        fileName = 'Cluster-Results\Cluster_Results' + str(i) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
+        fileName = 'Cluster-Results\Cluster_Results' + str(fold) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
         with open(fileName,mode='w', newline='') as resultsFile:
             resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment','centroid#','centroid_Health_Expenditure','centroid_GDP_Per_Capita','centroid_Education','centroid_Unemployment'])
@@ -36,14 +36,14 @@ for i in range(1,11): #11   6,11
         df = pd.read_csv(fileName)
         for centroidNum in range(1,k+1):
             index =  index +1
-            analysisdf.at[index,'Series'] = i
+            analysisdf.at[index,'Series'] = fold
             analysisdf.at[index,'k'] = k 
             analysisdf.at[index,'centroidNum'] = centroidNum
             filtereddf = df.where( df['centroid#'] == centroidNum )
             analysisdf.at[index,'Mean'] = filtereddf['Error'].mean()
             analysisdf.at[index,'stdDev'] = filtereddf['Error'].std()
             analysisdf.at[index,'count'] = filtereddf['Error'].count()
-    analysisdf.to_csv('Analysis\Cluster-Analysis-Even-Fold-Dataset' + str(i) + 'theshold' + str(movingThreshold) +'-Run.csv')
+    analysisdf.to_csv('Analysis\Cluster-Analysis-Even-Fold' + str(fold) + 'theshold' + str(movingThreshold) + 'noCentroids=' + str(numberOfCentroids) + '-Run.csv')
     analysisdf.dropna()
 l = 0
 

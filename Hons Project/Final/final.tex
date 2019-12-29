@@ -182,6 +182,21 @@ Linear Regression is a popular technique, used to find relationships in data. As
 
 The Ordinary Least Square (OLS) method of estimation will be used. This algorithm will be implemented in Python and used to analyse how well this technique models the problem.
 
+The Ordinary Least Squares method can be described as:
+
+\begin{equation}
+ y_i = x^T_i \beta + c
+\end{equation}
+
+and
+
+\begin{equation}
+\beta = (X^T X)^{-1}X^Ty
+\end{equation}
+
+
+where $x_i$ is the ith data point, $X$ is all the data points in matrix form and $y_i$ is the predicted life expectancy.
+
 \subsubsection{Logistic regression}
 This regression is appropriate when the dependant variable is discrete, e.g. a yes/no answer. It also assumes a linear relationship between inputs. In contrast to linear regression, this linear sum is passed through the sigmoid function \citep{Murphy}. All of this makes it inappropriate for non-linear target functions and this study.
 
@@ -531,9 +546,9 @@ Randomly trying to find appropriate initial starting position for the centroids 
 
 The next question was how small should those intervals be. Larger intervals means fewer centroids and will improve the running performance of the algorithm and enable more runs over more folds, but will pair data points that are more different together. Which makes the predictave performance worse. Conversely, a smaller interval leads to more centroids. Which would allow only more similar data points to be grouped together and thus improve predictave performance of the algorithm, but at the cost of running performance. 
 
-From a practical point of view, this new evely spaced form of CLS should not run more than 12 hours. That was the amount of time the random version of CLS ran for per fold. Thus a full run should be approximately 120 hours, which is 5 full days. The random version of CLS also had to do the calculations for $\sum_{2}^{15} i = $
+% From a practical point of view, this new evely spaced form of CLS should not run more than 12 hours. That was the amount of time the random version of CLS ran for per fold. Thus a full run should be approximately 120 hours, which is 5 full days. The random version of CLS also had to do the calculations for $\sum_{2}^{15} i = 119$
 
-
+If an interval of 0.1 is chosen in normalised space, then that would mean $11^4 = 14641$ centroids that have to be processed, because the space is 4 dimentional. Therefor, an interval of 0.2 was chosen. Which equates to 1296 centroids. A much more reasonable number. This one run took about a week and was done for all 10 folds but one one run. The results (Table \ref{CentroidResults1296}) show an average error of 9.909. Which is worse than even the Linear regression that was done first. This can be explained by some of the spaces (created by the intervals) have fewer predictors than dimensions of the space. In this case $\beta$ (see Section \ref{regression}) has no unique solutions. Thus giving unexpected results. A good example is where in fold 2 the test point for Norway in 2014 had a predicted life expectancy of 1126.056 years while in reality the life expectancy was 82.1 years. 
 
 
 

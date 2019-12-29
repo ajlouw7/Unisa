@@ -12,22 +12,22 @@
 \contentsline {subsubsection}{\numberline {2.4.2}Logistic regression}{9}
 \contentsline {subsubsection}{\numberline {2.4.3}k-Nearest Neighbour}{9}
 \contentsline {subsubsection}{\numberline {2.4.4}Support Vector Machines}{10}
-\contentsline {subsubsection}{\numberline {2.4.5}Clustering}{10}
+\contentsline {subsubsection}{\numberline {2.4.5}Clustering}{11}
 \contentsline {subsubsection}{\numberline {2.4.6}Neural Networks}{11}
 \contentsline {subsubsection}{\numberline {2.4.7}Decision Trees}{11}
-\contentsline {subsection}{\numberline {2.5}Datasets}{11}
-\contentsline {subsubsection}{\numberline {2.5.1}Life Expectancy}{11}
+\contentsline {subsection}{\numberline {2.5}Datasets}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}Life Expectancy}{12}
 \contentsline {subsubsection}{\numberline {2.5.2}Income}{12}
 \contentsline {subsubsection}{\numberline {2.5.3}Educational Attainment}{12}
 \contentsline {subsubsection}{\numberline {2.5.4}Per Capita spending on health}{12}
-\contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{12}
+\contentsline {subsubsection}{\numberline {2.5.5}Unemployment}{13}
 \contentsline {section}{\numberline {3}Methodology/Procedure}{13}
 \contentsline {subsection}{\numberline {3.1}Choice of algorithms}{13}
-\contentsline {subsection}{\numberline {3.2}Cross-Validation}{13}
+\contentsline {subsection}{\numberline {3.2}Cross-Validation}{14}
 \contentsline {section}{\numberline {4}Results}{14}
-\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{15}
-\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{15}
-\contentsline {subsection}{\numberline {4.3}Clustering Results}{18}
+\contentsline {subsection}{\numberline {4.1}Linear Regression Results}{14}
+\contentsline {subsection}{\numberline {4.2}k-Nearest Neighbour Results}{17}
+\contentsline {subsection}{\numberline {4.3}Clustering Results}{17}
 \contentsline {section}{\numberline {5}Discussion}{20}
 \contentsline {section}{\numberline {6}Conclusions and limitations}{22}
 \contentsline {section}{\numberline {7}Recommendations}{22}

@@ -46,7 +46,7 @@ def getKSpacedCentroids(k,df):
     return list   
 
 def getSpacedCentoids(ddf):
-    centroidsDF = pd.read_csv("clustering-InitialCentroids1.csv")
+    centroidsDF = pd.read_csv("clustering-InitialCentroids0.5.csv")
     l = []
     for i in range(len(centroidsDF)):
             df = pd.DataFrame( columns=ddf.columns)
@@ -94,8 +94,10 @@ def getClosestCentroid(datapoint,centroidDatas,onlySelectCentroidIfNearsestPoint
 
 
 def getMeanPoint(nearestDataPoints,trainingData):
+    #create new centroid  
     meanPoint = randomN(trainingData)
 
+    #set values of centroid to mean of each dimension
     meanPoint.head(1).Health_Expenditure = nearestDataPoints['Health_Expenditure'].mean()
     meanPoint.head(1).GDP_Per_Capita = nearestDataPoints['GDP_Per_Capita'].mean()
     meanPoint.head(1).Unemployment = nearestDataPoints['Unemployment'].mean()
