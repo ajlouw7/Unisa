@@ -30,9 +30,8 @@ def getKCentroids(k,df):
         list.append( randomN(df) )
     return list
 
-def getKSpacedCentroids(k,df):
+def getKSpacedCentroids(k,df,delta):
     list = []
-    delta = 0.2
     for i in np.arange(0.0,1.1,delta):
         for j in np.arange(0,1.1,delta):
             for k in np.arange(0,1.1,delta):
@@ -44,6 +43,13 @@ def getKSpacedCentroids(k,df):
                     centroid.head(1).Education = l
                     list.append( centroid )
     return list   
+
+
+def getK(delta):
+    k = int(1/delta) + 1
+    return k**4
+
+
 
 def getSpacedCentoids(ddf):
     centroidsDF = pd.read_csv("clustering-InitialCentroids0.5.csv")
@@ -57,9 +63,9 @@ def getSpacedCentoids(ddf):
 #sort datapoints according to nearest centroid
 
 
-def getInitialCentroidDatas(k,df):    
+def getInitialCentroidDatas(k,df,delta):    
     centroidDatas = []
-    centroids = getKSpacedCentroids(k,df)
+    centroids = getKSpacedCentroids(k,df,delta)
     #centroids = getSpacedCentoids(df)
     for i in range(len(centroids)):
         centroidData = CentroidData()
@@ -154,10 +160,10 @@ def CalculateCentroids(trainingData, k, movingThreshold, centroidDatas):
     print("returning after " + str(j) + "itterations")
     return centroidDatas
 
-def RunClustering(testSet, k, movingThreshold):
+def RunClustering(testSet, k, movingThreshold, delta):
     centroidResults = CentroidResults()
 
-    centroidDatas = getInitialCentroidDatas(k,testSet.trainingDF)  
+    centroidDatas = getInitialCentroidDatas(k,testSet.trainingDF, delta)  
 
     centroidDatas = CalculateCentroids(testSet.trainingDF, k, movingThreshold, centroidDatas)
     

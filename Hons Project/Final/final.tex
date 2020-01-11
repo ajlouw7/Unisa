@@ -28,7 +28,7 @@
 
 
 
-The pursuit of increasing ones life expectancy is a very human endeavour. In order to study human life expectancy, demographers and other scientists, study the factors that affect life expectancy. Those include socio-economic indicators like income, educational attainment and per capita spending on healthcare. Understanding these relationships can lead a country to better a understand of which socio-economic areas to focus on, in order to increase their life expectancy. A popular techinique when studying the relationship between life expectancy and these factors is linear regression. This study will use datasets, from the World Bank, that descibe these indicators on a global scale and compare how well linear regression fits the data in comparrison with various machine learning techniques. These techniques are k-nearest neighbour, Support Vector Machines and clustering. All of these techniques will then be compared using Mean Sqared Error.
+The pursuit of increasing ones life expectancy is a very human endeavour. In order to study human life expectancy, demographers and other scientists, study the factors that affect life expectancy. Those include socio-economic indicators like income, educational attainment and per capita spending on healthcare. Understanding these relationships can lead a country to better a understand of which socio-economic areas to focus on, in order to increase their life expectancy. A popular techinique when studying the relationship between life expectancy and these factors is linear regression. This study will use datasets, from the World Bank, that descibe these indicators on a global scale and compare how well linear regression fits the data in comparrison with various machine learning techniques. These techniques are linear regression, k-nearest neighbour, and clustering. These algorithms will be implemented in Pyton and their predictive power will be measured by comparing their resultant Mean Squared Error.
 
 \newpage
 
@@ -45,7 +45,9 @@ The pursuit of increasing ones life expectancy is a very human endeavour. In ord
 
 Human beings have always had a fascination with longevity. Myths like the fountain of youth or the Holy Grail are a testament to this fact. Today, longevity and causes of mortality are studies by professionals like Demographers and Actuaries. Trying to determine why some people or group live long lives.    
 
-This study investigates the use of Machine Learning techniques in studying determinants of life expectancy for countries. Indicators that have shown to have some form of correlation with life expectancy will be selected. Their relationship with life expectancy will be investigated using various techniques from Machine Learning and contrasted to various forms of regression whose use is ubiquitous in the literature. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between these indicators and life expectancy. It is the hypothesis of this study that machine learning techniques like k-Nearest Neighbour and Support Vector Machines will model the indicator/life expectancy relationship better than regression techniques can. Also that these techniques can create more accurate models. In the hope that the causes of long life expectancies in certain countries can be better understood \citep{Chen2017}. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usefullness of machine learning algorithms as  tools. 
+This study investigates the use of Machine Learning techniques in studying determinants of life expectancy for countries. Indicators that have shown to have some form of correlation with life expectancy will be selected. Their relationship with life expectancy will be investigated using various techniques from Machine Learning and contrasted to various forms of regression whose use is ubiquitous in the literature. This analysis will seek out to prove the appropriateness of using these machine learning algorithms for use in research to find the exact correlation between these indicators and life expectancy. It is the hypothesis of this study that machine learning techniques like k-Nearest Neighbour and Linear clustering will model the indicator/life expectancy relationship better than regression techniques can. Also that these techniques can create more accurate models. In the hope that the causes of long life expectancies in certain countries can be better understood \citep{Chen2017}. This study does not aim to prove causation between the indicators chosen and life expectancy, but rather the usefullness of machine learning algorithms as  tools. 
+
+The research question is: Does k-Nearest Neighbour and Linear clustering create models that predict life expectancy more accurately than Ordinary Least Squares Linear Regression on a dataset of commonly accepted indicators of Life Expectancy? The aim is to implement these algorithms from first principles in the Python programming Language. 
 
 Statistical regression techniques are predominantly used algorithm for data analysis. Linear regression (Section \ref{regression}) forinstance assumes a linear relationships between the independant variables and the dependant variable. Which might not be the case. This we will discuss in Literature Review (Section \ref{lit}).
 
@@ -206,36 +208,6 @@ The k-Nearest Neighbour algorithm (kNN) is an instance based form of machine lea
 
 The value of $k$ will have to be found experimentally and will be affected by the density of the data points. One potential issue could be if the data tends to cluster around certain points. This could happen if developing countries cluster together and developed countries cluster together. That could make developing countries, that are on the higher end of the development scale, more difficult to classify, since not a lot of data points will be very close to them. 
 
-\subsubsection{Support Vector Machines}
-
-The classic Support Vector Machine (SVM) is used in classification tasks. It involves determining the decision surface with regards to the data points closest to the surface. This study will use a modified SVM algorithm that makes it useful for regression tasks. This is called Support Vector Regression (SVR). The SVR algorithm is described in \cite{smola2004}. The final model can be described as:
-
-\begin{equation}
- f(x) = \sum_{i=1}^l (\alpha_i-\alpha_i^*)k(x_i,x)+b
-\end{equation}
-
-where $\alpha_i$ and $\alpha_i^*$ are Lagrange multipliers, $b$ is the bias and the term $k(x_i,x)$ is the kernel function. The kernel is a function to determine the similarity between 2 input vectors. Kernel functions are used to map a non-linear problem space into a smaller subspace where the features are linearly seperable. A kernel has to map from the dimension of the problem space down to 1 dimension. Instead if computing the dot product of 2 datapoints, we can replace it with a kernel that requires less computation. Various kernels will be investigated, including the Radial-basis function
-
-\begin{equation}
- k(x_i,x) = exp(-\frac{\mid\mid x-x_i \mid\mid^2}{2\sigma^2})
-\end{equation}
-
-and the polynomial kernel
-
-\begin{equation}
- k(x_i,x) = (x_i.x +1)^p
-\end{equation}
-
-Unfortunately, SVR models are difficult to analyse. Making it hard to determine how the input features of the model affect the output. In order for SVR to be seen as a viable alternative to multivariate regression, an appropriate technique has to be found that can assist in this dilemma. For purpose, this study will use the techniques described in \cite{USTUN2007299} to understand which input feature the SVR model deems most important for the modelling of our life expectancy problem space.
-
-In the algorithm described in \cite{USTUN2007299}, a kernel matrix or Gram matrix has to be computed. This matrix $K$ will be of size $N X N$ and contains in each cell the kernel function corresponding to the input vectors of the same index such that
-
-\begin{equation}
- K_{ij} = k(x_i,x_j)
-\end{equation}
-
-The vector of input data(I) is of size $M X N$ where $M$ is the number of input features and $N$ is the size of the dataset. The Correlation matrics(R) is calculated by correlating each row of I with each column in K. This gives a resultant vector R of size $N X M$. Now we have a measure of the impotance of each input to the kernel matrix. This resultant matrix is then converted to an image so that the relationships can be seen visually.
-
 \subsubsection{Clustering} \label{clustering}
 
 Clustering techniques are a form of unsupervised learning where the algorithm tries to group the data in a number of groups. In essence, classifying the data into categories. This cannot be easily compared to regression techniques. This study will rather follow the approach of Clustered linear regression(CLR) \citep{Ari2002}. In CLR, clustering techniques are used to break the dataset into clusters. Then apply linear regression to the datapoints in each cluster. In this way one linear regression model does not have to account for all data the data in the data set. Each regression model can be tailored to data similar to it, thereby increasing the chance of getting a good linear fit on the data. This technique also allows the researcher to gain information about the dataset. If the data is very clustered, it could mean that the promlem space in not very linear and that data tends to ``jump'' between clusters. Comparisons will be made to how the number of clusters affect the results from the regression analyses.
@@ -303,8 +275,9 @@ Unemployment will be ignored for this study because sufficient data on unemploym
 
 \section{Methodology/Procedure}
 
+\subsection{Choice of algorithms} \label{algo}
 
-This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country over a 30-year period. This will be done by implementing the various algorithms discussed in Section \ref{moddelingTechniques} in Python. Then these programs will be applied to the dataset. Python is a common tool used in machine learning applications, with a wide variety of libraries that can be used. The algorithms will be newly implemented for this project but libraries like Numpy will be used to help with reading data from files and writing data to files.
+This study will attempt to create a model that can predict life expectancy for a country based on various socio-economic conditions in the country over a 30-year period. This will be done by implementing the various algorithms discussed in Section \ref{moddelingTechniques} in the Python language. Then these programs will be applied to the dataset. Python is a common tool used in machine learning applications, with a wide variety of libraries that can be used. The algorithms will be newly implemented for this project but libraries like Numpy will be used to help with reading data from files and writing data to files.
 
 Then by using thise programs we will evaluate how well these machine learning techniques model the relationship between Life expectancy and the chosen indicators. Unlike \cite{Shaw2005}, this study will not take into account the age distribution of each country.
 
@@ -318,7 +291,7 @@ The mean squared error will be calculated for each of the k Cross-Validation dat
 
 \subsection{Choice of algorithms} \label{algo}
 
-As discussed in Section \ref{moddelingTechniques} of the Literature Review, this study will compare k-Nearest Neighbour, Support Vector Machines and Clustered linear regression with Linear regression. Linear Regression will be used as a baseline for comparison on the dataset. 
+As discussed in Section \ref{moddelingTechniques} of the Literature Review, this study will compare k-Nearest Neighbour and Clustered linear regression with Linear regression. Linear Regression will be used as a baseline or control group for comparison on the dataset. 
 
 \subsection{Cross-Validation} \label{cross}
 
@@ -485,12 +458,6 @@ where $LE_i$ is the life expectancy of the ith data point and $d_i$ is the dista
 \caption{Clustering algorithm results per randomly selected number of centroids}\label{CentroidRandomResults}
 \end{table}
 
-
-
-
-
-
-
 \begin{table}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -515,12 +482,34 @@ Average: & 9.909412981 & 2.618906287\\
 
 At first, random centroids were selected for each run of the clustering algorithm on each fold. This was also done for various numbers of centroids. The runs ran for up to 15 centroids per fold. The amount of centroids that could be used was limited by the amount of time the algorithm took to run. It took approximately 12 hours to run through 2 to 15 centroids for each fold. 4 of these total runs were done. The algorithm terminated when all the datapoints assigned to each centroid was within a euclidean distance of 0.001. This number was determined experimentally. That number was the smallest distance the datapoints could be from the centroids while the algorithm would still terminate within a reasonable amount of time. The number dis dimentionless, since it is calculated using the normalised values of each indicator or dimension. Which in turn is also dimensionless. The averaged results of these random runs can be seen in Table \ref{CentroidRandomResults}.
 
+Next, the data was run against 1261 and 81 evenly spaces centroids in the solution space. These results can be seen in Table \ref{CentroidResults1296} and Table \ref{CentroidResults81} respectively.
 
+
+\begin{table}
+\begin{tabular}{|c|c|c|}
+\hline
+Run & Average Mean Error & Average Standard Deviation of Error\\
+\hline
+1 & 7.493788364 & 3.729178852\\
+2 & 6.080383158 & 3.677490002\\
+3 & 7.528946402 & 3.756068204\\
+4 & 7.436940708 & 3.901789169\\
+5 & 6.100301336 & 3.934587462\\
+6 & 5.11928854 & 3.768635701\\
+7 & 6.012460382 & 3.591611634\\
+8 & 5.625271298 & 3.773165245\\
+9 & 6.938321779 & 3.811118222\\
+\hline
+Average: & 6.481744663 & 3.771516054\\
+\hline
+\end{tabular}
+\caption{Clustering algorithm results with 81 evenly spaced centroids}\label{CentroidResults81}
+\end{table}
 
 
 \section{Discussion}
 
-Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. From Table \ref{OLSResults} we can see that the Error value averaged 9.609 years iver all the data sets.The large error is to be expected since the data is not linear, as can be seen in Figure \ref{scatter}. More specifically, the Preston Curve discussed in Section \ref{income} can be seen in Figure \ref{scatter} where Life Expectancy and GDP per Capita intersect. Thus Linear Regression when done over the whole dataset, gives a result with such high error. 
+Since Linear regression is used often in the literature (Section \ref{regression}), the result for linear regression will be regarded as the baseline. From Table \ref{OLSResults} we can see that the Error value averaged 9.609 years iver all the data sets. The large error is to be expected since the data is not linear, as can be seen in Figure \ref{scatter}. More specifically, the Preston Curve discussed in Section \ref{income} can be seen in Figure \ref{scatter} where Life Expectancy and GDP per Capita intersect. Thus Linear Regression when done over the whole dataset, gives a result with such high error. 
 
 The kNN-alogortihm fared much better. The kNN-algorithm was first implemented without weighting the nearest neighbours. Table \ref{kNNResultsUnweighted} shows that result. This table only takes the Average Mean Error into account for the value of k for which the Average Mean Error is the smallest. The value of k does change per run but averages around 39. Over the 10 the best value of the Average Mean Error averaged 2.12 years. 
 
@@ -532,7 +521,7 @@ Unlike OLS Linear regression, the kNN-algorithm only takes datapoints into accou
 
 As discussed in Section \ref{clustering}, the CLR algorithm assigns data points to various clusters and then updates the position of the centroid of each cluster based on the average position of all the assigned datapoints. When some form of equalibrium is reached, Linear regression is applied to each of the clusters. The same code that was used in the OLS regression algorithm above, was used for the Linear Regression part of the CLR algorithm.
 
-The first results from the custering algorithm was where the optimum number of clusters was being determined using random positions of the centroids. Unfortunately, as discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15. A plot of this data can be seen in Figure \ref{clusteringRandom}. There is no obvious pattern in the data from this graph. Unlike the graphs for the kNN algorithms where accuracy clearly increased to a point around k=40. This can be seen in Figure \ref{kNNResultsPerFold}. Also we can see from Table \ref{CentroidRandomResults} that the average error, from randomly trying to find the correct initial positions of the centroids, is also worse that the average error achieved by the weighted kNN-algorithm. This data does not prove that it is impossible to find good initial positions for a small number of centroids randomly. A greater number of runs would have had to be performed in order to have gotten a sense of what randomised initial position could have delivered in terms of better modelling the data. The number of runs were also reduced when compared to the other algorithms (see Section \ref{Clustering Results}). Which does not make this a fair comparison.
+The first results from the custering algorithm was where the optimum number of clusters was being determined using random positions of the centroids. Unfortunately, as discussed in Section \ref{Clustering Results}, the number of centroids were varied between 2 and 15. A plot of this data can be seen in Figure \ref{clusteringRandom}. There is no obvious pattern in the data from this graph. Unlike the graphs for the kNN algorithms where accuracy clearly increased to a point around k=40. This can be seen in Figure \ref{kNNResultsPerFold}. Also, we can see from Table \ref{CentroidRandomResults} that the average error, from randomly trying to find the correct initial positions of the centroids, is also worse that the average error achieved by the weighted kNN-algorithm. This data does not prove that it is impossible to find good initial positions for a small number of centroids randomly. A greater number of runs would have had to be performed in order to have gotten a sense of what a randomised initial position could have delivered in terms of better modelling the data. The number of runs were also reduced when compared to the other algorithms (see Section \ref{Clustering Results}). Which does not make this a fair comparison.
 
 
 \begin{figure}
@@ -542,50 +531,42 @@ The first results from the custering algorithm was where the optimum number of c
 \label{clusteringRandom}
 \end{figure}
 
-Randomly trying to find appropriate initial starting position for the centroids was not successful. Therefor evenly spaced initial centroids were chosen. If the starting points were evenly spaced over the problem domain, then outlying data points should have their own centroids, thus improving predictave performance.
+Randomly trying to find the appropriate initial starting position for the centroids was not successful. Therefor evenly spaced initial centroids were chosen. If the starting points were evenly spaced over the problem domain, then outlying data points should have their own centroids, thus improving predictive performance.
 
-The next question was how small should those intervals be. Larger intervals means fewer centroids and will improve the running performance of the algorithm and enable more runs over more folds, but will pair data points that are more different together. Which makes the predictave performance worse. Conversely, a smaller interval leads to more centroids. Which would allow only more similar data points to be grouped together and thus improve predictave performance of the algorithm, but at the cost of running performance. 
+The next question was how small should those intervals be. Larger intervals means fewer centroids and will improve the running performance of the algorithm and enable more runs over more folds, but will pair data points that are more different together. Which makes the predictive performance worse. Conversely, a smaller interval leads to more centroids. Which would allow only more similar data points to be grouped together and thus improve the predictive performance of the algorithm, but at the cost of running performance. 
 
 % From a practical point of view, this new evely spaced form of CLS should not run more than 12 hours. That was the amount of time the random version of CLS ran for per fold. Thus a full run should be approximately 120 hours, which is 5 full days. The random version of CLS also had to do the calculations for $\sum_{2}^{15} i = 119$
 
-If an interval of 0.1 is chosen in normalised space, then that would mean $11^4 = 14641$ centroids that have to be processed, because the space is 4 dimentional. Therefor, an interval of 0.2 was chosen. Which equates to 1296 centroids. A much more reasonable number. This one run took about a week and was done for all 10 folds but one one run. The results (Table \ref{CentroidResults1296}) show an average error of 9.909. Which is worse than even the Linear regression that was done first. This can be explained by some of the spaces (created by the intervals) have fewer predictors than dimensions of the space. In this case $\beta$ (see Section \ref{regression}) has no unique solutions. Thus giving unexpected results. A good example is where in fold 2 the test point for Norway in 2014 had a predicted life expectancy of 1126.056 years while in reality the life expectancy was 82.1 years. 
+If an interval of 0.1 is chosen in normalised space, then that would mean $11^4 = 14641$ centroids that have to be processed, because the solution space is 4 dimensional. Therefor, an interval of 0.2 was chosen. Which equates to 1296 centroids. Which is a much more reasonable number. This one run took about a week and was done for all 10 folds. The results (Table \ref{CentroidResults1296}) show an average error of 9.909. Which is worse than even the Linear regression that was done first. This can be explained by some of the spaces (created by the intervals) have fewer predictors than the dimensions of the solution space. In this case $\beta$ (see Section \ref{regression}) has no unique solutions. Thus, giving unexpected results. A good example is where in fold 2 the test point for Norway in 2014 had a predicted life expectancy of 1126.056 years while in reality the life expectancy was 82.1 years. 
 
+Trying to randomly find the optimum number of centroids and the optimum initial placement of these centroids, did not yield better results than the kNN algorithm (See Table \ref{kNNResultsWeighted}). Having more runs could have yielded better results. But, given the limited computing power available, another approach was followed. 
 
+The number of centroids were reduced while the number of runs were increased. Fewer centroids would alleviate the problem of not having enough data points per centroids and reducing the total run time of the algorithm. While increasing the number of runs would ensure that the results are not based on one particular way the data was grouped into folds. The number of centroids were chosen to be 81, which corresponds to an interval between centroids of 0.5 in the normalised space. This is the largest the interval could be before only peripheral points on the space is used. Then the interval would be 1.0. An interval between 0,5 an 1.0 can not be considered, because that would make the centroids bias to one side of the solution space.
 
+The results for this run can be found in Table \ref{CentroidResults81}. Note only 9 runs were done compared to the standard of 10 runs per algorithm. This was due to time constraints. Comparing the results of an interval width of 0.5 (no of centroids = 81) to that of an interval width of 0.2 (no of centroids = 1296), reveals that the larger interval gave better results. The average error for having 81 clusters was 6.48 years while the average for 1296 clusters were 9.91 years. 
 
-no of runs arent enough like 10 for knn and OLS
-
-Trying to randomly find the optimum number of centroids and the optimum initial placement of these centroids, did not yield better results than the kNN algorithm (See Table \ref{kNNResultsWeighted}). Having more runs could have yeilded better results. But, given the limited computing power available, another approach was followed.
-
-Table of optimum run random clustering vs average mean error
-
-dimension explosion
-
-delta of 0.2 
-
-1296
-
-0.0,0.0,0.0,0.0 to 1.0,1.0,1.0,1.0
-
-
-
+Both of these average errors were still larger than the average error determined by the weighted kNN-algorithm.
 
 \section{Conclusions and limitations}
 
 
 
-Multi-dimentional data is hard to visualise and thus hard to understand and study. The situation gets worse with each additional dimention. Combining Primary- , Secondary- and Tertiary School Enrollment, meant that the amount of dimentions studied reduced from 7 to 5. Which is unfortunately still difficult to analyse, mostly becuase it is impossible to visualise mentally. Techniques like a matrix scatter plot from Figure \ref{scatter} helped but still require interpretation.
+Multi-dimensional data is hard to visualise and thus hard to understand and study. The situation gets worse with each additional dimension. Combining Primary- , Secondary- and Tertiary School Enrollment, meant that the amount of dimensions studied reduced from 7 to 5. Which is unfortunately still difficult to analyse, mostly because it is impossible to visualise mentally. Techniques like a matrix scatter plot from Figure \ref{scatter} helped but still require interpretation.
 
 The source code and raw results can be found on GitHub \citep{rawData}.
 
-The greatest limitation for the analysis of the centroid algorithm was the computation time. Running through all the folds of a dataset could take more than a week, not icluding external factors like load shedding or technical issues on the chosen computer. Python is not an ideal language to scientific computation when all the computation, especially long loops, are not being done in a more performant language like c or c++ \citep{Cai2005}. It would have been more efficient to implement the clustering algorithm in a more performant language and then calling those libraries from python. If that was the case then the algorithm could have been tested against more clusters. The threshold distance that the datapoints had to be from the centroids, for the algorithm to terminate, could also have been reduced. 
+The greatest limitation for the analysis of the centroid algorithm was the computation time. Running through all the folds of a dataset could take more than a week, not including external factors like load shedding or technical issues on the chosen computer. The Python language is not always an ideal language to scientific computation when all the computation, especially long loops, are not being done in a more performant language like c or c++ \citep{Cai2005}. It would have been more efficient to implement the clustering algorithm in a more performant language and then calling those libraries from python. If that was the case then the algorithm could have been tested against more clusters. The threshold distance that the data points had to be from the centroids, for the algorithm to terminate, could also have been reduced. 
 
 Multiple CPU cores should also have been taken into account. The algorithm only ran on one core of a 4-core I7-4770k, which also supports multi-threading. Multiple runs of the algorithm could have been done in parallel since they are mutually exclusive. 
 
 
+
+Even with the limitations, kNN was the clear winner. It has the ability to localise the datapoints that would make the greatest contribution to a correct prediction. While being able to ignore outliers that could affect prediction negatively.
+
+
 \section{Recommendations}
 
-
+Python is a great language to do machine learning in. Libraries like numpy make it easy to handle data sets. Unfortunately, heavy logic should not be implemented in python and should rather be implemented in a library, in a more performant langauge, which python can then utilise. 
 
 
 
