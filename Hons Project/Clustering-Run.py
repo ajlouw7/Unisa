@@ -14,14 +14,14 @@ analysisdf = pd.DataFrame( columns=['Series','k','delta','centroidNum','Mean','s
 
 numberOfCentroids = cluster.getK(delta)
 
-for dataset in range(1,11):
+for dataset in range(8,10):
     #for each fold
     for fold in range(1,11): #11   6,11
         #for each number of clusters
         for k in range(numberOfCentroids,numberOfCentroids+1): #2,16  1296,1297
             results = cluster.RunClustering(kfold.testSet(fold,dataset), k, movingThreshold, delta )
             #for each centroid    
-            fileName = 'Cluster-Results\Cluster_Results' + str(fold) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + '.csv'
+            fileName = 'Cluster-Results\Cluster_Results-Fold' + str(fold) + '#ofclusters=' + str(k) + ' theshold= ' + str(movingThreshold) + 'dataset' +str(dataset)+ '.csv'
             with open(fileName,mode='w', newline='') as resultsFile:
                 resultsWriter = csv.writer( resultsFile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                 resultsWriter.writerow(['LE','Predicted LE', 'Error','Health_Expenditure','GDP_Per_Capita','Education','Unemployment','centroid#','centroid_Health_Expenditure','centroid_GDP_Per_Capita','centroid_Education','centroid_Unemployment'])

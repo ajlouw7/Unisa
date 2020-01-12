@@ -3,4 +3,5 @@
 \contentsline {table}{\numberline {3}{\ignorespaces Weighted kNN Results for best value of k\relax }}{17}
 \contentsline {table}{\numberline {4}{\ignorespaces Clustering algorithm results per randomly selected number of centroids\relax }}{17}
 \contentsline {table}{\numberline {5}{\ignorespaces Clustering algorithm results with 1296 evenly spaced centroids\relax }}{18}
-\contentsline {table}{\numberline {6}{\ignorespaces Clustering algorithm results with 81 evenly spaced centroids\relax }}{19}
+\contentsline {table}{\numberline {6}{\ignorespaces Clustering algorithm results with 16 evenly spaced centroids\relax }}{19}
+\contentsline {table}{\numberline {7}{\ignorespaces Clustering algorithm results with 81 evenly spaced centroids\relax }}{19}
